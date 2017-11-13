@@ -1,0 +1,49 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.schedule-page {
+
+}
+
+.show {
+
+    &__block {
+        margin-left: 30px;
+        color: $gray;
+        display: flex;
+    }
+
+    &__title {
+        margin-right: 15px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        cursor: pointer;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+
+        .fa {
+            margin-right: 5px;
+            font-size: 16px;
+        } 
+        
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            color: $blue;
+        }
+
+        &.active {
+            color: $blue;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{% extends "template.html" %}	
+
+{% block content %}	
+
+<main class="schedule-page">
+  <div class="tools">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <a href="">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="">Расписание</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="">Lash.Moda Praga</a>
+      </li>
+    </ul>
+
+    <div class="tools__block">
+      <div class="tools__title-block">
+        <a href="">
+          Lash.Moda Praga
+          <i class="pointer_bottom sm"></i>
+        </a>
+      </div>
+      <div class="show__block">
+        <p class="show__title">Показать в виде:</p>   
+        <ul class="show__list">
+          <li class="show__item">
+              <i class="fa fa-columns" aria-hidden="true"></i>
+              <span class="show__text">Колонки</span>
+          </li>
+          <li class="show__item active">
+              <i class="fa fa-table" aria-hidden="true"></i>
+              <span class="show__text">Таблицы</span>
+          </li>
+        </ul>
+      </div> 
+    </div>
+  </div>
+</main>
+
+{% endblock %} 

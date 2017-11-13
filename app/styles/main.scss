@@ -1,0 +1,25 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import "_reset";
+@import "_fonts";
+@import "_font-awesome";
+@import "_includs";
+
+@import "_components";
+@import "_layot";
+@import "_buttons";
+
+
+@import "_header";
+@import "_left-menu";
+@import "_schedule-page";
+
+@import "_max-1025.scss";
+@import "_max-992.scss";
+@import "_max-768.scss";
+
+  

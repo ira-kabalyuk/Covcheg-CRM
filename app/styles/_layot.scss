@@ -1,0 +1,90 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+body {
+    font-family: 'Helvetica';
+	color: $black;
+	background: $light-blue;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+
+
+.img-wrap {
+
+	img {
+		width: 100%;
+		height: 100%;
+		 -o-object-fit: cover;
+			object-fit: cover;
+		vertical-align: top;
+	}
+}
+
+.flex {
+	display: flex;
+}
+
+.clearfix {
+	
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	
+	}
+
+	.custom-object-fit {
+		background-repeat: no-repeat;
+		position: relative;
+		background-size: cover;
+		background-position: center center;
+		img {
+			opacity: 0;
+		}
+	}
+
+	main {
+		padding: 0 30px;
+		margin-top: 50px;
+		margin-left: 110px;
+		min-width: 768px;		
+	}
+
+	.tools {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&__block {
+			display: flex;
+			font-size: 12px;
+		}
+
+		&__title-block {
+
+			a {
+				display: flex;
+				align-items: center;
+				color: $black;
+				font-size: 12px;
+				font-weight: 500;
+			}
+
+			.pointer_bottom {
+				margin-left: 10px;
+			}
+		}
+	}
+
+	
