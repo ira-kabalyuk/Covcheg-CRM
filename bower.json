@@ -3,7 +3,8 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
-    "hover": "^2.1.1"
+    "hover": "^2.1.1",
+    "moment": "^2.19.2"
   },
   "overrides": {
     "bootstrap-sass": {
