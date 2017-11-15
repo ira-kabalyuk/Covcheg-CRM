@@ -38,6 +38,27 @@ $icon-font-path: '../fonts/';
             height: 5px;  
         }
     }
+
+    &_right {
+        display: block;
+        cursor: pointer;
+        width: 8px;
+        height: 8px;
+        border-left: 1px solid $braun; 
+        border-bottom: 1px solid $braun; 
+        transform: rotate(-135deg);
+        margin-left: 10px;
+
+        &.sm {
+            width: 5px;
+            height: 5px;  
+        }
+
+        &.blue {
+            border-left: 1px solid $blue; 
+            border-bottom: 1px solid $blue;  
+        }
+    }
 }
 
 .label {
@@ -46,19 +67,45 @@ $icon-font-path: '../fonts/';
     align-items: center;
     width: 17px;
     height: 17px;
-    border-radius: 50%;
-    color: #fff;
+    border-radius: 50%;    
     font-size: 11px;
     font-weight: 700;
     font-style: normal;
     vertical-align: middle;
     line-height: 10px;
-   
-    &_red {
-        background: $red; 
+    
+
+    &.ab {
         position: absolute;
         top: 7px;
         left: 7px;
+    }
+   
+    &_red {
+        background: $red;       
+        color: #fff;
+    }
+
+    &_gray {
+        background: #86909d;
+        color: #fff;
+    }
+
+    &_blue {
+        background: $blue;
+        color: #fff;
+    }   
+
+    &.lang {
+        font-size: 0.7rem;
+        font-weight: 400;
+        display: inline-block;
+        width: auto;
+        text-transform: uppercase;
+        padding: 3px;
+        width: auto;
+        height: auto;
+        border-radius: 0;
     }
 }
 

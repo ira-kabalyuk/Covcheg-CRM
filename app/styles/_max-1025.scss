@@ -4,6 +4,30 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (max-width: 1025px) {
 
- 
-  
+		//schedule
+
+		.schedule {
+
+				&__head {
+					height: 140px;				
+
+						&_left {
+								flex-wrap: wrap;
+								//height: 70px;
+						}
+
+						&_right {
+							flex-wrap: wrap;
+							height: 110px;
+							align-items: center;
+					}
+				}
+
+				&__nav-list {
+				//margin-top: 44px;
+				height: 50%;
+				
+				}
+		}
+	
 }

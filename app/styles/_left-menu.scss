@@ -8,10 +8,11 @@ $red: #ec1c23;
 
 .left-menu {
     width: 110px;
-    height: 100%;
+    height: calc(100% - 50px);
     background: $light-bg;
     position: fixed;
-    z-index: 10;
+    overflow-y: auto;
+    z-index: 100;
     left: 0;
     top: 50px;
 
@@ -32,7 +33,7 @@ $red: #ec1c23;
             width: 100%;
             height: 100%;
             text-align: center;
-            padding: 15px 5px;
+            padding: 13px 5px;
             position: relative;
 
             &:hover {
@@ -215,7 +216,7 @@ $red: #ec1c23;
 
     &__title {
         color: $braun;
-        font-size: 14px;
+        font-size: 1rem;
         font-weight: 400;
         text-align: center;
     }

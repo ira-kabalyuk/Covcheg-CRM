@@ -8,8 +8,6 @@ $icon-font-path: '../fonts/';
 @import "_fonts";
 @import "_font-awesome";
 @import "_includs";
-@import "_fullcalendar";
-@import "_scheduler";
 
 @import "_components";
 @import "_layot";
@@ -20,6 +18,7 @@ $icon-font-path: '../fonts/';
 @import "_left-menu";
 @import "_schedule-page";
 
+@import "_max-1260.scss";
 @import "_max-1025.scss";
 @import "_max-992.scss";
 @import "_max-768.scss";
