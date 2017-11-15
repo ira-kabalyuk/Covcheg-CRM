@@ -4,30 +4,29 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (max-width: 1025px) {
 
-		//schedule
+	//schedule
 
-		.schedule {
+	.today-data {
+		font-size: 1em;
+	}
 
-				&__head {
-					height: 140px;				
+	.calendar-button {
+		margin-left: 10px;
+	}
 
-						&_left {
-								flex-wrap: wrap;
-								//height: 70px;
-						}
+	.schedule {
 
-						&_right {
-							flex-wrap: wrap;
-							height: 110px;
-							align-items: center;
-					}
-				}
-
-				&__nav-list {
-				//margin-top: 44px;
-				height: 50%;
-				
-				}
+		&__nav-list {
+			margin: 0 10px;
 		}
+
+		&__nav-item {
+			font-size: 0.9em;
+		}
+
+		&__nav-button {
+			padding: 0 7px;
+		}
+	}	
 	
 }
