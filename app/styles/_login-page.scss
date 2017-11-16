@@ -1,0 +1,15 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}

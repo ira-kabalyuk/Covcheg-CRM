@@ -1,0 +1,878 @@
+{% extends "template.html" %}	
+
+{% block content %}	
+
+<main class="schedule-page">
+	<div class="tools">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<i class="fa fa-home" aria-hidden="true"></i>
+				<a href="">Главная</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<a href="">Расписание</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<a href="">Lash.Moda Praga</a>
+			</li>
+		</ul>
+
+		<div class="tools__block">      
+				<div class="dropdown">
+					<a data-toggle="dropdown" href="#">	
+								Lash.Moda Praga             
+					</a>
+					<i class="pointer_bottom sm"></i>
+					<ul class="dropdown-menu tools__list" role="menu" aria-labelledby="dLabel">              
+						<li class="tools__item">
+								<a href="">
+									Lash.Moda Kiev
+								</a>
+						</li>
+						<li class="tools__item">
+								<a href="">
+									Lash.Moda Lvov
+								</a>
+						</li>
+					</ul>
+				</div>
+			
+			<div class="show__block">
+				<p class="show__title">Показать в виде:</p>   
+				<ul class="show__list">
+					<li class="show__item">
+							<i class="fa fa-columns" aria-hidden="true"></i>
+							<span class="show__text">Колонки</span>
+					</li>
+					<li class="show__item active">
+							<i class="fa fa-table" aria-hidden="true"></i>
+							<span class="show__text">Таблицы</span>
+					</li>
+				</ul>
+			</div> 
+		</div>
+	</div>
+
+	<div class="schedule">
+		<div class="schedule__head">
+				<div class="schedule__head_left">
+					<p class="today-data">16 ноября 2017г.</p>
+					<button class="calendar-button">
+							<i class="fa fa-calendar" aria-hidden="true"></i>
+					</button>
+					<ul class="schedule__nav-list">
+						<li class="schedule__nav-item">
+							<button class="schedule__nav-button gray">
+								сегодня
+							</button>
+						</li>
+						<li class="schedule__nav-item">
+							<button class="schedule__nav-button">
+								завтра
+								<i class="pointer_right sm blue"></i>
+							</button>
+						</li>
+						<li class="schedule__nav-item">
+								<button class="schedule__nav-button">
+									Cp
+								<span>17</span>
+								</button>
+						</li>
+						<li class="schedule__nav-item">
+								<button class="schedule__nav-button">
+									Чт
+									<span>18</span>
+								</button>
+						</li>
+						<li class="schedule__nav-item">
+								<button class="schedule__nav-button">
+									Пт
+									<span>19</span>
+								</button>
+						</li>
+						<li class="schedule__nav-item">
+								<button class="schedule__nav-button">
+									Сб
+									<span>20</span>
+								</button>
+						</li>
+						<li class="schedule__nav-item active">
+								<button class="schedule__nav-button">
+								Вс
+									<span>21</span>
+								</button>
+						</li>
+						<li class="schedule__nav-item">
+								<button class="schedule__nav-button">
+								Пн
+									<span>22</span>
+								</button>
+						</li>
+						<li class="schedule__nav-item">
+								<button class="schedule__nav-button">
+								Вт
+									<span>23</span>
+								</button>
+						</li>
+					</ul>
+				</div>
+				<div class="schedule__head_right">
+					<button class="button green">
+						Лист ожидания
+						<i class="label ab label_red">8</i>
+					</button>
+				</div>
+		</div>
+		<div class="schedule__body">
+			<span class="line"></span>
+			<table class="schedule__content">
+				<tr class="schedule__content-head">
+					<td class="time-td"></td>
+					<td>Ирина Наботова <span>Визажист / бровист</span></td>
+					<td>Олеся Никитина <span>Визажист / бровист</span></td>
+					<td>Наталья Петрова <span>Лешмейкер</span></td>
+					<td>Екатерина Мирончук<span>Визажист / бровист</span></td>
+				</tr>
+				<tr class="schedule__content-item">
+					<td class="time-td">8.00</td>
+					<td>
+						<div class="schedule__content-item-hover">
+							8.30
+							<span>Екатерина Мирончук</span>
+						</div>
+					</td>
+					<td>
+							<div class="schedule__content-item-hover">
+									8.30
+								<span>Екатерина Мирончук</span>
+							</div>
+					</td>
+					<td>
+							<div class="schedule__content-item-hover">
+									8.30
+								<span>Екатерина Мирончук</span>
+							</div>
+					</td>
+					<td>
+							<div class="schedule__content-item-hover">
+									8.30
+								<span>Екатерина Мирончук</span>
+							</div>
+					</td>
+				</tr>
+				<tr class="schedule__content-item">
+					<td class="time-td selectedTD">8.30</td>
+					<td>
+							<div class="schedule__content-item-hover">
+									8.30
+								<span>Екатерина Мирончук</span>
+							</div>
+					</td>
+					<td>
+							<div class="schedule__content-item-hover">
+									8.30
+								<span>Екатерина Мирончук</span>
+							</div>
+					</td>
+					<td>
+							<div class="schedule__content-item-hover">
+									8.30
+								<span>Екатерина Мирончук</span>
+							</div>
+					</td>
+					<td>
+							<div class="schedule__content-item-hover">
+									8.30
+								<span>Екатерина Мирончук</span>
+							</div>
+							<div class="record-block height-1 blue">
+									<div class="record-block__item lg">
+										<span class="record-block__item-time">14.00-15.00</span>
+										<span class="record-block__item-time">Наращивание ресниц</span>
+									</div>
+									<div class="record-block__item">
+										<span class="label label_gray lang">Потенциальный</span>
+										<span class="record-block__item-price">550грн</span>
+									</div>
+								</div>
+					</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">9.00</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								8.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">9.30</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								8.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">10.00</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								8.30
+								<span>Екатерина Мирончук</span>
+							</div>
+							<div class="record-block height-1 pink">
+									<div class="record-block__item lg">
+										<span class="record-block__item-time">14.00-15.00</span>
+										<span class="record-block__item-time">Моделирование бровей</span>
+									</div>
+									<div class="record-block__item">
+										<span class="label label_gray lang">Потенциальный</span>
+										<span class="record-block__item-price">550грн</span>
+									</div>
+								</div>							
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+								<div class="record-block height-2 gray">
+										<div class="record-block__item lg">
+											<span class="record-block__item-time">14.00-15.00</span>
+											<span class="record-block__item-time">Наращивание ресниц</span>
+										</div>
+										<div class="record-block__item">
+											<span class="label label_blue lang">Разовый</span>
+											<span class="record-block__item-price">550грн</span>
+										</div>
+									</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">10.30</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								8.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">10.30</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								8.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">11.30</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								8.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">12.00</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								12.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">12.30</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								12.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">13.00</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								12.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+								<div class="record-block height-1 yellow">
+										<div class="record-block__item lg">
+											<span class="record-block__item-time">14.00-15.00</span>
+											<span class="record-block__item-time">Наращивание ресниц</span>
+										</div>
+										<div class="record-block__item">
+											<span class="label label_blue lang">Разовый</span>
+											<span class="record-block__item-price">550грн</span>
+										</div>
+									</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">13.30</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								12.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">14.00</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								12.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">14.30</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								12.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">15.00</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								12.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+								<div class="record-block height-2 green">
+										<div class="record-block__item lg">
+											<span class="record-block__item-time">14.00-15.00</span>
+											<span class="record-block__item-time">Наращивание ресниц</span>
+										</div>
+										<div class="record-block__item">
+											<span class="label label_blue lang">Разовый</span>
+											<span class="record-block__item-price">550грн</span>
+										</div>
+									</div>
+						</td>						
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">15.30</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								12.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">16.00</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								12.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">16.30</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								12.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">17.00</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								12.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">17.30</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								12.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">18.00</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								12.30
+								<span>Екатерина Мирончук</span>
+							</div>
+							<div class="record-block height-2 dark-blue">
+									<div class="record-block__item lg">
+										<span class="record-block__item-time">14.00</span>
+										<span class="record-block__item-time">Наращивание ресниц</span>
+									</div>
+									<div class="record-block__item">
+											<span class="label label_gray lang">Потенциальный</span>
+										<span class="record-block__item-price">550грн</span>
+									</div>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">18.30</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								12.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">19.00</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								12.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+				<tr class="schedule__content-item">
+						<td class="time-td">19.30</td>
+						<td>
+							<div class="schedule__content-item-hover">
+								12.30
+								<span>Екатерина Мирончук</span>
+							</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+						<td>
+								<div class="schedule__content-item-hover">
+										8.30
+									<span>Екатерина Мирончук</span>
+								</div>
+						</td>
+				</tr>
+			</table>
+		</div>
+		<div class="schedule__footer">
+			<ul class="schedule__footer-list">
+				<li class="schedule__footer-item">
+					<i class="icon blue"></i>
+					<span>Запланировано</span>
+				</li>
+				<li class="schedule__footer-item">
+					<i class="icon pink"></i>
+					<span>Выполняется</span>
+				</li>
+				<li class="schedule__footer-item">
+						<i class="icon gray"></i>
+						<span>Выполнено</span>
+					</li>
+					<li class="schedule__footer-item">
+						<i class="icon green"></i>
+						<span>Обслуживание завершено</span>
+					</li>
+					<li class="schedule__footer-item">
+						<i class="icon dark-blue"></i>
+						<span>Визит отменен</span>
+					</li>
+					<li class="schedule__footer-item">
+						<i class="icon yellow"></i>
+						<span>Подтверждена</span>
+					</li>
+			</ul>
+		</div>
+	</div>
+
+</main>
+
+{% endblock %} 
