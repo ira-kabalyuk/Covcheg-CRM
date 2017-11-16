@@ -6,19 +6,19 @@ $light-bg: #3d3d3d;
 $braun: #8a8a8a;
 $red: #ec1c23;
 
+
+
 .left-menu {
     width: 110px;
-    height: calc(100% - 50px);
+    flex-basis: 110px;
+    flex-shrink: 0;   
     background: $light-bg;
-    position: fixed;
-    overflow-y: auto;    
+    position: relative;     
     z-index: 100;
     left: 0;
-    
-
-    &__list {
-
-    }
+    margin-top: 50px;
+    min-height: calc(100vh - 50px);
+   
 
     &__item {
         border-bottom: 1px solid $braun;

@@ -14,6 +14,10 @@ body {
 	background: $light-blue;
 }
 
+.pagewrap {
+	display: flex;
+}
+
 
 * {
     box-sizing: border-box;
@@ -63,8 +67,11 @@ body {
 	main {
 		padding: 0 30px;
 		margin-top: 50px;
-		margin-left: 110px;
-		min-width: 768px;		
+		//margin-left: 110px;
+		min-width: calc(768px - 110px);	
+		width: calc(100% - 110px);
+		flex-basis: calc(100% - 110px);
+		flex-shrink: 0;
 	}
 
 	.tools {

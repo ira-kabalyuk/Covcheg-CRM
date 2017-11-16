@@ -21,6 +21,7 @@ var src = {
     js: 'app/scripts/*.js',
     sass: 'app/styles/*.scss',
     images: 'app/images/*',
+    fonts: 'app/fonts/*',
     spriteImages: 'app/images/sprite/*.png',
     tmp: '.tmp/',
     dist: 'dist/',
@@ -75,6 +76,12 @@ gulp.task('images', function() {
         .pipe(browserSync.stream());
 });
 
+gulp.task('fonts', function() {
+    return gulp.src(src.fonts)
+        .pipe(gulp.dest(src.tmp + '/fonts'))
+        .pipe(browserSync.stream());
+});
+
 
 gulp.task('nunjucks', function() {
     return gulp.src(src.html)
@@ -83,7 +90,7 @@ gulp.task('nunjucks', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('serve', ['styles', 'scripts', 'nunjucks', 'images'], function() {
+gulp.task('serve', ['styles', 'scripts', 'fonts', 'nunjucks', 'images'], function() {
     browserSync.init({
         server: {
             baseDir: [src.tmp],

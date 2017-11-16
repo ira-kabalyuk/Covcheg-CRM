@@ -102,7 +102,7 @@ $icon-font-path: '../fonts/';
         display: inline-block;
         width: auto;
         text-transform: uppercase;
-        padding: 3px;
+        padding: 3px 3px 2px 3px;
         width: auto;
         height: auto;
         border-radius: 0;
@@ -153,4 +153,34 @@ $icon-font-path: '../fonts/';
             }
         }
     }
+}
+
+&.blue {
+    background: #e7faff;
+    border: 2px solid #9bcbd8;
+}
+
+&.pink {
+    background: #fceffc;
+    border: 2px solid #d3b4d3;
+}
+
+&.gray {
+    background: #fff;
+    border: 2px solid #c4c4c4;
+}
+
+&.green {
+    background: #e2f0e1;
+    border: 2px solid #accaaa;
+}
+
+&.dark-blue {
+    background: #d1d8df;
+    border: 2px solid #98a6b3;
+}
+
+&.yellow {
+    background: #faf2da;
+    border: 2px solid #e5d4a1;
 }
