@@ -11,7 +11,7 @@ $icon-font-path: '../fonts/';
 	}
 
 	.calendar-button {
-		margin-left: 10px;
+		margin-left: 5px;
 	}
 
 	.schedule {
@@ -21,11 +21,23 @@ $icon-font-path: '../fonts/';
 		}
 
 		&__nav-item {
-			font-size: 0.9em;
+			font-size: 0.8em;
 		}
 
 		&__nav-button {
-			padding: 0 7px;
+			padding: 0 6px;
+		}
+
+		&__footer {
+
+			&-list {
+				justify-content: flex-start;
+			}
+
+			&-item {
+				margin-bottom: 5px;
+			}
+			
 		}
 	}	
 	

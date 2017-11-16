@@ -3,9 +3,9 @@ $icon-font-path: '../fonts/';
 @import "_includs";
 
 html {
-	min-height: 100%;
-	overflow-y: auto;
+	min-height: 100%;	
 	font-size: 14px;
+	overflow-x: hidden;
 }
 
 body {
@@ -68,7 +68,7 @@ body {
 		padding: 0 30px;
 		margin-top: 50px;
 		//margin-left: 110px;
-		min-width: calc(768px - 110px);	
+		min-width: calc(768px - 80px);	
 		width: calc(100% - 110px);
 		flex-basis: calc(100% - 110px);
 		flex-shrink: 0;

@@ -254,9 +254,9 @@ $icon-font-path: '../fonts/';
      
 
     .record-block {
-        width: 102%;
-        height: auto;       
-        padding: 10px; 
+        width: 102%;            
+        padding: 5px 10px; 
+        min-height: 200%;
         display: flex;
         justify-content: space-between; 
 
@@ -299,6 +299,14 @@ $icon-font-path: '../fonts/';
                 margin-bottom: 5px;  
             }
         }
+
+        &.height-1 {
+            height: 200%;
+        }
+
+        &.height-2 {
+            height: 300%;
+        }
     }
 
     
@@ -312,6 +320,7 @@ $icon-font-path: '../fonts/';
             display: flex;
             align-items: center;
             justify-content: flex-end;
+            flex-wrap: wrap;
         }
 
         &-item {
@@ -382,10 +391,6 @@ $icon-font-path: '../fonts/';
 }
 
 
-
-body {
-	overflow: hidden;
-}
 
 
 
