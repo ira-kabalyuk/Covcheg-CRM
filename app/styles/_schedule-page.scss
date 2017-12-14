@@ -49,8 +49,7 @@ $icon-font-path: '../fonts/';
 }
 
 .schedule {
-    background: #fff;
-     
+    background: #fff;     
 
     &__head {
         padding: 0 30px;
@@ -60,10 +59,71 @@ $icon-font-path: '../fonts/';
         justify-content: space-between;
         width: 100%;  
 
+        .title {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
         &_left {
             display: flex;
             align-items: center;
             height: 100%;
+
+            .docs-datepicker {
+                display: flex;
+                position: relative;
+            }
+            
+            input {
+                position: relative;
+                border:none;                
+                cursor: pointer;
+                color: $black;
+
+                &::-webkit-input-placeholder {color: $black;}
+                &::-moz-placeholder          {color: $black;}
+                &:-moz-placeholder           {color: $black;}
+                &:-ms-input-placeholder      {color: $black;}
+            }            
+
+            .today-data-mask {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .input-group {
+                display: flex;
+                position: relative;
+                z-index: 10;
+                background: transparent;
+                width: 240px;
+
+                .fa {
+                    font-size: 22px;
+                    color: $red;
+                   position: absolute;
+                   top: 0;
+                   right: 0;
+                }
+
+               
+            }
+
+            .data-input {
+                color: #fff;
+            }
+
+            .calendar-button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 10;
+
+                font-weight: 700;
+                width: 100%;
+                text-align: left;
+            }
         }
 
         &_right {
@@ -175,19 +235,20 @@ $icon-font-path: '../fonts/';
             .time-td {
                 width: 75px;
             }
+
+            
         }
 
         &-item {
             position: relative;
 
             td {
-                padding: 5px;
+                padding: 7px 5px;
                 font-size: 1rem;
                 cursor: default;
                 position: relative;
 
-                &:hover {
-                    outline: 2px solid $yellow;
+                &:hover {                   
 
                     .schedule__content-item-hover {
                         display: flex;
@@ -208,7 +269,7 @@ $icon-font-path: '../fonts/';
                  
 
             .selectedTD {
-                background: $red;
+                background: #ec666a;
                 color: #fff;
 
                 &:after {
@@ -216,8 +277,8 @@ $icon-font-path: '../fonts/';
                     width: 0;
                     height: 0;
                     border-style: solid;
-                    border-width: 13px 0 13px 10px;
-                    border-color: transparent transparent transparent $red;
+                    border-width: 15px 0 15px 10px;
+                    border-color: transparent transparent transparent #ec666a;
                     
                     position: absolute;
                     top: 0;
@@ -231,17 +292,18 @@ $icon-font-path: '../fonts/';
 
         &-item-hover {            
            font-size: 1em;
+           outline: 2px solid $yellow;
            font-weight: 700;
            padding: 0 10px;
-           width: 100%;           
+           width: 98%;           
            justify-content: space-between;
            align-items: center;
            display:none;
 
            position: absolute;
-           height: 100%;
-           top: 0;
-           left: 0;
+           height: 98%;
+           top: 1%;
+           left: 1%;
 
            span {
                color: $gray;
@@ -251,28 +313,148 @@ $icon-font-path: '../fonts/';
     }
 
     
-     
+    &__content-column {
+        width: 100%;
+        table-layout: fixed;
+
+        &-head {
+            background: #595959;
+            color: #e4e4e4;            
+            
+            th {
+                font-size: 15px;
+                font-weight: 500;
+                padding: 22px 30px;
+                white-space: nowrap;
+                vertical-align: middle;
+            }
+            
+            .title-name {
+                width: 20%;
+            }  
+            
+            .title-phone {
+                width: 16%;
+            }
+
+            .title-status {
+                width: 20%;
+            }
+
+            .title-servises {
+                width: 17%;
+            }
+            
+            .name-master-title {
+                width: 20%;
+            }
+
+            .data-title {
+                width: 17%;
+            }
+
+            .sum-title {
+                width: 17%;
+            }
+            
+            .img-wrap {
+                width: 136px;
+                height: 85px;
+            }
+           
+        }
+
+        tr {
+            border-bottom: 1px solid $el-border-color;
+        }
+
+        td {
+            padding: 28px 30px; 
+            font-size: 15px; 
+            overflow: hidden;
+            vertical-align: middle;
+            position: relative;
+
+            &.with-hover {
+                overflow: visible;
+
+                &:hover {
+
+                    .table-hover-block {
+                        display: block;
+                    }
+                }
+
+            }
+        }
+
+        .pointer-wrap {
+            display: inline-block;
+        }
+
+        .name {
+           color: $blue;
+           font-weight: 700;           
+           margin-bottom: 7px;
+					 display: inline-block;
+					 text-decoration: underline;
+
+					 &:hover {
+						 text-decoration: none;
+					 }
+        }
+
+        .info {
+            display: block;
+        }
+
+        .data,
+        .time {
+            display: inline-block;
+            color: $blue;
+        }
+
+        .data {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .sum {
+            font-weight: 700;
+            color: $green;
+        }
+
+        .fa-calendar {
+            font-size: 17px;
+						color: $red;
+						
+						&.gray {
+							color: $gray;
+							border: none;
+						}
+        }
+    }
 
     .record-block {
-        width: 102%;            
+        width: 99%;            
         padding: 5px 10px; 
         min-height: 200%;
         display: flex;
         justify-content: space-between; 
+        font-size: 13px;
 
         position: absolute;
         top: -100%;
-        left: -1%;
+        left: 0.5%;
         z-index: 50;
-        transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out; 
         
-        &.green {
-            border: 1px solid $black;
-            background: #e2f0e1;
+        &:hover {
+            border: 2px solid $black;
         }
-
+        
         &__item { 
-            overflow: hidden;           
+            overflow: hidden;
 
             span {
                 display: block;
@@ -288,7 +470,14 @@ $icon-font-path: '../fonts/';
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
-                margin-bottom: 5px;
+                margin: 0 5px 0 0;
+            }
+
+            &-name {
+                font-weight: 700;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
             &-price {
@@ -306,6 +495,16 @@ $icon-font-path: '../fonts/';
 
         &.height-2 {
             height: 300%;
+        }
+
+        &__item-wrap {
+            display: flex;
+            flex-wrap: wrap;            
+            margin-bottom: 5px;
+        }
+
+        &.gray {
+            color: $gray;
         }
     }
 
@@ -341,42 +540,13 @@ $icon-font-path: '../fonts/';
                 flex-basis: 13px;
                 flex-shrink: 0;
                 margin-right: 7px;
-
-                &.blue {
-                    background: #e7faff;
-                    border: 2px solid #9bcbd8;
-                }
-
-                &.pink {
-                    background: #fceffc;
-                    border: 2px solid #d3b4d3;
-                }
-
-                &.gray {
-                    background: #fff;
-                    border: 2px solid #c4c4c4;
-                }
-
-                &.green {
-                    background: #e2f0e1;
-                    border: 2px solid #accaaa;
-                }
-
-                &.dark-blue {
-                    background: #d1d8df;
-                    border: 2px solid #98a6b3;
-                }
-
-                &.yellow {
-                    background: #faf2da;
-                    border: 2px solid #e5d4a1;
-                }
             }
         }
-    }
+    }    
 }
 
-.today-data {
+.today-data,
+.data-input {
     font-size: 1.5rem;
     font-weight: 700;
     white-space: nowrap;
@@ -385,12 +555,65 @@ $icon-font-path: '../fonts/';
 .calendar-button {
     background: transparent;
     border: none;
-    font-size: 1.5rem;
-    color: $red;
-    margin-left: 20px;    
+    font-size: 1.5rem;    
+    margin-left: 20px;
+
+    .fa {
+        color: $red;
+    }
 }
 
 
+.pay-block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    //flex-shrink: 0;
+    //flex-basis: 100%;
+    max-width: 270px;      
+
+    .swipe-label {
+        width: 80%;
+    }
+
+    .checkbox-wrap {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 120px;
+    }
+}
+
+.status {
+
+    &__block {
+        margin: 0 20px;
+    }
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        //align-items: center;
+        margin: 5px -10px 0;
+    }
+
+    &__item {
+        margin: 0 25px 10px 0;
+    }
+}
+
+.filter-button-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    flex-basis: 170px;
+    //max-width: 170px;    
+    margin: 0 -5px;
+    
+    .button {
+        margin: 0 5px;
+    }
+}
 
 
 

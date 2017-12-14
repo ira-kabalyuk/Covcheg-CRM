@@ -1,0 +1,60 @@
+<!--лист ожидания-->
+<div class="swipe-panel swipe-panel-3 w400">
+	<div class="swipe-panel__header">
+			<div class="swipe-panel__title-block">
+				<p class="swipe-panel__title">
+					Лист ожидания
+				</p>			
+			</div>
+			<div class="swipe-panel__close-block">
+					<i class="fa fa-times" aria-hidden="true"></i>
+			</div>	
+	</div>
+	<div class="swipe-panel__body">
+			<button class="button green trans add-record-button">+ Добавить запись</button>
+			<ul class="swipe-panel__list">
+					<li class="swipe-panel__item">
+							<div class="button-wrap">
+								<button class="panel-redact"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+								<button class="panel-close">×</button>
+							</div>
+							<div class="name-wrap">
+								<span class="name" title="Маргарита Иванова-Петровская">Маргарита Иванова-Петровская</span>
+								<span class="label label_orange lang">Постоянный</span>
+							</div>
+							<div class="info-wrap">
+								<p class="info">+38055-555-55-55</p>
+							</div>
+							<div class="record-info-wrap">
+								<span class="data">8.05.2017</span>
+								<p class="master-name"><span>Мастер:</span>Екатерина Мирончук</p>
+							</div>
+					</li>
+					<li class="swipe-panel__item">
+							<div class="button-wrap">
+								<button class="panel-redact"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+								<button class="panel-close">×</button>
+							</div>
+							<div class="name-wrap">
+								<span class="name" title="Марина Шевченко">Марина Шевченко</span>
+								<span class="label label_green lang">Активный</span>
+							</div>
+							<div class="info-wrap">
+								<p class="info">+38055-555-55-55</p>
+							</div>
+							<p class="note">
+									<i class="fa fa-comment-o" aria-hidden="true"></i>
+									Просит скидку 15%
+							</p>
+							<div class="record-info-wrap">
+								<span class="data">8.05.2017</span>
+								<p class="master-name"><span>Мастер:</span>Екатерина Мирончук</p>
+							</div>
+					</li>
+			</ul>
+	</div>
+	{% include "swipe-panel-add-record.html" %}	
+</div>
+
+
+

@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+		{% include "head.html" %}
+
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<div class="pagewrap">
+				{% include "header.html" %}
+				{% include "left-menu.html" %}
+			
+				{% block content %}	
+			
+				{% endblock %} 
+			
+				{% include "scripts.html" %}	
+		</div>
+	
+	</body>
+	
+	{% include "swipe-panel-1.html" %}<!--форма добавления клиента-->
+	{% include "swipe-panel-2.html" %}<!--новая запись в салон-->
+	{% include "swipe-panel-3.html" %}<!--лист ожидания-->
+	{% include "swipe-panel-4.html" %}<!--окно в таблице расписания-->
+	{% include "swipe-panel-5.html" %}<!--форма добавления товара-->
+	{% include "swipe-panel-6.html" %}<!--редактирование склады-->
+	{% include "swipe-panel-7.html" %}<!--добавить справочник-->
+	{% include "swipe-panel-8.html" %}<!--добавить статью-->
+	{% include "swipe-panel-9.html" %}<!--добавить контрагента-->
+</html>

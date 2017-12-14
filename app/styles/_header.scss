@@ -2,6 +2,16 @@ $icon-font-path: '../fonts/';
 
 @import "_includs";
 
+.logo-wrap {
+	width: 160px;
+	height: 17px;
+
+	img {
+		object-fit: contain;
+		-o-object-fit: contain;
+	}
+}
+
 .header {
 	width: 100%;    
 	height: 50px;

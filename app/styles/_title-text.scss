@@ -1,0 +1,61 @@
+@import "_includs";
+
+.title-block {
+    width: 100%;
+    padding: 28px 30px;
+    
+    &.title-gray {
+        background: #f3f3f3;
+    }
+
+    &.title-braun {
+      background: #404040;
+      
+      .title {
+          color: #fff;
+      }
+    }
+
+    &.top-border-gray {
+       border-top: 1px solid $light-blue;
+    }
+
+    .title {
+        margin-bottom: 0;
+    }
+}
+
+
+.title {
+    font-size: 22px;
+    font-weight: 700;
+    color: $black;
+    margin-bottom: 15px;
+}
+
+.color-title {
+    font-size: 15px;
+    font-weight: 700;    
+}
+
+
+.bold {
+    font-weight: 700;
+}
+
+.black-text {
+    color: $black;
+}
+
+.blue-text {
+    color: $blue;
+ }
+
+ .green-text {
+     color: $green;
+ }
+
+ .red-text {
+     color: $red;
+ }
+

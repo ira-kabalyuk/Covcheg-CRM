@@ -1,0 +1,48 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.sidebar {
+    width: 285px;
+    flex-basis: 285px;
+    flex-shrink: 0;
+    background: #f2f2f2;
+
+    &__title {
+        background: $blue;
+        color: #fff;
+        padding: 25px 30px;
+        font-size: 26px;
+        font-weight: 700;
+        width: 100%;
+    }
+
+    &__list {
+        width: 100%;
+        padding: 17px 30px;
+    }
+
+    &__item {
+        font-size: 17px;
+        padding: 10px 0;
+
+        a {
+            color: $black;
+            font-weight: 400;
+
+            &:hover {
+                color: $black;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+
+        &.active {
+
+            a {
+                font-weight: 700;
+            }
+        }
+    }
+  
+}

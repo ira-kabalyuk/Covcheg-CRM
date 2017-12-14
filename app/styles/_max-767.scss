@@ -4,6 +4,10 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (max-width: 767px) {
 
+  html {   
+    overflow-x: auto;
+  }
+
     main {
         overflow-x: auto;
         width: 100%;

@@ -1,4 +1,4 @@
-{% extends "template.html" %}	
+{% extends "template-width-swipe.html" %}	
 
 {% block content %}	
 
@@ -56,10 +56,16 @@
 	<div class="schedule">
 		<div class="schedule__head">
 				<div class="schedule__head_left">
-					<p class="today-data">16 ноября 2017г.</p>
-					<button class="calendar-button">
-							<i class="fa fa-calendar" aria-hidden="true"></i>
-					</button>
+					<div class="docs-datepicker">
+							<p class="input-group" >
+								<input type="text" class="data-input" placeholder="17 ноября 2017г.">
+								<!--<p class="today-data today-data-mask">16 ноября 2017 г.</p>-->	
+								<input type="button" class="calendar-button js-datepicker">
+									<i class="fa fa-calendar js-datepicker" aria-hidden="true"></i>
+								
+							</p>							
+					</div>
+					
 					<ul class="schedule__nav-list">
 						<li class="schedule__nav-item">
 							<button class="schedule__nav-button gray">
@@ -117,7 +123,7 @@
 					</ul>
 				</div>
 				<div class="schedule__head_right">
-					<button class="button green">
+					<button class="button green trans waiting-list-btn">
 						Лист ожидания
 						<i class="label ab label_red">8</i>
 					</button>
@@ -187,8 +193,11 @@
 							</div>
 							<div class="record-block height-1 blue">
 									<div class="record-block__item lg">
-										<span class="record-block__item-time">14.00-15.00</span>
-										<span class="record-block__item-time">Наращивание ресниц</span>
+										<div class="record-block__item-wrap">
+											<span class="record-block__item-time">14.00-15.00</span>
+											<span class="record-block__item-name" title="Гончаренко Наталья">Гончаренко Наталья</span>
+										</div>										
+											<span class="record-block__item-time">Наращивание ресниц</span>
 									</div>
 									<div class="record-block__item">
 										<span class="label label_gray lang">Потенциальный</span>
@@ -260,7 +269,10 @@
 							</div>
 							<div class="record-block height-1 pink">
 									<div class="record-block__item lg">
-										<span class="record-block__item-time">14.00-15.00</span>
+											<div class="record-block__item-wrap">
+												<span class="record-block__item-time">14.00-15.00</span>
+												<span class="record-block__item-name" title="Гончаренко Наталья">Гончаренко Наталья</span>
+											</div>	
 										<span class="record-block__item-time">Моделирование бровей</span>
 									</div>
 									<div class="record-block__item">
@@ -288,7 +300,10 @@
 								</div>
 								<div class="record-block height-2 gray">
 										<div class="record-block__item lg">
-											<span class="record-block__item-time">14.00-15.00</span>
+												<div class="record-block__item-wrap">
+													<span class="record-block__item-time">14.00-15.00</span>
+													<span class="record-block__item-name" title="Гончаренко Наталья">Гончаренко Наталья</span>
+												</div>	
 											<span class="record-block__item-time">Наращивание ресниц</span>
 										</div>
 										<div class="record-block__item">
@@ -448,11 +463,14 @@
 								</div>
 								<div class="record-block height-1 yellow">
 										<div class="record-block__item lg">
-											<span class="record-block__item-time">14.00-15.00</span>
+												<div class="record-block__item-wrap">
+													<span class="record-block__item-time">14.00-15.00</span>
+													<span class="record-block__item-name" title="Гончаренко Наталья">Гончаренко Наталья</span>
+												</div>	
 											<span class="record-block__item-time">Наращивание ресниц</span>
 										</div>
 										<div class="record-block__item">
-											<span class="label label_blue lang">Разовый</span>
+											<span class="label label_green lang">Активный</span>
 											<span class="record-block__item-price">550грн</span>
 										</div>
 									</div>
@@ -572,7 +590,10 @@
 								</div>
 								<div class="record-block height-2 green">
 										<div class="record-block__item lg">
-											<span class="record-block__item-time">14.00-15.00</span>
+												<div class="record-block__item-wrap">
+													<span class="record-block__item-time">14.00-15.00</span>
+													<span class="record-block__item-name" title="Мороз Виктория">Мороз Виктория</span>
+												</div>	
 											<span class="record-block__item-time">Наращивание ресниц</span>
 										</div>
 										<div class="record-block__item">
@@ -732,7 +753,10 @@
 							</div>
 							<div class="record-block height-2 dark-blue">
 									<div class="record-block__item lg">
-										<span class="record-block__item-time">14.00</span>
+											<div class="record-block__item-wrap">
+												<span class="record-block__item-time">14.00-15.00</span>
+												<span class="record-block__item-name" title="Мороз Виктория">Мороз Виктория</span>
+											</div>	
 										<span class="record-block__item-time">Наращивание ресниц</span>
 									</div>
 									<div class="record-block__item">
@@ -785,6 +809,7 @@
 										8.30
 									<span>Екатерина Мирончук</span>
 								</div>
+								
 						</td>
 				</tr>
 				<tr class="schedule__content-item">
@@ -838,7 +863,7 @@
 								<div class="schedule__content-item-hover">
 										8.30
 									<span>Екатерина Мирончук</span>
-								</div>
+								</div>								
 						</td>
 				</tr>
 			</table>
@@ -876,3 +901,5 @@
 </main>
 
 {% endblock %} 
+
+	

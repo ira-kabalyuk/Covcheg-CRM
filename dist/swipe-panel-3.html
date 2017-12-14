@@ -1,0 +1,111 @@
+<!--лист ожидания-->
+<div class="swipe-panel swipe-panel-3 w400">
+	<div class="swipe-panel__header">
+			<div class="swipe-panel__title-block">
+				<p class="swipe-panel__title">
+					Лист ожидания
+				</p>			
+			</div>
+			<div class="swipe-panel__close-block">
+					<i class="fa fa-times" aria-hidden="true"></i>
+			</div>	
+	</div>
+	<div class="swipe-panel__body">
+			<button class="button green trans add-record-button">+ Добавить запись</button>
+			<ul class="swipe-panel__list">
+					<li class="swipe-panel__item">
+							<div class="button-wrap">
+								<button class="panel-redact"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+								<button class="panel-close">×</button>
+							</div>
+							<div class="name-wrap">
+								<span class="name" title="Маргарита Иванова-Петровская">Маргарита Иванова-Петровская</span>
+								<span class="label label_orange lang">Постоянный</span>
+							</div>
+							<div class="info-wrap">
+								<p class="info">+38055-555-55-55</p>
+							</div>
+							<div class="record-info-wrap">
+								<span class="data">8.05.2017</span>
+								<p class="master-name"><span>Мастер:</span>Екатерина Мирончук</p>
+							</div>
+					</li>
+					<li class="swipe-panel__item">
+							<div class="button-wrap">
+								<button class="panel-redact"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+								<button class="panel-close">×</button>
+							</div>
+							<div class="name-wrap">
+								<span class="name" title="Марина Шевченко">Марина Шевченко</span>
+								<span class="label label_green lang">Активный</span>
+							</div>
+							<div class="info-wrap">
+								<p class="info">+38055-555-55-55</p>
+							</div>
+							<p class="note">
+									<i class="fa fa-comment-o" aria-hidden="true"></i>
+									Просит скидку 15%
+							</p>
+							<div class="record-info-wrap">
+								<span class="data">8.05.2017</span>
+								<p class="master-name"><span>Мастер:</span>Екатерина Мирончук</p>
+							</div>
+					</li>
+			</ul>
+	</div>
+	<!--добавление записи-->
+
+	<div class="swipe-panel__body add-record__body">
+			<div class="swipe-panel__nav">
+                <button class="back-button pointer_left lg blue"></button>
+                <p class="swipe-panel__body-title">Добавление записи</p>
+			</div>
+			<form action="" class="swipe-form">
+                <div class="input-wrap">
+                    <div class="add-block__head">                        
+                        <span class="add client-add">+ Добавить клиента</span>
+                    </div>
+                    <input type="text" class="swipe-input" placeholder="Поиск клиента">
+                </div>
+				<div class="input-wrap col-input-wrap">
+                    <div class="datepicker-wrap">
+                        <input type="text" class="swipe-input add-rec-datepicker" placeholder="16.11.2017">                    
+                        <i class="fa fa-calendar form-calendar-button add-rec-datepicker" aria-hidden="true"></i>
+                    </div>
+                    <div class="checkbox-wrap">
+                        <input type="checkbox" class="checkbox">
+                        <label for="checkbox" class="check-label">срочно</label>
+                    </div>				
+				</div>
+				<div class="input-wrap">
+                    <select class="swipe-select" data-placeholder="Выберите специалиста" ref="master">
+                        <option value="0">Выберите специалиста</option>
+                        <option value="21">Анна Янкова</option>
+                        <option value="8">Ирина Наботова</option>
+                        <option value="9">Екатерина Мирончук</option>
+                        <option value="17">Дарья Шаховал</option>
+                        <option value="10">Арзамазова Дарина</option>
+                        <option value="19">Олеся Никитина</option>
+                        <option value="11">Виктория Левчук</option>
+                        <option value="20">Елена Вербицкая</option>
+                        <option value="7">Марина Заикина</option>
+                    </select>
+                </div>
+                <div class="input-wrap">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий" class="comment-input"></textarea>
+                </div>
+				<div class="button-wrap">
+                    <button class="button green trans">Сохранить</button>
+                    <button class="button gray-border trans">Отмена</button>
+                </div>
+			</form>	
+	</div>	
+
+
+
+
+	
+</div>
+
+
+

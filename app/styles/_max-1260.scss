@@ -10,6 +10,17 @@ $icon-font-path: '../fonts/';
 
         &__head {
             padding: 0 15px;
+
+            &_left {
+
+                .input-group {
+                    width: 200px;
+                }
+
+                .calendar-button {
+                    font-size: 1.3rem;
+                }
+            }
         }
 
         &__nav-list {
@@ -26,8 +37,24 @@ $icon-font-path: '../fonts/';
         
     }
 
-    .today-data {
+    .today-data,
+    .data-input {
         font-size: 1.2rem;
     }
-  
+
+    //client-card-page
+
+    .add-group {
+
+        &__block {
+            left: -60%;
+        }
+    }
+
+    .client-card-column {       
+        
+        &__item {
+            width: calc(50% - 30px);
+        }
+    }
 }

@@ -1,0 +1,661 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.input-wrap {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+
+    &.flex {
+        flex-wrap: wrap;        
+        align-items: center;
+       justify-content: space-between;
+
+        .swipe-label {
+            width: 100%;
+        }
+
+        .checkbox-wrap {
+            padding: 12px 0; 
+            margin-right: 10px;
+            
+            &:last-child {
+                margin-right: 0; 
+            }
+        }
+    }
+    
+    .error-text {
+        display: none;
+    }
+
+    &.error {
+        
+        input {
+            border-bottom: 1px solid $red;
+        }
+
+        .error-text {
+            font-size: 0.9rem;
+            color: $red;
+            display: inline-block;
+            margin-top: 7px;
+        }
+    }
+
+    .nice-select {
+        color: $gray;
+
+        .list {
+            color: $black;
+
+            li {
+                text-align: left;
+                padding: 0 20px;
+            }
+        }
+    }
+    .select2 {
+        width: 100% !important;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &.horisontal {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        .swipe-label {
+            width: auto;
+            font-size: 14px;
+            font-weight: 400;
+           margin: 0 10px 0 0;
+        }
+
+        .swipe-select {
+            width: 60%;
+            flex-basis: 60%;
+            flex-shrink: 0;
+        }
+
+        .swipe-input {
+            width: 60%;
+            flex-basis: 60%;
+            flex-shrink: 0;
+        }
+    }
+
+    .checkbox-wrap {
+        width: 100%;
+    }
+
+    .swipe-input[type="password"] {
+
+        &:focus {
+           border: 1px solid $green;
+        }
+    }
+    
+}
+
+.dable-input-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .swipe-label {
+        width: 100%;
+    } 
+    
+    .tire {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    
+    input {
+				width: 45%;
+				
+				&.w-26pr {
+					width: 26%;
+				}
+		
+				&.w-70pr {
+					width: 70%;
+				}
+		}
+		
+		.nice-select {
+			width: 45%;
+		}
+
+    .button {
+        width: 50%;
+        padding: 10px 5px;
+        margin: 5px 0;
+        font-size: 13px;
+		}
+
+		&.sb {
+			justify-content: space-between;
+	}
+		
+}
+
+.swipe-label {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+ .swipe-input {
+    width: 100%;
+    background: $clear-blue;
+    border: 1px solid $el-border-color;
+    padding: 11px 20px;
+    font-size: 1rem;
+    position: relative;
+
+    &::-webkit-input-placeholder {color: $gray;}
+    &::-moz-placeholder          {color: $gray;}
+    &:-moz-placeholder           {color: $gray;}
+    &:-ms-input-placeholder      {color: $gray;}
+}
+
+.swipe-textarea {
+    width: 100%;
+    background: $clear-blue;
+    border: 1px solid $el-border-color;
+    padding: 11px 20px;
+    font-size: 1rem;
+    position: relative;
+    resize: none;
+    height: 130px;
+
+    &::-webkit-input-placeholder {color: $gray;}
+    &::-moz-placeholder          {color: $gray;}
+    &:-moz-placeholder           {color: $gray;}
+    &:-ms-input-placeholder      {color: $gray;}
+
+    &.min {
+        height: 85px;
+		}
+		
+		&.middle {
+			height: 100px;
+		}
+
+		&.lg {
+			height: 140px;
+		}
+}
+
+.checkbox {
+   width: 15px;
+   height: 15px;
+   
+   &:focus {
+    width: 15px;
+    height: 15px;  
+   }
+}
+
+.checkbox-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .check-label {
+        font-size: 14px;
+        font-weight: 400;
+        
+        &.color {
+            font-size: 10px;
+        }
+    }
+
+    .checkbox {
+        margin-right: 10px;
+        margin-top: 0;
+
+        &:focus {
+            outline:none;
+           
+        }
+       
+    }
+
+    &.green {
+        padding: 7px 10px;
+        background: $green;
+        border: none;
+        color: #fff;
+        font-weight: 400;
+    }
+
+    &.braun {
+        padding: 7px 10px;
+        background: $braun-bg;
+        border: none;
+        color: #fff;
+        font-weight: 400; 
+    }
+}
+
+.form-link {
+    font-size: 12px;
+    font-weight: 400;
+    color: $blue;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $blue;
+        text-decoration: underline;
+    }
+}
+
+.page-filter-wrap {
+    color: $gray;
+    display: flex;
+    align-items: center;
+
+    .nice-select {
+        background: $clear-blue;
+    }
+}
+
+.page-filter-name {
+    font-size: 1rem;
+    color: $gray;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.datepicker-block {
+    display: flex;
+    align-items: center;   
+    //width: 25%;
+
+    .swipe-label {
+        width: 100%;
+    }
+
+    .datepicker-wrap {
+        width: 45%;        
+    }
+
+    .tire {
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
+
+//swith
+
+.switch-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input[type="checkbox"] { 
+        position: absolute;
+        opacity: 0;
+    }
+    
+}
+
+/* Normal Track */
+input[type="checkbox"].switch + div {
+	vertical-align: middle;
+	width: 40px;	height: 20px;
+	border: 1px solid $green;
+	border-radius: 999px;
+	background-color: $green;
+	transition-duration: .4s;
+	transition-property: background-color, box-shadow;
+	
+}
+
+/* Tiny Track */
+input[type="checkbox"].tinyswitch.switch + div {
+    width: 34px;
+    height: 18px;
+}
+
+/* Big Track */
+input[type="checkbox"].bigswitch.switch + div {
+    width: 50px;
+    height: 22px;
+}
+
+/* Green Track */
+input[type="checkbox"].green.switch:checked + div {
+	background-color: #dddddd;
+	border: 1px solid #dddddd;
+	
+}
+
+/* Normal Knob */
+input[type="checkbox"].switch + div > div {
+	float: left;
+    width: 18px;
+    height: 18px;
+	border-radius: inherit;
+	background: #ffffff;
+	transition-timing-function: cubic-bezier(.54,1.85,.5,1);
+	transition-duration: 0.4s;
+	transition-property: transform, background-color, box-shadow;	
+	
+	pointer-events: none;
+	margin-top: 1px;
+    margin-left: 1px;
+    
+    transform: translate3d(20px, 0, 0);
+	transform: translate3d(27px, 0, 0);
+}
+
+/* Checked Knob (Blue Style) */
+input[type="checkbox"].switch:checked + div > div {
+	transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	background-color:#fff;
+	//box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(8, 80, 172,1);
+}
+
+
+/* Big Knob */
+input[type="checkbox"].bigswitch.switch + div > div {
+    width: 18px;
+    height: 18px;
+	margin-top: 1px;
+}
+
+/* Needless Page Decoration */
+
+
+.swipe-window {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 1px 18px 3px rgba(243,243,243,1);
+
+    position: absolute;
+    max-width: 415px;
+    top:100%;
+    left: 50%;
+    z-index: 10;
+    display: none;
+    
+    
+    &__form {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        .input-wrap {
+            margin-bottom: 0;
+            width: 250px;
+        }
+        
+        .swipe-input {
+            width: 100%;
+        }
+
+        .swipe-select {
+            width: 100%;
+            background: $clear-blue;
+            padding: 11px 25px 11px 20px;
+
+            .list {
+                width: 100%;
+            }
+        }
+
+        .button {
+            margin-left: 30px;
+        }
+    }
+}    
+
+//end swith
+
+//dynamic input
+
+.dyn-input-wrap {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.removeButton {
+    background: #676767;
+    color: #fff;
+    width: 33px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 10%;
+    right: 5px;
+
+    &:after {
+        content: "\f00d";
+        font-family: 'FontAwesome';
+       
+    }
+}
+
+.addButton {
+    background: #676767;
+    color: #fff;
+    width: 33px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 10%;
+    right: 42px;
+
+    &:after {
+        content: "\f067";
+        font-family: 'FontAwesome';
+       
+    }
+}
+
+.download-block {    
+
+    .jfilestyle {
+        display: flex;
+        
+    }
+
+    .input-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;       
+    }
+
+    .swipe-label {
+        width: 100%;
+    }
+
+    input[type="text"] {        
+        background: $clear-blue;
+        border: 1px solid $el-border-color;
+        padding: 11px 20px;
+        font-size: 1rem;
+        position: relative;      
+    }
+}
+
+
+.dz-clickable {
+    height: 220px;
+    background-image: url(../images/cloud-icon.png);
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-color: $light-blue; 
+   position: relative;
+}
+
+.dz-image {
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.drop-button-wrap {
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+   pointer-events: none;
+
+    .button {
+        padding: 5px 10px;
+        font-size: 12px;
+        background: #fff;
+        width: 100%;
+    }
+}
+
+.dz-details,
+.dz-size,
+.dz-filename,
+.dz-progress,
+.dz-error-message,
+.dz-success-mark,
+.dz-error-mark {
+    display: none;
+}
+
+.color-input {
+    width: 100%;
+    background: $clear-blue;
+    padding: 11px 30px 11px 20px;
+    position: relative;
+    border: 1px solid $el-border-color;
+
+    &:after { 
+        border-bottom: 1px solid $gray;
+        border-right: 1px solid $gray;
+        content: '';
+        display: block; 
+        height: 8px;
+        margin-top: -6px;
+        pointer-events: none;
+        position: absolute; 
+        right: 12px; 
+        top: 50%; 
+        transform-origin: 66% 66%;
+        transform: rotate(45deg);
+        transition: all 0.15s ease-in-out;
+        width: 8px;
+      }
+
+      .color-line {
+          width: 100%;
+          height: 20px;
+          background: $light-gray;          
+      }
+}
+
+.color {
+
+    &__block {
+       padding: 15px 30px 15px 15px;
+       border: 1px solid $el-border-color;
+       border-top: 0;
+       display: none;
+    }
+
+    &__list {
+        margin: 0 -5px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        margin: 0 5px;
+        width: calc(14.28% - 10px);
+        height: 33px;
+
+        &:hover {
+            outline: 2px solid $black;
+            height: 29px;
+        }
+
+        &.active {
+            outline: 2px solid $black;
+            height: 29px;
+        }
+
+        &.light-blue {
+            background-color: #acd1e9;
+        }
+
+        &.turq {
+            background: #20b8af;
+        }
+
+        &.green {
+            background: #45b649;
+            border: none;
+        }
+
+        &.red {
+            background: #fd5f49;
+        }
+
+        &.blue {
+            background: #0575e6;
+            border: none;
+        }
+
+        &.purple {
+            background: #b06ab3;
+        }
+
+        &.light-green {
+            background: #01ce83;
+        }
+    }
+}
+
+.calendar-info {
+    
+
+   .fa {
+     color: red;
+     font-size: 17px;
+     margin-right: 10px;  
+   } 
+
+   span {
+       font-size: 16px;
+   }
+}

@@ -1,0 +1,237 @@
+{% extends "template.html" %}	
+
+{% block content %}	
+
+<main class="product-page">
+	<div class="tools">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<i class="fa fa-home" aria-hidden="true"></i>
+				<a href="">Главная</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<a href="">Товары</a>
+			</li>			
+		</ul>
+		
+	</div>
+
+	<div class="table-page">
+		<div class="table-page__head">
+				<div class="table-page__head_left">	
+					<h1 class="title">Товары</h1>
+					<button class="button green trans waiting-list-btn">
+							+ Добавить товар
+					</button>
+				</div>
+				<div class="table-page__head_right">
+					<div class="table-page__filter-nav">
+						<p class="table-page__filter-link">
+							<span class="del-text">- Свернуть фильтр</span>
+							<span class="show-text">+ Показать фильтр</span>							
+						</p>
+						<div class="page-filter-wrap">
+							<span class="page-filter-name">Показывать по:</span>
+							<select class="swipe-select">
+									<option data-display="10">10</option>
+									<option value="1">20</option>
+									<option value="2">30</option>									
+									<option value="4">40</option>
+								</select>
+						</div>
+					</div>
+				</div>			
+		</div>
+		<div class="filter-wrap">
+			<div class="table-page__filter">				
+				<div class="table-page__filter-top-block">
+						<div class="input-wrap">
+								<label for="" class="swipe-label">Товар</label>
+								<input type="text" class="swipe-input" placeholder="ID, наименование, артикул...">					
+						</div>						
+						<div class="input-wrap">
+								<label for="" class="swipe-label">Выбор категории</label>
+							<select class="swipe-select" ref="master">
+								<option value="0" data-display="Выберите категорию">Выберите категорию</option>
+								<option value="1">Категория-1</option>
+								<option value="2">Категория-2</option>        
+							</select>
+						</div>				
+					<div class="input-wrap dable-input-wrap">
+							<label for="" class="swipe-label">Кол-во</label>
+							<input type="text" class="swipe-input" placeholder="от">
+							<span class="tire">-</span>
+							<input type="text" class="swipe-input" placeholder="до">					
+					</div>
+					<div class="input-wrap dable-input-wrap">
+							<label for="" class="swipe-label">Цена, грн</label>
+							<input type="text" class="swipe-input" placeholder="от">
+							<span class="tire">-</span>
+							<input type="text" class="swipe-input" placeholder="до">					
+					</div>					
+					<div class="input-wrap">
+							<label for="" class="swipe-label">Магазин</label>
+						<select class="swipe-select" ref="master">
+							<option value="0" data-display="Выберите магазин">Выберите магазин</option>
+							<option value="1">Магазин-1</option>
+							<option value="2">Lash.Moda Praga</option>
+							<option value="2">Lash.Moda New-York</option>          
+						</select>
+					</div>
+					<div class="input-wrap">
+							<label for="" class="swipe-label">Активность</label>
+						<select class="swipe-select" ref="master">
+							<option value="0" data-display="Выберите значение">Выберите значение</option>
+							<option value="1">Значение-1</option>
+							<option value="2">Очень длинное значение-2</option>        
+						</select>
+					</div>		
+					<div class="input-wrap">
+						<label for="" class="swipe-label"></label>
+							<div class="filter-button-block">
+								<button class="button braun trans">Применить фильтр</button>
+								<button class="button gray-border trans">Сброс</button>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="table-page__filter-select">
+					<span class="swipe-label">Шаблон фильтра:</span>
+					<div class="input-wrap">
+							<select class="swipe-select" data-placeholder="Короленко Фильтр-1" ref="master">
+									<option value="0">Петрова Фильтр-1</option>
+									<option value="21">Короленко Фильтр-2</option>
+									<option value="8">Короленко Фильтр-3</option>
+									<option value="9">Короленко Фильтр-4</option>									
+							</select>
+					</div>
+					<div class="button-wrap">
+							<button class="panel-redact braun-bg"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+							<button class="panel-save braun-bg"><i class="fa fa-floppy-o" aria-hidden="true"></i></i></button>
+					</div>
+			</div>
+		</div>
+		<div class="schedule__body">
+			<table class="schedule__content-column white">
+				<thead class="schedule__content-column-head">
+					<tr>
+						<th class="">
+							Фото
+							
+						</th>
+						<th class="w-15pr">
+							Название
+								<span class="pointer-wrap">
+									<i class="pointer_top sm"></i>
+									<i class="pointer_bottom sm"></i>
+								</span>	
+						</th>
+						<th class="">
+							Артикул
+							<span class="pointer-wrap">
+									<i class="pointer_top sm"></i>
+									<i class="pointer_bottom sm"></i>
+								</span>	
+						</th>
+						<th class="w-20pr">
+							Категория
+								<span class="pointer-wrap">
+									<i class="pointer_top sm"></i>
+									<i class="pointer_bottom sm"></i>
+								</span>	
+						</th>
+						<th class="">
+							Цена закупки, грн
+								<span class="pointer-wrap">
+									<i class="pointer_top sm"></i>
+									<i class="pointer_bottom sm"></i>
+								</span>	
+						</th>
+						<th class="">
+								Цена продажи, грн
+							<span class="pointer-wrap">
+									<i class="pointer_top sm"></i>
+									<i class="pointer_bottom sm"></i>
+								</span>	
+						</th>
+						<th class="">
+							Количество
+								<span class="pointer-wrap">
+										<i class="pointer_top sm"></i>
+										<i class="pointer_bottom sm"></i>
+									</span>	
+							</th>						
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+								<div class="img-wrap">
+									<img src="images/img-1.jpg" alt="">
+								</div>
+						</td>
+						<td class="blue-text">
+								Плойка Rowenta GC-55
+						</td>
+						<td>8539647852</td>
+						<td>Моделирование бровей + окрашивание краской</td>
+						<td class="green-text">2000</td>
+						<td class="green-text">2400</td>
+						<td class="blue-text with-hover">25 шт.
+								<div class="table-hover-block">
+										<p class="table-hover-block__title">В наличии</p>
+										<ul class="table-hover-block__list">
+											<li class="table-hover-block__item">
+												<span>Склад №1</span>	
+												<span>12 шт</span>	
+											</li>
+											<li class="table-hover-block__item">
+													<span>Склад №155</span>	
+													<span>122 шт</span>
+												</li>
+										</ul>
+								</div>
+							</td>						
+					</tr>
+					<tr>
+							<td>
+									<div class="img-wrap">
+										<img src="images/img-1.jpg" alt="">
+									</div>
+							</td>
+							<td class="blue-text">
+									Плойка Rowenta GC-55
+							</td>
+							<td>8539647852</td>
+							<td>Моделирование бровей + окрашивание краской</td>
+							<td class="green-text">2000</td>
+							<td class="green-text">2400</td>
+							<td class="blue-text with-hover">25 шт.
+								<div class="table-hover-block">
+										<p class="table-hover-block__title">В наличии</p>
+										<ul class="table-hover-block__list">
+											<li class="table-hover-block__item">
+												<span>Склад №1</span>	
+												<span>12 шт</span>	
+											</li>
+											<li class="table-hover-block__item">
+													<span>Склад №155</span>	
+													<span>122 шт</span>
+												</li>
+										</ul>
+								</div>
+								</td>					
+						</tr>
+				</tbody>
+			</table>
+			{% include "paging.html" %}
+		</div>
+		
+	</div>
+
+</main>
+
+{% endblock %} 
+
+	

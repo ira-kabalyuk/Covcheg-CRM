@@ -1,0 +1,90 @@
+{% extends "template.html" %}	
+
+{% block content %}	
+
+<main class="client-card-page">
+		<div class="tools">
+				<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+								<i class="fa fa-home" aria-hidden="true"></i>
+								<a href="">Главная</a>
+						</li>
+						<li class="breadcrumbs__item">
+								<a href="">Клиенты</a>
+						</li>
+						<li class="breadcrumbs__item">
+								<a href="">Карина Молчанова</a>
+						</li>				
+				</ul>        
+		</div>
+		<div class="client-card__head">
+			<div class="client-card__head-left">
+				<div class="client-card__title-block">
+					<p class="title">Карина Молчанова</p>
+					<p class="info-element green">+38 (050) 555 55 55</p>
+				</div>
+				<div class="filter-block">
+						<div class="filter-block__item">
+								<span class="label-name">Статус</span>
+								<span class="label label_orange lang">Постоянный</span>
+						</div>
+						<div class="filter-block__item">
+								<span class="label-name">Группы</span>	
+								<div class="group__list">
+									<span class="group__item">Низкий LTV</span>
+									<span class="group__item">Средний чек</span>								
+								</div>								
+									<button class="plus-button green add-group__button"><i class="fa fa-plus" aria-hidden="true"></i></button>							
+								<div class="swipe-window add-group__block">
+										<div class="swipe-window__form">
+												<div class="input-wrap">													
+													<select class="swipe-select" data-placeholder="Выберите группу" ref="master">
+															<option value="0">Выберите группу</option>
+															<option value="1">Группа 1</option>
+															<option value="2">Группа 2</option>
+															<option value="3">Группа 3</option>
+													</select>
+														
+												</div>
+												<button class="button braun trans">Сохранить</button>
+										</div>
+									</div>
+						</div>    
+				</div>
+			</div>
+			<div class="client-card__head-right">
+					<div class="filter-button-block">
+						<button class="button gray-border trans">
+								<i class="pointer_left sm"></i>
+							Назад к списку клиентов</button>
+						<button class="button braun trans">Применить</button>
+					</div>
+			</div>
+		</div>
+	<div class="content-wrap">
+			<ul class="nav page-nav-tabs">
+				<li class="active"><a href="#tab2_1" data-toggle="tab">Информация</a></li>
+				<li><a href="#tab2_2" data-toggle="tab">Статистика</a></li>
+				<li><a href="#tab2_3" data-toggle="tab">История визитов</a></li>
+				<li><a href="#tab2_4" data-toggle="tab">Планируемые визиты</a></li>
+				<li><a href="#tab2_5" data-toggle="tab">Счет</a></li>
+				<li><a href="#tab2_6" data-toggle="tab">Звонки</a></li>
+				<li><a href="#tab2_7" data-toggle="tab">Документы</a></li>
+			</ul>
+
+		<div class="tab-content">
+			{% include "client-card-tab-1.html" %}
+			{% include "client-card-tab-2.html" %}
+			{% include "client-card-tab-3.html" %}
+			{% include "client-card-tab-4.html" %}
+			{% include "client-card-tab-5.html" %}
+			{% include "client-card-tab-6.html" %}
+			{% include "client-card-tab-7.html" %}
+		</div>    
+	</div>
+
+</main>
+
+{% endblock %} 
+
+	

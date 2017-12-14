@@ -6,275 +6,324 @@ jQuery(document).ready(function() {
     var rowIndex = td.parent().index();
     var headRowHeight = td.parents('tbody').children().first().outerHeight();
     var line = $('.line');
-    line.css('top', headRowHeight + tdHeight * (rowIndex -1) + tdHeight / 2);   
+    line.css('top', headRowHeight + tdHeight * (rowIndex -1) + tdHeight / 2);  
+
+    //datapicker
+    /*$("#datepickerForm").datepicker();*/
+    /*$( "#datepickerForm" ).datepicker( $.datepicker.regional[ "ru" ] );*/
+
+    $('.js-datepicker').datepicker({
+        altField: ".data-input", // селектор элемента куда будет выводится выбранная дата
+        dateFormat: "d MM yy 'г.'",
+    });    
 
 
-    //resizing
+    $('.add-rec-datepicker').datepicker({
+         altField: ".add-rec-input", // селектор элемента куда будет выводится выбранная дата
+         dateFormat: "dd.mm.yy"
+     });
 
+     $('.datepicker-1').datepicker({
+      altField: ".input-1",
+      dateFormat: "dd.mm.yy"
+    });
+
+    $('.datepicker-2').datepicker({
+      altField: ".input-2",
+      dateFormat: "dd.mm.yy"
+    });
+
+    $('.datepicker-3').datepicker({
+      altField: ".input-3",
+      dateFormat: "dd.mm.yy"
+    });
+
+    $('.datepicker-4').datepicker({
+      altField: ".input-4",
+      dateFormat: "dd.mm.yy"
+    });
+     
+
+   /* $('#ui-datepicker-div').css('display', 'none');  */
+    //end datepicker    
+
+     /*$(".left-menu__item a").click(function( e ) {        
+      $(".left-menu__item a").removeClass("active")
+       $(this).addClass("active");
+      
+   }); */ 
+
+    //swipe-panels
+    $(".waiting-list-btn").click(function( e ) {        
+      $(".swipe-panel-3").addClass("active");   
+      $("body").addClass("mask");   
+   }); 
+
+   $(".swipe-panel__close-block").click(function( e ) {   
+     $(".swipe-panel").removeClass("active");
+     $("body").removeClass("mask");      
+    });    
+    
+    $(".schedule__content-item td").dblclick(function( e ) {        
+      $(".swipe-panel-2").addClass("active"); 
+      $("body").addClass("mask");      
+    }); 
+
+    $(".add-record-button").click(function( e ) {        
+      $(".add-record__body").addClass("active");               
+    });    
+
+    $(".client-add").click(function( e ) {        
+      $(".swipe-panel-1").addClass("active");      
+   }); 
+
+   $(".back-button").click(function( e ) {        
+    $(".add-record__body").removeClass("active"); 
+    $(".swipe-panel-1").removeClass("active");                    
+  });
+
+  $(".js-edit").click(function( e ) {   
+    $(".swipe-panel-6").addClass("active"); 
+    $("body").addClass("mask");                    
+  });
+
+  $(".js-add-directory").click(function( e ) {   
+    $(".swipe-panel-7").addClass("active"); 
+    $("body").addClass("mask");                    
+	});
+	
+	$(".js-item-add").click(function( e ) {   
+    $(".swipe-panel-8").addClass("active"); 
+    $("body").addClass("mask");                    
+	});
+	
+	$(".js-counter-add").click(function( e ) {   
+    $(".swipe-panel-9").addClass("active"); 
+    $("body").addClass("mask");                    
+  });
+
+  //график работы
+
+  $(".schedule-work-table td").dblclick(function( e ) {        
+		$(".swipe-panel-5").addClass("active");
+		$("body").addClass("mask");      
+ });
+
+ $(".schedule-work-table td").click(function( e ) {        
+  $(this).toggleClass("work-time-active");     
+ 
+});
+
+    /*окно в таблице расписания*/
+
+      $(".schedule__content-column .data").click(function( e ) {        
+        $(".swipe-panel-4").addClass("active");   
+        $("body").addClass("mask");   
+    }); 
+   
+
+  //end swipe panels
+  
+      $(".table-page__filter-link").click(function( e ) {
+        e.stopPropagation();	
+        $(".filter-wrap").slideToggle(400);
+        $(".table-page__filter-link").toggleClass("no-show");	
+      });                      
+  });
+
+    $(document).ready(function() {
+      $('.swipe-select').niceSelect();
+    });
+
+    //select
+
+    $(document).ready(function() {
+      
+      $('.multiple-select-1').select2({  
+        dropdownParent: $('.multiple-select-drop-1'),     
+        closeOnSelect: false,
+        placeholder: "Выберите из списка",        
+        data: [
+          {id: 1, text: 'Морозова Ирина', profession: 'Визажист', disabled: false, selected: false},
+          {id: 2, text: 'Шевченко Екатерина', profession: 'Бровист', disabled: false, selected: false},
+          {id: 3, text: 'Вязьмитинова Наталья', profession: 'Лейшмейкер', disabled: false, selected: false},
+          {id: 4, text: 'Сорокина Татьяна', profession: 'Визажист/бровист', disabled: false, selected: false}
+        ],
+        
+        templateResult: function (item) {
+          return $('<b>'+item.text+'</b><span>'+item.profession+'</span>')
+        }
+      });
+
+     
+
+      $('.multiple-select-2').select2({
+        dropdownParent: $('.multiple-select-drop-2'),
+        closeOnSelect: false,
+        placeholder: "Выберите услуги",       
+      });
+
+      $('.multiple-select-3').select2({
+        dropdownParent: $('.multiple-select-drop-3'),
+        closeOnSelect: false,
+        placeholder: "Выберите категории услуг",       
+      });
+
+      $('.multiple-select-4').select2({
+        dropdownParent: $('.multiple-select-drop-4'),
+        closeOnSelect: false,            
+      });
+
+      $('.multiple-select-5').select2({
+        dropdownParent: $('.multiple-select-drop-5'),
+        closeOnSelect: false,              
+      });
+
+      $('.multiple-select-6').select2({
+        dropdownParent: $('.multiple-select-drop-6'),
+        closeOnSelect: false,
+        placeholder: "Выберите теги",               
+      });
+  });
+
+  //окно добавить роль
+
+  $(".role-add__button").click(function( e ) {
+		e.stopPropagation();	
+		$(".role-add__block").slideToggle(400);		
+  }); 
+  
+  //блоки в добавлении ролей 
+
+  $(".role__list-1 .active .bigswitch").click(function( e ) {
+    e.stopPropagation();	
+    $(".role__list-2").toggleClass("show");	
+    $(".role__list-3").removeClass("show");		
+  });
+
+  $(".role__list-2 .active .checkbox").click(function( e ) {
+    e.stopPropagation();	
+    $(".role__list-3").toggleClass("show");   	
+  });
+
+  //блок в карточке клиента таб 1
  
 
-"use strict";
+  $(".js-add-input").click(function( e ) {
+    e.stopPropagation();	
+    $(".js-user-window").toggleClass("show");  	
+  }); 
+  
+  $(".js-close-input").click(function( e ) {
+    e.stopPropagation();	
+    $(this).parents('.input-wrap').css('display', 'none');	
+  }); 
+  
 
-// Minimum resizable area
-var minWidth = 60;
-var minHeight = 40;
+ //окно добавить группу на странице client-card-page
 
-// Thresholds
-var FULLSCREEN_MARGINS = -10;
-var MARGINS = 4;
-
-// End of what's configurable.
-var clicked = null;
-var onRightEdge, onBottomEdge, onLeftEdge, onTopEdge;
-
-var rightScreenEdge, bottomScreenEdge;
-
-var preSnapped;
-
-var b, x, y;
-
-var redraw = false;
-
-var pane = document.getElementById('pane');
-var ghostpane = document.getElementById('ghostpane');
-
-function setBounds(element, x, y, w, h) {
-	element.style.left = x + 'px';
-	element.style.top = y + 'px';
-	element.style.width = w + 'px';
-	element.style.height = h + 'px';
-}
-
-function hintHide() {
-  setBounds(ghostpane, b.left, b.top, b.width, b.height);
-  ghostpane.style.opacity = 0;
-
-  // var b = ghostpane.getBoundingClientRect();
-  // ghostpane.style.top = b.top + b.height / 2;
-  // ghostpane.style.left = b.left + b.width / 2;
-  // ghostpane.style.width = 0;
-  // ghostpane.style.height = 0;
-}
+ $(".add-group__button").click(function( e ) {
+  e.stopPropagation();	
+  $(".add-group__block").slideToggle(400);		
+}); 
 
 
-// Mouse events
-pane.addEventListener('mousedown', onMouseDown);
-document.addEventListener('mousemove', onMove);
-document.addEventListener('mouseup', onUp);
-
-// Touch events	
-pane.addEventListener('touchstart', onTouchDown);
-document.addEventListener('touchmove', onTouchMove);
-document.addEventListener('touchend', onTouchEnd);
-
-
-function onTouchDown(e) {
-  onDown(e.touches[0]);
-  e.preventDefault();
-}
-
-function onTouchMove(e) {
-  onMove(e.touches[0]);		
-}
-
-function onTouchEnd(e) {
-  if (e.touches.length ==0) onUp(e.changedTouches[0]);
-}
-
-function onMouseDown(e) {
-  onDown(e);
-  e.preventDefault();
-}
-
-function onDown(e) {
-  calc(e);
-
-  var isResizing = onRightEdge || onBottomEdge || onTopEdge || onLeftEdge;
-
-  clicked = {
-    x: x,
-    y: y,
-    cx: e.clientX,
-    cy: e.clientY,
-    w: b.width,
-    h: b.height,
-    isResizing: isResizing,
-    isMoving: !isResizing && canMove(),
-    onTopEdge: onTopEdge,
-    onLeftEdge: onLeftEdge,
-    onRightEdge: onRightEdge,
-    onBottomEdge: onBottomEdge
-  };
-}
-
-function canMove() {
-  return x > 0 && x < b.width && y > 0 && y < b.height
-  && y < 30;
-}
-
-function calc(e) {
-  b = pane.getBoundingClientRect();
-  x = e.clientX - b.left;
-  y = e.clientY - b.top;
-
-  onTopEdge = y < MARGINS;
-  onLeftEdge = x < MARGINS;
-  onRightEdge = x >= b.width - MARGINS;
-  onBottomEdge = y >= b.height - MARGINS;
-
-  rightScreenEdge = window.innerWidth - MARGINS;
-  bottomScreenEdge = window.innerHeight - MARGINS;
-}
-
-var e;
-
-function onMove(ee) {
-  calc(ee);
-
-  e = ee;
-
-  redraw = true;
-
-}
-
-function animate() {
-
-  requestAnimationFrame(animate);
-
-  if (!redraw) return;
-
-  redraw = false;
-
-  if (clicked && clicked.isResizing) {
-
-    if (clicked.onRightEdge) pane.style.width = Math.max(x, minWidth) + 'px';
-    if (clicked.onBottomEdge) pane.style.height = Math.max(y, minHeight) + 'px';
-
-    if (clicked.onLeftEdge) {
-      var currentWidth = Math.max(clicked.cx - e.clientX  + clicked.w, minWidth);
-      if (currentWidth > minWidth) {
-        pane.style.width = currentWidth + 'px';
-        pane.style.left = e.clientX + 'px';	
-      }
-    }
-
-    if (clicked.onTopEdge) {
-      var currentHeight = Math.max(clicked.cy - e.clientY  + clicked.h, minHeight);
-      if (currentHeight > minHeight) {
-        pane.style.height = currentHeight + 'px';
-        pane.style.top = e.clientY + 'px';	
-      }
-    }
-
-    hintHide();
-
-    return;
+jQuery(function($){
+  var row = $(".r0").clone();
+  var del = $(".del");
+  
+  var removeTr = function(e){
+    e.preventDefault();
+    $(this).closest('tr').remove();
   }
-
-  if (clicked && clicked.isMoving) {
-
-    if (b.top < FULLSCREEN_MARGINS || b.left < FULLSCREEN_MARGINS || b.right > window.innerWidth - FULLSCREEN_MARGINS || b.bottom > window.innerHeight - FULLSCREEN_MARGINS) {
-      // hintFull();
-      setBounds(ghostpane, 0, 0, window.innerWidth, window.innerHeight);
-      ghostpane.style.opacity = 0.2;
-    } else if (b.top < MARGINS) {
-      // hintTop();
-      setBounds(ghostpane, 0, 0, window.innerWidth, window.innerHeight / 2);
-      ghostpane.style.opacity = 0.2;
-    } else if (b.left < MARGINS) {
-      // hintLeft();
-      setBounds(ghostpane, 0, 0, window.innerWidth / 2, window.innerHeight);
-      ghostpane.style.opacity = 0.2;
-    } else if (b.right > rightScreenEdge) {
-      // hintRight();
-      setBounds(ghostpane, window.innerWidth / 2, 0, window.innerWidth / 2, window.innerHeight);
-      ghostpane.style.opacity = 0.2;
-    } else if (b.bottom > bottomScreenEdge) {
-      // hintBottom();
-      setBounds(ghostpane, 0, window.innerHeight / 2, window.innerWidth, window.innerWidth / 2);
-      ghostpane.style.opacity = 0.2;
-    } else {
-      hintHide();
-    }
-
-    if (preSnapped) {
-      setBounds(pane,
-      	e.clientX - preSnapped.width / 2,
-      	e.clientY - Math.min(clicked.y, preSnapped.height),
-      	preSnapped.width,
-      	preSnapped.height
-      );
-      return;
-    }
-
-    // moving
-    pane.style.top = (e.clientY - clicked.y) + 'px';
-    pane.style.left = (e.clientX - clicked.x) + 'px';
-
-    return;
+  
+  var changeField = function(e){
+    e.preventDefault();
+    transformInput($(e.target));
   }
-
-  // This code executes when mouse moves without clicking
-
-  // style cursor
-  if (onRightEdge && onBottomEdge || onLeftEdge && onTopEdge) {
-    pane.style.cursor = 'nwse-resize';
-  } else if (onRightEdge && onTopEdge || onBottomEdge && onLeftEdge) {
-    pane.style.cursor = 'nesw-resize';
-  } else if (onRightEdge || onLeftEdge) {
-    pane.style.cursor = 'ew-resize';
-  } else if (onBottomEdge || onTopEdge) {
-    pane.style.cursor = 'ns-resize';
-  } else if (canMove()) {
-    pane.style.cursor = 'move';
-  } else {
-    pane.style.cursor = 'default';
-  }
-}
-
-animate();
-
-function onUp(e) {
-  calc(e);
-
-  if (clicked && clicked.isMoving) {
-    // Snap
-    var snapped = {
-      width: b.width,
-      height: b.height
-    };
-
-    if (b.top < FULLSCREEN_MARGINS || b.left < FULLSCREEN_MARGINS || b.right > window.innerWidth - FULLSCREEN_MARGINS || b.bottom > window.innerHeight - FULLSCREEN_MARGINS) {
-      // hintFull();
-      setBounds(pane, 0, 0, window.innerWidth, window.innerHeight);
-      preSnapped = snapped;
-    } else if (b.top < MARGINS) {
-      // hintTop();
-      setBounds(pane, 0, 0, window.innerWidth, window.innerHeight / 2);
-      preSnapped = snapped;
-    } else if (b.left < MARGINS) {
-      // hintLeft();
-      setBounds(pane, 0, 0, window.innerWidth / 2, window.innerHeight);
-      preSnapped = snapped;
-    } else if (b.right > rightScreenEdge) {
-      // hintRight();
-      setBounds(pane, window.innerWidth / 2, 0, window.innerWidth / 2, window.innerHeight);
-      preSnapped = snapped;
-    } else if (b.bottom > bottomScreenEdge) {
-      // hintBottom();
-      setBounds(pane, 0, window.innerHeight / 2, window.innerWidth, window.innerWidth / 2);
-      preSnapped = snapped;
-    } else {
-      preSnapped = null;
-    }
-
-    hintHide();
-
-  }
-
-  clicked = null;
-
-}
-
-
+  
+  $('.del').click(removeTr);
+  $('.change').click(changeField);
+  
+  $("#add").click(function(){
+   var newRow = row.clone().insertBefore(".final");
+    
+    newRow.find('.del').on('click', removeTr);
+    newRow.find('.change').on('click', changeField);
+    
+   });
+  
 });
+
+
+//динамические формы с добавлением полей-->
+
+var el1 =$('#dyn1');
+if(el1[0]) { 
+    $("#dyn1").addRemoveTextbox({
+      addButtonClass: "addButton",
+      removeButtonClass: "removeButton",  
+    })  
+}
+
+var el2 =$('#dyn2');
+if(el2[0]) {  
+    $("#dyn2").addRemoveTextbox({
+      addButtonClass: "addButton-2",
+      removeButtonClass: "removeButton-2",  
+    })  
+}
+
+
+//загрузка файлов
+$(".js-download").jfilestyle({
+  dragdrop: true,
+  text: "Выбрать файлы",
+  placeholder: "*.jpg, *.doc, *.xls",
+  inputSize: "550px"
+});
+
+//загрузка фото
+
+var el2 =$('.dz-clickable');
+if(el2[0]) {
+  var myDropzone = new Dropzone("#fall", {
+    url: "/images",
+    uploadMultiple: true
+  })
+}
+
+
+
+//drug drop
+
+$( function() {
+  $( "#sortable" ).sortable({
+    handle: ".icon-drop-icon"
+  });
+  $( "#sortable" ).disableSelection();
+} );
+
+$(".js-del").click(function( e ) {
+  e.stopPropagation();	
+  $(this).parents('.sortable__item').remove();  		
+}); 
+
+//color input 
+
+$(document).ready(function() {
+    $(".color__item ").click(function( e ) {
+    $(".color__item ").removeClass("active"); 
+    $(this).addClass("active"); 
+
+      var color = $(this).css('background-color');    
+      $(this).parents('.input-wrap').find('.color-line').css('background-color', color);
+    });
+
+    $(".js-color-input").click(function( e ) {
+      $(".color__block").slideToggle(400);
+    });
+    
+  
+  })
+

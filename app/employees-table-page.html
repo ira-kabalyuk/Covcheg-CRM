@@ -1,0 +1,155 @@
+{% extends "template.html" %}	
+
+{% block content %}	
+
+<main class="employees-page">
+	<div class="tools">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<i class="fa fa-home" aria-hidden="true"></i>
+				<a href="">Главная</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<a href="">Сотрудники</a>
+			</li>			
+		</ul>
+		
+	</div>
+
+	<div class="table-page">
+		<div class="table-page__head">
+				<div class="table-page__head_left">	
+					<h1 class="title">Сотрудники</h1>
+					<button class="button green trans">
+							+ Добавить Сотрудника
+					</button>
+				</div>
+				<div class="table-page__head_right">
+					<div class="table-page__filter-nav">						
+						<div class="page-filter-wrap">
+							<span class="page-filter-name">Показывать по:</span>
+							<select class="swipe-select">
+								<option data-display="10">10</option>
+								<option value="1">20</option>
+								<option value="2">30</option>									
+								<option value="4">40</option>
+							</select>
+						</div>
+					</div>
+				</div>			
+		</div>
+		
+		<div class="schedule__body">
+			<table class="schedule__content-column white">
+				<thead class="schedule__content-column-head">
+					<tr>
+						<th class="sort">
+
+						</th>
+						<th class="w-25pr sort">
+								ФИО
+								<span class="pointer-wrap">
+									<i class="pointer_top sm"></i>
+									<i class="pointer_bottom sm"></i>
+								</span>	
+						</th>
+						<th class="sort">
+							Должность
+							<span class="pointer-wrap">
+									<i class="pointer_top sm"></i>
+									<i class="pointer_bottom sm"></i>
+								</span>	
+						</th>
+						<th class="w-20pr sort">
+							Телефон
+								<span class="pointer-wrap">
+									<i class="pointer_top sm"></i>
+									<i class="pointer_bottom sm"></i>
+								</span>	
+						</th>
+						<th class="sort">
+							Статус
+								<span class="pointer-wrap">
+									<i class="pointer_top sm"></i>
+									<i class="pointer_bottom sm"></i>
+								</span>	
+						</th>
+						<th class="sort">
+							Расписание
+								<span class="pointer-wrap">
+									<i class="pointer_top sm"></i>
+									<i class="pointer_bottom sm"></i>
+								</span>	
+						</th>
+						<th class="sort">
+							
+						</th>
+						
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<div class="circle-avatar-wrap">								
+									<img src="images/avatar-2.jpg" alt="">								
+							</div>
+						</td>
+						<td>
+							<a href="" class="name">Маргарита Кравцова</a>						
+						</td>
+						<td>			
+							Администратор
+						</td>
+						<td><p class="info">+38 (050) 555-55-55</p></td>
+						<td >
+						<label class="shut" for="">выкл.</label></td>
+						<td>
+							<a href="">
+								<i class="fa fa-calendar gray" aria-hidden="true"></i>
+							</a>
+						</td>
+						<td>
+							<button class="sortable-button edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+							<button class="sortable-button del"><i class="fa fa-times" aria-hidden="true"></i></button>			
+						</td>				
+					</tr>
+					<tr>
+						<td>								
+								<div class="circle-avatar-wrap">								
+										<img src="images/avatar.jpg" alt="">								
+								</div>
+						</td>
+							<td>
+								<a href="" class="name">Наталья Петренко-Иванцова</a>
+							
+							</td>
+							<td>							
+								Лешмейкер
+							</td>
+							<td><p class="info">+38 (050) 555-55-55</p></td>
+							<td >
+								<label class="incl" for="">	вкл.</label></td>
+							
+							</td>
+							<td>
+									<a href="">
+										<i class="fa fa-calendar gray" aria-hidden="true"></i>
+									</a>
+							</td>
+							<td>
+								<button class="sortable-button edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+								<button class="sortable-button del"><i class="fa fa-times" aria-hidden="true"></i></button>
+							</td>
+						</tr>
+				</tbody>
+			</table>
+			{% include "paging.html" %}
+		</div>
+		
+	</div>
+
+</main>
+
+{% endblock %} 
+
+	

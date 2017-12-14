@@ -1,0 +1,125 @@
+{% extends "template-width-swipe.html" %}	
+
+{% block content %}	
+
+<main class="counter-page">
+	<div class="tools">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<i class="fa fa-home" aria-hidden="true"></i>
+				<a href="">Главная</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<a href="">контрагенты</a>
+			</li>	
+				
+		</ul>
+		
+	</div>
+
+	<div class="table-page">
+		<div class="table-page__head">
+				<div class="table-page__head_left">	
+					<h1 class="title">Контрагенты</h1>
+					<button class="button green trans js-counter-add">
+							+ Добавить
+					</button>
+				</div>				
+		</div>
+	
+		<div class="schedule__body">
+			<table class="schedule__content-column white">
+				<thead class="schedule__content-column-head">
+					<tr>
+						
+						<th class="w-5pr">#</th>
+						<th class="w-7pr">тип</th>
+						<th class="w-20pr">Название</th>
+						<th class="">Реквизиты</th>
+						<th class="">Контактное лицо</th>
+						<th class="">Телефон</th>
+						<th class="">E-mail</th>
+						<th class="w-10pr">Адрес</th>
+						<th class="w-7pr">Баланс</th>	
+						<th class="w-110px"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+						242			
+						</td>
+						<td>
+							юр. лицо
+						</td>
+						<td class="bold">
+						Промогруп
+						</td>
+						<td>
+								ИИК: 25028395679235
+						</td>	
+						<td>
+							Петр Трембовецкий
+						</td>	
+						<td>
+							+380979555555
+						</td>
+						<td>
+								gmail@gmail.com
+						</td>
+						<td>
+							г. Киев, ул. Саперно-Слобицкая, 11, кв 555
+						</td>
+						<td class="green-text">
+								0.00
+						</td>	
+						<td>
+								<button class="sortable-button edit js-edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+								<button class="sortable-button del js-del"><i class="fa fa-times" aria-hidden="true"></i></button>
+						</td>									
+					</tr>
+					<tr>
+							<td>
+							46				
+							</td>
+							<td>
+								физ. лицо
+							</td>
+							<td class="bold">
+							Промогруп
+							</td>
+							<td>
+									ИИК: 25028395679235 <br>
+									МФО 225566
+							</td>	
+							<td>
+								Петр Иванов
+							</td>	
+							<td>
+								+380979555555
+							</td>
+							<td>
+									gmail@gmail.com
+							</td>
+							<td>
+									г. Киев, ул. Костельная, 11, кв 555
+								</td>
+							<td class="green-text">
+									500.00
+							</td>	
+							<td>
+									<button class="sortable-button edit js-edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+									<button class="sortable-button del js-del"><i class="fa fa-times" aria-hidden="true"></i></button>
+							</td>									
+						</tr>					
+				</tbody>
+			</table>			
+		</div>
+		
+	</div>
+
+</main>
+
+{% endblock %} 
+
+	

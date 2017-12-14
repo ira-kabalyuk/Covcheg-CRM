@@ -1,0 +1,21 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+
+.associate-card-page {
+   
+    .content-wrap {
+        margin-top: 0;
+    }
+
+    .dz-clickable {
+        max-width: 305px;
+        height: 340px;
+    }
+
+    .dz-image  {
+        height: 300px;
+    }
+}
+
