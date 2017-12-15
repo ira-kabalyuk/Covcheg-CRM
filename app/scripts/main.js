@@ -60,7 +60,8 @@ jQuery(document).ready(function() {
    }); 
 
    $(".swipe-panel__close-block").click(function( e ) {   
-     $(".swipe-panel").removeClass("active");
+		 $(".swipe-panel").removeClass("active");
+		 $(".add-record__body").removeClass("active"); 
      $("body").removeClass("mask");      
     });    
     
@@ -71,7 +72,9 @@ jQuery(document).ready(function() {
 
     $(".add-record-button").click(function( e ) {        
       $(".add-record__body").addClass("active");               
-    });    
+		}); 
+		
+	
 
     $(".client-add").click(function( e ) {        
       $(".swipe-panel-1").addClass("active");      
@@ -100,7 +103,20 @@ jQuery(document).ready(function() {
 	$(".js-counter-add").click(function( e ) {   
     $(".swipe-panel-9").addClass("active"); 
     $("body").addClass("mask");                    
-  });
+	});
+	
+	$(".js-cash-add").click(function( e ) {   
+    $(".swipe-panel-10").addClass("active"); 
+    $("body").addClass("mask");                    
+	});
+	
+	$(".js-salary-link").click(function( e ) {   
+    $(".swipe-panel-11").addClass("active"); 
+    $("body").addClass("mask");                    
+	});
+	
+	
+
 
   //график работы
 
@@ -184,7 +200,8 @@ jQuery(document).ready(function() {
         closeOnSelect: false,
         placeholder: "Выберите теги",               
       });
-  });
+	});	
+	
 
   //окно добавить роль
 

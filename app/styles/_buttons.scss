@@ -20,7 +20,18 @@ $icon-font-path: '../fonts/';
             background: $blue;
             border: 2px solid $blue;
         }
-    }
+		}
+		
+		&.blue-btn {
+			background: #2a7ebc;
+			border: 2px solid #2a7ebc;
+			color: #fff;  
+			
+			&:hover {
+					background: $green;
+					border: 2px solid $green;
+			}
+	}
 
     &.green-border {
         border: 2px solid $green;
@@ -30,7 +41,18 @@ $icon-font-path: '../fonts/';
             background: $green;
             color: #fff;
         }
-    }
+		}
+		
+		&.red-border {
+			background: transparent;
+			border: 2px solid $red;
+			color: $red;
+
+			&:hover {
+					background: $red;
+					color: #fff;
+			}
+	}
 
     &.red {
         background: $red;
@@ -201,7 +223,10 @@ $icon-font-path: '../fonts/';
     font-size: 15px;
     line-height: 30px;
     vertical-align: middle;
-    background: $light-blue;
+		background: $light-blue;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
     &.blue {
         color: $blue;

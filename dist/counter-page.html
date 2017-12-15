@@ -187,7 +187,7 @@
 				<a href="">Главная</a>
 			</li>
 			<li class="breadcrumbs__item">
-				<a href="">Контрагенты</a>
+				<a href="">контрагенты</a>
 			</li>	
 				
 		</ul>
@@ -251,8 +251,8 @@
 								0.00
 						</td>	
 						<td>
-								<button class="sortable-button edit js-edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-								<button class="sortable-button del js-del"><i class="fa fa-times" aria-hidden="true"></i></button>
+								<button class="sortable-button edit"><i class="icon icon-pencil-gray" aria-hidden="true"></i></button>
+								<button class="sortable-button del js-del"><i class="icon icon-close" aria-hidden="true"></i></button>
 						</td>									
 					</tr>
 					<tr>
@@ -285,8 +285,8 @@
 									500.00
 							</td>	
 							<td>
-									<button class="sortable-button edit js-edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-									<button class="sortable-button del js-del"><i class="fa fa-times" aria-hidden="true"></i></button>
+									<button class="sortable-button edit"><i class="icon icon-pencil-gray" aria-hidden="true"></i></button>
+									<button class="sortable-button del js-del"><i class="icon icon-close" aria-hidden="true"></i></button>
 							</td>									
 						</tr>					
 				</tbody>
@@ -309,7 +309,51 @@
 		</div>
 	
 	</body>
-	
+	<!--добавление записи-->
+
+	<div class="swipe-panel__body add-record__body">
+			<div class="swipe-panel__nav">
+                <button class="back-button pointer_left lg blue"></button>
+                <p class="swipe-panel__body-title">Добавление записи</p>
+			</div>
+			<form action="" class="swipe-form">
+                <div class="input-wrap">
+                    <div class="add-block__head">                        
+                        <span class="add client-add">+ Добавить клиента</span>
+                    </div>
+                    <input type="text" class="swipe-input" placeholder="Поиск клиента">
+                </div>
+				<div class="input-wrap col-input-wrap">
+                    <div class="datepicker-wrap">
+                        <input type="text" class="swipe-input add-rec-datepicker" placeholder="16.11.2017">                    
+                        <i class="icon icon-calendar form-calendar-button add-rec-datepicker" aria-hidden="true"></i>
+                    </div>
+                    <div class="checkbox-wrap">
+                        <input type="checkbox" class="checkbox">
+                        <label for="checkbox" class="check-label">срочно</label>
+                    </div>				
+				</div>
+				<div class="input-wrap">
+                    <select class="swipe-select" data-placeholder="Выберите специалиста" ref="master">
+                        <option value="0">Выберите специалиста</option>
+                        <option value="21">Анна Янкова <span>визажист-бровист</span></option>
+                        <option value="8">Ирина Наботова <span>визажист-бровист</span></option>                        
+                    </select>
+                </div>
+                <div class="input-wrap">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий" class="comment-input"></textarea>
+                </div>
+				<div class="button-wrap">
+                    <button class="button green trans">Сохранить</button>
+                    <button class="button gray-border trans">Отмена</button>
+                </div>
+			</form>	
+	</div>	
+
+
+
+
+ 	<!--форма добавления записи в календаре-->
 	<!--новый клиент-->
 <div class="swipe-panel swipe-panel-1 w400">
 	<div class="swipe-panel__header">
@@ -319,7 +363,7 @@
 				</p>			
 			</div>
 			<div class="swipe-panel__close-block">
-					<i class="fa fa-times" aria-hidden="true"></i>
+					<i class="icon icon-close" aria-hidden="true"></i>
 			</div>	
 	</div>
 	<div class="swipe-panel__body">
@@ -359,12 +403,12 @@
 				</p>			
 			</div>
 			<div class="swipe-panel__close-block">
-					<i class="fa fa-times" aria-hidden="true"></i>
+					<i class="icon icon-close" aria-hidden="true"></i>
 			</div>	
 	</div>
 	    <div class="swipe-panel__body">
             <div class="swipe-panel__data-block">
-                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <i class="icon icon-calendar-gray"></i>
                 <span>17 ноября 10.30-11.30</span> 
             </div>
             <div class="swipe-panel__name-block">
@@ -485,105 +529,54 @@
 				</p>			
 			</div>
 			<div class="swipe-panel__close-block">
-					<i class="fa fa-times" aria-hidden="true"></i>
+					<i class="icon icon-close"></i>
 			</div>	
 	</div>
 	<div class="swipe-panel__body">
-			<button class="button green trans add-record-button">+ Добавить запись</button>
+			<button class="button blue-btn trans add-record-button">+ Добавить запись</button>
 			<ul class="swipe-panel__list">
 					<li class="swipe-panel__item">
 							<div class="button-wrap">
-								<button class="panel-redact"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+								<button class="panel-redact"><i class="icon icon-pencil-gray"></i></button>
 								<button class="panel-close">×</button>
 							</div>
 							<div class="name-wrap">
-								<span class="name" title="Маргарита Иванова-Петровская">Маргарита Иванова-Петровская</span>
+								<a href="" class="name" title="Маргарита Иванова-Петровская">Маргарита Иванова</a>
 								<span class="label label_orange lang">Постоянный</span>
 							</div>
 							<div class="info-wrap">
 								<p class="info">+38055-555-55-55</p>
 							</div>
 							<div class="record-info-wrap">
-								<span class="data">8.05.2017</span>
+								<p class="data">на 8.05.2017</p>
 								<p class="master-name"><span>Мастер:</span>Екатерина Мирончук</p>
 							</div>
 					</li>
 					<li class="swipe-panel__item">
 							<div class="button-wrap">
-								<button class="panel-redact"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+								<button class="panel-redact"><i class="icon icon-pencil-gray"></i></button>
 								<button class="panel-close">×</button>
 							</div>
 							<div class="name-wrap">
-								<span class="name" title="Марина Шевченко">Марина Шевченко</span>
+								<a href="" class="name" title="Маргарита Иванова-Петровская">Ирина Шевченко</a>
 								<span class="label label_green lang">Активный</span>
 							</div>
 							<div class="info-wrap">
 								<p class="info">+38055-555-55-55</p>
-							</div>
-							<p class="note">
-									<i class="fa fa-comment-o" aria-hidden="true"></i>
-									Просит скидку 15%
-							</p>
+							</div>						
 							<div class="record-info-wrap">
-								<span class="data">8.05.2017</span>
+								<p class="data">8.05.2017</p>
+								<p class="note">
+									<i class="icon icon-comment"></i>
+									Просит скидку 15%
+								</p>
 								<p class="master-name"><span>Мастер:</span>Екатерина Мирончук</p>
 							</div>
 					</li>
 			</ul>
 	</div>
-	<!--добавление записи-->
-
-	<div class="swipe-panel__body add-record__body">
-			<div class="swipe-panel__nav">
-                <button class="back-button pointer_left lg blue"></button>
-                <p class="swipe-panel__body-title">Добавление записи</p>
-			</div>
-			<form action="" class="swipe-form">
-                <div class="input-wrap">
-                    <div class="add-block__head">                        
-                        <span class="add client-add">+ Добавить клиента</span>
-                    </div>
-                    <input type="text" class="swipe-input" placeholder="Поиск клиента">
-                </div>
-				<div class="input-wrap col-input-wrap">
-                    <div class="datepicker-wrap">
-                        <input type="text" class="swipe-input add-rec-datepicker" placeholder="16.11.2017">                    
-                        <i class="fa fa-calendar form-calendar-button add-rec-datepicker" aria-hidden="true"></i>
-                    </div>
-                    <div class="checkbox-wrap">
-                        <input type="checkbox" class="checkbox">
-                        <label for="checkbox" class="check-label">срочно</label>
-                    </div>				
-				</div>
-				<div class="input-wrap">
-                    <select class="swipe-select" data-placeholder="Выберите специалиста" ref="master">
-                        <option value="0">Выберите специалиста</option>
-                        <option value="21">Анна Янкова</option>
-                        <option value="8">Ирина Наботова</option>
-                        <option value="9">Екатерина Мирончук</option>
-                        <option value="17">Дарья Шаховал</option>
-                        <option value="10">Арзамазова Дарина</option>
-                        <option value="19">Олеся Никитина</option>
-                        <option value="11">Виктория Левчук</option>
-                        <option value="20">Елена Вербицкая</option>
-                        <option value="7">Марина Заикина</option>
-                    </select>
-                </div>
-                <div class="input-wrap">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий" class="comment-input"></textarea>
-                </div>
-				<div class="button-wrap">
-                    <button class="button green trans">Сохранить</button>
-                    <button class="button gray-border trans">Отмена</button>
-                </div>
-			</form>	
-	</div>	
-
-
-
-
-	
 </div>
+
 
 
 
@@ -597,13 +590,13 @@
 				</p>			
 			</div>
 			<div class="swipe-panel__close-block">
-					<i class="fa fa-times" aria-hidden="true"></i>
+					<i class="icon icon-close" aria-hidden="true"></i>
 			</div>	
 	</div>
 		<div class="swipe-panel__body">
 			<span class="check-label color border-green">осблуживание завершено</span>
 			<div class="swipe-panel__data-block">
-				<i class="fa fa-calendar" aria-hidden="true"></i>
+				<i class="icon icon-calendar" aria-hidden="true"></i>
 				<span>17 ноября 10.30</span> 
 			</div>
 			<div class="swipe-panel__name-block">
@@ -706,7 +699,7 @@
 				</p>			
 			</div>
 			<div class="swipe-panel__close-block">
-					<i class="fa fa-times" aria-hidden="true"></i>
+					<i class="icon icon-close" aria-hidden="true"></i>
 			</div>	
 	</div>
 	<div class="swipe-panel__body">
@@ -787,7 +780,7 @@
 				</p>			
 			</div>
 			<div class="swipe-panel__close-block">
-					<i class="fa fa-times" aria-hidden="true"></i>
+					<i class="icon icon-close" aria-hidden="true"></i>
 			</div>	
 	</div>
 	<div class="swipe-panel__body">			
@@ -837,7 +830,7 @@
 				</p>			
 			</div>
 			<div class="swipe-panel__close-block">
-					<i class="fa fa-times" aria-hidden="true"></i>
+					<i class="icon icon-close" aria-hidden="true"></i>
 			</div>	
 	</div>
 	<div class="swipe-panel__body">			
@@ -906,16 +899,16 @@
 						<label for="" class="swipe-label">Период</label>
 						<div class="datepicker-wrap">							
 								<input type="text" class="swipe-input datepicker-1 input-1" placeholder="16.11.2017">                    
-								<i class="fa fa-calendar form-calendar-button datepicker-1" aria-hidden="true"></i>
+								<i class="icon icon-calendar form-calendar-button datepicker-1" aria-hidden="true"></i>
 						</div>
 						<span class="tire">-</span>
 						<div class="datepicker-wrap">
 								<input type="text" class="swipe-input datepicker-2 input-2" placeholder="16.11.2017">                    
-								<i class="fa fa-calendar form-calendar-button datepicker-2" aria-hidden="true"></i>
+								<i class="icon icon-calendar form-calendar-button datepicker-2" aria-hidden="true"></i>
 						</div>
 				</div>
 				<div class="input-wrap calendar-info">
-						<i class="fa fa-calendar form-calendar-button datepicker-2" aria-hidden="true"></i>
+						<i class="icon icon-calendar form-calendar-button datepicker-2" aria-hidden="true"></i>
 						<span>10 ноября 10.30-11.30</span>
 				</div>
 				<div class="input-wrap">
@@ -949,7 +942,7 @@
 				</p>			
 			</div>
 			<div class="swipe-panel__close-block">
-					<i class="fa fa-times" aria-hidden="true"></i>
+					<i class="icon icon-close" aria-hidden="true"></i>
 			</div>	
 	</div>
 	<div class="swipe-panel__body">			
@@ -993,7 +986,7 @@
 				</p>			
 			</div>
 			<div class="swipe-panel__close-block">
-					<i class="fa fa-times" aria-hidden="true"></i>
+					<i class="icon icon-close" aria-hidden="true"></i>
 			</div>	
 	</div>
 	<div class="swipe-panel__body">			
@@ -1064,4 +1057,97 @@
 
 
 <!--добавить контрагента-->
+	<!--добавление статьи-->
+<div class="swipe-panel swipe-panel-10 w400">
+	<div class="swipe-panel__header">
+			<div class="swipe-panel__title-block">
+				<p class="swipe-panel__title">
+					Касса
+				</p>			
+			</div>
+			<div class="swipe-panel__close-block">
+					<i class="icon icon-close" aria-hidden="true"></i>
+			</div>	
+	</div>
+	<div class="swipe-panel__body">			
+			<div class="swipe-panel__info">							
+			</div>
+			<form action="" class="swipe-form">
+				<div class="input-wrap">
+					<label for="" class="swipe-label">Название</label>
+					<input type="text" class="swipe-input" placeholder="введите название статьи">
+				</div>
+				<div class="input-wrap">
+					<label for="" class="swipe-label">Тип статьи</label>
+					<select class="swipe-select swipe-input" ref="master">
+							<option value="0" data-display="продажа/доход">продажа/доход</option>                       
+							<option value="2">Расход</option>
+							<option value="2">статья-2</option>
+							<option value="2">статья-3</option>        
+					</select>
+				</div>
+				<div class="input-wrap">
+						<label for="" class="swipe-label">Салон</label>
+						<select class="swipe-select swipe-input" ref="master">
+								<option value="0" data-display="Lash.Moda New-York">Lash.Moda New-York</option>                       
+								<option value="2">Lash.Moda Praga</option>
+								<option value="2">Lash.Moda Kiev</option>
+								<option value="2">Lash.Moda Madagaskar</option>        
+						</select>
+					</div>
+				<div class="input-wrap">
+						<label for="" class="swipe-label">Комменатрий</label>
+						<textarea type="text" class="swipe-textarea"></textarea>
+					</div>
+				<div class="button-wrap">
+						<button class="button green trans">Сохранить</button>
+						<button class="button red-border trans">Удалить</button>
+				</div>
+			</form>	
+	</div>	
+</div>
+
+
+
+<!--добавление кассы-->
+	<!--новый клиент-->
+<div class="swipe-panel swipe-panel-11 w800">
+	<div class="swipe-panel__header">
+			<div class="swipe-panel__title-block">
+				<p class="swipe-panel__title">
+					Новый клиент
+				</p>			
+			</div>
+			<div class="swipe-panel__close-block">
+					<i class="icon icon-close" aria-hidden="true"></i>
+			</div>	
+	</div>
+	<div class="swipe-panel__body">
+			<div class="swipe-panel__nav">
+				<button class="back-button pointer_left lg blue"></button>
+				<p class="swipe-panel__body-title">Добавление клиента</p>
+			</div>
+			<div class="swipe-panel__info">							
+			</div>
+			<form action="" class="swipe-form">
+				<div class="input-wrap">
+					<label for="" class="swipe-label">Имя</label>
+					<input type="text" class="swipe-input">
+				</div>
+				<div class="input-wrap">
+					<label for="" class="swipe-label">Фамилия</label>
+					<input type="text" class="swipe-input">
+				</div>
+				<div class="input-wrap">
+					<label for="" class="swipe-label">Телефон</label>
+					<input type="text" class="swipe-input">
+				</div>
+				<button class="button green trans">Сохранить</button>
+			</form>	
+	</div>	
+</div>
+
+
+
+<!--начисление зарплаты-->
 </html>

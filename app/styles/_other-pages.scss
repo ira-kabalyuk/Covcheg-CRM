@@ -2,3 +2,22 @@ $icon-font-path: '../fonts/';
 
 @import "_includs";
 
+.salary-page {
+
+	.schedule {
+
+		&__content-column {
+
+			td {
+
+				a {
+					&:hover {
+						color: $blue;
+						text-decoration: none;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+}

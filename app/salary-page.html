@@ -1,0 +1,102 @@
+{% extends "template-width-swipe.html" %}	
+
+{% block content %}	
+
+<main class="salary-page">
+	<div class="tools">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<i class="fa fa-home" aria-hidden="true"></i>
+				<a href="">Главная</a>
+			</li>		
+			<li class="breadcrumbs__item">
+				<a href="">Зарплаты</a>
+			</li>		
+		</ul>
+		
+	</div>
+
+	<div class="table-page">
+		<div class="table-page__head">
+				<div class="table-page__head_left">	
+					<h1 class="title">Начисление зарплаты</h1>				
+				</div>				
+		</div>
+	
+		<div class="schedule__body">
+			<table class="schedule__content-column white">
+				<thead class="schedule__content-column-head">
+					<tr>
+						<th class="w-7pr">#</th>
+						<th class="w-15pr">Дата</th>
+						<th class="w-20pr">Салон</th>
+						<th class="w-20pr">Период начисления</th>	
+						<th class="">Начислено, грн</th>	
+						<th class="">Выплачено, грн</th>	
+						<th class="">Остаток, грн</th>					
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+						2				
+						</td>
+						<td class="blue-text bold">
+							<a class="blue-text bold js-salary-link">
+								24.11.2017
+								<span class="time">19.30</span>
+							</a>	
+						</td>
+						<td> 
+								Lash.Moda New-York
+						</td>
+						<td>
+								24.11.2017 - 10.12.2017
+							</td>
+							<td class="green-text bold">
+								25 000.00
+							</td>
+							<td class="green-text bold">
+								20 000.00
+							</td>
+							<td class="green-text bold">
+									5 000.00
+							</td>					
+					</tr>
+					<tr>
+							<td>
+							2345				
+							</td>
+							<td class="blue-text bold">
+									<a class="blue-text bold" href="">
+										24.11.2017
+										<span class="time">19.30</span>
+									</a>	
+							</td>
+							<td> 
+									Lash.Moda New-York
+							</td>
+							<td>
+									24.11.2017 - 10.12.2017
+								</td>
+								<td class="green-text bold">
+									25 000.00
+								</td>
+								<td class="green-text bold">
+									20 000.00
+								</td>
+								<td class="green-text bold">
+										5 000.00
+								</td>					
+						</tr>
+				</tbody>
+			</table>			
+		</div>
+		
+	</div>
+
+</main>
+
+{% endblock %} 
+
+	

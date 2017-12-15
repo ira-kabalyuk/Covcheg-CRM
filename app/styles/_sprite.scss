@@ -16,6 +16,18 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+.icon-calendar-gray {
+  background-image: url(../images/sprite.png);
+  background-position: -60px -23px;
+  width: 18px;
+  height: 19px;
+}
+.icon-calendar {
+  background-image: url(../images/sprite.png);
+  background-position: -60px 0px;
+  width: 21px;
+  height: 23px;
+}
 .icon-call-away {
   background-image: url(../images/sprite.png);
   background-position: 0px 0px;
@@ -34,27 +46,75 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 30px;
   height: 30px;
 }
+.icon-close {
+  background-image: url(../images/sprite.png);
+  background-position: -60px -42px;
+  width: 18px;
+  height: 18px;
+}
+.icon-column-blue {
+  background-image: url(../images/sprite.png);
+  background-position: -16px -74px;
+  width: 16px;
+  height: 15px;
+}
+.icon-column-gray {
+  background-image: url(../images/sprite.png);
+  background-position: -81px -45px;
+  width: 16px;
+  height: 15px;
+}
+.icon-comment {
+  background-image: url(../images/sprite.png);
+  background-position: -56px -60px;
+  width: 12px;
+  height: 11px;
+}
 .icon-download {
   background-image: url(../images/sprite.png);
-  background-position: -60px -44px;
+  background-position: -68px -60px;
   width: 11px;
   height: 10px;
 }
 .icon-drop-icon {
   background-image: url(../images/sprite.png);
-  background-position: -60px 0px;
+  background-position: 0px -60px;
   width: 19px;
   height: 14px;
 }
+.icon-l-close-gray {
+  background-image: url(../images/sprite.png);
+  background-position: -44px -60px;
+  width: 12px;
+  height: 12px;
+}
+.icon-l-close-red {
+  background-image: url(../images/sprite.png);
+  background-position: -32px -60px;
+  width: 12px;
+  height: 12px;
+}
+.icon-pencil-blue {
+  background-image: url(../images/sprite.png);
+  background-position: -19px -60px;
+  width: 13px;
+  height: 13px;
+}
+.icon-pencil-gray {
+  background-image: url(../images/sprite.png);
+  background-position: -81px -60px;
+  width: 13px;
+  height: 13px;
+}
 .icon-pointer-bottom {
   background-image: url(../images/sprite.png);
-  background-position: -60px -14px;
+  background-position: -81px -15px;
   width: 17px;
   height: 15px;
 }
 .icon-pointer-top {
   background-image: url(../images/sprite.png);
-  background-position: -60px -29px;
+  background-position: -81px 0px;
   width: 17px;
   height: 15px;
 }
@@ -63,4 +123,16 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-position: -30px -30px;
   width: 30px;
   height: 30px;
+}
+.icon-table-blue {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -74px;
+  width: 16px;
+  height: 15px;
+}
+.icon-table-gray {
+  background-image: url(../images/sprite.png);
+  background-position: -81px -30px;
+  width: 16px;
+  height: 15px;
 }

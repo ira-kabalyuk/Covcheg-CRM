@@ -27,9 +27,10 @@ $icon-font-path: '../fonts/';
         cursor: pointer;
         margin-right: 20px;
         display: flex;
-        align-items: center;
+				align-items: center;
+			
 
-        .fa {
+        .icon {
             margin-right: 5px;
             font-size: 16px;
         } 
@@ -42,9 +43,44 @@ $icon-font-path: '../fonts/';
             color: $blue;
         }
 
-        &.active {
-            color: $blue;
-        }
+        &.active-column {
+
+						.icon-column-gray{
+							display: none;
+						}
+						
+						.icon-column-blue {
+							display: inline-block;
+						}
+
+						.icon-table-gray{
+							display: none;
+						}
+						
+						.icon-table-blue {
+							display: inline-block;
+						}
+				}
+				
+				&.active-table {
+
+					.icon-column-gray{
+						display: inline-block;
+					}
+					
+					.icon-column-blue {
+						display: none;
+					}
+	
+					.icon-table-gray{
+						display: inline-block;
+					}
+					
+					.icon-table-blue {
+						display: none;
+					}
+					
+				}
     }
 }
 
@@ -107,6 +143,14 @@ $icon-font-path: '../fonts/';
                    right: 0;
                 }
 
+								.data-input {
+									width: 90%;								
+
+									&::-webkit-input-placeholder {color: $black; opacity: 1}
+									&::-moz-placeholder          {color: $black; opacity: 1}/* Firefox 19+ */
+									&:-moz-placeholder           {color: $black; opacity: 1}/* Firefox 18- */
+									&:-ms-input-placeholder      {color: $black; opacity: 1}
+								}
                
             }
 
@@ -214,7 +258,8 @@ $icon-font-path: '../fonts/';
 
             td {
                 font-size: 1.1rem;
-                font-weight: 700;
+								font-weight: 700;
+								padding: 20px 15px;
 
                 span {
                     font-size: 0.85rem;
@@ -229,7 +274,13 @@ $icon-font-path: '../fonts/';
 
                 &:nth-child(2n) {
                     background: $clear-gray;
-                }
+								}
+								
+								.position {
+									display: inline-block;
+									margin-left: 10px;
+									color: #626262;
+								}
             }
 
             .time-td {
@@ -422,21 +473,11 @@ $icon-font-path: '../fonts/';
         .sum {
             font-weight: 700;
             color: $green;
-        }
-
-        .fa-calendar {
-            font-size: 17px;
-						color: $red;
-						
-						&.gray {
-							color: $gray;
-							border: none;
-						}
-        }
+        }        
     }
 
     .record-block {
-        width: 99%;            
+        width: 99%;
         padding: 5px 10px; 
         min-height: 200%;
         display: flex;
