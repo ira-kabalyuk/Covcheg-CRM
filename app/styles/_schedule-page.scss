@@ -144,7 +144,7 @@ $icon-font-path: '../fonts/';
                 }
 
 								.data-input {
-									width: 90%;								
+									//width: 90%;								
 
 									&::-webkit-input-placeholder {color: $black; opacity: 1}
 									&::-moz-placeholder          {color: $black; opacity: 1}/* Firefox 19+ */
@@ -155,19 +155,26 @@ $icon-font-path: '../fonts/';
             }
 
             .data-input {
-                color: #fff;
+								color: $black;
+								background: #fff;
+							/*	position: relative;
+								z-index: 20;
+								height: 100%;*/
             }
 
-            .calendar-button {
-                position: absolute;
-                top: 0;
-                right: 0;
-                z-index: 10;
-
-                font-weight: 700;
-                width: 100%;
-                text-align: left;
-            }
+            .calendar-button {               
+                font-weight: 700;              
+								text-align: left;
+								display: none;
+								position: absolute;
+								top: 0;
+								left: 0;
+								
+						}
+						
+						.ui-datepicker-trigger {
+							margin-left: 10px;
+						}
         }
 
         &_right {

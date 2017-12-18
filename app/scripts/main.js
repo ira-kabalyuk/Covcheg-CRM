@@ -14,8 +14,23 @@ jQuery(document).ready(function() {
 
     $('.js-datepicker').datepicker({
         altField: ".data-input", // селектор элемента куда будет выводится выбранная дата
-        dateFormat: "d MM yy 'г.'",
-    });    
+				dateFormat: "d MM yy 'г.'",		
+				showOn:"button", 
+				buttonImage:"images/calendar.png",
+				buttonImageOnly:true,
+
+				autoSize: true,
+
+				onSelect: function(dateString) {
+					$('.data-input').text(dateString)
+				}
+			
+		}); 
+		
+	$( ".js-datepicker" ).datepicker( "setDate", Date.now() );
+
+	var currentDateString = $('.js-datepicker').val();
+	$('.data-input').text(currentDateString)
 
 
     $('.add-rec-datepicker').datepicker({
