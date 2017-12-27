@@ -163,10 +163,10 @@ jQuery(document).ready(function() {
   });
 
     $(document).ready(function() {
-      $('.swipe-select').niceSelect();
+      $('.swipe-select, .main-filter__select').niceSelect();
     });
 
-    //select
+    //select https://select2.org/getting-started/basic-usage
 
     $(document).ready(function() {
       
@@ -214,6 +214,23 @@ jQuery(document).ready(function() {
         dropdownParent: $('.multiple-select-drop-6'),
         closeOnSelect: false,
         placeholder: "Выберите теги",               
+      });
+
+      $('.single-select-7').select2({
+        dropdownParent: $('.single-select-drop-7'),
+        closeOnSelect: false, 
+        placeholder: "Выберите сотрудника", 
+        search: false,       
+        data: [
+          {id: 11, text: 'Морозова Ирина', profession: 'Визажист', disabled: false, selected: false},
+          {id: 22, text: 'Шевченко Екатерина', profession: 'Бровист', disabled: false, selected: false},
+          {id: 33, text: 'Вязьмитинова Наталья', profession: 'Лейшмейкер', disabled: false, selected: false},
+          {id: 44, text: 'Сорокина Татьяна', profession: 'Визажист/бровист', disabled: false, selected: false}
+        ],
+        
+        templateResult: function (item) {
+          return $('<b>'+item.text+'</b><span>'+item.profession+'</span>')
+        }
       });
 	});	
 	
