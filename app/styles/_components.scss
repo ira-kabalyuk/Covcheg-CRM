@@ -583,4 +583,43 @@ $icon-font-path: '../fonts/';
 			}
 		}
 
+.circle-icon {    
+    width: 25px;
+    height: 25px;
+    flex-basis: 25px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    margin-right: 20px;
+
+    &.blue {
+        border: none;
+        background: #9bcbd8;
+    }
+
+    &.yellow {
+        border: none;
+        background: #e5d4a1;
+    }
+
+    &.pink {
+        border: none;
+        background: #d3b4d3;
+    }
+
+    &.gray {
+        border: none;
+        background: #c3c3c3;
+    }
+
+    &.green {
+        border: none;
+        background: $green;
+    }
+
+    &.dark-blue {
+        border: none;
+        background: #778a9c;        
+    }
+}
+
     

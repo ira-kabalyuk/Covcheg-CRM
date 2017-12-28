@@ -45,8 +45,17 @@ $icon-font-path: '../fonts/';
         flex-basis: 85px;
         flex-shrink: 0;
         text-align: right;
+
+        .icon {
+            vertical-align: middle;
+        }
+
+        .fa {
+            font-size: 14px;
+        }
     }
 
+    
     &__nav-block {
         display: flex;
         align-items: center;

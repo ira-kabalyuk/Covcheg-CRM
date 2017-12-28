@@ -59,7 +59,7 @@ $icon-font-path: '../fonts/';
 		}
 
 		.pointer_bottom {
-			margin-left: 0;
+			margin-left: 0;			
 		}
 	} 
 	
@@ -168,11 +168,27 @@ $icon-font-path: '../fonts/';
 		padding: 0 15px;
 		display: flex;
 		align-items: center;
+		cursor: pointer;
 
 		&__name {
 			color: #fff;
 			font-weight: 700;
 			margin: 0 15px;
 		}
+
+		&:hover {
+
+			.submenu {
+				display: block;
+			}
+		}
+	}
+
+	.submenu {
+		width: 225px;		
+		top: 100%;
+		right: -30px;
+		display: none;
+		
 	}
 }

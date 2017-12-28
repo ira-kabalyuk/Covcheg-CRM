@@ -358,6 +358,11 @@ $(".js-del").click(function( e ) {
   $(this).parents('.sortable__item').remove();  		
 }); 
 
+$(".js-del").click(function( e ) {
+  e.stopPropagation();	
+  $(this).parents('.process-page__item').remove();  		
+}); 
+
 //color input 
 
 $(document).ready(function() {

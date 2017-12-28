@@ -46,6 +46,7 @@ $icon-font-path: '../fonts/';
 
     .nice-select {
         color: $gray;
+        padding: 10px 20px;
 
         .list {
 						color: $black;
@@ -71,6 +72,10 @@ $icon-font-path: '../fonts/';
         position: absolute;
         top: 0;
         right: 0;
+
+        .icon-close-sm {
+            vertical-align: middle;
+        }
     }
 
     &.horisontal {
@@ -654,11 +659,10 @@ input[type="checkbox"].bigswitch.switch + div > div {
 }
 
 .calendar-info {
-    
+    display: flex;
+    align-items: center;
 
-   .fa {
-     color: red;
-     font-size: 17px;
+   .icon {    
      margin-right: 10px;  
    } 
 

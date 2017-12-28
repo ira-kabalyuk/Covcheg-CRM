@@ -1,0 +1,216 @@
+{% extends "template-width-swipe.html" %}	
+
+{% block content %}	
+
+<main class="process-page page-width-sidebar">
+		<div class="content-wrap flex">
+			<div class="sidebar">
+				<p class="sidebar__title">Настройки</p>
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="">Основные нстройки</a>
+					</li>	
+					<li class="sidebar__item">
+						<a href="">Баланс и оплата</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="">Пользователи и права</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="">Свои поля</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="">Контакты</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="">Компании</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="">Заявки</a>
+					</li>
+					<li class="sidebar__item">
+							<a href="">Сделки</a>
+					</li>
+					<li class="sidebar__item active">
+							<a href="">Склады</a>
+					</li>
+					<li class="sidebar__item">
+							<a href="">Финансы</a>
+					</li>			
+				</ul>
+			</div>
+			<div class="content col">
+					<div class="title-block title-braun">
+							<p class="title">Процесс обслуживания клиента</p>  
+							<button class="button red trans">Сохранить</button> 
+					</div>
+					<ul class="breadcrumbs__list brd-bottom">
+							<li class="breadcrumbs__item">								
+								<a href="">Настройки</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a href="">Процесс обслуживания клиента</a>
+							</li>						
+						</ul>
+						<button class="button big-button light-braun trans">+ Добавить процесс</button>
+						<div class="element-wrap">
+								<ul class="process-page__list">
+									<li class="process-page__item">
+										<div class="process-page__item-head">
+											<span class="circle-icon blue"></span>
+											<div class="process__title-block">
+												<p class="process__title"><span> Статус 1:</span> Запланировано</p>
+												<ul class="process__list">
+                                                    <li class="process__item">
+                                                        <input type="checkbox" class="checkbox">
+                                                         <p class="process__title">Кнопка “Удалить запись”</p>
+                                                    </li>
+                                                    <li class="process__item">
+                                                        <input type="checkbox" class="checkbox">
+                                                         <p class="process__title">Поиск-добавление клиента</p>
+                                                    </li>
+                                                    <li class="process__item">
+                                                        <input type="checkbox" class="checkbox">
+                                                         <p class="process__title">Редактирование перечня услуг и товаров</p>
+                                                    </li>
+                                                    <li class="process__item">
+                                                        <input type="checkbox" class="checkbox">
+                                                         <p class="process__title">Кнопка “Сохранить запись”</p>
+                                                    </li>
+                                                </ul>
+											</div>
+										</div>
+										<div class="process-page__nav-block sb">											
+											<div class="process-page__tools-block">
+												<div class="switch-wrap">                                                  						
+                                                        <label>
+                                                            <input type="checkbox" class="switch green bigswitch" checked="">
+                                                            <div>
+                                                                <div>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                </div>
+												<button class="sortable-button del js-del"><i class="icon icon-close-sm"></i></button>												
+											</div>
+										</div>
+									</li>
+									<li class="process-page__item">
+										<div class="process-page__item-head">
+											<span class="circle-icon yellow"></span>
+											<div class="process__title-block">
+												<p class="process__title"><span> Статус 2:</span> Подтверждена</p>												
+											</div>
+										</div>
+										<div class="process-page__nav-block sb">											
+											<div class="process-page__tools-block">
+												<div class="switch-wrap">                                                  						
+                                                        <label>
+                                                            <input type="checkbox" class="switch green bigswitch" checked="">
+                                                            <div>
+                                                                <div>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                </div>
+												<button class="sortable-button del js-del"><i class="icon icon-close-sm"></i></button>												
+											</div>
+										</div>
+                                    </li>
+                                    <li class="process-page__item">
+										<div class="process-page__item-head">
+											<span class="circle-icon pink"></span>
+											<div class="process__title-block">
+												<p class="process__title gray-text"><span> Статус 3:</span> Выполняется</p>												
+											</div>
+										</div>
+										<div class="process-page__nav-block sb">											
+											<div class="process-page__tools-block">
+												<div class="switch-wrap">                                                  						
+                                                        <label>
+                                                            <input type="checkbox" class="switch green bigswitch" checked="">
+                                                            <div>
+                                                                <div>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                </div>
+												<button class="sortable-button del js-del"><i class="icon icon-close-sm"></i></button>												
+											</div>
+										</div>
+                                    </li>
+                                    <li class="process-page__item">
+										<div class="process-page__item-head">
+											<span class="circle-icon gray"></span>
+											<div class="process__title-block">
+												<p class="process__title"><span> Статус 4:</span> Выполнено</p>												
+											</div>
+										</div>
+										<div class="process-page__nav-block sb">											
+											<div class="process-page__tools-block">
+												<div class="switch-wrap">                                                  						
+                                                        <label>
+                                                            <input type="checkbox" class="switch green bigswitch" checked="">
+                                                            <div>
+                                                                <div>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                </div>
+												<button class="sortable-button del js-del"><i class="icon icon-close-sm"></i></button>												
+											</div>
+										</div>
+                                    </li>
+                                    <li class="process-page__item">
+										<div class="process-page__item-head">
+											<span class="circle-icon green"></span>
+											<div class="process__title-block">
+												<p class="process__title"><span> Статус 5:</span> Обслуживание завершено</p>												
+											</div>
+										</div>
+										<div class="process-page__nav-block sb">											
+											<div class="process-page__tools-block">
+												<div class="switch-wrap">                                                  						
+                                                        <label>
+                                                            <input type="checkbox" class="switch green bigswitch" checked="">
+                                                            <div>
+                                                                <div>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                </div>
+												<button class="sortable-button del js-del"><i class="icon icon-close-sm"></i></button>												
+											</div>
+										</div>
+                                    </li>
+                                    <li class="process-page__item">
+										<div class="process-page__item-head">
+											<span class="circle-icon dark-blue"></span>
+											<div class="process__title-block">
+												<p class="process__title"><span> Статус 6:</span> Визт отменен</p>												
+											</div>
+										</div>
+										<div class="process-page__nav-block sb">											
+											<div class="process-page__tools-block">
+												<div class="switch-wrap">                                                  						
+                                                        <label>
+                                                            <input type="checkbox" class="switch green bigswitch" checked="">
+                                                            <div>
+                                                                <div>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                </div>
+												<button class="sortable-button del js-del"><i class="icon icon-close-sm"></i></button>												
+											</div>
+										</div>
+                                    </li>								
+								</ul>
+						</div>				
+			</div>
+		</div>
+</main>
+
+{% endblock %} 
+
+	
