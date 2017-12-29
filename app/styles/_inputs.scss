@@ -164,6 +164,10 @@ $icon-font-path: '../fonts/';
     margin-bottom: 5px;
     font-size: 1rem;
     font-weight: 700;
+
+    &.sm {
+        font-size: 13px;
+    }
 }
 
  .swipe-input {
@@ -669,4 +673,44 @@ input[type="checkbox"].bigswitch.switch + div > div {
    span {
        font-size: 16px;
    }
+}
+
+.counter-wrap {
+    position: relative;
+}
+
+.triangle-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid $el-border-color;
+    z-index: 10;
+    cursor: pointer;
+
+     i {
+        margin-left: 0;
+     }
+}
+
+.triangle-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 1px solid $el-border-color;
+    z-index: 10;
+    cursor: pointer;
+
+    i {
+        margin-left: 0;
+     }
 }

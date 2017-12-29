@@ -36,9 +36,13 @@ $icon-font-path: '../fonts/';
         width: 600px; 
 		}
 		
-		&.w800 {
-			width: 800px; 
-	}
+    &.w800 {
+        width: 800px; 
+    }
+
+    &.gray-bg {
+        background: #f0f0f0;
+    }
 
     .button {
         margin-bottom: 15px;
@@ -139,9 +143,15 @@ $icon-font-path: '../fonts/';
                 width: 100%;
                 margin: 10px 0;
             }
+        }    
+
+        &.white-bg {
+            background: #fff;
         }
 
-        
+        &.gray-bg {
+            background: #f0f0f0;
+        }
     }
 
     &__data-block {
@@ -311,7 +321,13 @@ $icon-font-path: '../fonts/';
 		
 		.thin-wrap {
 			width: 220px;
-		}
+        }
+
+
+        .page-nav-tabs  {
+            background: #f0f0f0;
+            justify-content: center;
+        }   
 }
 
 
@@ -633,6 +649,79 @@ $icon-font-path: '../fonts/';
         }        
     }
 }
+
+/*добавить салон*/
+
+.swipe-panel-12 {
+
+    .button-wrap { 
+        width: calc(100% + 20px); 
+        flex-direction: row;
+        margin: 40px -10px 0 -10px;
+
+        .button {
+            width: calc(50% - 22px);
+            margin: 0 10px;
+        }
+    }
+}
+
+.graph {
+
+    &__list {
+
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        .checkbox {
+            margin-right: 10px;
+        }
+
+        .dable-input-wrap {
+            margin-bottom: 0;
+        }
+
+        .input-wrap .nice-select {           
+            padding: 10px;
+
+            .list {
+                li {
+                    padding: 10px;  
+                }
+            }
+        }
+    }
+
+    &__title-wrap {
+       width: 80%;
+       display: flex;
+       align-items: center;
+    }
+}
+
+.settings-block {
+    padding: 15px 0;
+    
+    &.b-top {
+        border-top: 1px solid #c8c8c8;
+    }
+
+    &.b-bot {
+        border-top: 1px solid #c8c8c8;
+    }
+
+    &.bord {
+        border-top: 1px solid #c8c8c8;
+        border-bottom: 1px solid #c8c8c8;
+    }
+}
+
+
 
 
 

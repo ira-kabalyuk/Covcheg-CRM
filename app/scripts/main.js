@@ -128,6 +128,11 @@ jQuery(document).ready(function() {
 	$(".js-salary-link").click(function( e ) {   
     $(".swipe-panel-11").addClass("active"); 
     $("body").addClass("mask");                    
+  });
+  
+  $(".js-add-salon").click(function( e ) {   
+    $(".swipe-panel-12").addClass("active"); 
+    $("body").addClass("mask");                    
 	});
 	
 	
@@ -154,12 +159,31 @@ jQuery(document).ready(function() {
    
 
   //end swipe panels
+
+  //counter
   
       $(".table-page__filter-link").click(function( e ) {
         e.stopPropagation();	
         $(".filter-wrap").slideToggle(400);
         $(".table-page__filter-link").toggleClass("no-show");	
-      });                      
+      });
+      
+      $('.triangle-bottom').click(function(){
+        var $inp=$(this).siblings('input');
+        var kol=parseInt($inp.val())-1;
+        if(kol!=0) $inp.val(kol).trigger('change');
+        console.log(kol);
+      });
+      
+      $('.triangle-top').click(function(){
+        var $inp=$(this).siblings('input');
+        var kol=parseInt($inp.val())+1;
+         $inp.val(kol).trigger('change');
+         console.log(kol);
+      });
+
+      //end counter
+
   });
 
     $(document).ready(function() {
