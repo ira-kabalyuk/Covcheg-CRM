@@ -327,6 +327,11 @@ $icon-font-path: '../fonts/';
         .page-nav-tabs  {
             background: #f0f0f0;
             justify-content: center;
+            padding-top: 30px;
+
+            li {
+                border-right: none;
+            }
         }   
 }
 
@@ -666,6 +671,14 @@ $icon-font-path: '../fonts/';
     }
 }
 
+#tab4_1 {
+
+    .button-wrap {
+        margin: 0 -10px 0 -10px;
+
+    }
+}
+
 .graph {
 
     &__list {
@@ -721,7 +734,19 @@ $icon-font-path: '../fonts/';
     }
 }
 
+.counter-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 
+    .input-wrap {
+        width: 47%;
+    }
+
+    .counter-wrap {
+        width: 100px;
+    }
+}
 
 
 

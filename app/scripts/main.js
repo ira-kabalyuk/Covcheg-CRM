@@ -263,7 +263,8 @@ jQuery(document).ready(function() {
 
   $(".role-add__button").click(function( e ) {
 		e.stopPropagation();	
-		$(".role-add__block").slideToggle(400);		
+    $(".role-add__block").slideToggle(400);		
+   
   }); 
   
   //блоки в добавлении ролей 
@@ -368,6 +369,8 @@ if(el2[0]) {
 
 
 
+
+
 //drug drop
 
 $( function() {
@@ -401,6 +404,15 @@ $(document).ready(function() {
     $(".js-color-input").click(function( e ) {
       $(".color__block").slideToggle(400);
     });
+
+
+
+    //основные настройки
+
+    $(".sidebar__item").click(function( e ) {
+      e.stopPropagation();	
+      $(this).find('.sidebar__submenu-list').slideToggle(400);     	
+    }); 
     
   
   })

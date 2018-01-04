@@ -25,14 +25,17 @@ $icon-font-path: '../fonts/';
     &__item {
         font-size: 17px;
         padding: 10px 0;
+        cursor: pointer;
 
         a {
             color: $black;
             font-weight: 400;
+            display: flex;
+            align-items: center;
 
             &:hover {
-                color: $black;
-                font-weight: 700;
+                color: $blue;
+                font-weight: 400;
                 text-decoration: none;
             }
         }
@@ -43,6 +46,18 @@ $icon-font-path: '../fonts/';
                 font-weight: 700;
             }
         }
+    }
+
+    &__submenu-list {
+        margin-top: 12px;
+        display: none;
+    }
+
+    &__submenu-item {
+        font-size: 15px;
+        color: $blue;
+        cursor: pointer;
+        padding: 10px 20px;
     }
   
 }
