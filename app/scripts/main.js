@@ -378,7 +378,15 @@ $( function() {
     handle: ".icon-drop-icon"
   });
   $( "#sortable" ).disableSelection();
-} );
+});
+
+$( function() {
+  $( "#sortable1, #sortable2, #sortable3" ).sortable({
+    connectWith: ".sortable__list",
+    handle: ".icon-drop-icon",
+    placeholder: "drop-placeholder"
+  }).disableSelection();
+});
 
 $(".js-del").click(function( e ) {
   e.stopPropagation();	
@@ -412,8 +420,7 @@ $(document).ready(function() {
     $(".sidebar__item").click(function( e ) {
       e.stopPropagation();	
       $(this).find('.sidebar__submenu-list').slideToggle(400);     	
-    }); 
-    
+    });   
   
   })
 

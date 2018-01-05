@@ -186,4 +186,24 @@ $icon-font-path: '../fonts/';
 			flex-wrap: wrap;	
 		}
 	}
+
+	//main-menu-page
+
+	.main-menu-page {
+
+        .sortable {
+
+            &__title-block {
+                font-size: 13px;
+			}
+			
+			&__item {
+				padding: 20px 10px;
+
+				.icon-drop-icon {
+					margin-right: 10px;
+				}
+			}
+        }
+    }
 }

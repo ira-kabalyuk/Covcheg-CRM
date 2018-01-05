@@ -1,0 +1,70 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.main-menu-page {
+
+    .content {
+        position: relative;
+    }
+
+    .sortable {
+
+        &__list {
+            //border-right: 1px solid $light-gray;
+            width: 33.3%;
+
+            &:before {
+                content:"";
+                width: 1px;
+                height: calc(100% - 120px);
+                background: $light-gray;
+                display: block;
+                position: absolute;
+                top: 120px;
+                right:66.6%;
+            }
+            
+
+            &:after {
+                content:"";
+                width: 1px;
+                height: calc(100% - 120px);
+                background: $light-gray;
+                display: block;
+                position: absolute;
+                top: 120px;
+                right: 33.3%;
+            }
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+
+        &__item {
+            min-height: 50px;
+
+            &:hover {
+               outline: 1px solid #acacac;
+            }
+        }
+
+        &__head {
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 10px;
+            min-height: 30px;
+        }
+
+    }
+}
+
+
+.drop-placeholder {
+    background: #f7f7f7;
+    border: 1px dashed #c2c2c2;
+    height: 60px;
+    width: 100%;
+    margin: 20px 0;
+}

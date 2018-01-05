@@ -57,4 +57,16 @@ $icon-font-path: '../fonts/';
             width: calc(50% - 30px);
         }
     }
+
+    //main-menu-page
+
+    .main-menu-page {
+
+        .sortable {
+
+            &__title-block {
+                font-size: 14px;
+            }
+        }
+    }
 }
