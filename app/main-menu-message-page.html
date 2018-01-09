@@ -1,0 +1,96 @@
+{% extends "template-width-swipe.html" %}	
+
+{% block content %}	
+
+<main class="main-menu-page page-width-sidebar">
+		<div class="content-wrap flex">
+				{% include "sidebar.html" %}
+			<div class="content col">
+					<div class="title-block title-braun">
+							<p class="title">Уведомления</p>  
+							<button class="button red trans">Сохранить</button> 
+					</div>
+					<ul class="breadcrumbs__list brd-bottom">
+							<li class="breadcrumbs__item">								
+								<a href="">Настройки</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a href="">Основные натсройки</a>
+							</li>						
+						</ul>						
+						<div class="setting__table-wrap">
+							<table class="settings__table">
+                                <thead>
+                                    <tr>
+                                        <th>Событие</th>
+                                        <th>E-mail</th>
+                                        <th>Телеграм</th>
+                                        <th>Система</th>
+                                        <th>Браузер</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                       <td class="settings__table-title">Новое сообщение чата</td>
+                                       <td>
+                                           <label class="control control--checkbox">
+                                            <input type="checkbox" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                          </label>
+                                        </td>
+                                       <td>
+                                            <label class="control control--checkbox">
+                                            <input type="checkbox" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                            </label>
+                                       </td>
+                                       <td>
+                                            <label class="control control--checkbox">
+                                            <input type="checkbox" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                            </label>
+                                       </td>
+                                       <td>
+                                            <label class="control control--checkbox">
+                                            <input type="checkbox" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                            </label>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                            <td>Входящий звонок</td>
+                                            <td>
+                                                <label class="control control--checkbox">
+                                                 <input type="checkbox" checked="checked"/>
+                                                 <div class="control__indicator"></div>
+                                               </label>
+                                             </td>
+                                            <td>
+                                                 <label class="control control--checkbox">
+                                                 <input type="checkbox" checked="checked"/>
+                                                 <div class="control__indicator"></div>
+                                                 </label>
+                                            </td>
+                                            <td>
+                                                 <label class="control control--checkbox">
+                                                 <input type="checkbox" checked="checked"/>
+                                                 <div class="control__indicator"></div>
+                                                 </label>
+                                            </td>
+                                            <td>
+                                                 <label class="control control--checkbox">
+                                                 <input type="checkbox" checked="checked"/>
+                                                 <div class="control__indicator"></div>
+                                                 </label>
+                                            </td>
+                                         </tr>
+                                </tbody>
+                            </table>	   
+						</div>				
+			</div>
+		</div>
+</main>
+
+{% endblock %} 
+
+	

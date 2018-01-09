@@ -46,6 +46,10 @@ $icon-font-path: '../fonts/';
                 font-weight: 700;
             }
         }
+
+        .pointer_bottom {
+            margin-top: -3px;
+        }
     }
 
     &__submenu-list {
@@ -58,6 +62,24 @@ $icon-font-path: '../fonts/';
         color: $blue;
         cursor: pointer;
         padding: 10px 20px;
+
+        &.active {
+           font-weight: 700;
+           position: relative; 
+
+           &:after {
+               content: "";
+               width: 5px;
+               height: 5px;
+               display: inline-block;
+               border-radius: 50%;
+               background: $blue;
+               position: absolute;
+               top: 50%;
+               margin-top: -3px;
+               left: 5px;
+           }
+        }
     }
   
 }
