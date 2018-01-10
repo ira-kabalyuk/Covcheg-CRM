@@ -69,4 +69,19 @@ $icon-font-path: '../fonts/';
             }
         }
     }
+
+    .settings {
+
+        &__table {
+
+            th {
+                padding: 11px 20px;
+                font-size: 1rem;               
+            }
+
+            td {
+               padding: 11px 20px; 
+            }
+        }
+    }
 }

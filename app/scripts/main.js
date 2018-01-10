@@ -421,6 +421,14 @@ $(document).ready(function() {
       e.stopPropagation();	
       $(this).find('.sidebar__submenu-list').slideToggle(400);     	
     });   
+
+
+    // Биндинг событий для стандартных елементов UI
+    $("body").on("click",'[data-action="toggle"]',function(e){
+          e.stopPropagation();
+          var target=$(this).data('target');
+          $(target).slideToggle(400);
+        });
   
   })
 
