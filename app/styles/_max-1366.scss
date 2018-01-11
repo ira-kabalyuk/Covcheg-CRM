@@ -18,4 +18,16 @@ $icon-font-path: '../fonts/';
             }
         }
     }
+
+    .sidebar {
+        width: 220px;
+        flex-basis: 220px;
+    }
+
+    .page-width-sidebar {
+
+        .content {
+            width: calc(100% - 220px);
+        }
+    }
 }

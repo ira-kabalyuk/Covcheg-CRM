@@ -334,9 +334,9 @@ $icon-font-path: '../fonts/';
 input[type="checkbox"].switch + div {
 	vertical-align: middle;
 	width: 40px;	height: 20px;
-	border: 1px solid $green;
+	border: 1px solid #dddddd;
 	border-radius: 999px;
-	background-color: $green;
+	background-color: #dddddd;
 	transition-duration: .4s;
 	transition-property: background-color, box-shadow;
 	
@@ -356,8 +356,8 @@ input[type="checkbox"].bigswitch.switch + div {
 
 /* Green Track */
 input[type="checkbox"].green.switch:checked + div {
-	background-color: #dddddd;
-	border: 1px solid #dddddd;
+	background-color: $green;
+	border: 1px solid $green;
 	
 }
 
@@ -374,18 +374,19 @@ input[type="checkbox"].switch + div > div {
 	
 	pointer-events: none;
 	margin-top: 1px;
-    margin-left: 1px;
-    
-    transform: translate3d(20px, 0, 0);
-	transform: translate3d(27px, 0, 0);
+    margin-left: 1px;   
+   
+
+    transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	background-color:#fff;
+	//box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(8, 80, 172,1);    
 }
 
 /* Checked Knob (Blue Style) */
 input[type="checkbox"].switch:checked + div > div {
-	transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-	background-color:#fff;
-	//box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(8, 80, 172,1);
+    transform: translate3d(20px, 0, 0);
+    transform: translate3d(27px, 0, 0);
 }
 
 
@@ -713,4 +714,13 @@ input[type="checkbox"].bigswitch.switch + div > div {
     i {
         margin-left: 0;
      }
+}
+
+.switsh-label {
+    display: flex;
+    align-items: center;
+
+    label {
+        margin-left: 20px;
+    }
 }

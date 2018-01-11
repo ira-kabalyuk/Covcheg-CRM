@@ -84,4 +84,34 @@ $icon-font-path: '../fonts/';
             }
         }
     }
+
+    .main-menu {
+
+        &__col-list {
+            flex-direction: column;
+        }
+
+        &__col-item {
+            width: 100%;
+        }
+    }
+
+    .main-menu-page {
+
+        .main-form {
+            flex-direction: column;
+            
+            &__column_1 {
+                width: calc(100% - 20px - 200px);  
+               
+                &:last-child {
+                    margin: -15px 10px 10px 10px;
+                }
+
+                &.thin {
+                    width: calc(200px - 20px); 
+                }
+            }
+        }
+    }
 }

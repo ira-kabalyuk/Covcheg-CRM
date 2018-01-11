@@ -36,8 +36,34 @@ $icon-font-path: '../fonts/';
             width: 19px;
             flex-basis: 19px;
             flex-shrink: 0;
-        }
+        }      
         
+    }
+
+    &__wrap {
+        display: flex;
+        margin: 0 -7px;
+        width: calc(100% + 14px);
+
+        .input-wrap {
+            width: calc(30% - 14px);
+            flex-basis: calc(30% - 14px);
+            margin: 0 7px;
+            align-items: center;
+            
+            span {
+                font-size: 1rem;
+                margin-top: 2px;
+            }
+        }
+
+        .sortable__tools-block {
+            width: 30px;
+            flex-basis: auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
     }
 
     &__tools-block {
@@ -64,5 +90,18 @@ $icon-font-path: '../fonts/';
 
     &__name {
         font-size: 14px;       
+    }
+
+    &__title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    &__body {
+        width: 100%;
     }
 }

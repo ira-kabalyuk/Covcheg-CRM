@@ -5,7 +5,7 @@ $icon-font-path: '../fonts/';
 .main-menu-page {
 
     .content {
-        position: relative;
+        position: relative;      
     }
 
     .sortable {
@@ -58,6 +58,11 @@ $icon-font-path: '../fonts/';
         }
 
     }
+
+    .main-form {
+        padding: 0 30px;   
+        width: auto;    
+    }
 }
 
 
@@ -74,6 +79,75 @@ $icon-font-path: '../fonts/';
     &__list {
         width: 33.3%;
         padding: 20px 30px;
+    }
+
+    &__row-list {
+        display: flex;
+        padding: 20px 10px;       
+        flex-wrap: wrap;
+
+        .input-wrap,
+        .switch-wrap {
+            width: calc(33.3% - 40px);
+           flex-basis: calc(33.3% - 40px);
+           flex-grow: 0;
+            margin: 0 20px 20px 20px;
+        }
+    }
+
+    &__col-list {
+        display: flex;
+       
+    }
+
+    &__col-item {
+        width: 50%;
+
+        .dable-input-wrap {
+            flex-wrap: nowrap;
+
+            .nice-select {
+                width: 44%;
+            }
+        }
+        
+        .sortable__item {
+            flex-wrap: wrap;
+
+            &:hover {
+                outline: none;
+            }
+        }
+    }
+
+    &__col-item-block {
+        display: flex;
+
+        .input-wrap {
+            margin-bottom: 0;
+            width: 45%;
+            margin-right: 15px;
+        }        
+
+    }
+
+    &__col-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        background: #595959;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+
+        &.last {
+            background: #454545;            
+        }
+    }
+
+    &__col-item-wrap {
+        padding: 30px;
     }
 }
 

@@ -1,0 +1,94 @@
+{% extends "template-width-swipe.html" %}	
+
+{% block content %}	
+
+<main class="main-menu-page page-width-sidebar">
+		<div class="content-wrap flex">
+				{% include "sidebar.html" %}
+			<div class="content col">
+					<div class="title-block title-braun">
+							<p class="title">Профиль компании</p>  
+							<button class="button red trans">Сохранить</button> 
+					</div>
+					<ul class="breadcrumbs__list brd-bottom">
+							<li class="breadcrumbs__item">								
+								<a href="">Настройки</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a href="">Основные натсройки</a>
+							</li>						
+						</ul>
+												
+						<div class="element-wrap">
+								<p class="main-form__title">Данные компании</p>						
+								<form action="" class="main-form w-1030px">									
+										<div class="main-form__column_1 thin">
+												<div class="input-wrap dz-clickable" id="fall">	
+													<div class="drop-button-wrap">
+														<button type="button" class="button green-border trans">Загрузить логотип</button>
+													</div>
+												</div>
+										</div>
+										<div class="main-form__column_1">
+											<div class="input-wrap">
+													<label for="" class="swipe-label">Название компании</label>
+													<input type="text" class="swipe-input">					
+											</div>
+											<div class="input-wrap">
+													<label for="" class="swipe-label">Телефон</label>
+													<input type="text" class="swipe-input">					
+											</div>
+										
+										</div>
+										<div class="main-form__column_1">						
+												<div class="input-wrap">
+														<label for="" class="swipe-label">E-mail</label>
+														<input type="text" class="swipe-input">					
+												</div>				
+											
+											</div>															
+									</form>
+							<div class="main-menu__row-list brd-top">
+									<div class="input-wrap clearfix">
+											<label for="" class="swipe-label">Страна</label>
+											<select class="swipe-select swipe-input" ref="master">
+													<option value="0" data-display="Украина">Украина</option>
+													<option value="1">Англия</option>
+													<option value="2">США</option>
+													<option value="2">Германия</option>            
+											</select>
+									</div>
+									<div class="input-wrap clearfix">
+											<label for="" class="swipe-label">Часовой пояс</label>
+											<select class="swipe-select swipe-input" ref="master">
+													<option value="0" data-display="(GMT +4:00) Абу-Даби">(GMT +4:00) Абу-Даби</option>
+													<option value="1">(GMT +4:00)Абу-Даби</option>
+													<option value="2">(GMT +4:00)Абу-Даби</option>        
+											</select>
+									</div>
+									<div class="input-wrap clearfix">
+											<label for="" class="swipe-label">Язык</label>
+											<select class="swipe-select swipe-input" ref="master">
+													<option value="0" data-display="Русский">Русский</option>
+													<option value="1">Украинский</option>
+													<option value="2">Английский</option>        
+											</select>
+									</div>
+									<div class="input-wrap clearfix">
+											<label for="" class="swipe-label">Валюта</label>
+											<select class="swipe-select swipe-input" ref="master">
+													<option value="0" data-display="Гривна">Гривна</option>
+													<option value="1">Евро</option>
+													<option value="2">Доллар</option>        
+											</select>
+									</div>
+							</div>
+						</div>				
+							
+			</div>
+		</div>
+</main>
+
+{% endblock %} 
+
+	
