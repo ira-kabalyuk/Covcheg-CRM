@@ -48,7 +48,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-close-sm {
   background-image: url(../images/sprite.png);
-  background-position: -55px -74px;
+  background-position: -71px -74px;
   width: 10px;
   height: 10px;
 }
@@ -66,19 +66,19 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-column-gray {
   background-image: url(../images/sprite.png);
-  background-position: -81px -30px;
+  background-position: 0px -74px;
   width: 16px;
   height: 15px;
 }
 .icon-comment {
   background-image: url(../images/sprite.png);
-  background-position: -32px -74px;
+  background-position: -48px -74px;
   width: 12px;
   height: 11px;
 }
 .icon-download {
   background-image: url(../images/sprite.png);
-  background-position: -44px -74px;
+  background-position: -60px -74px;
   width: 11px;
   height: 10px;
 }
@@ -102,13 +102,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-pencil-blue {
   background-image: url(../images/sprite.png);
-  background-position: -81px -60px;
+  background-position: -32px -60px;
   width: 13px;
   height: 13px;
 }
 .icon-pencil-gray {
   background-image: url(../images/sprite.png);
-  background-position: -32px -60px;
+  background-position: -81px -60px;
   width: 13px;
   height: 13px;
 }
@@ -122,6 +122,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-image: url(../images/sprite.png);
   background-position: -81px -15px;
   width: 17px;
+  height: 15px;
+}
+.icon-pointer-right {
+  background-image: url(../images/sprite.png);
+  background-position: -16px -74px;
+  width: 16px;
   height: 15px;
 }
 .icon-pointer-top {
@@ -144,13 +150,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-table-blue {
   background-image: url(../images/sprite.png);
-  background-position: -16px -74px;
+  background-position: -32px -74px;
   width: 16px;
   height: 15px;
 }
 .icon-table-gray {
   background-image: url(../images/sprite.png);
-  background-position: 0px -74px;
+  background-position: -81px -30px;
   width: 16px;
   height: 15px;
 }

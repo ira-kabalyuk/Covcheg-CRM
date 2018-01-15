@@ -101,6 +101,7 @@ $icon-font-path: '../fonts/';
             flex-basis: 60%;
             flex-shrink: 0;
         }
+       
     }
 
     .checkbox-wrap {
@@ -113,6 +114,8 @@ $icon-font-path: '../fonts/';
            border: 1px solid $green;
         }
     }
+
+    
     
 }
 
@@ -723,4 +726,34 @@ input[type="checkbox"].bigswitch.switch + div > div {
     label {
         margin-left: 20px;
     }
+}
+
+.search-block {
+    position: relative;
+
+    .fa {
+        border: none;
+        background: transparent;
+        color: $gray;
+        position: absolute;
+        top: 50%;
+        margin-top: -7px;
+        right: 15px;
+        padding: 0;
+    }
+}
+
+.search {
+    font-size: 13px;
+    border: solid 1px $el-border-color;
+    background: $clear-blue;
+    color: $gray;
+    padding: 7px 40px 7px 16px;
+    color: $black;
+
+    &::-webkit-input-placeholder { color: $gray;}
+	&::-moz-placeholder          { color: $gray;}/* Firefox 19+ */
+	&:-moz-placeholder           { color: $gray;}/* Firefox 18- */
+	&:-ms-input-placeholder      { color: $gray;}
+
 }

@@ -30,10 +30,24 @@ $icon-font-path: '../fonts/';
 				font-size: 0.9rem;
 			}
 			
-		}
+		}		
 	}	
 
 	.table-page {
+
+		&__head {
+			
+			.button-wrap {
+				display: flex;
+				flex-direction: column;
+		
+				.button {
+					margin-left: 0;
+					margin-bottom: 10px;
+				}
+			}
+		
+		}
 
 		&__filter {
 
@@ -59,6 +73,7 @@ $icon-font-path: '../fonts/';
 		}
 	}
 
+	
 	.datepicker-block {
 
 		.datepicker-wrap {

@@ -133,9 +133,22 @@ jQuery(document).ready(function() {
   $(".js-add-salon").click(function( e ) {   
     $(".swipe-panel-12").addClass("active"); 
     $("body").addClass("mask");                    
+  });
+  
+  $(".js-add-trigger").click(function( e ) {   
+    $(".swipe-panel-13").addClass("active"); 
+    $("body").addClass("mask");                    
 	});
 	
-	
+	$(".js-new-payment").click(function( e ) {   
+    $(".swipe-panel-14").addClass("active"); 
+    $("body").addClass("mask");                    
+  });
+  
+  $(".js-new-transfer").click(function( e ) {   
+    $(".swipe-panel-15").addClass("active"); 
+    $("body").addClass("mask");                    
+	});
 
 
   //график работы

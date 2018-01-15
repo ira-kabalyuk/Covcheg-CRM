@@ -67,11 +67,13 @@ $icon-font-path: '../fonts/';
 
 
     &.blue {
-        background: $dark-blue;        
-        color: #fff;  
+        background: $blue;        
+        color: #fff;
+        border:  2px solid $blue;
 
         &:hover {
             background: rgba(59, 89, 152, 0.8);
+            border:  2px solid rgba(59, 89, 152, 0.8);
         }
     }
 
@@ -322,25 +324,31 @@ $icon-font-path: '../fonts/';
 }
 
 .look {
-
-    &.included {
+    
+    &_on .icon-on{
+        display: inline-block;
         color: $green;
-        .fa-eye-slash {
-            display: none;
-        }
-    }
+      }
+      &_off .icon-off{
+        display: inline-block;
+        color: $gray; 
+      }
+      &_on .icon-off{
+        display: none;
+      }
+      &_off .icon-on{
+        display: none;
+      }    
 
-    &.disabled {
-        color: $gray;
-        cursor: default;
-
-        .fa-eye {
-            display: none;
-        }
-    }
 }
 
+.button-wrap {
+    margin-left: 30px;
 
+    .button {
+        margin-left: 10px;
+    }
+}
 
 @media only screen and (max-width: 1260px) {
     .button {

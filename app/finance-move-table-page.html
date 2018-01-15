@@ -1,0 +1,223 @@
+{% extends "template-width-swipe.html" %}	
+
+{% block content %}	
+
+<main class="finance-move-page">
+	<div class="tools">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<i class="fa fa-home" aria-hidden="true"></i>
+				<a href="">Главная</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<a href="">Движение средств</a>
+			</li>			
+		</ul>
+		
+	</div>
+
+	<div class="table-page">
+		<div class="table-page__head">
+				<div class="table-page__head_left">	
+					<h1 class="title">Движение средств</h1>
+					<div class="button-wrap">
+						<button class="button green trans js-new-payment">Новый платеж</button>
+						<button class="button blue trans js-new-transfer">Перевод средств</button>
+						<button class="button braun trans">Приход</button>
+					</div>                   
+				</div>
+				<div class="table-page__head_right">
+					<div class="table-page__filter-nav">
+						<p class="table-page__filter-link">
+							<span class="del-text">- Свернуть фильтр</span>
+							<span class="show-text">+ Показать фильтр</span>							
+						</p>
+						<div class="page-filter-wrap">
+							<span class="page-filter-name">Показывать по:</span>
+							<select class="swipe-select">
+									<option data-display="10">10</option>
+									<option value="1">20</option>
+									<option value="2">30</option>									
+									<option value="4">40</option>
+								</select>
+						</div>
+					</div>
+				</div>			
+		</div>
+		<div class="filter-wrap">
+			<div class="table-page__filter">
+				
+				<div class="table-page__filter-top-block">
+						<div class="datepicker-block">
+								<label for="" class="swipe-label">Дата регистрации</label>
+								<div class="datepicker-wrap">							
+										<input type="text" class="swipe-input datepicker-1 input-1" placeholder="16.11.2017">                    
+										<i class="icon icon-calendar form-calendar-button datepicker-1" aria-hidden="true"></i>
+								</div>
+								<span class="tire">-</span>
+								<div class="datepicker-wrap">
+										<input type="text" class="swipe-input datepicker-2 input-2" placeholder="16.11.2017">                    
+										<i class="icon icon-calendar form-calendar-button datepicker-2" aria-hidden="true"></i>
+								</div>
+						</div>
+						<div class="input-wrap clearfix">
+								<label for="" class="swipe-label">Вид платежей</label>
+								<select class="swipe-select swipe-input" ref="master">
+										<option value="0" data-display="Выберите вид платежей">Выберите вид платежей</option>                       
+										<option value="2">вид 1</option>
+										<option value="2">вид 2</option>
+										<option value="2">вид 3</option>        
+								</select>
+							</div> 	
+							<div class="input-wrap clearfix">
+									<label for="" class="swipe-label">Контрагент</label>
+									<select class="swipe-select swipe-input" ref="master">
+											<option value="0" data-display="Выберите контрагента">Выберите контрагента</option>                       
+											<option value="2">Контрагент-1</option>
+											<option value="2">Контрагент-2</option>
+											<option value="2">Контрагент-3</option>        
+									</select>
+								</div>
+						</div>
+						<div class="table-page__filter-top-block">
+								<div class="input-wrap clearfix">
+										<label for="" class="swipe-label">Касса</label>
+										<select class="swipe-select swipe-input" ref="master">
+												<option value="0" data-display="Выберите кассу">Выберите кассу</option>                       
+												<option value="2">Касса-1</option>
+												<option value="2">Касса-2</option>
+												<option value="2">Касса-3</option>        
+										</select>
+									</div>
+									<div class="input-wrap clearfix">
+											<label for="" class="swipe-label">Статья</label>
+											<select class="swipe-select swipe-input" ref="master">
+													<option value="0" data-display="Выберите статью">Выберите статью</option>                       
+													<option value="2">Статья-1</option>
+													<option value="2">Статья-2</option>
+													<option value="2">Статья-3</option>        
+											</select>
+										</div>
+										<div class="input-wrap clearfix">
+												<label for="" class="swipe-label">Сотрудник</label>
+												<select class="swipe-select swipe-input" ref="master">
+														<option value="0" data-display="Выберите кассу">Выберите сотрудника</option>                       
+														<option value="2">Вязьмитинова Наталья</option>
+														<option value="2">Иванченко Марина</option>
+														<option value="2">Петренко Екатерина</option>        
+												</select>
+											</div>
+											<div class="input-wrap clearfix">
+													<label for="" class="swipe-label">Статус</label>
+													<select class="swipe-select swipe-input" ref="master">
+															<option value="0" data-display="Выберите статус">Статус 1</option>                       
+															<option value="2">Статус-2</option>
+															<option value="2">Статус-3</option>
+															<option value="2">Статус-4</option>        
+													</select>
+												</div>
+									</div>
+							<div class="table-page__filter-top-block">				 	
+								<div class="input-wrap">
+										<label for="" class="swipe-label">Поиск клиента</label>
+										<input type="text" class="swipe-input">					
+								</div>
+								<div class="input-wrap">
+										<label for="" class="swipe-label">Поиск по номеру документа</label>
+										<input type="text" class="swipe-input">					
+								</div>
+								<div class="input-wrap">
+										<label for="" class="swipe-label">Поиск по названию товара/услуги</label>
+										<input type="text" class="swipe-input">					
+								</div>
+								<div class="input-wrap filter-button-block">
+										<button class="button braun trans">Применить</button>
+										<button class="button gray-border trans">Сброс</button>
+								</div>						
+							</div>
+						</div>	
+			<div class="table-page__filter-select">
+					<span class="swipe-label">Шаблон фильтра:</span>
+					<div class="input-wrap">
+							<select class="swipe-select" data-placeholder="Короленко Фильтр-1" ref="master">
+									<option value="0">Петрова Фильтр-1</option>
+									<option value="21">Короленко Фильтр-2</option>
+									<option value="8">Короленко Фильтр-3</option>
+									<option value="9">Короленко Фильтр-4</option>									
+							</select>
+					</div>
+					<div class="button-wrap">
+							<button class="panel-redact braun-bg"><i class="icon icon-pencil-white"></i></button>
+							<button class="panel-save braun-bg"><i class="icon icon-save-white"></i></i></button>
+					</div>
+			</div>
+		</div>
+		<div class="schedule__body">
+			<table class="schedule__content-column white">
+				<thead class="schedule__content-column-head">
+					<tr>
+						<th class="w-15pr">Дата</th>
+						<th class="">Тип</th>
+						<th class="w-10pr">Контрагент</th>
+						<th class="">Назначение</th>
+						<th class="">Касса</th>
+						<th class="">Комент</th>
+						<th class="w-10pr">Автор</th>
+						<th class="">Cумма</th>
+						<th class="">Остаток</th>
+						<th class="w-15pr">Услуга/товар</th>
+						<th class="">Статус</th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr>
+							<td class=""><i class="icon icon-pointer-bottom"></i> 17.12.18 <span>10:45</span></td>
+							<td class=""></i>Приход</td>
+							<td class="">Вязьмитинова Наталья</td>
+							<td class="">Оплата услуги</td>
+							<td class="">Терминал Privat-bank</td>
+							<td class="">Комент</td>
+							<td class="">Ярослава Даценко</td>
+							<td class="red-text">1300</td>
+							<td class="bold">8300</td>
+							<td class="">Услуга/товар</td>
+							<td class="">12</td>
+						</tr>
+						<tr>
+								<td class=""><i class="icon icon-pointer-top"></i> 17.12.18 <span>10:45</span></td>
+								<td class=""></i>Расход</td>
+								<td class="">Петрова Ирина</td>
+								<td class="">Оплата услуги</td>
+								<td class="">Касса Privat-bank</td>
+								<td class="">Комент</td>
+								<td class="">Маргарита Кравцова</td>
+								<td class="green-text">25000</td>
+								<td class="bold">50000</td>
+								<td class="">Услуга/товар</td>
+								<td class="">124</td>
+							</tr>
+							r>
+								<td class=""><i class="icon icon-pointer-right"></i> 17.12.18 <span>10:45</span></td>
+								<td class=""></i>Перевод</td>
+								<td class="">Петрова Ирина</td>
+								<td class="">Оплата услуги</td>
+								<td class="">Касса Privat-bank</td>
+								<td class="">Комент</td>
+								<td class="">Маргарита Кравцова</td>
+								<td class="green-text">25000</td>
+								<td class="bold">50000</td>
+								<td class="">Услуга/товар</td>
+								<td class="">124</td>
+							</tr>
+				</tbody>
+			</table>
+			{% include "paging.html" %}
+		</div>
+		
+	</div>
+
+</main>
+
+{% endblock %} 
+
+	

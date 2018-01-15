@@ -69,8 +69,12 @@ body {
 	}
 }
 
-.brd-top {
+&.brd-top {
 	border-top: 1px solid $light-gray;
+}
+
+&.brd-bot {
+	border-bottom: 1px solid $light-gray;
 }
 
 

@@ -34,14 +34,27 @@ $icon-font-path: '../fonts/';
             position: relative;
         }
 
-        &_right {
+        &_wrap {
+            display: flex;
+            align-items: center;
 
+            .search-block {
+                margin-right: 30px;
+            }
         }
 
         .button-block {              
             
             .button {
                 margin-left: 10px;
+            }
+        }
+
+        .button-wrap {
+            margin-left: 30px;
+        
+            .button {
+                margin-left: 5px;
             }
         }
     }
@@ -96,7 +109,7 @@ $icon-font-path: '../fonts/';
 
         &-top-block {
             display: flex;
-            align-items: flex-start;
+            align-items: flex-end;
             flex-wrap: wrap;           
             margin: 0 -10px;
             
@@ -107,7 +120,7 @@ $icon-font-path: '../fonts/';
                 margin: 15px 10px;
                 flex-basis: calc(25% - 20px);   
                 width: calc(25% - 20px);            
-                flex-grow: 1;
+               // flex-grow: 1;
 
                 .swipe-input  {
                     padding: 11px 10px;
@@ -118,7 +131,7 @@ $icon-font-path: '../fonts/';
                 margin: 15px 10px;
                 flex-basis: calc(25% - 20px);
                 width: calc(25% - 20px);
-                flex-grow: 1;
+               // flex-grow: 1;
                 //margin-bottom: 0;                
             }
 
