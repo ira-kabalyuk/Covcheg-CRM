@@ -16,6 +16,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+.icon-blue-pointer-right {
+  background-image: url(../images/sprite.png);
+  background-position: -19px -60px;
+  width: 16px;
+  height: 11px;
+}
 .icon-calendar-gray {
   background-image: url(../images/sprite.png);
   background-position: -60px -23px;
@@ -46,9 +52,15 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 30px;
   height: 30px;
 }
+.icon-case-green {
+  background-image: url(../images/sprite.png);
+  background-position: -81px -30px;
+  width: 17px;
+  height: 15px;
+}
 .icon-close-sm {
   background-image: url(../images/sprite.png);
-  background-position: -71px -74px;
+  background-position: -35px -60px;
   width: 10px;
   height: 10px;
 }
@@ -60,25 +72,31 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-column-blue {
   background-image: url(../images/sprite.png);
-  background-position: -81px -45px;
+  background-position: -16px -74px;
   width: 16px;
   height: 15px;
 }
 .icon-column-gray {
   background-image: url(../images/sprite.png);
-  background-position: 0px -74px;
+  background-position: -32px -74px;
   width: 16px;
   height: 15px;
 }
 .icon-comment {
   background-image: url(../images/sprite.png);
-  background-position: -48px -74px;
+  background-position: -98px -63px;
   width: 12px;
   height: 11px;
 }
+.icon-cros-top {
+  background-image: url(../images/sprite.png);
+  background-position: -81px 0px;
+  width: 17px;
+  height: 15px;
+}
 .icon-download {
   background-image: url(../images/sprite.png);
-  background-position: -60px -74px;
+  background-position: -98px -74px;
   width: 11px;
   height: 10px;
 }
@@ -88,51 +106,57 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 19px;
   height: 14px;
 }
+.icon-gal-top {
+  background-image: url(../images/sprite.png);
+  background-position: -81px -60px;
+  width: 17px;
+  height: 14px;
+}
 .icon-l-close-gray {
   background-image: url(../images/sprite.png);
-  background-position: -69px -60px;
+  background-position: -98px -39px;
   width: 12px;
   height: 12px;
 }
 .icon-l-close-red {
   background-image: url(../images/sprite.png);
-  background-position: -57px -60px;
+  background-position: -98px -51px;
   width: 12px;
   height: 12px;
 }
 .icon-pencil-blue {
   background-image: url(../images/sprite.png);
-  background-position: -32px -60px;
+  background-position: -98px -13px;
   width: 13px;
   height: 13px;
 }
 .icon-pencil-gray {
   background-image: url(../images/sprite.png);
-  background-position: -81px -60px;
+  background-position: -80px -74px;
   width: 13px;
   height: 13px;
 }
 .icon-pencil-white {
   background-image: url(../images/sprite.png);
-  background-position: -19px -60px;
+  background-position: -98px 0px;
   width: 13px;
   height: 13px;
 }
 .icon-pointer-bottom {
   background-image: url(../images/sprite.png);
-  background-position: -81px -15px;
+  background-position: -81px -45px;
   width: 17px;
   height: 15px;
 }
 .icon-pointer-right {
   background-image: url(../images/sprite.png);
-  background-position: -16px -74px;
+  background-position: -48px -74px;
   width: 16px;
   height: 15px;
 }
 .icon-pointer-top {
   background-image: url(../images/sprite.png);
-  background-position: -81px 0px;
+  background-position: -81px -15px;
   width: 17px;
   height: 15px;
 }
@@ -144,19 +168,19 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-save-white {
   background-image: url(../images/sprite.png);
-  background-position: -45px -60px;
+  background-position: -98px -26px;
   width: 12px;
   height: 13px;
 }
 .icon-table-blue {
   background-image: url(../images/sprite.png);
-  background-position: -32px -74px;
+  background-position: -64px -74px;
   width: 16px;
   height: 15px;
 }
 .icon-table-gray {
   background-image: url(../images/sprite.png);
-  background-position: -81px -30px;
+  background-position: 0px -74px;
   width: 16px;
   height: 15px;
 }

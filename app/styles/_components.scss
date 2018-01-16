@@ -78,6 +78,10 @@ $icon-font-path: '../fonts/';
     vertical-align: top;
 }
 
+.pink-bg {
+    background: #fff1f1;
+}
+
 
 .avatar {
     width: 30px;
@@ -521,6 +525,15 @@ $icon-font-path: '../fonts/';
 
     &.fend {
         justify-content: flex-end;
+    }
+
+    &.aife {
+        align-items: flex-end;
+    }
+
+    .plus-icon {
+        font-size: 30px;
+        font-style: normal;
     }
 
     .shut {

@@ -148,6 +148,11 @@ jQuery(document).ready(function() {
   $(".js-new-transfer").click(function( e ) {   
     $(".swipe-panel-15").addClass("active"); 
     $("body").addClass("mask");                    
+  });
+  
+  $(".js-add-com").click(function( e ) {   
+    $(".swipe-panel-16").addClass("active"); 
+    $("body").addClass("mask");                    
 	});
 
 

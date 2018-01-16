@@ -34,6 +34,13 @@ $icon-font-path: '../fonts/';
             position: relative;
         }
 
+        &_right {
+            width: 390px;
+            flex-basis: 390px;
+            flex-shrink: 0;
+            margin-left: 10px;
+        }
+
         &_wrap {
             display: flex;
             align-items: center;
@@ -54,7 +61,7 @@ $icon-font-path: '../fonts/';
             margin-left: 30px;
         
             .button {
-                margin-left: 5px;
+                margin: 5px 0 5px 5px;;
             }
         }
     }

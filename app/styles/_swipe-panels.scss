@@ -145,7 +145,7 @@ $icon-font-path: '../fonts/';
             }
 
             &.horisontal {
-                
+
                 .checkbox-wrap {
                     width: auto;
                 }
@@ -771,6 +771,87 @@ $icon-font-path: '../fonts/';
         &.horisontal {
             padding-bottom: 10px;
         }
+    }
+}
+
+.swipe-table {
+    width: 100%;
+    table-layout: fixed; 
+    
+    &__footer {
+        font-weight: 700;
+        font-size: 16px;
+    }
+    
+    thead {        
+
+        tr {
+            border-top: 1px solid $gray;
+            border-bottom: 1px solid $gray; 
+        }
+        
+    }
+
+    tbody {
+
+        tr {
+            border-bottom: 1px solid $light-blue;   
+        }
+    }
+
+    th {
+        padding: 12px 10px 12px 0;
+        color: $gray;
+        font-weight: 400;
+        vertical-align: middle;
+
+        &:last-child {
+            text-align: right;
+            padding-right: 0;
+        }
+
+        &.unit {
+            text-align: center;
+        }
+       
+    }
+
+    td {
+        padding: 12px 10px 12px 0;
+        vertical-align: middle;
+      
+
+        .input-wrap {
+            margin-bottom: 0;
+        }
+
+        .panel-close {
+            margin-left: 15px;
+        }
+
+        .price {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        &.unit {
+            text-align: center;
+        }
+
+        &:last-child {
+            text-align: right;
+            padding-right: 0;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            
+            .icon {
+                margin-right: 10px;
+            }
+        }
+        
     }
 }
 
