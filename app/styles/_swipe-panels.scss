@@ -110,6 +110,8 @@ $icon-font-path: '../fonts/';
                 width: 45%;
                 margin-right: 0;               
             }
+
+            
     
         }
 
@@ -159,6 +161,23 @@ $icon-font-path: '../fonts/';
         &.gray-bg {
             background: #f0f0f0;
         }
+
+        .row-wrap {
+            display: flex;
+            width: 100%;
+
+            .datepicker-block {
+              margin: 0 20px 20px 0;
+              width: 45%;
+            }
+        
+            .datepicker-wrap {
+                width: 100%;
+                
+            }
+            
+        }
+        
     }
 
     &__data-block {
@@ -526,7 +545,7 @@ $icon-font-path: '../fonts/';
             width: calc(50% - 22px);
             margin: 0 10px;
         }
-		}
+	}
 		
 		.dable-input-wrap {
 			justify-content: flex-start;
@@ -548,7 +567,16 @@ $icon-font-path: '../fonts/';
 
 		&__column {
 			margin: 0 30px; 
-			width: calc(50% - 60px);
+            width: calc(50% - 60px);
+            
+            .button-wrap {
+                margin-top: 0;
+            }
+
+            .button {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
 		}
 }
 
@@ -777,6 +805,7 @@ $icon-font-path: '../fonts/';
 .swipe-table {
     width: 100%;
     table-layout: fixed; 
+    margin-bottom: 20px;
     
     &__footer {
         font-weight: 700;
@@ -796,6 +825,10 @@ $icon-font-path: '../fonts/';
 
         tr {
             border-bottom: 1px solid $light-blue;   
+
+            &:last-child {
+                border-bottom: none;
+            }
         }
     }
 
@@ -852,6 +885,60 @@ $icon-font-path: '../fonts/';
             }
         }
         
+    }
+}
+
+.swipe-bg-block {
+    margin-top: 30px;   
+    width: 100%;
+
+    &__head {
+        background: #595959;  
+        color: #fff; 
+        display: flex;
+       align-items: center;
+        font-size: 15px;
+        width: 100%;
+        justify-content: space-between; 
+        height: 50px; 
+        
+        span {
+            padding: 0 30px;
+        }
+    }
+
+    &__close {
+        background:$braun-bg;
+        color: $braun;
+        width: 60px;
+        height: 100%;      
+        flex-basis: 60px;        
+        flex-shrink: 0;       
+        display: flex;       
+        justify-content: center;       
+        align-items: center;
+        cursor: pointer;
+        
+    }
+
+    .swipe-form {        
+
+        &__column-wrap {
+            background: #f3f3f3;
+            width: 100%;
+            margin: 0;
+        }
+
+        &__column {
+            padding: 30px 0;
+
+          
+        }
+    }
+
+    .swipe-input,
+    .swipe-select {
+        background: #fff;
     }
 }
 

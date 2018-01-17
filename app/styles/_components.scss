@@ -523,6 +523,10 @@ $icon-font-path: '../fonts/';
         justify-content: space-between;
     }
 
+    &.fest {
+        justify-content: flex-start;
+    }
+
     &.fend {
         justify-content: flex-end;
     }
@@ -531,8 +535,12 @@ $icon-font-path: '../fonts/';
         align-items: flex-end;
     }
 
+    &.aifs {
+        align-items: flex-start;
+    }
+
     .plus-icon {
-        font-size: 30px;
+        font-size: 16px;
         font-style: normal;
     }
 

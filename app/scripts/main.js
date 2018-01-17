@@ -153,8 +153,26 @@ jQuery(document).ready(function() {
   $(".js-add-com").click(function( e ) {   
     $(".swipe-panel-16").addClass("active"); 
     $("body").addClass("mask");                    
+  });
+  
+  $(".js-add-move").click(function( e ) {   
+    $(".swipe-panel-17").addClass("active"); 
+    $("body").addClass("mask");                    
+  });
+  
+  $(".js-add-write-off").click(function( e ) {   
+    $(".swipe-panel-18").addClass("active"); 
+    $("body").addClass("mask");                    
+  });
+  
+  $(".js-add-inventory").click(function( e ) {   
+    $(".swipe-panel-19").addClass("active"); 
+    $("body").addClass("mask");                    
 	});
 
+
+
+  
 
   //график работы
 
