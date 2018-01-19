@@ -168,9 +168,12 @@ jQuery(document).ready(function() {
   $(".js-add-inventory").click(function( e ) {   
     $(".swipe-panel-19").addClass("active"); 
     $("body").addClass("mask");                    
+  });
+  
+  $(".js-add-services").click(function( e ) {   
+    $(".swipe-panel-20").addClass("active"); 
+    $("body").addClass("mask");                    
 	});
-
-
 
   
 

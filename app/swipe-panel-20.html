@@ -1,0 +1,164 @@
+<!--новая услуга-->
+<div class="swipe-panel swipe-panel-20 h100 w800">
+		<div class="swipe-panel__header">
+				<div class="swipe-panel__title-block">
+					<p class="swipe-panel__title">
+					Новая услуга
+					</p>			
+				</div>
+				<div class="swipe-panel__close-block">
+						<i class="icon icon-close" aria-hidden="true"></i>
+				</div>	
+		</div>
+		<div class="swipe-panel__body">			
+				
+				<form action="" class="swipe-form">
+					<div class="swipe-form__column-wrap aifs">
+						<div class="swipe-form__column">
+								<div class="alert alert-warning">
+										<i class="fa fa-info-circle" aria-hidden="true"></i>
+										<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+										<span>При добавлении записи необходимо соблюдать орфографию</span>
+								</div>							
+								<div class="input-wrap clearfix">
+										<label for="" class="swipe-label">Группа</label>
+										<select class="swipe-select" ref="master">
+												<option value="0" data-display="Выберите группу">Брови</option>
+												<option value="1">Ресницы</option>
+												<option value="2">Ногти</option>        
+										</select>
+								</div>
+								<div class="input-wrap clearfix">
+										<label for="" class="swipe-label">Название</label>
+										<input type="text" class="swipe-input">
+									</div>
+								<div class="input-wrap">
+										<label for="" class="swipe-label">Продолжительность минут</label>
+										<div class="counter-wrap clearfix">
+												<a class="triangle-top"><i class="pointer_top"></i></a>
+												<input type="text" value="0" class="counter tc swipe-input" name="set" placeholder="50">
+												<a class="triangle-bottom"><i class="pointer_bottom"></i></a>
+										</div> 
+									</div>
+									<div class="input-wrap">
+											<label for="" class="swipe-label">Цены в салонах (грн)</label>
+											<div class="input-wrap horisontal">
+												<span>Lash.Moda Praga</span>
+												<input type="text" class="swipe-input sm">
+											</div>
+											<div class="input-wrap horisontal">
+												<span>Lash.Moda Kiev</span>
+												<input type="text" class="swipe-input sm">
+											</div>
+									</div>
+									<div class="switch-wrap input-wrap">
+											<span class="switsh-label">Услуга активна
+												<label>
+														<input type="checkbox" class="switch green bigswitch" checked="">
+														<div>
+																<div>
+																</div>
+														</div>
+												</label>
+											</span>
+									</div>
+									<div class="button-wrap pt30">
+											<button class="button green trans">Создать</button>
+											<button class="button gray-border trans">Отмена</button>
+									</div>
+								</div>
+								<div class="swipe-form__column gray-bg">
+										<label for="" class="swipe-label">Расходники</label>
+									<div class="settings-block b-top">
+											<div class="input-wrap clearfix">
+													<label for="" class="swipe-label">Склад</label>
+													<select class="swipe-select" ref="master">
+															<option value="0" data-display="Выберите склад">Склад 1</option>
+															<option value="1">Склад 2</option>
+															<option value="2">Склад 3</option>        
+													</select>
+											</div>
+											<div class="input-wrap clearfix">
+													<label for="" class="swipe-label">Товар</label>
+													<select class="swipe-select" ref="master">
+															<option value="0" data-display="Краски">Краски</option>
+															<option value="1">Кисти</option>
+															<option value="2">Пинцет</option>        
+													</select>
+											</div>
+											<table class="input-table">
+												<tbody>
+													<tr>
+															<td class="w-40pr">
+																	<div class="input-wrap clearfix">																	
+																			<select class="swipe-select" ref="master">
+																					<option value="0" data-display="Roventa">Roventa</option>
+																					<option value="1">Braun</option>
+																					<option value="2">Philips</option>        
+																			</select>
+																	</div>
+															</td>
+															<td class="">
+																	<div class="input-wrap clearfix">																	
+																			<input type="text" class="swipe-input" placeholder="25">
+																		</div>														
+															</td>
+															<td class="">
+																	<div class="input-wrap clearfix">																	
+																			<select class="swipe-select" ref="master">
+																					<option value="0" data-display="шт.">шт.</option>
+																					<option value="1">грн</option>
+																					<option value="2">10 шт</option>        
+																			</select>
+																	</div>
+															</td>
+															<td class="w-10pr">
+																	<button class="plus-button md green"><i class="fa fa-plus"></i></button>
+															</td>
+													</tr>
+																										
+												</tbody>
+											</table>
+											<table class="swipe-table-min">
+												<tr>
+													<td class="w-50pr">Плойка Rowenta-G555</td>
+													<td class="">1 шт</td>
+													<td class="">55 грн</td>
+													<td class="">
+															<div class="sortable__tools-block">
+																	<button class="sortable-button edit"><i class="icon icon-pencil-gray" aria-hidden="true"></i></button>
+																	<button class="sortable-button del"><i class="icon icon-close-sm" aria-hidden="true"></i></button>														
+																</div>
+													</td>
+												</tr>
+												<tr>
+														<td class="name">Плойка Rowenta-G555</td>
+														<td class="">25 шт</td>
+														<td class="">5555 грн</td>
+														<td class="">
+																<div class="sortable__tools-block">
+																		<button class="sortable-button edit"><i class="icon icon-pencil-gray" aria-hidden="true"></i></button>
+																		<button class="sortable-button del"><i class="icon icon-close-sm" aria-hidden="true"></i></button>														
+																	</div>
+														</td>
+													</tr>
+													<tr class="swipe-table-min__footer">
+														<td class="bold">Итого</td>
+														<td class=""></td>
+														<td class="bold" colspan="2">
+															25000 грн
+														</td>															
+													</tr>
+											</table>	
+									</div>				
+								</div>
+							</div>	
+						
+					</div>				
+				</form>	
+		</div>	
+	</div>
+	
+	
+	
+	

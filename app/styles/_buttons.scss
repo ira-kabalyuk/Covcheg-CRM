@@ -214,6 +214,11 @@ $icon-font-path: '../fonts/';
         background: $braun-bg;
         color: #fff;
     }
+
+    &.green-bg {
+        background: $green;
+        color: #fff;
+    }
 }
 
 .panel-redact {

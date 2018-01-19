@@ -44,6 +44,10 @@ $icon-font-path: '../fonts/';
         background: #f0f0f0;
     }
 
+    &.white-bg {
+        background: #fff;
+    }
+
     .button {
         margin-bottom: 15px;
     }
@@ -96,6 +100,7 @@ $icon-font-path: '../fonts/';
     &__body {
         padding: 30px;
         position: relative;
+        
 
         &-title {
             font-size: 18px;
@@ -568,6 +573,7 @@ $icon-font-path: '../fonts/';
 		&__column {
 			margin: 0 30px; 
             width: calc(50% - 60px);
+            position: relative;
             
             .button-wrap {
                 margin-top: 0;
@@ -577,6 +583,22 @@ $icon-font-path: '../fonts/';
                 margin-top: 0;
                 margin-bottom: 0;
             }
+
+            &.gray-bg {
+                background: transparent;
+
+                &:after {
+                    content: "";
+                    background: #f5f5f5;
+                    display: inline-block;
+                    width: calc(100% + 60px);
+                    height: calc(100% + 60px);
+                    position: absolute;
+                    top: -30px;
+                    left: -30px;
+                    z-index: -1;
+                }
+            }            
 		}
 }
 
@@ -761,7 +783,7 @@ $icon-font-path: '../fonts/';
     }
 
     &.b-bot {
-        border-top: 1px solid #c8c8c8;
+        border-bottom: 1px solid #c8c8c8;
     }
 
     &.bord {
@@ -930,15 +952,73 @@ $icon-font-path: '../fonts/';
         }
 
         &__column {
-            padding: 30px 0;
-
-          
+            padding: 30px 0;            
         }
     }
 
     .swipe-input,
     .swipe-select {
         background: #fff;
+    }
+}
+
+.h100 {
+
+    .swipe-panel {
+
+        &__body {
+            height: calc(100% - 60px);
+        }        
+    }
+
+    .swipe-form {
+        height: 100%;
+
+        &__column-wrap {
+            height: 100%;
+        }
+
+        &__column {
+           height: 100%;
+
+           .switch-wrap {
+                height: auto;
+            }
+        }
+    }
+}
+
+.swipe-table-min {
+    font-size: 13px;
+    width: 100%;
+    table-layout: fixed;
+
+    .sortable__tools-block {
+        width: auto;
+    }
+
+    .name {
+        width: 45%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }    
+
+    td {
+        padding: 7px 5px 7px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    &__footer {
+        font-weight: 700;
+        font-size: 14px;
+        border-top: 1px solid #c8c8c8;;
     }
 }
 

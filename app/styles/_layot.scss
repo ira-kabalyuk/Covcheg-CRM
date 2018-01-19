@@ -40,7 +40,7 @@ body {
 		&__list {
 			padding: 11px 30px;
 
-			&.brd-bottom {
+			&.brd-bot {
 				border-bottom: 1px solid $light-gray;
 			}
 		}
@@ -64,18 +64,12 @@ body {
 		border-top: 1px solid $light-gray;
 	}
 
-	&.brd-bottom {
+	&.brd-bot {
 		border-bottom: 1px solid $light-gray;
 	}
 }
 
-&.brd-top {
-	border-top: 1px solid $light-gray;
-}
 
-&.brd-bot {
-	border-bottom: 1px solid $light-gray;
-}
 
 .row-wrap {
 	display: flex;

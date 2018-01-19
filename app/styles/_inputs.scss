@@ -94,12 +94,22 @@ $icon-font-path: '../fonts/';
             width: 60%;
             flex-basis: 60%;
             flex-shrink: 0;
+
+            &.sm {
+                width: 40%;
+                flex-basis: 40%; 
+            }
         }
 
         .swipe-input {
             width: 60%;
             flex-basis: 60%;
             flex-shrink: 0;
+
+            &.sm {
+                width: 40%;
+                flex-basis: 40%; 
+            }
         }
        
     }
@@ -756,4 +766,29 @@ input[type="checkbox"].bigswitch.switch + div > div {
 	&:-moz-placeholder           { color: $gray;}/* Firefox 18- */
 	&:-ms-input-placeholder      { color: $gray;}
 
+}
+
+.input-table {
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 30px; 
+
+    .input-wrap {
+        margin-bottom: 0;
+    }
+
+    td {
+       padding-right: 5px;
+       vertical-align: middle;
+       
+       &:last-child {
+           padding-right: 0;
+           text-align: right;
+       }
+    }
+
+    .plus-button {
+        height: 40px;
+        width: 40px;
+    }
 }

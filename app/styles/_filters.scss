@@ -35,10 +35,28 @@ $icon-font-path: '../fonts/';
         }
 
         &_right {
-            width: 390px;
-            flex-basis: 390px;
+            //width: 390px;
+            flex-basis: 350px;
             flex-shrink: 0;
             margin-left: 10px;
+
+            .input-wrap {
+                width: 280px;
+                max-width: 280px;
+                margin-left: 20px;
+                margin-bottom: 0;
+
+                &.min {
+                    width: 120px;
+                    max-width: 120px;
+                }
+            }
+
+            .datepicker-block{
+                width: 300px;
+                max-width: 300px;               
+                margin-bottom: 0;
+            }
         }
 
         &_wrap {

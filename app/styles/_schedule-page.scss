@@ -422,6 +422,32 @@ $icon-font-path: '../fonts/';
            
         }
 
+        &-footer {
+            font-weight: 700;
+        }
+
+        &-receipt {
+            background: #e6ffe7;
+
+            td {
+
+                &:first-child {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        &-expense {
+            background: #fff1f1;
+
+            td {
+
+                &:first-child {
+                    font-weight: 700;
+                }
+            }
+        }
+
         tr {
             border-bottom: 1px solid $el-border-color;
         }
@@ -443,6 +469,10 @@ $icon-font-path: '../fonts/';
                     }
                 }
 
+            }
+
+            .icon-fin-blue {
+                margin-left: 5px;
             }
         }
 
@@ -480,7 +510,23 @@ $icon-font-path: '../fonts/';
         .sum {
             font-weight: 700;
             color: $green;
-        }        
+        }
+        
+        .time-text {
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        &.border {
+
+            tr {
+                border: none;
+            }
+
+            td {
+                border: 1px solid $el-border-color;
+            }
+        }
     }
 
     .record-block {
