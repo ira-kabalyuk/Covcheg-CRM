@@ -21,6 +21,11 @@ $icon-font-path: '../fonts/';
        background: $clear-blue;
        padding: 30px;
        text-align: center;
+
+       .logo-wrap {
+           text-align: center;
+           margin: 0 auto;
+       }
     }
 
     &__title-block {
@@ -95,13 +100,20 @@ $icon-font-path: '../fonts/';
             width: 100%;
             display: flex;
             justify-content: space-between;
+            margin-left: 0;
         }
 
         .button {
             width: 45%;
            padding: 15px;
            font-size: 1rem;
+
+           &:first-child {
+               margin-left: 0;
+           }
         }
+
+        
     }
 
     &__text {

@@ -418,6 +418,7 @@ $icon-font-path: '../fonts/';
             .img-wrap {
                 width: 136px;
                 height: 85px;
+                           
             }
            
         }
@@ -474,6 +475,12 @@ $icon-font-path: '../fonts/';
             .icon-fin-blue {
                 margin-left: 5px;
             }
+
+            .img-wrap {
+                border: 1px solid #e1e1e1;
+                width: 136px;
+                height: 85px;   
+            }
         }
 
         .pointer-wrap {
@@ -484,8 +491,10 @@ $icon-font-path: '../fonts/';
            color: $blue;
            font-weight: 700;           
            margin-bottom: 7px;
-					 display: inline-block;
-					 text-decoration: underline;
+            display: inline-block;
+            text-decoration: none;
+            display: inline;
+            border-bottom: 1px dotted $blue;
 
 					 &:hover {
 						 text-decoration: none;

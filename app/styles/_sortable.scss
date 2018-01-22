@@ -89,7 +89,8 @@ $icon-font-path: '../fonts/';
     }
 
     &__name {
-        font-size: 14px;       
+        font-size: 14px;   
+        font-weight: 700;    
     }
 
     &__title {
@@ -99,9 +100,18 @@ $icon-font-path: '../fonts/';
         font-size: 17px;
         font-weight: 700;
         margin-bottom: 20px;
+        
     }
 
     &__body {
         width: 100%;
+    }
+
+    &__title-block {
+        font-weight: 700;
+
+        span {
+            font-size: 400;
+        }
     }
 }

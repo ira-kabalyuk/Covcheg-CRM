@@ -520,46 +520,7 @@ $icon-font-path: '../fonts/';
     }
 }
 
-.table-hover-block {
-    padding: 10px 15px;
-    color: $black;
-    width: 175px;
-    background: #fff;
-    position: absolute;
-    bottom: -55px;
-    right: 0;
-    display: none;
-    z-index: 10;
 
-    &__title {
-        font-size: 1rem;
-        font-weight: 700;
-        padding-bottom: 10px;
-        border-bottom: 1px solid $light-blue;
-    }
-
-    &__item {
-        display: flex;
-        justify-content: space-between;
-        font-size: 0.9rem;
-        padding: 5px 0;
-    }
-
-    &:before {
-        content: "";
-        display: inline-block;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 10px 10px 10px;
-        border-color: transparent transparent #ffffff transparent;
-
-        position: absolute;
-        top: -10px;
-        left: 50%;
-        margin-left: -10px;
-    }
-}
 
 .button-block {
 

@@ -10,7 +10,7 @@ $icon-font-path: '../fonts/';
     &.flex {
         flex-wrap: wrap;        
         align-items: center;
-       justify-content: space-between;
+      
 
         .swipe-label {
             width: 100%;
@@ -18,10 +18,20 @@ $icon-font-path: '../fonts/';
 
         .checkbox-wrap {
             padding: 12px 0; 
-            margin-right: 10px;
+            margin-right: 20px;
+            width: calc(50% - 20px);
+            flex-basis: calc(50% - 20px);
+            flex-shrink: 0;
             
             &:last-child {
                 margin-right: 0; 
+            }
+
+            .checkbox {
+                width: 15px;
+                height: 15px;
+                flex-basis: 15px;
+                flex-shrink: 0;
             }
         }
     }
@@ -416,7 +426,7 @@ input[type="checkbox"].bigswitch.switch + div > div {
 .swipe-window {
     background: #fff;
     padding: 20px;
-    box-shadow: 0px 1px 18px 3px rgba(243,243,243,1);
+    //box-shadow: 0px 1px 18px 3px rgba(243,243,243,1);
 
     position: absolute;
     max-width: 415px;

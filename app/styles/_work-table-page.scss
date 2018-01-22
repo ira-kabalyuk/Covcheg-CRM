@@ -5,6 +5,7 @@ $icon-font-path: '../fonts/';
 .page-nav-tabs {
 	border: none;
 	display: flex;
+	background: $light-blue;
 
 	li {
 		min-width: 150px;
@@ -50,6 +51,7 @@ $icon-font-path: '../fonts/';
 		}
 
 		&:last-child {
+			border-right: none;
 
 			&.active {
 				//border-right: 1px solid $light-gray;
@@ -234,6 +236,10 @@ $icon-font-path: '../fonts/';
 	color: $red;
 }
 
+.netrale {
+	color: #707070;
+}
+
 .graph-block {
 	padding: 30px;
 	background: #fff;
@@ -274,6 +280,14 @@ $icon-font-path: '../fonts/';
 		&:first-child {
 			padding: 15px 15px 15px 0;
 			white-space: nowrap;
+		}
+	}	
+		
+	tr {
+		td,th {
+			&:last-child {
+				text-align: right;
+			}
 		}
 	}
 
@@ -381,7 +395,14 @@ $icon-font-path: '../fonts/';
 		vertical-align: middle;			
 	}
 
-	
+	tr {
+		th, td {
+
+			&:last-child {
+				text-align: right;
+			}
+		}
+	}
 }
 
 //tab 4
