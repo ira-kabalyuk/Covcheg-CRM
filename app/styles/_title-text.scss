@@ -74,5 +74,27 @@
      span {
          font-weight: 400;
      }
+
+     &__link {
+         color: $blue;
+        text-decoration: none;
+        border-bottom: 1px dotted $blue;        
+        position: relative; 
+        font-size: 16px;
+        font-weight: 700;       
+
+        &:hover {
+            text-decoration: none;
+            color: $blue;
+        }
+
+        .pointer_bottom {
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            margin-top: -5px;
+            right: -20px;
+        }
+     }
  }
 

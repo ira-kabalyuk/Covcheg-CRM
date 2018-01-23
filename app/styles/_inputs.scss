@@ -546,9 +546,20 @@ input[type="checkbox"].bigswitch.switch + div > div {
     height: 220px;
     background-image: url(../images/cloud-icon.png);
     background-repeat: no-repeat;
-    background-position: 50% 40%;
+    background-position: 50% 50%;
     background-color: $light-blue; 
    position: relative;
+   margin-bottom: 5px;
+
+   img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &.min {
+        height: 180px;
+    }
 }
 
 .dz-image {
@@ -556,30 +567,31 @@ input[type="checkbox"].bigswitch.switch + div > div {
     height: 180px;
     position: absolute;
     top: 0;
-    left: 0;
-    
+    left: 0;   
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
 }
 
 .drop-button-wrap {
     background: #fff;
-    position: absolute;
-    bottom: 0;
+   max-width: 305px;
     text-align: center;
     width: 100%;
     padding: 5px 0;
-   pointer-events: none;
+    cursor: pointer;
 
     .button {
-        padding: 5px 10px;
-        font-size: 12px;
+        padding: 10px;        
         background: #fff;
         width: 100%;
+        font-size: 15px;
+    }
+
+    &.min {
+        .button {
+            font-size: 12px;
+            padding: 5px 10px;
+        }
+
     }
 }
 

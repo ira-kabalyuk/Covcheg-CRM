@@ -20,12 +20,20 @@ $icon-font-path: '../fonts/';
   }
 }
 
+.main-form-wrap {
+
+    &.w-1030px {       
+        width: 1030px;
+        max-width: 1030px;
+    }
+}
+
 .main-form {
     margin: 0 -10px;
     display: flex; 
     flex-wrap: wrap;  
 
-    &.w-1030px {       
+     &.w-1030px {       
         width: 1030px;
         max-width: 1030px;
     }

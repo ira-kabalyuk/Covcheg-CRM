@@ -11,7 +11,10 @@ $icon-font-path: '../fonts/';
 
     .dz-clickable {
         max-width: 305px;
-        height: 340px;
+        height: 300px;
+        overflow: hidden;
+
+        
     }
 
     .dz-image  {

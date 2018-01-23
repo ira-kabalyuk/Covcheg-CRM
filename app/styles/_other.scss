@@ -97,7 +97,7 @@ $icon-font-path: '../fonts/';
             }
 
             td {
-				padding: 28px 15px;
+				padding: 21px 15px;
             }
         }
     }
@@ -221,4 +221,14 @@ $icon-font-path: '../fonts/';
 			}
         }
     }
+}
+
+.balance-counter-page {
+
+	.schedule {
+
+		&__body {
+			border-bottom: 1px solid #ababab;
+		}
+	}
 }

@@ -423,6 +423,22 @@ $icon-font-path: '../fonts/';
            
         }
 
+        &-subhead {
+            font-weight: 700;
+            background: #f5f5f5;
+
+            span {
+               font-weight: 700;
+               color: $green;              
+
+               i {
+                   font-weight: normal;
+                   font-style: normal;
+                   color: $black;
+               }
+            }
+        }
+
         &-footer {
             font-weight: 700;
         }
@@ -454,7 +470,7 @@ $icon-font-path: '../fonts/';
         }
 
         td {
-            padding: 28px 30px; 
+            padding: 21px 30px; 
             font-size: 15px; 
             overflow: hidden;
             vertical-align: middle;
@@ -503,6 +519,7 @@ $icon-font-path: '../fonts/';
 
         .info {
             display: block;
+            margin-top: 10px;
         }
 
         .data,

@@ -175,7 +175,10 @@ jQuery(document).ready(function() {
     $("body").addClass("mask");                    
 	});
 
-  
+  $(".js-add-services-win").click(function( e ) {   
+    $(".swipe-panel-21").addClass("active"); 
+    $("body").addClass("mask");                    
+	});
 
   //график работы
 
@@ -398,16 +401,13 @@ $(".js-download").jfilestyle({
 
 //загрузка фото
 
-var el2 =$('.dz-clickable');
+/*var el2 =$('.dz-clickable');
 if(el2[0]) {
   var myDropzone = new Dropzone("#fall", {
     url: "/images",
     uploadMultiple: true
   })
-}
-
-
-
+}*/
 
 
 //drug drop

@@ -61,12 +61,28 @@ $icon-font-path: '../fonts/';
 	width: 110px;
 }
 
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
 .mb-20 {
     margin-bottom: 20px;
 }
 
 .mt-20 {
     margin-top: 20px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.pt-20 {
+    padding-top: 20px;
 }
 
 .trans {
@@ -177,6 +193,14 @@ $icon-font-path: '../fonts/';
         &.sm {
             width: 5px;
             height: 5px;  
+        }
+
+        &.blue {
+            border-left: 1px solid $blue; 
+            border-bottom: 1px solid $blue;  
+            background: transparent;
+            border-right: none;
+            border-top: none;
         }
     }
 
