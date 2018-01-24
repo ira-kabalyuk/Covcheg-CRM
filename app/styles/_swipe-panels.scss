@@ -27,6 +27,7 @@ $icon-font-path: '../fonts/';
     transition: transform 0.25s ease-in-out;
     transform: translateX(100%);
     overflow-y: auto;
+    
 
     &.w400 {
         width: 400px;
@@ -222,9 +223,16 @@ $icon-font-path: '../fonts/';
         }
     }
 
-    &__list {
+    &__subname {
+        font-size: 14px;
+        font-weight: 500;
 
+        span {
+            font-weight: 400;
+        }
     }
+
+   
 
     &__item {        
         position: relative;
@@ -320,8 +328,8 @@ $icon-font-path: '../fonts/';
             position: relative;
             background: #f5f5f5;
             padding: 10px 10px 10px 20px;
-						margin-top: 10px;
-						display: inline-block;
+            margin-top: 10px;
+            display: inline-block;
 
             &:before {
                 content: "";
@@ -342,6 +350,8 @@ $icon-font-path: '../fonts/';
                 color: $gray;               
             }
         }
+
+        
     }
 
     &__nav {
@@ -434,6 +444,10 @@ $icon-font-path: '../fonts/';
 
        .name {
            font-weight: 700;
+
+           &.big {
+               font-size: 18px;
+           }
        }
 
        .label {
@@ -454,6 +468,10 @@ $icon-font-path: '../fonts/';
             font-size: 12px;
             color: $gray;
             margin-top: 5px;
+        }
+
+        &.no-btn {
+            padding-right: 0;
         }
     }
 
@@ -847,7 +865,7 @@ $icon-font-path: '../fonts/';
 
         tr {
             border-bottom: 1px solid $light-blue;     
-                    
+
             &.swipe-table__footer {
                 border-bottom: none;
             }
@@ -969,22 +987,31 @@ $icon-font-path: '../fonts/';
 
         &__body {
             height: calc(100% - 60px);
-        }        
+        }       
+        
     }
 
     .swipe-form {
-        height: 100%;
+        min-height: 100%;
 
         &__column-wrap {
-            height: 100%;
+            min-height: 100%;
         }
 
         &__column {
-           height: 100%;
+           min-height: 100%;
 
            .switch-wrap {
                 height: auto;
             }
+        }
+    }
+
+    .swipe-row-tab-content {
+
+        .swipe-form__column {
+            height: auto;
+            width: calc(100% - 60px);
         }
     }
 }
@@ -1020,6 +1047,29 @@ $icon-font-path: '../fonts/';
         font-weight: 700;
         font-size: 14px;
         border-top: 1px solid #c8c8c8;;
+    }
+}
+
+.swipe-button-wrap {
+
+    .button {
+        margin-bottom: 20px;
+    }
+}
+
+.swipe-row-tab-content {
+    position: absolute;
+    top: 0;
+    padding-top: 30px;
+    right: 0;
+    width: 50%;
+    height: 100%;
+
+    .swipe-form {
+
+        &__column {
+            //width: 100%;
+        }
     }
 }
 

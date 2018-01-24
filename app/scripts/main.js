@@ -178,6 +178,11 @@ jQuery(document).ready(function() {
   $(".js-add-services-win").click(function( e ) {   
     $(".swipe-panel-21").addClass("active"); 
     $("body").addClass("mask");                    
+  });
+  
+  $(".record-block").click(function( e ) {   
+    $(".swipe-panel-22").addClass("active"); 
+    $("body").addClass("mask");                    
 	});
 
   //график работы
@@ -202,13 +207,21 @@ jQuery(document).ready(function() {
 
   //end swipe panels
 
-  //counter
+  
   
       $(".table-page__filter-link").click(function( e ) {
         e.stopPropagation();	
         $(".filter-wrap").slideToggle(400);
         $(".table-page__filter-link").toggleClass("no-show");	
       });
+
+      $(".subtitle__link").click(function( e ) {
+        e.stopPropagation();	
+        $(this).parents(".subtitle-block").next(".schedule__body").slideToggle(400);       
+      });
+
+
+      //counter
       
       $('.triangle-bottom').click(function(){
         var $inp=$(this).siblings('input');

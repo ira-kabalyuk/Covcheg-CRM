@@ -63,6 +63,10 @@
      color: #bdbdbd;
  }
 
+ .dotted-dec {
+     border-bottom: 1px dotted $blue;
+ }
+
  .subtitle-block {
      padding: 16px 30px;     
  }
@@ -81,7 +85,8 @@
         border-bottom: 1px dotted $blue;        
         position: relative; 
         font-size: 16px;
-        font-weight: 700;       
+        font-weight: 700;
+        cursor: pointer;       
 
         &:hover {
             text-decoration: none;
