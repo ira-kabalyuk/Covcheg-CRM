@@ -151,7 +151,12 @@ $icon-font-path: '../fonts/';
     height: 33px;
     border: none;
     color: #fff;
-    background: $braun-bg;
+		background: $braun-bg;
+		
+		&.light-braun {
+			background: #737373;
+			color: #fff;
+		}
 }
 
 .close-btn {

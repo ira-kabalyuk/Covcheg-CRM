@@ -13,7 +13,9 @@
 	<!-- Place favicon.ico in the root directory -->
 
 
-	<link rel="stylesheet" href="styles/main.css">
+	<!-- build:css styles/main.css -->
+	<link rel="stylesheet" href="styles/main.css">    
+	<!-- endbuild -->
 	  
 </head>
 
@@ -98,7 +100,27 @@
 						<img src="images/avatar.jpg" alt="">
 					</div>
 					<span class="user-item__name">Мария</span>
-					<i class="pointer_bottom"></i>	
+					<i class="pointer_bottom"></i>
+
+					<div class="submenu">
+						<ul class="submenu__list">
+							<li class="submenu__item">
+								<a href="">Управление аккаунтом</a>
+							</li>
+							<li class="submenu__item">
+								<a href="">Подписка на сервис</a>
+							</li>
+							<li class="submenu__item">
+								<a href="">Настройки профиля</a>
+							</li>
+							<li class="submenu__item">
+								<a href="">Помощь</a>
+							</li>
+							<li class="submenu__item submenu__light-item">
+								<a href="">Выход</a>
+							</li>
+						</ul>
+					</div>	
 				</li>
 		</ul>
 </header>
@@ -181,18 +203,7 @@
 
 <main class="client-card-page">
 		<div class="tools">
-				<ul class="breadcrumbs__list">
-						<li class="breadcrumbs__item">
-								<i class="fa fa-home" aria-hidden="true"></i>
-								<a href="">Главная</a>
-						</li>
-						<li class="breadcrumbs__item">
-								<a href="">Клиенты</a>
-						</li>
-						<li class="breadcrumbs__item">
-								<a href="">Карина Молчанова</a>
-						</li>				
-				</ul>        
+			     
 		</div>
 		<div class="client-card__head">
 			<div class="client-card__head-left">
@@ -312,7 +323,7 @@
                             <option value="3">Вероника Шевченко</span></option>
                             <option value="4">Маргарита Кравцова</option>
                         </select>
-                    <div class="multiple-select-drop-4"></div>
+                    <div class="multiple-select-drop multiple-select-drop-4"></div>
                 </div>
                 <div class="input-wrap">
                     <label for="" class="swipe-label">Примечание</label>
@@ -343,7 +354,7 @@
                     </div>
                 </div>
                 <div class="input-wrap clearfix">
-                    <label for="" class="swipe-label">Источник общения</label>
+                    <label for="" class="swipe-label">Источник обращения</label>
                     <select class="swipe-select swipe-input" ref="master">
                         <option value="0" data-display="Сайт">Сайт</option>                       
                         <option value="2">Телефон</option>
@@ -351,6 +362,7 @@
                         <option value="2">Viber</option>        
                     </select>
                 </div> 
+               
                 <div class="input-wrap">
                     <label for="" class="swipe-label">Семейное положение, возраст детей</label>
                     <textarea type="text" class="swipe-textarea"></textarea>                    
@@ -387,7 +399,7 @@
                 </div>
                 <div class="input-wrap  js-custom-input">
                     <label for="" class="swipe-label">Свое поле 1 </label>                    
-                    <span class="close-btn js-close-input"><i class="icon icon-close" aria-hidden="true"></i></span>   
+                    <span class="close-btn js-close-input"><i class="icon icon-close-sm" aria-hidden="true"></i></span>   
                     <input type="text" class="swipe-input" placeholder="">                    
                 </div>
             </div>
@@ -458,7 +470,7 @@
 												Пинцет для бровей х 2 = 550
 										</td>
 										<td>Пришла</td>
-										<td>550</td>
+										<td class="green-text">550</td>
 										<td>0%</td>
 										<td>
 												<span class="label label_red lang">не оплачен</span>
@@ -475,7 +487,7 @@
 												Пинцет для бровей х 2 = 550
 										</td>
 										<td>Пришла</td>
-										<td>550</td>
+										<td class="green-text">550</td>
 										<td>0%</td>
 										<td>
 												<span class="label label_green lang">Оплачен</span>

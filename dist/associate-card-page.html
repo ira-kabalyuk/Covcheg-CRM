@@ -13,7 +13,9 @@
 	<!-- Place favicon.ico in the root directory -->
 
 
-	<link rel="stylesheet" href="styles/main.css">
+	<!-- build:css styles/main.css -->
+	<link rel="stylesheet" href="styles/main.css">    
+	<!-- endbuild -->
 	  
 </head>
 
@@ -98,7 +100,27 @@
 						<img src="images/avatar.jpg" alt="">
 					</div>
 					<span class="user-item__name">Мария</span>
-					<i class="pointer_bottom"></i>	
+					<i class="pointer_bottom"></i>
+
+					<div class="submenu">
+						<ul class="submenu__list">
+							<li class="submenu__item">
+								<a href="">Управление аккаунтом</a>
+							</li>
+							<li class="submenu__item">
+								<a href="">Подписка на сервис</a>
+							</li>
+							<li class="submenu__item">
+								<a href="">Настройки профиля</a>
+							</li>
+							<li class="submenu__item">
+								<a href="">Помощь</a>
+							</li>
+							<li class="submenu__item submenu__light-item">
+								<a href="">Выход</a>
+							</li>
+						</ul>
+					</div>	
 				</li>
 		</ul>
 </header>
@@ -181,18 +203,7 @@
 
 <main class="associate-card-page">
 		<div class="tools">
-				<ul class="breadcrumbs__list">
-						<li class="breadcrumbs__item">
-								<i class="fa fa-home" aria-hidden="true"></i>
-								<a href="">Главная</a>
-						</li>
-						<li class="breadcrumbs__item">
-								<a href="">Сотрудники</a>
-						</li>
-						<li class="breadcrumbs__item">
-								<a href="">Карина Молчанова</a>
-						</li>				
-				</ul>        
+				      
 		</div>
 		<div class="client-card__head">
 			<div class="client-card__head-left">
@@ -232,11 +243,12 @@
 		<div class="content pad brd-top">
 				<form class="client-card-column__list">
 						<div class="client-card-column__item">						 
-								<div class="input-wrap dz-clickable" id="fall">	
-										<div class="drop-button-wrap">
-											<button type="button" class="button green-border trans">Загрузить фото сотрудника</button>
-										</div>
-									</div>								 
+								<div class="input-wrap dz-clickable">	
+									<img src="images/avatar.jpg" alt="">	
+								</div>
+								<div class="drop-button-wrap">
+									<button type="button" class="button green-border trans">Загрузить фото сотрудника</button>
+								</div>								 
 						</div>
 						<div class="client-card-column__item">
 								<div class="input-wrap">
@@ -309,29 +321,32 @@
 												<input type="checkbox" class="checkbox">
 												<label for="checkbox" class="check-label">Lash.Moda Praga</label>
 										</div>
-										<div class="checkbox-wrap mb-20">
+										<div class="checkbox-wrap">
 												<input type="checkbox" class="checkbox">
 												<label for="checkbox" class="check-label">Lash.Moda Kiev</label>
 										</div>
-										<div class="switch-wrap mb-20">
-											<span class="switsh-label">Доступ к системе</span>
-											<label>
-												<input type="checkbox" class="switch green bigswitch" checked="">
-												<div>
-													<div>
-													</div>
-												</div>
-											</label>
+										<div class="switch-wrap mt-20 mb-20">
+											<span class="switsh-label">Доступ к системе
+													<label>
+															<input type="checkbox" class="switch green bigswitch" checked="">
+															<div>
+																<div>
+																</div>
+															</div>
+														</label>
+											</span>											
 										</div>
 										<div class="switch-wrap">
-												<span class="switsh-label">Выводить в календаре</span>
-												<label>
-													<input type="checkbox" class="switch green bigswitch" checked="">
-													<div>
-														<div>
-														</div>
-													</div>
-												</label>
+												<span class="switsh-label">Выводить в календаре
+														<label>
+																<input type="checkbox" class="switch green bigswitch" checked="">
+																<div>
+																	<div>
+																	</div>
+																</div>
+															</label>
+												</span>
+												
 											</div>
 								</div>							
 							
@@ -367,12 +382,12 @@
 								</div>
 								<div class="input-wrap  js-custom-input">
 										<label for="" class="swipe-label">Свое поле 1 </label>                    
-										<span class="close-btn js-close-input"><i class="icon icon-close" aria-hidden="true"></i></span>   
+										<span class="close-btn js-close-input"><i class="icon icon-close-sm" aria-hidden="true"></i></span>   
 										<input type="text" class="swipe-input" placeholder="">                    
 								</div>
 								<div class="input-wrap  js-custom-input">
 										<label for="" class="swipe-label">Свое поле 2 </label>                    
-										<span class="close-btn js-close-input"><i class="icon icon-close" aria-hidden="true"></i></span>   
+										<span class="close-btn js-close-input"><i class="icon icon-close-sm" aria-hidden="true"></i></span>   
 										<input type="text" class="swipe-input" placeholder="">                    
 								</div>
 						</div>
@@ -427,14 +442,16 @@
 						<div class="client-card-column__item">
 								<div class="input-wrap">
 								<div class="switch-wrap mb-20">
-										<span class="switsh-label">Доступ к IP-телефонии Lira</span>
-										<label>
-											<input type="checkbox" class="switch green bigswitch" checked="">
-											<div>
-												<div>
-												</div>
-											</div>
-										</label>
+										<span class="switsh-label">Доступ к IP-телефонии Lira
+												<label>
+														<input type="checkbox" class="switch green bigswitch" checked="">
+														<div>
+															<div>
+															</div>
+														</div>
+													</label>
+										</span>
+										
 									</div>
 								</div>
 								<div class="input-wrap">
