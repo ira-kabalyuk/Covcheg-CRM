@@ -135,7 +135,16 @@ $icon-font-path: '../fonts/';
         }
     }
 
-    
+    &.lg {
+
+			.swipe-label {
+				font-size: 16px
+			}
+
+			.swipe-input {
+				font-size: 16px;
+			}
+		}
     
 }
 

@@ -564,13 +564,13 @@
                     <div class="add-block__body">
                         <button type="button" class="form-close">×</button>
                         <span class="name">Екатерина Кишковская</span>
-                        <span class="label label_orange lang">Постоянный</span>
+                        <span class="label label_orange lang" title="Постоянный" style="color: #ffffff; background: #ec5c1c">Постоянный</span>
                         <p class="info">+38099-999-99-99</p>
                     </div>
                     <div class="add-block__body">
                         <button type="button" class="form-close">×</button>
                         <span class="name">Екатерина Тарановская</span>
-                        <span class="label label_blue lang">Разовый</span>
+                        <span class="label label_blue lang" title="Разовый" style="color: #ffffff; background: #2182c5">Разовый</span>
                         <p class="info">+38099-999-99-99</p>
                     </div>                   
                 </div>
@@ -664,7 +664,7 @@
 							</div>
 							<div class="name-wrap">
 								<a href="" class="name" title="Маргарита Иванова-Петровская">Маргарита Иванова</a>
-								<span class="label label_orange lang">Постоянный</span>
+								<span class="label label_orange lang" title="Постоянный" style="color: #ffffff; background: #ec5c1c">Постоянный</span>
 							</div>
 							<div class="info-wrap">
 								<p class="info">+38055-555-55-55</p>
@@ -681,7 +681,7 @@
 							</div>
 							<div class="name-wrap">
 								<a href="" class="name" title="Маргарита Иванова-Петровская">Ирина Шевченко</a>
-								<span class="label label_green lang">Активный</span>
+								<span class="label label_green lang" title="Активный" style="color: #ffffff; background: #5fad5a">Активный</span>
 							</div>
 							<div class="info-wrap">
 								<p class="info">+38055-555-55-55</p>
@@ -2575,7 +2575,7 @@
 										</table>		
 										<div class="add-block__body no-btn">									
 												<span class="name big blue-text dotted-dec">Екатерина Кишковская</span>
-												<span class="label label_orange lang">Постоянный</span>
+												<span class="label label_orange lang" title="Постоянный" style="color: #ffffff; background: #ec5c1c">Постоянный</span>
 												<p class="info">+38099-999-99-99</p>
 										</div>
 								</div>
@@ -2789,15 +2789,154 @@
 <!--системное сообщение сохранено и системное сообщение ошибка-->
 	<!--попап на calendar-page.html при оплате услуги-->
 
-<div class="modal popup-pay" id="#payPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> <!--display: none; display: flex;-->
+<div class="modal popup-pay" id="payPopup"> <!--display: none; display: flex;-->
 	<div class="modal-dialog modal-pay">
 	  <div class="modal-content">
-		<div class="modal-header">
-		  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		  <h4 class="modal-title">Системное сообщение</h4>
+		<div class="modal-header">			
+		  <p class="modal-title">Оплата визита</p>
+		  <button type="button" class="close" data-dismiss="modal">
+				<i class="icon icon-close" aria-hidden="true"></i>
+			</button>
 		</div>
 		<div class="modal-body">
-		  <p class="system-message">Через <span>з дня</span> у вас заканчивается подписка на использование CleverBox CRM</p>
+				<div class="swipe-info-block mb-20">
+						<table class="swipe-info-table">
+								<colgroup></colgroup>												
+							<tbody><tr>
+								<td class="">Запись <span>	№534</span></td>
+								<td>8 ноября на 10.30</td>
+								<td>Клиент:<span> Кишковская Екатерина</span></td>													
+							</tr>							
+							<tr>
+								<td class="">Сумма без скидки:</td>
+								<td><span>800</span> грн</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="">Сумма к оплате:</td>
+								<td><span>800</span> грн</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>	
+				</div>
+				<table class="swipe-table">
+						<thead>
+							<tr>
+								<th class="w-40pr">Наименование</th>
+								<th class="">Кол-во</th>
+								<th>Цена, грн</th>
+								<th>Сумма</th>
+								<th>Скидка</th>
+								<th class="w-15pr">Итого</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									Брови
+								</td>							
+								<td class="">
+									1
+								</td>
+								<td class="green-text bold">
+										255
+								</td>
+								<td class="bold">
+									350
+								</td>
+								<td>
+									<select class="swipe-select swipe-input" ref="master">
+										<option value="0" data-display="0%">0%</option>                       
+										<option value="2">5%</option>
+										<option value="2">10%</option>
+										<option value="2">15%</option>        
+									</select>
+								</td>
+								<td class="bold">350</td>
+							</tr>	
+							<tr>
+									<td>
+										Визаж
+									</td>							
+									<td class="">
+										1
+									</td>
+									<td class="green-text bold">
+											255
+									</td>
+									<td class="bold">
+										350
+									</td>
+									<td>
+										<select class="swipe-select swipe-input" ref="master">
+											<option value="0" data-display="0%">0%</option>                       
+											<option value="2">5%</option>
+											<option value="2">10%</option>
+											<option value="2">15%</option>        
+										</select>
+									</td>
+									<td class="bold">350</td>
+								</tr>							
+						</tbody>
+					</table>
+					<div class="code-pay__block">
+						<div class="code-pay__info">
+							<p class="code-pay__title">Оплатить сертификатом</p>
+							<p class="code-pay__text">Введите код сертификата и нажмите Enter</p>
+						</div>
+						<div class="code-pay__input-block">
+							<input type="text" class="pay-input" placeholder="Kод сертификата">	
+						</div>
+					</div>
+					<div class="popup-input-block">
+						<div class="popup-input-wrap flex">
+							<div class="popup-input-column">
+								<div class="input-wrap lg">
+									<label for="" class="swipe-label">Касса</label>
+									<select class="swipe-select swipe-input" ref="master">
+										<option value="0" data-display="Выберите кассу">Выберите кассу</option>                       
+										<option value="2">Касса-1</option>
+										<option value="2">Касса-2</option>
+										<option value="2">Касса-3</option>        
+								</select>
+								</div>	
+							</div>
+							<div class="popup-input-column">
+								<div class="input-wrap lg">
+									<label for="" class="swipe-label">Сумма, грн</label>
+									<input type="text" class="swipe-input">
+								</div>	
+							</div>
+						</div>
+					</div>
+					<div class="popup-input-block">
+						<div class="popup-input-wrap flex">
+							<div class="popup-input-column">
+								<div class="input-wrap lg">
+									<label for="" class="swipe-label">Касса</label>
+									<select class="swipe-select swipe-input" ref="master">
+										<option value="0" data-display="Выберите кассу">Выберите кассу</option>                       
+										<option value="2">Касса-1</option>
+										<option value="2">Касса-2</option>
+										<option value="2">Касса-3</option>        
+								</select>
+								</div>	
+							</div>
+							<div class="popup-input-column">
+								<div class="input-wrap horisontal lg">
+									<label for="" class="swipe-label green-text bold">Касса Praga</label>
+									<input type="text" class="swipe-input">
+									<span>грн.</span>
+								</div>
+								<div class="input-wrap horisontal lg">
+									<label for="" class="swipe-label green-text bold">Банк-терминал Praga</label>
+									<input type="text" class="swipe-input">
+									<span>грн.</span>
+								</div>	
+							</div>
+						</div>
+					</div>
 		</div>
 		<div class="modal-footer">
 			<button class="button green trans">
