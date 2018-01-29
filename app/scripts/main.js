@@ -183,7 +183,19 @@ jQuery(document).ready(function() {
   $(".record-block").click(function( e ) {   
     $(".swipe-panel-22").addClass("active"); 
     $("body").addClass("mask");                    
-	});
+  });
+  
+  $(".js-add-payroll").click(function( e ) {   
+    $(".swipe-panel-23").addClass("active"); 
+    $("body").addClass("mask");                    
+  });
+
+  $(".js-add-operation").click(function( e ) {   
+    $(".swipe-panel-24").addClass("active"); 
+    $("body").addClass("mask");                    
+  });
+  
+  
 
   //график работы
 

@@ -53,8 +53,12 @@ $icon-font-path: '../fonts/';
 	width: 40%;
 }
 
+.w-45pr {
+	width: 45% !important;
+}
+
 .w-50pr {
-	width: 50%;
+	width: 50% !important;
 }
 
 .w-55pr {
@@ -66,7 +70,7 @@ $icon-font-path: '../fonts/';
 }
 
 .w-100pr {
-	width: 100%;
+	width: 100% !important;
 }
 
 .w-110px {
@@ -75,6 +79,10 @@ $icon-font-path: '../fonts/';
 
 .mb-10 {
     margin-bottom: 10px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
 }
 
 .mt-10 {
@@ -89,12 +97,61 @@ $icon-font-path: '../fonts/';
     margin-top: 20px;
 }
 
+.mr-20 {
+    margin-right: 20px;
+}
+
+.ml-20 {
+    margin-left: 20px !important;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+&.pad {
+    padding: 30px;
+}
+
+.pb-9 {
+    padding-bottom: 9px;
+}
+
+.pt-9 {
+    padding-top: 9px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+&.pt-30 {
+    padding-top: 30px;
+}
+
+&.pb-30 {
+    padding-bottom: 30px;
+}
+
+
 .pb-20 {
     padding-bottom: 20px;
 }
 
 .pt-20 {
     padding-top: 20px;
+}
+
+.fs-14 {
+    font-size: 14px;
 }
 
 .trans {
@@ -134,16 +191,8 @@ $icon-font-path: '../fonts/';
 	border-bottom: 1px solid $light-gray;
 }
 
-&.pad {
-    padding: 30px;
-}
-
-&.pt30 {
-    padding-top: 30px;
-}
-
-&.pb30 {
-    padding-bottom: 30px;
+.link {
+    cursor: pointer;
 }
 
 &.col {
@@ -172,6 +221,10 @@ $icon-font-path: '../fonts/';
 
 &.aifs {
     align-items: flex-start;
+}
+
+.last-right {
+    text-align: right;
 }
 
 
@@ -463,6 +516,14 @@ $icon-font-path: '../fonts/';
 
 
 //borders label
+
+.pay-label {
+    font-size: 14px;
+    padding: 3px 4px 1px 3px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+}
 
 &.color {
     padding: 3px 5px 2px 5px;

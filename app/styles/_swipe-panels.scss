@@ -168,21 +168,34 @@ $icon-font-path: '../fonts/';
             background: #f0f0f0;
         }
 
-        .row-wrap {
-            display: flex;
-            width: 100%;
+        .row-wrap {            
 
-            .datepicker-block {
-              margin: 0 20px 20px 0;
-              width: 45%;
+            .datepicker-block {                
+                
+                &.min {
+                    margin: 0 20px 20px 0;
+                    width: 45%;
+                }
+                
+              
             }
         
             .datepicker-wrap {
                 width: 100%;
                 
-            }
+            }           
             
         }
+
+    .row-wrap {
+
+        &.col-3 {
+                .checkbox-wrap {
+                    margin: 0 20px;
+                    width: calc(33.3% - 40px);
+                }  
+            }
+        }    
         
     }
 
@@ -497,7 +510,9 @@ $icon-font-path: '../fonts/';
 						width: 50%;
 						margin-left: 10px;
 					}
-				}
+                }
+                
+           
 				
     }
 
@@ -972,6 +987,7 @@ $icon-font-path: '../fonts/';
     width: 100%;
     table-layout: fixed; 
     margin-bottom: 20px;
+    font-size: 13px;
     
     &__footer {
         font-weight: 700;
@@ -1048,8 +1064,12 @@ $icon-font-path: '../fonts/';
             align-items: center;
             
             .icon {
-                margin-right: 10px;
+                margin-right: 15px;
             }
+        }
+
+        .icon {
+            margin-left: 5px;
         }
         
     }

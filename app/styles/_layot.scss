@@ -86,6 +86,42 @@ body {
 		  margin: 10px 0;  
 		}
 	}
+
+	&.col-3 {
+		margin: 0 -20px;
+		width: calc(100% + 40px);
+
+			
+		.input-wrap {
+			margin: 0 20px;
+			width: calc(35% - 40px);
+		}
+
+		.datepicker-block {
+			margin: 0 20px;
+			width: calc(45% - 40px);
+
+			.datepicker-wrap {
+				width: 45%;
+			}
+		}
+
+		.time-wrap {
+			margin: 0 20px;
+			width: calc(20% - 40px);
+		}
+
+		.checkbox-wrap {
+			margin: 0 20px;
+			width: calc(33.3% - 40px);
+
+			.checkbox {
+				width: 15px;
+				flex-basis: 15px;
+				flex-shrink: 0;
+			}
+		}
+	}
 }
 
 
