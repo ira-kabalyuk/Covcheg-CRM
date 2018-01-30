@@ -57,6 +57,44 @@ jQuery(document).ready(function() {
       altField: ".input-4",
       dateFormat: "dd.mm.yy"
     });
+
+
+    //swipe-panels
+
+    function openPopup(settings) {
+      var options = Object.assign({}, {
+          closeButton: '.swipe-panel__close-block'
+      }, settings);
+  
+      if(!options.content || !options.button) {
+          console.warn('required parameters is missing in openPopup function');
+      }
+  
+      $(options.button).click(function(){
+          var body = $('body');
+          var mask = $('<div class="mask"></div>');
+          var contentClone = $(options.content).clone();
+          var closeButton = contentClone.find(options.closeButton);
+  
+          mask.append(contentClone);
+          body.append(mask);
+          setTimeout(function(){contentClone.addClass('visible')});
+  
+          closeButton.click(function() {
+            contentClone.one('transitionend', function(){
+                mask.remove();
+            });
+            contentClone.removeClass('visible');
+            // mask.remove();
+        })
+      })     
+     
+  }  
+
+  openPopup({content: '.swipe-panel-23', button: '.js-add-payroll'})
+  openPopup({content: '.swipe-panel-24', button: '.js-add-operation'});
+  openPopup({content: '.swipe-panel-25', button: '.js-add-employees'})
+
      
 
    /* $('#ui-datepicker-div').css('display', 'none');  */
@@ -69,7 +107,7 @@ jQuery(document).ready(function() {
    }); */ 
 
     //swipe-panels
-    $(".waiting-list-btn").click(function( e ) {        
+   /* $(".waiting-list-btn").click(function( e ) {        
       $(".swipe-panel-3").addClass("active");   
       $("body").addClass("mask");   
    }); 
@@ -187,15 +225,20 @@ jQuery(document).ready(function() {
   
   $(".js-add-payroll").click(function( e ) {   
     $(".swipe-panel-23").addClass("active"); 
-    $("body").addClass("mask");                    
+    $("body").addClass("mask");                     
   });
 
   $(".js-add-operation").click(function( e ) {   
     $(".swipe-panel-24").addClass("active"); 
+    $("body").addClass("mask");                   
+  });
+
+  $(".js-add-employees").click(function( e ) {   
+    $(".swipe-panel-25").addClass("active"); 
     $("body").addClass("mask");                    
   });
   
-  
+ */
 
   //график работы
 

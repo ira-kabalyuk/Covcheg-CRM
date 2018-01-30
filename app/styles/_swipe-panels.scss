@@ -2,7 +2,8 @@ $icon-font-path: '../fonts/';
 
 @import "_includs";
 
-.mask {    
+.mask {  
+  position: relative;  
 
     &:after {
         content: "";
@@ -14,19 +15,31 @@ $icon-font-path: '../fonts/';
         width: 100%;
         height: 100%;
         background: rgba(0,0,0,.8);
+        //transition: transform 0.25s ease-in-out;
+    }
+
+    .swipe-panel {
+        transform: translateX(100%);
+        transition: transform 0.25s ease-in-out;
+        display: block;
+
+        &.visible {
+            height: calc(100% - 50px);
+            position: fixed;
+            right: 0;
+            top: 50px;
+            background: #fff;
+            z-index: 999;  
+            transition: transform 0.25s ease-in-out;
+            transform: translateX(0);
+            overflow-y: auto;
+            
+        }
     }
 }
 
 .swipe-panel {    
-    height: calc(100% - 50px);
-    position: fixed;
-    right: 0;
-    top: 50px;
-    background: #fff;
-    z-index: 999;  
-    transition: transform 0.25s ease-in-out;
-    transform: translateX(100%);
-    overflow-y: auto;
+    display: none;  
     
 
     &.w400 {
@@ -54,9 +67,9 @@ $icon-font-path: '../fonts/';
     }
 
 
-    &.active {       
+    /*&.active {       
         transform: translateX(0);        
-    }
+    }*/
 
     &.w400 {
         width: 400px;
