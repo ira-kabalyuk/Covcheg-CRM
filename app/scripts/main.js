@@ -63,17 +63,18 @@ jQuery(document).ready(function() {
 
     function openPopup(settings) {
       var options = Object.assign({}, {
-          closeButton: '.swipe-panel__close-block'
+          closeButton: '.swipe-panel__close-block',
+          event: 'click'
       }, settings);
   
       if(!options.content || !options.button) {
           console.warn('required parameters is missing in openPopup function');
       }
   
-      $(options.button).click(function(){
+      $(options.button).on(options.event, function(){
           var body = $('body');
           var mask = $('<div class="mask"></div>');
-          var contentClone = $(options.content).clone();
+          var contentClone = $(options.content).clone(true);
           var closeButton = contentClone.find(options.closeButton);
   
           mask.append(contentClone);
@@ -81,184 +82,46 @@ jQuery(document).ready(function() {
           setTimeout(function(){contentClone.addClass('visible')});
   
           closeButton.click(function() {
-            contentClone.one('transitionend', function(){
+            var hasTransition = !(contentClone.css('transition-duration') == '0s');
+            if(hasTransition) {
+                contentClone.one('transitionend', function(){
+                    mask.remove();
+                });
+                contentClone.removeClass('visible');
+            } else {
                 mask.remove();
-            });
-            contentClone.removeClass('visible');
-            // mask.remove();
+            }
         })
       })     
      
-  }  
-
+  }
+  
+  openPopup({content: '.add-record__body', button: '.add-record-button', closeButton: '.back-button'})
+  openPopup({content: '.swipe-panel-1', button: '.client-add'})
+  openPopup({content: '.swipe-panel-2', button: '.schedule__content-item td', event: 'dblclick'})
+  openPopup({content: '.swipe-panel-3', button: '.waiting-list-btn'})
+  openPopup({content: '.swipe-panel-4', button: '.schedule__content-column .data'})
+  openPopup({content: '.swipe-panel-5', button: '.schedule-work-table td'})
+  openPopup({content: '.swipe-panel-6', button: '.js-edit'})
+  openPopup({content: '.swipe-panel-7', button: '.js-add-directory'})
+  openPopup({content: '.swipe-panel-8', button: '.js-item-add'})
+  openPopup({content: '.swipe-panel-9', button: '.js-counter-add'})
+  openPopup({content: '.swipe-panel-10', button: '.js-cash-add'})
+  openPopup({content: '.swipe-panel-11', button: '.js-salary-link'})
+  openPopup({content: '.swipe-panel-12', button: '.js-add-salon'})
+  openPopup({content: '.swipe-panel-13', button: '.js-add-trigger'})
+  openPopup({content: '.swipe-panel-14', button: '.js-new-payment'})
+  openPopup({content: '.swipe-panel-15', button: '.js-new-transfer'})
+  openPopup({content: '.swipe-panel-16', button: '.js-add-com'})
+  openPopup({content: '.swipe-panel-17', button: '.js-add-move'})
+  openPopup({content: '.swipe-panel-18', button: '.js-add-write-off'})
+  openPopup({content: '.swipe-panel-19', button: '.js-add-inventory'})
+  openPopup({content: '.swipe-panel-20', button: '.js-add-services'})
+  openPopup({content: '.swipe-panel-21', button: '.js-add-services-win'})
+  openPopup({content: '.swipe-panel-22', button: '.record-block'})
   openPopup({content: '.swipe-panel-23', button: '.js-add-payroll'})
-  openPopup({content: '.swipe-panel-24', button: '.js-add-operation'});
-  openPopup({content: '.swipe-panel-25', button: '.js-add-employees'})
-
-     
-
-   /* $('#ui-datepicker-div').css('display', 'none');  */
-    //end datepicker    
-
-     /*$(".left-menu__item a").click(function( e ) {        
-      $(".left-menu__item a").removeClass("active")
-       $(this).addClass("active");
-      
-   }); */ 
-
-    //swipe-panels
-   /* $(".waiting-list-btn").click(function( e ) {        
-      $(".swipe-panel-3").addClass("active");   
-      $("body").addClass("mask");   
-   }); 
-
-   $(".swipe-panel__close-block").click(function( e ) {   
-		 $(".swipe-panel").removeClass("active");
-		 $(".add-record__body").removeClass("active"); 
-     $("body").removeClass("mask");      
-    });    
-    
-    $(".schedule__content-item td").dblclick(function( e ) {        
-      $(".swipe-panel-2").addClass("active"); 
-      $("body").addClass("mask");      
-    }); 
-
-    $(".add-record-button").click(function( e ) {        
-      $(".add-record__body").addClass("active");               
-		}); 
-		
-	
-
-    $(".client-add").click(function( e ) {        
-      $(".swipe-panel-1").addClass("active");      
-   }); 
-
-   $(".back-button").click(function( e ) {        
-    $(".add-record__body").removeClass("active"); 
-    $(".swipe-panel-1").removeClass("active");                    
-  });
-
-  $(".js-edit").click(function( e ) {   
-    $(".swipe-panel-6").addClass("active"); 
-    $("body").addClass("mask");                    
-  });
-
-  $(".js-add-directory").click(function( e ) {   
-    $(".swipe-panel-7").addClass("active"); 
-    $("body").addClass("mask");                    
-	});
-	
-	$(".js-item-add").click(function( e ) {   
-    $(".swipe-panel-8").addClass("active"); 
-    $("body").addClass("mask");                    
-	});
-	
-	$(".js-counter-add").click(function( e ) {   
-    $(".swipe-panel-9").addClass("active"); 
-    $("body").addClass("mask");                    
-	});
-	
-	$(".js-cash-add").click(function( e ) {   
-    $(".swipe-panel-10").addClass("active"); 
-    $("body").addClass("mask");                    
-	});
-	
-	$(".js-salary-link").click(function( e ) {   
-    $(".swipe-panel-11").addClass("active"); 
-    $("body").addClass("mask");                    
-  });
-  
-  $(".js-add-salon").click(function( e ) {   
-    $(".swipe-panel-12").addClass("active"); 
-    $("body").addClass("mask");                    
-  });
-  
-  $(".js-add-trigger").click(function( e ) {   
-    $(".swipe-panel-13").addClass("active"); 
-    $("body").addClass("mask");                    
-	});
-	
-	$(".js-new-payment").click(function( e ) {   
-    $(".swipe-panel-14").addClass("active"); 
-    $("body").addClass("mask");                    
-  });
-  
-  $(".js-new-transfer").click(function( e ) {   
-    $(".swipe-panel-15").addClass("active"); 
-    $("body").addClass("mask");                    
-  });
-  
-  $(".js-add-com").click(function( e ) {   
-    $(".swipe-panel-16").addClass("active"); 
-    $("body").addClass("mask");                    
-  });
-  
-  $(".js-add-move").click(function( e ) {   
-    $(".swipe-panel-17").addClass("active"); 
-    $("body").addClass("mask");                    
-  });
-  
-  $(".js-add-write-off").click(function( e ) {   
-    $(".swipe-panel-18").addClass("active"); 
-    $("body").addClass("mask");                    
-  });
-  
-  $(".js-add-inventory").click(function( e ) {   
-    $(".swipe-panel-19").addClass("active"); 
-    $("body").addClass("mask");                    
-  });
-  
-  $(".js-add-services").click(function( e ) {   
-    $(".swipe-panel-20").addClass("active"); 
-    $("body").addClass("mask");                    
-	});
-
-  $(".js-add-services-win").click(function( e ) {   
-    $(".swipe-panel-21").addClass("active"); 
-    $("body").addClass("mask");                    
-  });
-  
-  $(".record-block").click(function( e ) {   
-    $(".swipe-panel-22").addClass("active"); 
-    $("body").addClass("mask");                    
-  });
-  
-  $(".js-add-payroll").click(function( e ) {   
-    $(".swipe-panel-23").addClass("active"); 
-    $("body").addClass("mask");                     
-  });
-
-  $(".js-add-operation").click(function( e ) {   
-    $(".swipe-panel-24").addClass("active"); 
-    $("body").addClass("mask");                   
-  });
-
-  $(".js-add-employees").click(function( e ) {   
-    $(".swipe-panel-25").addClass("active"); 
-    $("body").addClass("mask");                    
-  });
-  
- */
-
-  //график работы
-
-  $(".schedule-work-table td").dblclick(function( e ) {        
-		$(".swipe-panel-5").addClass("active");
-		$("body").addClass("mask");      
- });
-
- $(".schedule-work-table td").click(function( e ) {        
-  $(this).toggleClass("work-time-active");     
- 
-});
-
-    /*окно в таблице расписания*/
-
-      $(".schedule__content-column .data").click(function( e ) {        
-        $(".swipe-panel-4").addClass("active");   
-        $("body").addClass("mask");   
-    }); 
-   
+  openPopup({content: '.swipe-panel-24', button: '.js-add-operation'})
+  openPopup({content: '.swipe-panel-25', button: '.js-add-employees'})   
 
   //end swipe panels
 
