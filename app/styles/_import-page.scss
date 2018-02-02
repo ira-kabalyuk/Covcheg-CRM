@@ -1,0 +1,186 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.import-page {
+
+	.content-wrap {
+		min-height: calc(100vh - 110px);
+	}
+
+	.element-wrap {
+		padding: 30px;
+	}
+
+	.row-wrap {
+
+		.checkbox-wrap {
+			flex-basis: calc(50% - 40px);
+			flex-shrink: 0;
+		}
+	}
+
+.button-wrap {
+	margin-left: 0;
+	text-align: center;
+	margin-top:  40px;
+
+	.button {
+		padding: 10px 40px;
+	}
+}
+
+}
+
+.import {
+
+	&__nav-list {
+		background: #f6f6f6;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		counter-reset: item;
+		padding: 0 30px;
+	}
+
+	&__nav-item {	
+		display: flex;
+		align-items: center;
+		font-size: 15px;
+		font-weight: 700;	
+		color: #9e9e9e;
+		padding: 10px 0;
+		margin-right: 40px;
+
+		&:before { content: counter(item) "";
+			counter-increment: item;
+			width: 25px;
+			flex-basis: 25px;
+			flex-shrink: 0;
+			height: 25px;
+			background: #c2c2c2;
+			border-radius: 50%;
+			font-size: 15px;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: 10px;
+			font-weight: 700;
+		}
+
+		&.active {
+			color: $black;
+
+			&:before {
+				background: $green;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.import-table {
+	table-layout: fixed;	
+	width: 100%;
+
+	thead {
+		background: #e2e2e2;
+
+		 th {
+				padding: 15px;
+				border-right: 1px solid #fff;
+
+				&:first-child {
+					border-right: none;
+				}
+		 }
+	}
+
+	tbody {
+
+		tr {
+
+			&:nth-child(2n) {
+				background: #fafafa;
+			}
+		}
+	}
+
+	td {
+		border: 1px solid #e1e1e1;
+		padding: 10px 20px;
+		vertical-align: middle;
+		font-size: 14px;
+	}
+}
+
+.part-1,
+.part-3,
+.part-4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: calc(100% - 125px);
+}
+
+.download-block {
+	width: 300px;
+
+	.num {
+		font-size: 36px;
+		text-align: center;
+		margin-bottom: 15px;
+		color: #ababab;
+	}
+
+	&__line {
+		background: #f2f2f2;
+		width: 100%;
+		height: 5px;
+		margin-bottom: 30px;
+		position: relative;
+	}
+
+	&__value {
+		position: absolute;
+		display: block;
+		height: 100%;
+		background: $red;
+		top: 0;
+		left: 0;
+	}
+}
+
+.information-block {
+	width: 400px;
+	text-align: center;
+
+	&__title {
+		font-size: 22px;
+		color: $green;
+		margin-bottom: 15px;
+	}
+
+	&__list-title {
+		font-size: 15px;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	&__list {
+		margin: 15px auto 30px;
+		font-size: 14px;
+		width: 225px;		
+	}
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 0;
+
+		span {
+			font-weight: 700;
+		}
+	}
+}

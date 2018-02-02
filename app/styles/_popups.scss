@@ -129,7 +129,7 @@ $icon-font-path: '../fonts/';
 
 	.modal-pay {
 		width: 850px;
-		width: 850px;
+		max-width: 850px;
 	}
 
 
@@ -300,5 +300,131 @@ $icon-font-path: '../fonts/';
 	}
 }
 
+/*notification*/
+
+.popup-notification {
+	background: rgba(0, 0, 0, 0.8);
+	align-items: center;
+	justify-content: center;
+	display:none;
+	
+}
+
+.modal-notification {
+	background: #f0f0f0;
+	width: 775px;
+	max-width: 775px;
+
+	.modal-header  {
+		padding: 30px 30px 0 30px;
+	}
+
+	.close {
+		width: 80px;
+		height: 100%;
+		background: #fff;
+		opacity: 1;
+		font-size: 40px;
+		color: #a3a3a3;
+	}
+
+	.page-nav-tabs {
+
+		.label {
+			margin-left: 10px;
+			width: 24px;
+			height: 24px;
+			font-size: 15px;
+
+			&_tabs {
+				background: #f0f0f0;
+				color: $red;
+			}		
+		}
+
+		&.active {
+
+			.label {
+
+				&_tabs {
+					background: #f0f0f0;
+					color: $red;
+				}		
+			}
+		}
+	}
+
+	.modal-body {
+		padding: 0 0 50px 0;
+		height: 390px;
+		overflow: hidden;
+	}
+
+	.table-page {
+
+		&__head {
+			padding: 0 30px;
+
+			.button {
+				margin-left: 0;
+				font-size: 13px;
+				padding: 5px 15px;
+			}
+
+			&_right {
+				flex-basis: auto;
+			}
+		}
+	}
+
+	.notification-table-wrap {
+		height: 265px;
+    overflow: hidden;
+    overflow-y: auto;
+	}
+
+	.notification-table {
+		table-layout: fixed;
+		width: 100%;
+		font-size: 16px;
+
+		colgroup {
+			&:nth-child(2) {
+				width: 60%;
+			}
+		}
+
+		tr {			
+
+			 td {
+				 padding: 18px 10px;
+				 vertical-align: middle;
+				 border-bottom: 1px solid #fff;
+
+				 &:first-child {
+					 padding-left: 30px;
+				 }
+
+				 &:last-child {
+					 padding-right: 30px;
+				 }
+			 }
+
+			 .notification-table__text {
+				text-decoration: line-through;
+				color: #7f7f7f;
+			 }
+		}
+
+		.active {
+			background: #e4f7e4;		
+
+			.notification-table__text {
+				color: $black;
+				text-decoration: none;
+			}
+		}
+	}
+}
 
 

@@ -192,7 +192,49 @@ $icon-font-path: '../fonts/';
   .control input:checked:focus ~ .control__indicator {
     background: #45b649;
     border: 1px solid #45b649;
+	}
+
+	//gray
+	.control.gray-control .control__indicator {
+		background: #f6f6f6;
+    border: 1px solid #d0d0d0;
+	}
+
+	.control.gray-control:hover input ~ .control__indicator, .control input:focus ~ .control__indicator {
+		background: #f6f6f6;
+    border: 1px solid #d0d0d0;
+	}
+	.control.gray-control input:checked ~ .control__indicator {
+    background: #f6f6f6;
+    border: 1px solid #d0d0d0;
   }
+  .control.gray-control:hover input:not([disabled]):checked ~ .control__indicator,
+  .control.gray-control input:checked:focus ~ .control__indicator {
+    background: #f6f6f6;
+    border: 1px solid #d0d0d0;
+	}
+
+	.control--checkbox.gray-control .control__indicator:after {
+		border-color: #d0d0d0;
+	}
+//end gray
+
+//big
+
+.control.big .control__indicator{
+	width: 25px;
+	height: 25px;
+}
+
+.control.big .control__indicator:after {
+	left: 8px;
+	top: 4px;
+	width: 7px;
+	height: 12px;
+}
+
+//end big
+
   .control input:disabled ~ .control__indicator {
     background: #e6e6e6;
     opacity: 0.6;
