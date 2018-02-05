@@ -1,81 +1,77 @@
 $icon-font-path: '../fonts/';
 
-@import "_includs";
+$black: #1a1a1a;
+$red: #ed1c24;
+$gray: #f6f6f6;
 
 @media only screen and (max-width: 992px) {
 
-	html {   
-		overflow-x: auto;
-	  }
-	
-		main {
-			overflow-x: auto;
-			width: 100%;
-			/*min-width: auto;
-			flex-basis: 100%;
-			flex-shrink: 2;*/
-			
-		}
-	
-	 
-	
+    //SECTION-3
 
-    //work-table-page
+    .section-3 {
 
-	.main-filter {
-        //font-size: 0.9rem;
-        justify-content: space-between;	
-		width: auto;
-		
-		&.fs {
-			justify-content: flex-start;
-			
-			.main-filter__date {
-				flex-direction: row;
-			}
-		}
+        .content {
+            padding: 0 20px;
+        }
+    }
+
+    .input-wrap {
+        flex-direction: column;
+        margin-top:25px;
+    }
+
+    .input {
+        margin-bottom: 10px;
+       // width: calc(50% - 10px);
+       width: 350px;
         
-        &__block {
-           
+
+        &:last-child {
+            margin-bottom: 0;            
+        }
+    }
+
+    .button {
+        width: 350px;
+    }
+
+    .bottom-form-content {
+
+
+        .input-wrap {
+            align-items: center;
+        }
+    }
+
+    .copyright {
+        width: 100%;
+        position: relative;       
+        background: #f4f4f4;
+        justify-content: center;
+
+        &:after {
+            content: "";
+            width: 20px;
+            height: 100%;
+            display: block;
+            background: #f4f4f4;
+
+            position: absolute;
+            top: 0;
+            left: -20px;
         }
 
-		
+        &:before {
+            content: "";
+            width: 20px;
+            height: 100%;
+            display: block;
+            background: #f4f4f4;
 
-		.current {
-			font-size: 0.9rem;
-		}
-	}
+            position: absolute;
+            top: 0;
+            right: -20px;
+        }
+    }
 
-	.pay {
-		
-		&__title {
-			font-size: 0.75rem;
-		}
-
-		&__value {
-			font-size: 1.1rem;
-
-			span {
-				font-size: 0.75rem;
-			}	
-		}
-	}	
-
-	//schedule-work-page
-
-	.schedule-work-table {
-		th {
-			font-size: 11px;
-		}
-	} 
-		
-	
-	.work-time {
-		span {
-			font-size: 9px;
-			
-		}	
-	}
-
-	
 }

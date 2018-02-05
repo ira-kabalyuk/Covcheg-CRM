@@ -1,91 +1,147 @@
-{% extends "template-form.html" %}
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Page</title>
 
-{% block content %}	
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<!-- Place favicon.ico in the root directory -->
 
-<div class="login-page">
-	<div class="login-page__block">
-		<div class="login-page__header">
-			<div class="logo-wrap">
-				<img src="images/logo.png" alt="">
-			</div>
-		</div>		
-		<!--блок для входа-->
-		<div class="login-block">
-				<div class="login-page__title-block">
-				<p class="login-page__title">Вход в систему</p>
-			</div>
-			<div class="login-page__body">
-				<form action="" class="login-form">
-					<div class="input-wrap">
-						<label for="" class="swipe-label">E-mail</label>
-						<input type="text" class="swipe-input">
-						<span class="error-text">Неверный e-mail или пароль</span>
-					</div>
-					<div class="input-wrap error">
-						<label for="" class="swipe-label">Пароль</label>
-						<input type="password" class="swipe-input">
-						<span class="error-text">Неверный e-mail или пароль</span>
+		
+
+		<!-- build:css styles/main.css -->
+		<link rel="stylesheet" href="styles/main.css"> 
+			
+		<!-- endbuild -->    
+	</head>
+
+	<body>
+		<!--[if lt IE 10]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+			<main class="main">
+				<section class="section-1">
+					<div class="img-wrap img-wrap-desctop">
+						<img src="images/img-1.jpg" alt="">
 					</div>				
-					<button class="login-button button green trans">Войти</button>
-					<div class="login-page__nav">
-						<div class="checkbox-wrap">
-							<input type="checkbox" class="checkbox">
-							<label for="checkbox" class="check-label">Запомнить меня</label>
+					<div class="content">
+						<a href="" class="logo">
+							<img src="images/logo.png" alt="">
+						</a>
+						<div class="content-block">
+								<div class="img-wrap img-wrap-mobile">
+									<img src="images/img-2.png" alt="">
+								</div>
+							<h1 class="title">Умное управление <br>салоном красоты</h1>
+							<p class="text"><span class="bold-text">CleverBox CRM</span> – Самая совершенная платформа для управления beauty-бизнесом, 
+								созданная в коллаборации владельцев салонов красоты и профессиональных разработчиков.</p>
+						</div>	
+					</div>
+				</section>
+				<section class="section-2">
+					<div class="content">
+						<div class="content-block flex">
+							<div class="icon-wrap">
+								<i class="icon icon-1"></i>
+							</div>
+							<div class="text-block">
+								<p class="text-l"><span class="bold-text">CleverBox CRM</span> – это ответ на потребности руководителей предприятий beauty-индустрии.  Это платформа, которая объединяет стандартные инструменты (которые присутствуют  в большинстве CRM), а также уникальные возможности, которых нет ни у одной другой платформы.</p>
+								<p class="text-l">Выходите на качественно новый уровень управления салонов красоты – получите доступ к CleverBox CRM первыми.</p>
+							</div>
 						</div>
-						<a href="" class="form-link">Забыли пароль?</a>
 					</div>
-				</form>
-			</div>
-			<div class="login-page__footer">
-				<p class="login-page__footer-title"><span>или войти через</span></p>
-				<div class="button-wrap">
-					<button class="button blue trans">Facebook</button>
-					<button class="button dark-red trans">Google</button>
-				</div>			
-			</div>
-		</div>
-		<!--блок для восстановления пароля-->
-		<!--<div class="pass-forgot-block">
-			<div class="login-page__title-block">
-				<p class="login-page__title">Воввтановление пароля</p>
-			</div>
-			<div class="login-page__body">
-				<form action="" class="login-form">
-					<p class="login-page__text">Пожалуйста, введите ваш email и мы отправим вам письмо с инструкцией по	восстановлению пароля.</p>
-					<div class="input-wrap">
-						<label for="" class="swipe-label">E-mail</label>
-						<input type="text" class="swipe-input">							
+				</section>
+				<section class="section-3">
+					<div class="section-3__bg"></div>
+						<div class="content">
+								<div class="form-content">
+										<h2 class="title-md">Заполните форму</h2>
+										<p class="subtitle">получите приглашение на <span class="bold-text">тест-драйв </span> раньше своих конкурентов</p>
+									<form action="" class="form">
+										<div class="input-wrap">
+												<input type="text" class="input" placeholder="Введите Имя">
+												<input type="text" class="input" placeholder="E-mail">
+												<input type="text" class="input" placeholder="Телефон">
+										</div>
+										<a href="" class="button button--wapasha button--rounds">Хочу присоединиться</a>										
+									</form>
+									</div>
+						</div>				
+				</section>
+				<section class="section-4">
+					<div class="content">
+						<h3 class="title-sm"><span class="bold-text big-text">CleverBox CRM </span>– лучший помощник руководителей <br>
+								в управлении салоном красоты</h3>
+						<p class="text-l">Собрать и частично проанализировать данные (а именно это и предлагают все существующие CRM) – этого откровенно мало для эффективного управления салоном красоты. Мы предлагаем намного больше возможностей для роста и развития – сбор информации, анализ бизнес-процессов, поиск решений.</p>			
+						<ul class="column__list">
+							<li class="column__item">
+								<i class="column__icon_1"></i>
+								<p class="column__title">Базовый<br>функционал</p>
+								<p class="column__text">В системе есть календарь, база клиентов, зарплаты, складской учет, финансовый учет, смс-напоминания, скидки, базовые отчеты. Все то, без чего управление салоном не может быть полноценным.</p>
+							</li>
+							<li class="column__item">
+									<i class="column__icon_2"></i>
+									<p class="column__title">Автоматизация<br>процессов</p>
+									<p class="column__text">Благодаря CleverBox CRM удается автоматизировать рабочие процессы салона, в результате чего у сотрудников освобождается до 5 часов. Это открывает возможности для улучшения качества работы, экономит огромные ресурсы для других важных задач.</p>
+							</li>
+							<li class="column__item">
+									<i class="column__icon_2"></i>
+									<p class="column__title">Прогнозирование,<br>контроль и аналитика</p>
+									<p class="column__text">С помощью CleverBox CRM возможно прогнозировать продажи с точностью более 90 %. Вы можете анализировать все данные, которые существуют в системе, и контролировать их. Никаких случайных решений «наугад». Только взвешенные, обоснованные, эффективные шаги к улучшению бизнес-процессов и росту прибыли.</p>
+							</li>
+						</ul>
 					</div>
-					<button class="login-button button green trans">Отправить</button>						
-					<div class="login-page__nav">							
-						<a href="" class="form-link">
-							<i class="pointer_left sm blue"></i>
-							Вернуться назад
-						</a>
+				</section>
+				<section class="section-5 clearfix">
+					<div class="img-wrap">
+						<img src="images/img-5.jpg" alt="">
 					</div>
-				</form>
-			</div>				
-		</div>-->
-		<!--письмо отправлено-->
-		<!--<div class="mail-sent">
-			<div class="login-page__title-block">
-				<p class="login-page__title">Письмо отправлено</p>
-			</div>
-			<div class="login-page__body">
-				<form action="" class="login-form">
-					<p class="login-page__text">Мы отправили письмо с инструкцией по восстановлению на <span>gmail@gmail.com</span></p>						
-										
-					<div class="login-page__nav">							
-						<a href="" class="form-link">
-							<i class="pointer_left sm blue"></i>
-							Вернуться назад
-						</a>
-					</div>
-				</form>
-			</div>				
-		</div>-->		
-	</div>		
-</div>
+					<div class="content">
+						<div class="content-column-wrap">
+							<div class="content-column left">
+								<h2 class="title-md">Почему <span class="bold-text">CleverBox</span> отличается от других?</h2>
+							</div>
+							<div class="content-column right">
+								<div class="content-column-block">
+									<p class="text-l">Система создавалась в сотрудничестве с руководителями салонов красоты. Она стала ответом на наши собственные потребности как партнеров салонного бизнеса, так и наших клиентов. Мы создали то, что нужно нам и другим руководителям, которым хотят каждый день улучшать свой бизнес.</p>
+									<p class="text-l"><span class="red-text">CleverBox CRM.</span>Salon&Spa — cамая простая, легкая в освоении платформа, которая подстраивается под потребности вашего салона красоты, SPA-салона, ногтевой студии, парикмахерской.</p>	
+									<p class="text-l">Вы удивитесь, что контролировать и развивать свой бизнес может быть так просто.</p>
+								</div>
+							</div>
+						</div>
+						<div class="form-content bottom-form-content">
+								<h2 class="title-md">Заполните форму</h2>
+								<p class="subtitle">получите доступ ко всем возможностям <span class="bold-text">CleverBox CRM </span> первыми</p>
+							<form action="" class="form">
+								<div class="input-wrap">
+										<input type="text" class="input" placeholder="Введите Имя">
+										<input type="text" class="input" placeholder="E-mail">
+										<input type="text" class="input" placeholder="Телефон">
+								</div>
+								<a href="" class="button button--wapasha button--rounds">Хочу присоединиться</a>										
+							</form>
+							</div>
+							<span class="copyright">CleverBox CRM © 2017.</span>
+					</div>				
+				</section>
+			</main>
 
+		<!-- build:js scripts/vendor.js -->
+		<script src="/bower_components/jquery/dist/jquery.js"></script>   
+		<!-- endbuild -->
 
-{% endblock %} 
+		<!-- build:js scripts/plugins.js -->
+	
+		<!-- endbuild -->
+
+		
+	 
+		<!-- build:js scripts/main.js --> 
+	
+		<script src="scripts/main.js"></script>    
+		<!-- endbuild -->
+
+	</body>
+</html>

@@ -1,0 +1,36 @@
+$icon-font-path: '../fonts/';
+
+$black: #1a1a1a;
+$red: #ed1c24;
+$gray: #f6f6f6;
+
+@media only screen and (max-width: 540px) {
+
+    .section-2 {
+
+        .content-block {
+
+            &.flex {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    .icon-1 {
+        margin-top: 0;
+        margin-bottom: 30px;
+        width: 88px;
+        height: 88px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+}
+
