@@ -1,0 +1,235 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+@media only screen and (max-width: 1810px) {
+
+	//client-card-page
+
+	.user-window {
+
+		&__form {
+
+			.input-wrap {
+				width: 100%;
+			}
+		}
+	}
+
+}
+
+@media only screen and (max-width: 1320px) {
+	
+	.page-nav-tabs {
+		
+		li {
+			min-width: 100px;
+			
+			a {
+				padding: 15px 10px;
+				font-size: 0.9rem;
+			}
+			
+		}		
+	}	
+
+	.table-page {
+
+		&__head {
+			
+			/*.button-wrap {
+				display: flex;
+				flex-direction: column;
+		
+				.button {
+					margin-left: 0;
+					margin-bottom: 10px;
+				}
+			}*/
+		
+		}
+
+		&__filter {
+
+			&-top-block {
+				align-items: flex-start;
+			}
+		}
+
+		&__content-column {
+
+			&-head {
+
+				th {
+					font-size: 13px;
+					padding: 15px;
+				}
+			}
+
+			td {
+				font-size: 13px;
+				padding: 15px;
+			}
+		}
+	}
+
+	
+	.datepicker-block {
+
+		.datepicker-wrap {
+			width: 100%;
+		}	
+	}
+
+	.dable-input-wrap {
+
+		.swipe-input {
+			width: 100%;
+		}
+	}
+
+	.schedule {
+        
+        &__content-column {
+
+            th {
+               padding: 22px 15px;
+            }
+
+            td {
+				padding: 21px 15px;
+            }
+        }
+    }
+
+	//work-table-page tab-2
+	
+	.client-analitic {
+
+		&__title {
+			font-size: 1rem;
+		}
+
+		&__num {
+			font-size: 22px;
+		}
+	}
+
+	//client-table-page
+
+	.client-page {
+
+		.status {
+			
+			&__block {
+				flex-direction: column;
+				align-items: flex-start;
+				
+			}
+		}
+
+		.table-page {
+
+			&__filter-bottom-block {
+				align-items: flex-start;
+			}
+		}
+	}
+
+	.gender-block {
+		flex-direction: column;
+
+		.checkbox-wrap {
+			margin-left: 0;
+			margin-top: 10px;
+		}
+	}
+
+	.select2-container--default .select2-selection--multiple .select2-selection__choice {
+		width: 100%;
+	}
+	
+}
+
+/*@media only screen and (max-width: 1200px) {
+
+	.schedule-work-page {
+		width: 100%;
+		overflow-x: auto;
+	}
+
+}*/
+
+@media only screen and (max-width: 1100px) {
+	
+	
+
+	//work-table-page
+
+	.pay {
+
+		&__title {
+			font-size: 1rem;
+		}
+
+		&__value {
+			font-size: 1.2rem;
+
+			span {
+				font-size: 0.9rem;
+			}			
+		}
+	}
+
+	.main-analitic {
+		font-size: 0.9rem;
+	}
+
+	.client-analitic {		
+		
+		&__item {
+			width: 20%;
+		}		
+	}
+
+
+//tab4
+
+.communication {
+	
+		&__list {
+			flex-wrap: wrap;	
+		}
+	}
+
+	//main-menu-page
+
+	.main-menu-page {
+
+        .sortable {
+
+            &__title-block {
+                font-size: 13px;
+			}
+			
+			&__item {
+				padding: 20px 10px;
+
+				.icon-drop-icon {
+					margin-right: 10px;
+				}
+			}
+        }
+    }
+}
+
+.balance-counter-page {
+
+	.schedule {
+
+		&__body {
+			border-bottom: 1px solid #ababab;
+		}
+	}
+}
+

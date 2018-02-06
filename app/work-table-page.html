@@ -1,0 +1,30 @@
+{% extends "template.html" %}	
+
+{% block content %}	
+
+<main class="work-table-page">
+	<div class="content-wrap">
+			<ul class="nav page-nav-tabs">
+				<li class="active"><a href="#tab1" data-toggle="tab">Записи</a></li>
+				<li><a href="#tab2" data-toggle="tab">Клиенты</a></li>
+				<li><a href="#tab3" data-toggle="tab">Товары</a></li>
+				<li><a href="#tab4" data-toggle="tab">Сотрудники</a></li>
+				<li><a href="#tab5" data-toggle="tab">Коммуникации</a></li>
+				<li><a href="#tab6" data-toggle="tab">Финансы</a></li>
+			</ul>
+
+		<div class="tab-content">
+			{% include "work-table-tab-1.html" %}
+			{% include "work-table-tab-2.html" %}
+			{% include "work-table-tab-3.html" %}
+			{% include "work-table-tab-4.html" %}
+			{% include "work-table-tab-5.html" %}
+			{% include "work-table-tab-6.html" %}
+		</div>    
+	</div>
+
+</main>
+
+{% endblock %} 
+
+	

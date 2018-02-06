@@ -1,0 +1,48 @@
+{% extends "template.html" %}	
+
+{% block content %}	
+
+<main class="associate-card-page">
+		<div class="tools">
+				      
+		</div>
+		<div class="client-card__head">
+			<div class="client-card__head-left">
+				<div class="client-card__title-block">
+					<p class="title">Карина Молчанова</p>
+					<p class="info-element green">+38 (050) 555 55 55</p>
+				</div>
+				
+			</div>
+			<div class="client-card__head-right">
+					<div class="filter-button-block">
+						<button class="button gray-border trans">
+								<i class="pointer_left sm"></i>
+							Назад к списку клиентов</button>
+						<button class="button braun trans">Применить</button>
+					</div>
+			</div>
+		</div>
+	<div class="content-wrap">
+			<ul class="nav page-nav-tabs">
+				<li class="active"><a href="#tab3_1" data-toggle="tab">Профиль</a></li>
+				<li><a href="#tab3_3" data-toggle="tab">Услуги</a></li>
+				<li><a href="#tab3_3" data-toggle="tab">График</a></li>
+				<li><a href="#tab3_4" data-toggle="tab">Набор прав</a></li>
+				<li><a href="#tab3_5" data-toggle="tab">Коммуникации</a></li>				
+			</ul>
+
+		<div class="tab-content">
+			{% include "associate-card-tab-1.html" %}
+			{% include "associate-card-tab-2.html" %}
+			{% include "associate-card-tab-3.html" %}
+			{% include "associate-card-tab-4.html" %}
+			{% include "associate-card-tab-5.html" %}
+		</div>    
+	</div>
+
+</main>
+
+{% endblock %} 
+
+	

@@ -1,0 +1,101 @@
+{% extends "template-width-swipe.html" %}	
+
+{% block content %}	
+
+<!-- вид отчета: в разрезе салонов -->
+
+<main class="report-profit-page">
+	<div class="tools">
+		
+		
+	</div>
+
+	<div class="table-page">
+		<div class="table-page__head">
+				<div class="table-page__head_left">	
+					<h1 class="title">Выручка</h1>				
+				</div>
+				<div class="table-page__head_right flex">					
+					<div class="datepicker-block">						
+							<div class="datepicker-wrap">							
+									<input type="text" class="swipe-input datepicker-1 input-1" placeholder="16.11.2017">                    
+									<i class="icon icon-calendar form-calendar-button datepicker-1" aria-hidden="true"></i>
+							</div>
+							<span class="tire">-</span>
+							<div class="datepicker-wrap">
+									<input type="text" class="swipe-input datepicker-2 input-2" placeholder="16.11.2017">                    
+									<i class="icon icon-calendar form-calendar-button datepicker-2" aria-hidden="true"></i>
+							</div>
+					</div>
+					<button class="button green trans">Показать</button>	
+				</div>			
+		</div>		
+		<div class="subtitle-block white-bg brd-top flex sb aic">
+			<p class="subtitle">Вид отчета: <span>В разрезе салонов</span></p>
+			<div class="input-wrap clearfix">					
+					<select class="swipe-select swipe-input" ref="master">
+							<option value="0" data-display="Выберите вид отчета">в разрезе салонов</option>                       
+							<option value="2">в разрезе услуг</option>													      
+					</select>
+			</div>
+		</div>
+		<div class="schedule__body">
+			<table class="schedule__content-column white">
+				<thead class="schedule__content-column-head">
+					<tr>
+						<th class="w-20pr">
+							Салон
+						</th>
+						<th class="">
+							Выручка
+						</th>
+						<th class="">
+							Услуг, кол-во
+						</th>
+						<th class="">
+							Услуг, сумма
+						</th>
+						<th class="">
+							Товаров, кол-во
+						</th>
+						<th class="">
+							Товаров сумма
+						</th>											
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Lash.Moda New-York</td>
+						<td class="green-text">52000</td>
+						<td>250</td>
+						<td>467000 <i class="icon icon-fin-blue js-add-services-win"></i></td>
+						<td>12</td>					
+						<td>2556 <i class="icon icon-fin-blue js-add-services-win"></i></td>															
+					</tr>
+					<tr>
+                        <td>Lash.Moda New-York</td>
+                        <td class="green-text">52000</td>
+                        <td>250</td>
+                        <td>467000 <i class="icon icon-fin-blue js-add-services-win"></i></td>
+                        <td>12</td>					
+                        <td>2556 <i class="icon icon-fin-blue js-add-services-win"></i></td>															
+                    </tr>					
+					<tr class="schedule__content-column-footer blue-bg">
+						<td>Итого</td>
+						<td class="green-text">5000</td>
+						<td>0</td>
+						<td>0</td>
+						<td> 2556</td>					
+						<td> 2556</td>														
+					</tr>
+				</tbody>
+			</table>		
+		</div>
+		
+	</div>
+
+</main>
+
+{% endblock %} 
+
+	

@@ -1,16 +1,33 @@
 $icon-font-path: '../fonts/';
 
 // bower:scss
-//@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 @import "_reset";
 @import "_fonts";
+@import "_font-awesome";
+@import "_includs";
+@import "_sprite";
 
-@import "_page";
+@import "_jquery-ui-structure";
+@import "_jquery-ui-theme";
+@import "_jquery-ui";
+@import "_select2";
+@import "_nice-select";
+@import "_components";
+@import "_layot";
+@import "_buttons";
+@import "_title-text";
+@import "_datepicker";
+@import "_inputs";
+@import "_paging";
+@import "_filters";
+@import "_sidebar";
+@import "_sortable";
+@import "_other-pages";
+@import "_popups";
 
-<<<<<<< HEAD
-=======
 @import "_header";
 @import "_left-menu";
 @import "_schedule-page";
@@ -26,12 +43,17 @@ $icon-font-path: '../fonts/';
 @import "process-page";
 @import "main-menu-page";
 @import "import-page";
->>>>>>> 0c75997eac91091c044d3261c25bcc0401d8abb6
+@import "task-page";
 
 
-@import "_max-1170.scss";
+
+
+@import "_other";
+@import "_max-1366.scss";
+@import "_max-1260.scss";
 @import "_max-1025.scss";
 @import "_max-992.scss";
+@import "_max-768.scss";
 @import "_max-767.scss";
-@import "_max-540.scss";
 
+  

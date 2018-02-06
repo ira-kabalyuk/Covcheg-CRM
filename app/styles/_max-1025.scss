@@ -1,21 +1,83 @@
 $icon-font-path: '../fonts/';
 
-$black: #1a1a1a;
-$red: #ed1c24;
-$gray: #f6f6f6;
+@import "_includs";
 
-@media only screen and (max-width: 1025px) {	
+@media only screen and (max-width: 1025px) {
 
-    .content {
-        width: 100%;
-        padding: 0 20px;
-    }
+	//schedule
 
-    .section-1 {
+	.today-data {
+		font-size: 1em;
+	}
 
-        .content {
-            padding: 20px;
-        }
-    }
+	.calendar-button {
+		margin-left: 5px;
+	}
 
+	.schedule {
+
+		&__head {
+
+			&_left {
+				
+				.input-group {
+				//	width: 160px;
+
+					.fa {
+						font-size: 1.2em;
+					}
+				}
+
+				.calendar-button {
+					font-size: 1rem;
+				}
+
+				.today-data,
+				.data-input {
+					font-size: 1rem;
+				}
+			}
+		}
+
+		&__nav-list {
+			margin: 0 10px;
+		}
+
+		&__nav-item {
+			font-size: 0.8em;
+		}
+
+		&__nav-button {
+			padding: 0 6px;
+		}
+
+		&__footer {
+
+			&-list {
+				justify-content: flex-start;
+			}
+
+			&-item {
+				margin-bottom: 5px;
+			}
+			
+		}
+	}
+	
+	//schedule-work-page
+
+	.schedule-work-table {
+		th {
+			font-size: 11px;
+		}
+	} 
+		
+	
+	.work-time {
+		span {
+			font-size: 9px;
+			
+		}	
+	}
+	
 }

@@ -1,0 +1,236 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+
+.client-card-page {
+   
+    .content-wrap {
+        margin-top: 0;
+    }
+
+    .alert {
+        width: 550px;
+        font-size: 1rem;
+     }
+}
+
+.client-card {
+
+    &__title-block {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;       
+        position: relative;
+        z-index: 20;
+    }
+
+    &__head {
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .title {
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
+
+        .info-element {            
+           margin: 10px 0;
+        }
+
+        &-right {
+            display: flex;
+            align-items: center;
+
+            .button {
+                display: flex;
+                align-items:center; 
+            }
+        }
+
+       
+    }    
+}
+
+.filter-block {
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+
+    &__item {
+        margin-right: 20px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .label-name {
+        font-size: 12px;
+        color: $gray;
+        display: block;
+        margin-bottom: 3px;
+        width: 100%;
+    }
+}
+
+.group {
+
+    &__list {
+        display: flex;        
+        flex-wrap: wrap;        
+        z-index: 20;
+        max-width: 220px; 
+        
+        .plus-button {
+            position: relative;
+            z-index: 20;
+        }
+        
+    }
+
+    &__item {        
+        color: #fff;
+        background: #676767;
+        padding: 0 25px 0 5px;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        margin-right: 5px;
+        position: relative;
+        z-index: 20;
+        margin-bottom: 3px;
+        height: 21px;
+       
+
+        &:after {
+            content:"×";
+            color: #fff;
+            font-size: 20px;
+            display: inline-block;            
+            position: absolute;
+            top: 50%;
+            margin-top: -12px;
+            right: 5px;
+        }
+    }
+}
+
+.tab-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: $gray;
+
+    &__block {
+        padding: 30px;
+    }
+}
+
+.client-card-column {
+
+    &__list {
+        margin: 0 -15px;
+        display: flex;
+        width: calc(100% + 30px);
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin: 0 15px;
+        width: calc(25% - 30px);
+        position: relative;
+
+        .plus-button {
+            margin-bottom: 20px;
+        }
+        
+    }
+}
+
+.user-window {
+    background: #fff;
+    box-shadow: 0px 1px 18px 3px #f3f3f3;
+    padding: 20px;
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: -100;
+    top: 53px;
+    left: 0;
+
+    &.show {
+        opacity: 1;
+        transition: opacity 0.5s;
+        z-index: 10;
+    }
+    
+
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between; 
+        margin-bottom: 20px;
+        
+        .input-wrap {
+            width: 60%;
+            margin-right: 10px;
+        }
+    
+        .button {
+            margin-top: 0;        
+        }
+    }    
+}
+
+//tab-2
+
+.graph {
+
+    &__block {
+        display: flex;
+        margin: 0 -15px;
+        width: calc(100% + 30px);
+        flex-wrap: wrap;
+    }
+
+    &__item-md {
+        width: calc(50% - 30px); 
+        margin: 0 15px;       
+        max-height: 255px;
+        text-align: center;
+    }
+
+    &__item-lg {
+        width: calc(100% - 30px); 
+        margin: 0 15px;
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+
+//tab-7
+
+.file-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
+
+
+

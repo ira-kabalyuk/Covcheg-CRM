@@ -57,6 +57,10 @@ $icon-font-path: '../fonts/';
 	width: 45% !important;
 }
 
+.w-46pr {
+	width: 46% !important;
+}
+
 .w-50pr {
 	width: 50% !important;
 }
@@ -75,6 +79,22 @@ $icon-font-path: '../fonts/';
 
 .w-110px {
 	width: 110px;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mt-5 {
+    margin-top: 5px;
 }
 
 .mb-10 {
@@ -148,6 +168,14 @@ $icon-font-path: '../fonts/';
 
 .pt-20 {
     padding-top: 20px;
+}
+
+.pl-20 {
+    padding-left: 20px !important;
+}
+
+.pr-20 {
+    padding-right: 20px !important;
 }
 
 .fs-14 {
@@ -227,7 +255,26 @@ $icon-font-path: '../fonts/';
     text-align: right;
 }
 
+.line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
+.time-wrap {
+    position: relative;
+
+    span {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .icon-flag-braun {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
 
 .avatar {
     width: 30px;

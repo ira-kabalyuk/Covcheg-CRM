@@ -1,0 +1,229 @@
+@import "_includs";
+
+.task-page {
+
+    .checkbox-wrap {
+        margin-right: 10px;
+    }
+
+    .control {
+        position: static;
+        margin-left: 5px;
+    }
+
+    .sortable {
+
+		&__list {
+            width: 20%;
+            border-right: 1px solid #eaeaea;
+            
+            &.over {
+                
+                .time-label {
+                    color: red;
+                    padding: 3px 5px;
+                    border: 1px solid $red;               
+                    
+                }
+            }         
+            
+
+        }
+        
+        &__item {
+            padding: 30px;
+            min-height: 180px;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            
+            .checkbox-wrap {
+                margin: 15px 0;
+            }
+
+            .checkbox {
+                width: 30px;
+                flex-basis: 30px;
+                flex-shrink: 1;
+            }
+
+            .check-label {
+                font-size: 13px;
+            }
+           
+        }
+
+        .time-label {
+            font-size: 13px;
+            color: #909090;
+            width: auto;
+        }
+    }
+    
+    &__nav-list {
+        display: flex;
+        padding: 23px 0;
+        background: #e9e9e9;
+    }
+
+    &__nav-item {
+        width: 20%;
+        font-size: 16px;
+        font-weight: 700;
+        color: #7b7b7b;
+       position: relative;
+       padding: 0 30px;
+       text-align: center;
+
+       &:after {
+           content: "";
+           width: 1px;
+           height: calc(100% + 46px);
+           display: block;
+           background: #fff;
+           position: absolute;
+           top: -23px;
+           right: 0;
+       }
+
+       &:last-child {
+           &:after {
+               display: none;
+           }
+       }
+
+       &:before {
+           content: "";
+           display: block;
+           width: 100%;
+           height: 5px;
+           position: absolute;
+           bottom: -23px;
+           left: 0;
+       }
+
+       &.red-line {
+
+        &:before {
+            background: $red;
+        }
+
+       }
+
+       &.green-line {
+
+           &:before {
+               background: $green;
+           }
+       }
+
+       &.blue-line {
+
+            &:before {
+                background: $blue;
+            }
+       }
+
+       &.gray-line {
+
+            &:before {
+                background: #cbcbcb;
+            }
+
+       }
+
+       &.light-gray-line {
+
+            &:before {
+                background: #e2e2e2;
+            }
+       }
+
+    }
+
+    &__tabs-list {
+        display: flex;
+    }
+
+    &__tabs-item {
+        font-size: 14px;
+        color: $black;
+        border: 2px solid #d0d0d0;
+        padding: 10px 15px;
+        cursor: pointer;
+        width: 155px;
+        font-weight: 700;
+        text-align: center;
+
+        &:hover {
+            color: $green;
+            border: 2px solid $green; 
+        }
+
+        &.active {
+            color: $green;
+            border: 2px solid $green;
+            margin-left: -2px;
+        }
+    }
+
+    
+    
+
+    &__tab-list {
+        display: flex;
+        padding: 0 30px;       
+    }
+
+    &__tab-item {
+       
+        background: #e1e1e1;
+        position: relative;
+        min-width: 150px;
+        border-right: 1px solid #fff;       
+       
+        a {
+            color: #6e6e6e;
+            font-size: 15px;
+            font-weight: 700;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            padding: 20px;
+            text-align: center;
+
+            &:hover,
+            &:focus,
+            &:active {
+                text-decoration: none;
+            }
+        }
+
+        &.active {
+            background: #595959;
+            color: #fff;
+                a {
+                    color: #fff;
+                }
+        }
+    }
+
+   .schedule__content-column {
+       .checkbox {
+           width: 15px;
+           height: 15px;
+           flex-basis: 15px;
+           flex-shrink: 0;
+       }
+   }
+
+}
+
+.drop2-placeholder {
+    height: 180px;
+    background: #f7f7f7;
+    border: 1px dashed #c2c2c2;           
+    width: 100%;
+    margin: 20px 0;
+}

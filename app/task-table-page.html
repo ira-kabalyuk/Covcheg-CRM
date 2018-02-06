@@ -1,0 +1,214 @@
+{% extends "template-width-swipe.html" %}	
+
+{% block content %}	
+
+<main class="task-page">
+	<div class="tools">
+		
+	</div>
+
+	<div class="table-page">
+		<div class="table-page__head">
+				<div class="table-page__head_left">	
+					<h1 class="title">Задачи</h1>
+					<button class="button green trans js-add-task">
+							+ Новая задача
+					</button>
+				</div>
+				<div class="table-page__head_right flex fend">					
+						<div class="checkbox-wrap">
+							<input type="checkbox" class="checkbox">
+							<label class="control braun-control control--checkbox">
+								<input type="checkbox" checked="checked">
+								<div class="control__indicator"></div>
+							</label>
+						</div>
+						<ul class="task-page__tabs-list">
+							<li class="task-page__tabs-item">Список</li>
+							<li class="task-page__tabs-item active">Доска</li>
+						</ul>				
+				</div>
+		</div>
+		<ul class="task-page__tab-list white">
+			<li class="task-page__tab-item red-line active"><a href="#tab10-1" data-toggle="tab">Просрочено</a></li>
+			<li class="task-page__tab-item green-line"><a href="#tab10-2" data-toggle="tab">Сегодня</a></li>
+			<li class="task-page__tab-item blue-line"><a href="#tab10-3" data-toggle="tab">Завтра</a></li>
+			<li class="task-page__tab-item gray-line"><a href="#tab10-4" data-toggle="tab">Позже</a></li>
+			<li class="task-page__tab-item light-gray-line"><a href="#tab10-5" data-toggle="tab">Без дедлайна</a></li>
+		</ul>  
+		<div class="tab-content">
+				<div class="tab-pane active" id="tab10-1">
+						<table class="schedule__content-column white">
+								<thead class="schedule__content-column-head">
+									<tr>
+										<th class="w-5pr">
+												<div class="checkbox-wrap">
+														<input type="checkbox" class="checkbox">
+														<label class="control braun-control control--checkbox">
+															<input type="checkbox" checked="checked">
+															<div class="control__indicator"></div>
+														</label>
+													</div>
+										</th>
+										<th class="">
+											Дедлайн
+												
+										</th>
+										<th class="w-15pr">
+											Название
+											
+										</th>
+										<th class="">
+											Объект
+												
+										</th>
+										<th class="w-15pr">
+										Статус
+												
+										</th>
+										<th class="">
+											тип
+											
+										</th>
+										<th class="w-7pr">
+										Выполнено											
+											</th>
+											<th class="">
+										Создано
+											
+											</th>
+											<th class="w-10pr">Создатель</th>
+											<th class="w-10pr">Ответственный</th>
+											<th class="w-5pr"></th>
+
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+												<input type="checkbox" class="checkbox">			
+										</td>
+										
+											<td class=""> 17.12.18 <span class="time-text">10:45</span></td>
+										
+										<td class="bold line">Отправить письмо благодарности</td>
+										<td class="blue-text">не выбрано</td>
+										<td>
+												<label for="checkbox" class="check-label color border-green" title="осблуживание завершено" style="border: 1px solid #45b649; color: #45b649; background: #fff">новая</label>
+										</td>
+										<td >
+												поэтапная					
+										</td>
+										<td >
+											-
+										</td>
+										<td class=""> 17.12.18 <span class="time-text">10:45</span></td>
+										<td>
+											Виктория Краснова
+										</td>
+										<td>
+											Ирина Шишова
+										</td>
+										<td class="last-right">
+												<i class="icon icon-pencil-gray" aria-hidden="true"></i>
+										</td>
+									</tr>
+									<tr>
+											<td>
+													<input type="checkbox" class="checkbox">			
+											</td>
+											
+												<td class=""> 17.12.18 <span class="time-text">10:45</span></td>
+											
+											<td class="bold line">Отправить письмо благодарности</td>
+											<td class="blue-text">не выбрано</td>
+											<td>
+													<label for="checkbox" class="check-label color border-blue" title="запланировано" style="border: 1px solid #2182c5; color: #2182c5; background: #fff">в процессе</label>
+											</td>
+											<td >
+													поэтапная					
+											</td>
+											<td >
+												-
+											</td>
+											<td class=""> 17.12.18 <span class="time-text">10:45</span></td>
+											<td>
+												Виктория Краснова
+											</td>
+											<td>
+												Ирина Шишова
+											</td>
+											<td class="last-right">
+													<i class="icon icon-pencil-gray" aria-hidden="true"></i>
+											</td>
+										</tr>
+										<tr class="active">
+												<td>
+														<input type="checkbox" class="checkbox">			
+												</td>
+												
+													<td class=""> 17.12.18 <span class="time-text">10:45</span></td>
+												
+												<td class="bold line">Отправить письмо благодарности</td>
+												<td class="blue-text">не выбрано</td>
+												<td>
+														<label for="checkbox" class="check-label color border-braun" title="выполнено" style="border: 1px solid #8a8a8a; color: #8a8a8a; background: #fff">завершена удачно</label>
+												</td>
+												<td >
+														поэтапная					
+												</td>
+												<td >
+													-
+												</td>
+												<td class=""> 17.12.18 <span class="time-text">10:45</span></td>
+												<td>
+													Виктория Краснова
+												</td>
+												<td>
+													Ирина Шишова
+												</td>
+												<td class="last-right">
+														<i class="icon icon-pencil-gray" aria-hidden="true"></i>
+												</td>
+											</tr>
+											<tr>
+													<td>
+															<input type="checkbox" class="checkbox">			
+													</td>
+													
+														<td class=""> 17.12.18 <span class="time-text">10:45</span></td>
+													
+													<td class="bold line">Отправить письмо благодарности</td>
+													<td class="blue-text">не выбрано</td>
+													<td>
+															<label for="checkbox" class="check-label color border-braun" title="выполнено" style="border: 1px solid #ec1c23; color: #ec1c23; background: #fff">завершена не удачно</label>
+													</td>
+													<td >
+															поэтапная					
+													</td>
+													<td >
+														-
+													</td>
+													<td class=""> 17.12.18 <span class="time-text">10:45</span></td>
+													<td>
+														Виктория Краснова
+													</td>
+													<td>
+														Ирина Шишова
+													</td>
+													<td class="last-right">
+															<i class="icon icon-pencil-gray" aria-hidden="true"></i>
+													</td>
+												</tr>
+								</tbody>
+							</table>
+				</div>	
+		</div>
+		
+	</div>
+
+</main>
+
+{% endblock %} 
+
+	

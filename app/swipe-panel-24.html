@@ -1,0 +1,91 @@
+<!--добавление контрагента-->
+<div class="swipe-panel swipe-panel-24 w800">
+	<div class="swipe-panel__header">
+			<div class="swipe-panel__title-block">
+				<p class="swipe-panel__title">
+					Операция
+				</p>			
+			</div>
+			<div class="swipe-panel__close-block">
+					<i class="icon icon-close" aria-hidden="true"></i>
+			</div>	
+	</div>
+	<div class="swipe-panel__body">			
+			<div class="swipe-panel__info">							
+			</div>
+			<form action="" class="swipe-form">
+				<div class="swipe-form__column-wrap">
+					<div class="swipe-form__column">
+						<span class="pay-label red mb-20" style="border: 1px solid #ec1c23; color: #ec1c23; background: #fff">РКО не проведен</span>
+						<span class="pay-label red mb-20" style="border: 1px solid #45b649; color: #45b649; background: #fff;">РКО проведен</span>
+						<div class="input-wrap clearfix">
+							<label for="" class="swipe-label">Статья</label>
+							<select class="swipe-select swipe-input" ref="master">
+									<option value="0" data-display="Выберите статью">Оплата за товар</option>                       
+									<option value="2">Статья-1</option>
+									<option value="2">статья-2</option>
+									<option value="2">статья-3</option>        
+							</select>
+						</div>
+						<div class="input-wrap clearfix">
+								<label for="" class="swipe-label">Касса</label>
+								<select class="swipe-select swipe-input" ref="master">
+										<option value="0" data-display="Выберите кассу">Банк-Терминал Приват</option>                       
+										<option value="2">Касса-1</option>
+										<option value="2">Касса-2</option>
+										<option value="2">Касса-3</option>        
+								</select>
+							</div>
+						<div class="input-wrap">
+								<label for="" class="swipe-label">Сотрудник</label>
+								<input type="text" class="swipe-input" placeholder="Введите имя сотрудника">
+						</div>
+						
+					</div>
+					<div class="swipe-form__column">
+							<div class="add-block__head mb-15">								
+									<a class="add client-add">История изменений</a>
+							</div>
+							<div class="input-wrap dable-input-wrap sb">
+									<label for="" class="swipe-label">Дата</label>
+									<div class="swipe-panel__data-block">										
+											<span class="pb-9 pt-9">24.11.2018 10.30</span>											
+									</div>
+							</div>
+							<div class="input-wrap">
+									<label for="" class="swipe-label">Тип</label>	
+									<div class="row-wrap col-3 pb-9 pt-9">								
+										<div class="checkbox-wrap">
+												<input type="radio" class="checkbox" name="fam">
+												<label for="checkbox" class="check-label">Контрагент</label>
+										</div>
+										<div class="checkbox-wrap">
+												<input type="radio" class="checkbox" name="fam">
+												<label for="checkbox" class="check-label">Клиент</label>
+										</div>
+										<div class="checkbox-wrap">
+												<input type="radio" class="checkbox" name="fam">
+												<label for="checkbox" class="check-label">Сотрудник</label>
+										</div>
+									</div>
+							</div>
+							<div class="input-wrap w-45pr">
+									<label for="" class="swipe-label">Сумма, грн</label>
+									<input type="text" class="swipe-input">
+							</div>
+						
+						</div>	
+					</div>
+					<div class="input-wrap">
+							<label for="" class="swipe-label">Комментарий</label>
+							<textarea type="text" class="swipe-textarea min"></textarea>
+						</div>
+						<div class="button-wrap flex fend">
+								<button class="button green trans w-25pr">Сохранить</button>
+							</div>									
+			</form>	
+	</div>	
+</div>
+
+
+

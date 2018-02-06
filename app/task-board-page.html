@@ -1,0 +1,118 @@
+{% extends "template-width-swipe.html" %}	
+
+{% block content %}	
+
+<main class="task-page">
+	<div class="tools">
+		
+	</div>
+
+	<div class="table-page">
+		<div class="table-page__head">
+				<div class="table-page__head_left">	
+					<h1 class="title">Задачи</h1>
+					<button class="button green trans js-add-task">
+							+ Новая задача
+					</button>
+				</div>
+				<div class="table-page__head_right flex fend">					
+						<div class="checkbox-wrap">
+							<input type="checkbox" class="checkbox">
+							<label class="control braun-control control--checkbox">
+								<input type="checkbox" checked="checked">
+								<div class="control__indicator"></div>
+							</label>
+						</div>
+						<ul class="task-page__tabs-list">
+							<li class="task-page__tabs-item">Список</li>
+							<li class="task-page__tabs-item active">Доска</li>
+						</ul>				
+				</div>
+		</div>
+		<ul class="task-page__nav-list">
+			<li class="task-page__nav-item red-line">Просрочено</li>
+			<li class="task-page__nav-item green-line">Сегодня</li>
+			<li class="task-page__nav-item blue-line">Завтра</li>
+			<li class="task-page__nav-item gray-line">Позже</li>
+			<li class="task-page__nav-item light-gray-line">Без дедлайна</li>
+		</ul>  
+		<div class="element-wrap white flex">
+				<ul id="sortable1" class="sortable__list ui-sortable over">                  
+					<li class="sortable__item">                       
+							<i class="icon icon-drop2-icon ui-icon-arrowthick ui-sortable-handle"></i>                        									
+						<div class="sortable__title-block">
+								Отправить письмо благодарности     											
+						</div>
+						<div class="checkbox-wrap">
+							<input type="checkbox" class="checkbox">
+							<label for="checkbox" class="check-label">Написать директору салона</label>
+						</div>
+						<span class="time-label">17.11.2018 15:45</span>
+					</li>
+					<li class="sortable__item">                       
+							<i class="icon icon-drop2-icon ui-icon-arrowthick ui-sortable-handle"></i>                        									
+						<div class="sortable__title-block">
+								Отправить письмо благодарности     											
+						</div>
+						<span class="time-label">17.11.2018 15:45</span>
+					</li>                        						
+				</ul>
+				<ul id="sortable2" class="sortable__list ui-sortable">                  
+						<li class="sortable__item">                       
+								<i class="icon icon-drop2-icon ui-icon-arrowthick ui-sortable-handle"></i>                        									
+							<div class="sortable__title-block">
+									Отправить письмо благодарности     											
+							</div>
+							<span class="time-label">17.11.2018 15:45</span>
+						</li>     
+						<li class="sortable__item">                       
+								<i class="icon icon-drop2-icon ui-icon-arrowthick ui-sortable-handle"></i>                        									
+							<div class="sortable__title-block">
+									Отправить письмо благодарности     											
+							</div>
+							<span class="time-label">17.11.2018 15:45</span>
+						</li>     
+						<li class="sortable__item">                       
+								<i class="icon icon-drop2-icon ui-icon-arrowthick ui-sortable-handle"></i>                        									
+							<div class="sortable__title-block">
+									Отправить письмо благодарности     											
+							</div>
+							<span class="time-label">17.11.2018 15:45</span>
+						</li>     						
+				</ul>
+				<ul id="sortable3" class="sortable__list ui-sortable">                       
+					<li class="sortable__item">                       
+							<i class="icon icon-drop2-icon ui-icon-arrowthick ui-sortable-handle"></i>                        									
+						<div class="sortable__title-block">
+								Отправить письмо благодарности     											
+						</div>
+						<span class="time-label">17.11.2018 15:45</span>
+					</li>												
+				</ul>
+				<ul id="sortable4" class="sortable__list ui-sortable">                       
+					<li class="sortable__item">                       
+							<i class="icon icon-drop2-icon ui-icon-arrowthick ui-sortable-handle"></i>                        									
+						<div class="sortable__title-block">
+								Отправить письмо благодарности     											
+						</div>
+						<span class="time-label">17.11.2018 15:45</span>
+					</li>												
+				</ul>
+				<ul id="sortable5" class="sortable__list ui-sortable">                       
+					<li class="sortable__item">                       
+							<i class="icon icon-drop2-icon ui-icon-arrowthick ui-sortable-handle"></i>                        									
+						<div class="sortable__title-block">
+								Отправить письмо благодарности     											
+						</div>
+						<span class="time-label">17.11.2018 15:45</span>
+					</li>												
+				</ul>
+		</div>
+		
+	</div>
+
+</main>
+
+{% endblock %} 
+
+	
