@@ -1,0 +1,88 @@
+{% extends "template-width-swipe.html" %}	
+
+{% block content %}	
+
+<main class="main-menu-page page-width-sidebar">
+		<div class="content-wrap flex">
+				{% include "sidebar.html" %}
+			<div class="content col">
+					<div class="title-block title-braun">
+							<p class="title">Основное меню</p>  
+							<button class="button red trans">Сохранить</button> 
+					</div>
+					
+						
+						<div class="element-wrap flex">
+								<ul id="sortable1" class="sortable__list">
+									<li class="sortable__head">Показать основное меню</li>
+									<li class="sortable__item">
+										<div class="sortable__item-head">
+											<i class="icon icon-drop-icon ui-icon-arrowthick"></i>
+											<div class="sortable__title-block">
+												Рабочий стол											
+											</div>
+										</div>									
+									</li>
+									<li class="sortable__item">
+											<div class="sortable__item-head">
+												<i class="icon icon-drop-icon ui-icon-arrowthick"></i>
+												<div class="sortable__title-block">
+														Расписание									
+												</div>
+											</div>										
+										</li>
+										<li class="sortable__item">
+												<div class="sortable__item-head">
+													<i class="icon icon-drop-icon ui-icon-arrowthick"></i>
+													<div class="sortable__title-block">
+															Задачи											
+													</div>
+												</div>										
+											</li>						
+								</ul>
+								<ul id="sortable2" class="sortable__list">
+									<li class="sortable__head">Показать в "Еще"</li>
+									<li class="sortable__item">
+										<div class="sortable__item-head">
+											<i class="icon icon-drop-icon ui-icon-arrowthick"></i>
+											<div class="sortable__title-block">
+												Клиенты										
+											</div>
+										</div>									
+									</li>
+									<li class="sortable__item">
+										<div class="sortable__item-head">
+											<i class="icon icon-drop-icon ui-icon-arrowthick"></i>
+											<div class="sortable__title-block">
+												Услуги								
+											</div>
+										</div>										
+									</li>
+									<li class="sortable__item">
+											<div class="sortable__item-head">
+												<i class="icon icon-drop-icon ui-icon-arrowthick"></i>
+												<div class="sortable__title-block">
+														Сотрудникм
+												</div>
+											</div>										
+										</li>						
+								</ul>
+								<ul id="sortable3" class="sortable__list">
+										<li class="sortable__head">Скрыть меню</li>
+										<li class="sortable__item">
+											<div class="sortable__item-head">
+												<i class="icon icon-drop-icon ui-icon-arrowthick"></i>
+												<div class="sortable__title-block">
+													Отчеты										
+												</div>
+											</div>
+										</li>													
+									</ul>
+						</div>				
+			</div>
+		</div>
+</main>
+
+{% endblock %} 
+
+	

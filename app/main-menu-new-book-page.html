@@ -1,0 +1,192 @@
+{% extends "template-width-swipe.html" %}	
+
+{% block content %}	
+
+<main class="main-menu-page page-width-sidebar">
+		<div class="content-wrap flex">
+				{% include "sidebar.html" %}
+			<div class="content col">
+					<div class="title-block title-braun">
+							<p class="title">Новый сценарий</p>  
+							<button class="button red trans">Сохранить</button> 
+					</div>
+								
+						<div class="element-wrap">
+							<div class="main-menu__row-list">
+									<div class="input-wrap clearfix">
+											<label for="" class="swipe-label">Название</label>
+											<input class="swipe-input" type="text">
+									</div>
+									<div class="input-wrap clearfix">
+											<label for="" class="swipe-label">Описание</label>
+											<input class="swipe-input" type="text">
+									</div>
+									<div class="input-wrap clearfix">
+											<label for="" class="swipe-label">Группа</label>
+											<select class="swipe-select swipe-input" ref="master">
+													<option value="0" data-display="Заявки">Заявки</option>
+													<option value="1">Заявки-2</option>
+													<option value="2">Заявки-3</option>        
+											</select>
+									</div>
+									<div class="switch-wrap input-wrap">
+											<span class="switsh-label">Активность сценария
+												<label>
+														<input type="checkbox" class="switch green bigswitch" checked="">
+														<div>
+																<div>
+																</div>
+														</div>
+												</label>
+											</span>
+									</div>
+							</div>
+						</div>				
+							<div class="main-menu__col-list">
+								<div class="main-menu__col-item">
+									<p class="main-menu__col-title">Если</p>
+									<div class="main-menu__col-item-wrap">
+											<div class="input-wrap dable-input-wrap">										
+													<select class="swipe-select swipe-input" ref="master">
+															<option value="0" data-display="Сделка">Сделка</option>                       
+															<option value="2">Сделка-1</option>
+															<option value="2">Сделка-2</option>
+															<option value="2">Сделка-3</option>        
+													</select>
+													<span class="tire">была</span>
+													<select class="swipe-select swipe-input" ref="master">
+															<option value="0" data-display="Создана">Создана</option>                       
+															<option value="2">Отменена</option>
+															<option value="2">Перенесена</option>
+															<option value="2">Удалена</option>        
+												</select>
+															
+											</div>
+											<button class="button blue-btn trans">
+													Добавить условие												
+											</button>
+											<div class="sortable__item">
+												<div class="sortable__wrap">
+														<div class="input-wrap">
+																<select class="swipe-select swipe-input" ref="master">
+																				<option value="0" data-display="Сумма">Сумма</option>                       
+																				<option value="2">1000</option>
+																				<option value="2">2000</option>
+																				<option value="2">3000</option>        
+																</select>
+														</div> 
+														<div class="input-wrap">
+																<select class="swipe-select swipe-input" ref="master">
+																				<option value="0" data-display="Больше или равно">Больше или равно</option>                       
+																				<option value="2">1000</option>
+																				<option value="2">2000</option>
+																				<option value="2">3000</option>        
+																</select>
+														</div> 
+												<div class="input-wrap">													
+														<input class="swipe-input" type="text">
+												</div>					
+													<div class="sortable__tools-block">														
+														<button class="sortable-button del js-del"><i class="icon icon-close-sm" aria-hidden="true"></i></button>														
+													</div>
+												</div>													
+											</div>
+
+											<div class="sortable__item">
+													<div class="sortable__wrap">
+															<div class="input-wrap">
+																	<select class="swipe-select swipe-input" ref="master">
+																					<option value="0" data-display="Сумма">Сумма</option>                       
+																					<option value="2">1000</option>
+																					<option value="2">2000</option>
+																					<option value="2">3000</option>        
+																	</select>
+															</div> 
+															<div class="input-wrap">
+																	<select class="swipe-select swipe-input" ref="master">
+																					<option value="0" data-display="Больше или равно">Больше или равно</option>                       
+																					<option value="2">1000</option>
+																					<option value="2">2000</option>
+																					<option value="2">3000</option>        
+																	</select>
+															</div> 
+													<div class="input-wrap">													
+															<input class="swipe-input" type="text">
+													</div>					
+														<div class="sortable__tools-block">														
+															<button class="sortable-button del js-del"><i class="icon icon-close-sm" aria-hidden="true"></i></button>														
+														</div>
+													</div>
+														
+												</div>
+									</div>
+								</div>
+								<div class="main-menu__col-item">
+										<p class="main-menu__col-title last">То</p>
+										<div class="main-menu__col-item-wrap">
+											<div class="main-menu__col-item-block">
+												<div class="input-wrap">										
+														<select class="swipe-select swipe-input" ref="master">
+																<option value="0" data-display="Отправиь SMS клиенту">Отправиь SMS клиенту</option>                       
+																<option value="2">Сделка-1</option>
+																<option value="2">Сделка-2</option>
+																<option value="2">Сделка-3</option>        
+														</select>																
+												</div>
+												<button class="button blue-btn trans">
+														Добавить действие											
+												</button>												
+											</div>
+												<div class="sortable__item">
+													<div class="sortable__title">
+														<p class="sortable__text">Создать задачу</p>
+															<div class="sortable__tools-block">														
+																	<button class="sortable-button del js-del">
+																		<i class="icon icon-close-sm" aria-hidden="true"></i></button>														
+																</div>
+													</div>
+													<div class="sortable__body">
+															<div class="input-wrap clearfix">
+																	<label for="" class="swipe-label" >Тема</label>
+																	<input class="swipe-input" type="text" placeholder="Позвонить клиенту">
+															</div>
+															<div class="input-wrap clearfix">
+																	<label for="" class="swipe-label">Описание</label>
+																	<input class="swipe-input" type="text">
+															</div>
+													</div>	
+													<div class="sortable__wrap">
+															<div class="input-wrap">
+																	<label for="" class="swipe-label">Тип</label>
+																	<select class="swipe-select swipe-input" ref="master">
+																					<option value="0" data-display="Звонок">Звонок</option>                       
+																					<option value="2">Сообщение</option>
+																					<option value="2">СМС</option>
+																					<option value="2">Скайп</option>        
+																	</select>
+															</div> 
+															<div class="input-wrap">
+																	<label for="" class="swipe-label">Сотрудник</label>
+																	<select class="swipe-select swipe-input" ref="master">
+																					<option value="0" data-display="Менеджер">Менеджер</option>                       
+																					<option value="2">Директор</option>
+																					<option value="2">Лешмейкер</option>
+																					<option value="2">Администратор</option>        
+																	</select>
+															</div> 
+														<div class="input-wrap">
+																<label for="" class="swipe-label">Срок, мин</label>													
+																<input class="swipe-input" type="text">
+														</div>													
+													</div>													
+												</div>											
+										</div>
+									</div>
+							</div>	
+			</div>
+		</div>
+</main>
+
+{% endblock %} 
+
+	

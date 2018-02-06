@@ -1,0 +1,32 @@
+{% extends "template-width-swipe.html" %}	
+
+{% block content %}	
+
+<main class="main-menu-page page-width-sidebar">
+		<div class="content-wrap flex">
+				{% include "sidebar.html" %}
+			<div class="content col">
+					<div class="title-block title-braun">
+							<p class="title">Зарплата</p>  
+							<button class="button red trans">Сохранить</button> 
+					</div>
+								
+						<div class="element-wrap">
+								<div class="main-menu__list">
+										<div class="input-wrap clearfix">
+												<label for="" class="swipe-label">Переодичность начисления</label>
+												<select class="swipe-select swipe-input" ref="master">
+														<option value="0" data-display="Ежемесячно (в конце месяца)">Ежемесячно (в конце месяца)</option>
+														<option value="1">2 раза в месяц (Каждые 15 дней)</option>
+														<option value="2">2 раза в месяц (5-го и 20-го числа)</option>        
+												</select>
+										</div>
+								</div>    
+						</div>				
+			</div>
+		</div>
+</main>
+
+{% endblock %} 
+
+	

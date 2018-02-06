@@ -1,0 +1,129 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+@media only screen and (max-width: 1260px) {
+
+    //shedule-page
+
+    .schedule {
+
+        &__head {
+            padding: 0 15px;
+
+            &_left {
+
+                .input-group {
+                    width: 100%;
+                }
+
+                .calendar-button {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        &__nav-list {
+            margin: 0 15px;
+        }
+      
+        &__nav-button {
+
+        }
+
+        &__nav-item {
+            font-size: 0.9rem;
+        }
+        
+    }
+
+    .today-data,
+    .data-input {
+        font-size: 1.2rem;
+    }
+
+    //client-card-page
+
+    .add-group {
+
+        &__block {
+            left: -60%;
+        }
+    }
+
+    .client-card-column {       
+        
+        &__item {
+            width: calc(50% - 30px);
+        }
+    }
+
+    //main-menu-page
+
+    .main-menu-page {
+
+        .sortable {
+
+            &__title-block {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .settings {
+
+        &__table {
+
+            th {
+                padding: 11px 20px;
+                font-size: 1rem;               
+            }
+
+            td {
+               padding: 11px 20px; 
+            }
+        }
+    }
+
+    .main-menu {
+
+        &__col-list {
+            flex-direction: column;
+        }
+
+        &__col-item {
+            width: 100%;
+        }
+    }
+
+    .main-menu-page {
+
+        .main-form {
+            flex-direction: column;
+            
+            &__column_1 {
+                width: calc(100% - 20px - 200px);  
+               
+                &:last-child {
+                    margin: -15px 10px 10px 10px;
+                }
+
+                &.thin {
+                    width: calc(200px - 20px); 
+                }
+            }
+        }
+		}
+		
+		.import-table {
+
+			.nice-select {
+				font-size: 13px;
+			}
+
+			td {
+				font-size: 13px;
+				padding: 15px 10px;
+			}
+		}
+}

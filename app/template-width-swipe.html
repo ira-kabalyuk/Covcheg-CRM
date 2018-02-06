@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+		{% include "head.html" %}
+
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<div class="pagewrap">
+				{% include "header.html" %}
+				{% include "left-menu.html" %}
+			
+				{% block content %}	
+			
+				{% endblock %} 
+			
+				{% include "scripts.html" %}	
+		</div>
+	
+	</body>
+	{% include "swipe-panel-add-record.html" %} 	<!--форма добавления записи в календаре-->
+	{% include "swipe-panel-1.html" %}<!--форма добавления клиента-->
+	{% include "swipe-panel-2.html" %}<!--новая запись в салон-->
+	{% include "swipe-panel-3.html" %}<!--лист ожидания-->
+	{% include "swipe-panel-4.html" %}<!--окно в таблице расписания-->
+	{% include "swipe-panel-6.html" %}<!--редактирование склады-->
+	{% include "swipe-panel-7.html" %}<!--добавить справочник-->
+	{% include "swipe-panel-5.html" %}<!--форма добавления товара-->
+	{% include "swipe-panel-8.html" %}<!--добавить статью-->
+	{% include "swipe-panel-9.html" %}<!--добавить контрагента-->
+	{% include "swipe-panel-10.html" %}<!--добавление кассы-->
+	{% include "swipe-panel-11.html" %}<!--начисление зарплаты-->
+	{% include "swipe-panel-12.html" %}<!--справочник салоны-->
+	{% include "swipe-panel-13.html" %}<!--триггеры-->
+	{% include "swipe-panel-14.html" %}<!--перемещение средств новый платеж-->
+	{% include "swipe-panel-15.html" %}<!--перемещение средств перевод средств-->
+	{% include "swipe-panel-16.html" %}<!--приход страница Складские операции-->
+	{% include "swipe-panel-17.html" %}<!--перемещение страница Складские операции-->
+	{% include "swipe-panel-18.html" %}<!--списание страница Складские операции-->
+	{% include "swipe-panel-19.html" %}<!--инвентраризация страница Складские операции-->
+	{% include "swipe-panel-20.html" %}<!--добавить услугу-->
+	{% include "swipe-panel-21.html" %}<!--отчеты выручка-->
+	{% include "swipe-panel-22.html" %}<!--запись в салон страница calendar-page.html-->
+	{% include "swipe-panel-23.html" %}<!--начисление зарплаты окно "начисление зарптаты"-->
+	{% include "swipe-panel-24.html" %}<!--начисление зарплаты кнопка на иконке кошелька-->
+	{% include "swipe-panel-25.html" %}<!--начисление зарплаты кнопка на ссылке имени-->
+	
+	{% include "popup-system-message.html" %}<!--системное сообщение-->
+	{% include "popup-save-message.html" %}<!--системное сообщение сохранено и системное сообщение ошибка-->
+	{% include "popup-pay.html" %}<!--попап оплаты услуги в calendar-page.html -->
+	{% include "popup-notification.html" %}<!--попап оповещение -->
+	
+</html>

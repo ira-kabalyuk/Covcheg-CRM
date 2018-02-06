@@ -1,0 +1,80 @@
+{% extends "template-width-swipe.html" %}	
+
+{% block content %}	
+
+<main class="items-table-page">
+	<div class="tools">
+		
+		
+	</div>
+
+	<div class="table-page">
+		<div class="table-page__head">
+				<div class="table-page__head_left">	
+					<h1 class="title">Статьи</h1>
+					<button class="button green trans waiting-list-btn js-item-add">
+							+ Новая статья
+					</button>
+				</div>				
+		</div>
+	
+		<div class="schedule__body">
+			<table class="schedule__content-column white">
+				<thead class="schedule__content-column-head">
+					<tr>
+						<th class="w-10pr">	id</th>
+						<th class="w-40pr">Название	</th>
+						<th class="w-44pr">Шаблон операции</th>
+						<th class="w-6pr"></th>						
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+						24				
+						</td>
+						<td class="bold">
+							SMS
+						</td>
+						<td class="expense"> <!--expense  - класс для расходов и красная иконка, income - класс для доходов, зеленая иконка-->
+							<i class="icon icon-pointer-top"></i>
+							<i class="icon icon-pointer-bottom"></i>
+							Операционный расход
+						</td>
+						<td>
+							<button class="sortable-button look js-look included">
+								<i class="icon icon-eye-green-on" aria-hidden="true"></i>
+								<i class="icon icon-eye-gray-off" aria-hidden="true"></i>
+							</button>
+						</td>								
+					</tr>
+					<tr>
+							<td>
+							11				
+							</td>
+							<td class="bold">
+								Оплата услуги
+							</td>
+							<td class="income"> <!--expense  - класс для расходов и красная иконка, income - класс для доходов, зеленая иконка-->
+									<i class="icon icon-pointer-top"></i>
+									<i class="icon icon-pointer-bottom"></i>
+								Продажа
+							</td>
+							<td>
+									<button class="sortable-button look js-look disabled">
+										<i class="icon icon-eye-green-on" aria-hidden="true"></i>
+										<i class="icon icon-eye-gray-off" aria-hidden="true"></i>
+									</button>			
+							</td>										
+						</tr>					
+				</tbody>
+			</table>			
+		</div>
+		
+	</div>
+
+</main>
+
+{% endblock %} 
+
+	

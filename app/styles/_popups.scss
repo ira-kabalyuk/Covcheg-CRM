@@ -1,0 +1,430 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+/*системное сообщение*/
+
+.modal {
+    font-family: 'Helvetica', "sans-serif";
+    color: $black;
+}
+
+.popup-system-message {
+    display: none; /*display: flex;*/
+    background: rgba(190, 190, 190, 0.5);
+    align-items: center;
+    justify-content: center;
+
+    .modal-footer {      
+        
+        .button {
+            width: 100%;
+        }
+    }
+}
+
+.modal-system-message {
+    width: 350px;
+
+}
+
+.modal-content {
+    border-radius: 0;
+    box-shadow: none;
+    border: none;    
+}
+
+.modal-header {
+   background: #ebebeb;
+   position: relative;
+   padding: 11px 30px;
+   border-bottom: 0;
+   
+   .close {
+       width: 45px;
+       background: #e0e0e0;
+       position: absolute;
+       top: 2px;
+       right: 0;
+       height: 100%;
+       opacity: 0.7;
+
+   }
+} 
+
+.modal-title {   
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.modal-body {
+    border-bottom: none;
+    padding: 22px 30px;    
+}
+
+.system-message {
+    font-size: 14px;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.modal-footer {   
+    padding: 22px 30px;  
+    border-top: none;  
+  
+}
+
+/*системное сообщение конец*/
+
+
+/*системное сообщение сохранено*/
+.popup-save-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none; /*display: flex;*/
+    background: $green;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    z-index: 1050;
+    align-items: center;
+    justify-content: center;
+}
+
+/*системное сообщение сохранено конец*/
+
+/*системное сообщение ошибка*/
+.popup-error-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none; /*display: flex;*/
+    background: #dd484c;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    z-index: 1050;
+    align-items: center;
+    justify-content: center;
+}
+
+/*системное сообщение ошибка конец*/
+
+/*окно оплаты*/
+
+
+
+.popup-pay {
+	display: none; /*display: flex;*/
+	background: rgba(0, 0, 0, 0.8);
+	align-items: center;
+	justify-content: center;
+
+	.modal-pay {
+		width: 850px;
+		max-width: 850px;
+	}
+
+
+	.modal-header {
+		height: 60px;
+		display: flex;
+		background: $light-bg;
+		align-items: center;	
+    font-weight: 700;
+		color: #fff;
+		padding: 0;
+	}	
+	
+	.modal-title {
+		padding: 0 30px;
+		font-size: 18px;
+	}
+	
+	.close {
+		background: #575656;
+		color: #9c9c9c;
+		width: 60px;
+    height: 100%;  
+    flex-basis: 60px;   
+    flex-shrink: 0;   
+    display: flex;   
+    justify-content: center;  
+    align-items: center;
+    cursor: pointer;
+	}
+
+	.modal-body {
+		padding: 40px;
+	}
+
+	.swipe-info-table {
+		font-size: 16px;
+
+		td {
+			padding: 8px 0;
+		}
+
+		colgroup {
+			width: auto;
+		}
+	}
+
+	.swipe-table {
+
+		td {
+			padding: 7px 10px 7px 0;
+		}
+
+		.swipe-select {
+			padding: 5px 20px;
+		}
+	}
+
+	.code-pay {
+
+		&__block {
+			background: #f4f4f4;
+			padding: 15px 20px;
+			margin: 30px 0;
+			display: flex;		
+			align-items: flex-start;				
+		}
+
+		&__info {
+			font-size: 14px;
+			width: 37%;	
+			margin-right: 20px;	
+		}
+
+		&__title {
+			font-weight: 700;
+			margin-bottom: 5px;
+		}
+
+		&__text {
+			color: #757575;
+			font-size: 13px;
+		}
+
+		&__input-block {
+			width: 205px;
+			max-width: 205px;			
+			position: relative;
+
+			&:after {
+				content:"";
+				background: url(../images/icon-check-green.png);
+				width: 13px;
+				height: 11px;
+				display: inline-block;
+				position: absolute;
+				top: 50%;
+				margin-top: -5px;
+				right: 20px;
+			}
+	
+			.pay-input {
+				border: 1px solid #d0d0d0;
+				padding: 9px 40px 9px 20px;
+				background: transparent;		
+				width: 100%;
+				font-size: 13px;
+			
+			}
+	
+		}
+
+	}
+
+	.popup-input-column {
+
+		.input-wrap {
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.modal-footer {
+		padding: 0px 30px 40px;
+
+		.button {
+			width: 100%;
+			font-size: 18px;
+			padding: 19px 25px;
+		}
+	}
+
+}
+
+.popup-input-wrap {
+	margin: 30px -25px 0 -25px;
+}
+
+.popup-input-column {
+	width: calc(50% - 50px);
+	margin: 0 25px;
+
+	.horisontal {
+
+		.swipe-input {
+			width: 40%;
+			flex-basis: 40%;    
+    	flex-shrink: 0;
+		}
+
+		.swipe-label {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			width: 40%;
+			flex-basis: 40%;    
+			flex-shrink: 0;
+			font-weight: 700;
+		}
+
+		span {
+			display: inline-block;
+			font-size: 16px;
+			margin-left: 10px;
+		}
+	}
+}
+
+/*notification*/
+
+.popup-notification {
+	background: rgba(0, 0, 0, 0.8);
+	align-items: center;
+	justify-content: center;
+	display:none;
+	
+}
+
+.modal-notification {
+	background: #f0f0f0;
+	width: 775px;
+	max-width: 775px;
+
+	.modal-header  {
+		padding: 30px 30px 0 30px;
+	}
+
+	.close {
+		width: 80px;
+		height: 100%;
+		background: #fff;
+		opacity: 1;
+		font-size: 40px;
+		color: #a3a3a3;
+	}
+
+	.page-nav-tabs {
+
+		.label {
+			margin-left: 10px;
+			width: 24px;
+			height: 24px;
+			font-size: 15px;
+
+			&_tabs {
+				background: #f0f0f0;
+				color: $red;
+			}		
+		}
+
+		&.active {
+
+			.label {
+
+				&_tabs {
+					background: #f0f0f0;
+					color: $red;
+				}		
+			}
+		}
+	}
+
+	.modal-body {
+		padding: 0 0 50px 0;
+		height: 390px;
+		overflow: hidden;
+	}
+
+	.table-page {
+
+		&__head {
+			padding: 0 30px;
+
+			.button {
+				margin-left: 0;
+				font-size: 13px;
+				padding: 5px 15px;
+			}
+
+			&_right {
+				flex-basis: auto;
+			}
+		}
+	}
+
+	.notification-table-wrap {
+		height: 265px;
+    overflow: hidden;
+    overflow-y: auto;
+	}
+
+	.notification-table {
+		table-layout: fixed;
+		width: 100%;
+		font-size: 16px;
+
+		colgroup {
+			&:nth-child(2) {
+				width: 60%;
+			}
+		}
+
+		tr {			
+
+			 td {
+				 padding: 18px 10px;
+				 vertical-align: middle;
+				 border-bottom: 1px solid #fff;
+
+				 &:first-child {
+					 padding-left: 30px;
+				 }
+
+				 &:last-child {
+					 padding-right: 30px;
+				 }
+			 }
+
+			 .notification-table__text {
+				text-decoration: line-through;
+				color: #7f7f7f;
+			 }
+		}
+
+		.active {
+			background: #e4f7e4;		
+
+			.notification-table__text {
+				color: $black;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+
