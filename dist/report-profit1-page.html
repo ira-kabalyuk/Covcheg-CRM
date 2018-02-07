@@ -544,7 +544,10 @@
 			<ul class="swipe-panel__list">
 					<li class="swipe-panel__item">
 							<div class="button-wrap">
-								<button class="panel-redact"><i class="icon icon-pencil-gray"></i></button>
+								<button class="panel-redact">
+									<i class="icon icon-pencil-gray"></i>
+									<i class="icon icon-pencil-blue"></i>
+								</button>
 								<button class="panel-close">×</button>
 							</div>
 							<div class="name-wrap">
@@ -561,7 +564,10 @@
 					</li>
 					<li class="swipe-panel__item">
 							<div class="button-wrap">
-								<button class="panel-redact"><i class="icon icon-pencil-gray"></i></button>
+								<button class="panel-redact">
+									<i class="icon icon-pencil-gray"></i>
+									<i class="icon icon-pencil-blue"></i>
+								</button>
 								<button class="panel-close">×</button>
 							</div>
 							<div class="name-wrap">
@@ -2751,6 +2757,7 @@
 				<div class="swipe-form__column-wrap">
 					<div class="swipe-form__column">
 						<span class="pay-label red mb-20" style="border: 1px solid #ec1c23; color: #ec1c23; background: #fff">РКО не проведен</span>
+						<span class="pay-label red mb-20" style="border: 1px solid #45b649; color: #45b649; background: #fff;">РКО проведен</span>
 						<div class="input-wrap clearfix">
 							<label for="" class="swipe-label">Статья</label>
 							<select class="swipe-select swipe-input" ref="master">
@@ -2872,6 +2879,675 @@
 	
 	
 	<!--начисление зарплаты кнопка на ссылке имени-->
+	<!--Добавление оклада-->
+<div class="swipe-panel swipe-panel-26 w400">
+		<div class="swipe-panel__header">
+				<div class="swipe-panel__title-block">
+					<p class="swipe-panel__title">
+					Оклад
+					</p>			
+				</div>
+				<div class="swipe-panel__close-block">
+						<i class="icon icon-close"></i>
+				</div>	
+		</div>
+		<div class="swipe-panel__body">			
+				<div class="swipe-panel__info">							
+				</div>
+				<form action="" class="swipe-form">
+					<div class="input-wrap">
+							<label for="" class="swipe-label">Название</label>
+							<input type="text" class="swipe-input" placeholder="Введите название должности">
+					</div>
+					<div class="switch-wrap input-wrap switch-wrap__text-right">						
+									<label>
+											<input type="checkbox" class="switch green bigswitch" checked="">
+											<div>
+													<div>
+													</div>
+											</div>
+									</label>
+									<span class="switsh-label  bold">Фиксированная ставка</span>
+					</div>
+					<div class="input-wrap dable-input-wrap no-tire sb">
+							<label for="" class="swipe-label normal">Размер ставки, грн</label>
+							<input type="text" class="swipe-input" placeholder="0">
+						
+								<select class="swipe-select" ref="master">
+									<option value="0" data-display="В месяц">В месяц</option>
+									<option value="1">В неделю</option>
+									<option value="2">В день</option>        
+								</select>					
+					</div>
+					<div class="switch-wrap input-wrap switch-wrap__text-right">						
+							<label>
+									<input type="checkbox" class="switch green bigswitch" checked="">
+									<div>
+											<div>
+											</div>
+									</div>
+							</label>
+							<span class="switsh-label bold">Процент от собственных продаж</span>
+					</div>
+					<div class="input-wrap dable-input-wrap no-tire sb">
+							<label for="" class="swipe-label normal">Продажа услуг</label>
+							<input type="text" class="swipe-input" placeholder="0">
+						
+								<select class="swipe-select" ref="master">
+									<option value="0" data-display="% от суммы">10%</option>
+									<option value="1">20%</option>
+									<option value="2">30%</option>        
+								</select>					
+					</div>
+					<div class="input-wrap dable-input-wrap no-tire sb">
+							<label for="" class="swipe-label normal">Продажа товаров</label>
+							<input type="text" class="swipe-input" placeholder="0">
+						
+								<select class="swipe-select" ref="master">
+										<option value="0" data-display="% от суммы">10%</option>
+										<option value="1">20%</option>
+										<option value="2">30%</option>  
+								</select>					
+					</div>
+					<button class="button braun w-100pr min trans js-add-product" type="button">Уточнить процент на отдельные услуги и товары</button>
+					<div class="add-block">
+							<div class="label-wrap mb-5">
+								<a href="" class="label label_green lang" title="Активный" style="color: #ffffff; background: #5fad5a">+ Услуга</a>
+								<a href="" class="label label_blue lang" title="Разовый" style="color: #ffffff; background: #2182c5">+ Товар</a>
+							</div>
+							<div class="input-wrap">								
+									<input type="text" class="swipe-input" placeholder="Найти услугу">
+							</div>
+							<table class="search__list">
+									<tbody><tr>
+											<td class="search__item-name">Объемное наращивание ресниц 2D</td>
+											<td class="last-right">10%</td>
+											<td><i class="icon icon-close-sm" aria-hidden="true"></i></td>
+									</tr>
+									<tr>
+											<td class="search__item-name">
+											Гарантийное перенаращивание	
+											</td>
+											<td class="last-right">5%</td>
+											<td><i class="icon icon-close-sm" aria-hidden="true"></i></td>
+									</tr>								
+								</tbody>
+							</table>
+							<div class="add-block__body no-btn">
+									<i class="icon icon-close-sm" aria-hidden="true"></i>
+									<span class="service-name mb-10">Объемное наращивание ресниц Голливуд</span>												                      
+									<div class="input-wrap dable-input-wrap no-tire sb">										
+											<input type="text" class="swipe-input" placeholder="0">
+										
+												<select class="swipe-select" ref="master">
+														<option value="0" data-display="% от суммы">10%</option>
+														<option value="1">20%</option>
+														<option value="2">30%</option>  
+												</select>					
+									</div>									
+							</div>
+							<div class="add-block__body no-btn">
+									<i class="icon icon-close-sm" aria-hidden="true"></i>
+									<span class="service-name mb-10">Объемное наращивание ресниц Голливуд
+
+									</span>												                      
+									<div class="input-wrap dable-input-wrap no-tire sb">										
+											<input type="text" class="swipe-input" placeholder="0">
+										
+												<select class="swipe-select" ref="master">
+														<option value="0" data-display="% от суммы">10%</option>
+														<option value="1">20%</option>
+														<option value="2">30%</option>  
+												</select>					
+									</div>
+									
+							</div>
+					</div>
+					<div class="switch-wrap input-wrap switch-wrap__text-right">						
+							<label>
+									<input type="checkbox" class="switch green bigswitch" checked="">
+									<div>
+											<div>
+											</div>
+									</div>
+							</label>
+							<span class="switsh-label bold">Процент от продаж салона</span>
+					</div>
+					<div class="input-wrap dable-input-wrap no-tire sb">
+							<label for="" class="swipe-label normal">Оборот услуг</label>
+							<input type="text" class="swipe-input" placeholder="0">						
+								<select class="swipe-select" ref="master">
+										<option value="0" data-display="% от суммы">10%</option>
+										<option value="1">20%</option>
+										<option value="2">30%</option>  
+								</select>					
+					</div>
+					<div class="input-wrap dable-input-wrap no-tire sb">
+							<label for="" class="swipe-label normal">Оборот товаров</label>
+							<input type="text" class="swipe-input" placeholder="0">						
+								<select class="swipe-select" ref="master">
+										<option value="0" data-display="% от суммы">10%</option>
+										<option value="1">20%</option>
+										<option value="2">30%</option>  
+								</select>					
+					</div>
+					<div class="switch-wrap input-wrap switch-wrap__text-right">						
+							<label>
+									<input type="checkbox" class="switch green bigswitch" checked="">
+									<div>
+											<div>
+											</div>
+									</div>
+							</label>
+							<span class="switsh-label bold">Бонусы</span>
+					</div>
+					<div class="input-wrap dable-input-wrap no-tire sb">
+							<label for="" class="swipe-label normal w-46pr">Записки клиентов, грн</label>
+							<label for="" class="swipe-label normal w-46pr">Расчет клиентов, грн</label>						
+							<input type="text" class="swipe-input" placeholder="0">
+							<input type="text" class="swipe-input" placeholder="0">					
+					</div>
+					<div class="button-wrap">
+						<button class="button green trans">Отправить</button>
+						<button class="button gray-border trans">Отмена</button>
+					</div>
+				</form>	
+		</div>	
+	</div>
+	
+	
+	
+	<!--добвление оклада. Справочник окладов-->
+	<!--справочник оклад-->
+<div class="swipe-panel swipe-panel-27 w400">
+		<div class="swipe-panel__header">
+				<div class="swipe-panel__title-block">
+					<p class="swipe-panel__title">
+						Услуги и товары
+					</p>			
+				</div>
+				<div class="swipe-panel__close-block">
+						<i class="icon icon-close" aria-hidden="true"></i>
+				</div>	
+		</div>
+		<ul class="nav page-nav-tabs">
+			<li class="active"><a href="#tab8_1" data-toggle="tab">Услуги</a></li>
+			<li><a href="#tab8_2" data-toggle="tab">Товары</a></li>           
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane swipe-panel__body swipe-tab-pane active white-bg" id="tab8_1">              
+				<table class="tree-table">
+					<colgroup> </colgroup>
+					<tr class="tree-table__level-1">
+						<td class="open">
+							<i class="icon icon-tree-plus"></i>
+							<i class="icon icon-tree-minus"></i>
+							Все услуги
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="tree-table__level-2">
+						<td>
+							<i class="icon icon-tree-plus"></i>
+							<i class="icon icon-tree-minus"></i>
+							Биотатуаж
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="tree-table__level-2 open">
+							<td>
+								<i class="icon icon-tree-plus"></i>
+								<i class="icon icon-tree-minus"></i>
+								Брови
+							</td>
+							<td></td>
+							<td></td>
+						</tr>
+					<tr class="tree-table__level-3">
+						<td>Фиксация бровей</td>
+						<td>10</td>
+						<td>
+								<select class="swipe-select swipe-input" ref="master">
+										<option value="0" data-display="%">%</option>                       
+										<option value="2">грн</option>
+										<option value="2">С</option>												      
+								</select>	
+						</td>
+					</tr>
+					<tr class="tree-table__level-3">
+						<td>Моделирование бровей</td>
+						<td>150</td>
+						<td>															
+							<select class="swipe-select swipe-input" ref="master">
+									<option value="0" data-display="%">%</option>                       
+									<option value="2">грн</option>
+									<option value="2">С</option>												      
+							</select>									
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="tab-pane swipe-panel__body swipe-tab-pane white-bg" id="tab8_2">              
+					<table class="tree-table">
+							<colgroup> </colgroup>
+							<tr class="tree-table__level-1">
+								<td class="open">
+									<i class="icon icon-tree-plus"></i>
+									<i class="icon icon-tree-minus"></i>
+									Все товары
+								</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="tree-table__level-2">
+								<td>
+									<i class="icon icon-tree-plus"></i>
+									<i class="icon icon-tree-minus"></i>
+									Биотатуаж
+								</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="tree-table__level-2 open">
+									<td>
+										<i class="icon icon-tree-plus"></i>
+										<i class="icon icon-tree-minus"></i>
+										Брови
+									</td>
+									<td></td>
+									<td></td>
+								</tr>
+							<tr class="tree-table__level-3">
+								<td>Фиксация бровей</td>
+								<td>10</td>
+								<td>
+										<select class="swipe-select swipe-input" ref="master">
+												<option value="0" data-display="%">%</option>                       
+												<option value="2">грн</option>
+												<option value="2">С</option>												      
+										</select>	
+								</td>
+							</tr>
+							<tr class="tree-table__level-3">
+								<td>Моделирование бровей</td>
+								<td>150</td>
+								<td>															
+									<select class="swipe-select swipe-input" ref="master">
+											<option value="0" data-display="%">%</option>                       
+											<option value="2">грн</option>
+											<option value="2">С</option>												      
+									</select>									
+								</td>
+							</tr>
+						</table>			
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<!--добвление оклада. Справочник окладов-->
+	<!--новая задача-->
+<div class="swipe-panel swipe-panel-28 h100 w800">
+		<div class="swipe-panel__header">
+				<div class="swipe-panel__title-block">
+					<p class="swipe-panel__title">
+					Отправить письмо благодарности
+					</p>			
+				</div>
+				<div class="swipe-panel__close-block">
+						<i class="icon icon-close" aria-hidden="true"></i>
+				</div>	
+		</div>
+		<div class="swipe-panel__body">			
+				
+				<form action="" class="swipe-form">
+					<div class="swipe-form__column-wrap">
+						<div class="swipe-form__column">														
+								<div class="input-wrap clearfix">
+										<label for="" class="swipe-label">Название</label>
+										<input type="text" class="swipe-input" placeholder="Введите заголовок сообщения">
+								</div>
+								<div class="time-wrap mb-20">
+										<label for="" class="swipe-label">Создано</label>
+										<p class="time">17.11.2017 <span>15:45</span></p>
+										<div class="time-submenu">
+												<span class="icon icon-flag-braun"></span>
+											<ul class="time-submenu__list">
+												<li class="time-submenu__item">
+													<i class="icon icon-circle-pointer-green"></i>
+													follow-up</li>
+												<li class="time-submenu__item">
+													<i class="icon icon-case-blue"></i>
+													Встреча
+												</li>
+												<li class="time-submenu__item">
+														<i class="icon icon-time-gray"></i>
+													Другое
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="input-wrap clearfix">
+											<label for="" class="swipe-label">Тип</label>
+											<select class="swipe-select" ref="master">
+													<option value="0" data-display="Выберите тип">Поэтапная</option>
+													<option value="1">Поэтапная</option>
+													<option value="2">Поэтапная</option>        
+											</select>
+									</div>
+									<div class="input-wrap clearfix">
+											<label for="" class="swipe-label">Статус</label>
+											<select class="swipe-select" ref="master">
+													<option value="0" data-display="Выберите Статус">Новая</option>
+													<option value="1">Сегодняшняя</option>
+													<option value="2">Вчерашняя</option>        
+											</select>
+									</div>
+									<div class="input-wrap">
+										<label for="" class="swipe-label">Дедлайн</label>
+										<table class="input-table">
+												<tbody>
+													<tr>
+															<td class="w-50pr pr-20">
+																	<div class="datepicker-wrap">
+																			<input type="text" class="swipe-input add-rec-datepicker" placeholder="16.11.2017">                    
+																			<i class="icon icon-calendar form-calendar-button add-rec-datepicker" aria-hidden="true"></i>
+																		</div>
+															</td>
+															<td class="">
+																	<input type="text" class="swipe-input" placeholder="19">														
+															</td>
+															<td class="w-3pr">
+																	<span class="tire">:</span>
+															</td>
+															<td class="">
+																	<div class="input-wrap clearfix">																	
+																			<input type="text" class="swipe-input" placeholder="00">
+																	</div>
+															</td>
+														
+													</tr>																									
+												</tbody>
+											</table>								
+									</div>
+									<div class="input-wrap clearfix">
+											<label for="" class="swipe-label">Ответственный</label>
+											<select class="swipe-select" ref="master">
+													<option value="0" data-display="Выберите имя">Петрова Анастасия</option>
+													<option value="1">Иванова Екатерина</option>
+													<option value="2">Сидорова Соломия</option>        
+											</select>
+									</div>
+									<div class="input-wrap clearfix">
+											<label for="" class="swipe-label">Клиент</label>
+											<select class="swipe-select" ref="master">
+													<option value="0" data-display="Выберите имя">Петрова Анастасия</option>
+													<option value="1">Иванова Екатерина</option>
+													<option value="2">Сидорова Соломия</option>        
+											</select>
+									</div>
+									<div class="input-wrap">
+										<label for="" class="swipe-label">Описание</label>
+										<textarea type="text" class="swipe-textarea middle"></textarea>
+									</div>
+									<div class="swipe-button-wrap">
+											<button class="button green w-100pr trans" data-toggle="modal" data-target="#payPopup">Сохранить изменения</button>
+											<button class="button gray-border w-100pr trans">Завершить задачу</button>										
+											<div class="button-wrap mb-20">
+													<button class="button green-border trans">Удачно</button>
+													<button class="button red-border trans">Не удачно</button>
+											</div>										
+										</div>
+								</div>
+								<div class="swipe-form__column gray-bg">
+										<div class="input-wrap">
+											<label for="" class="swipe-label">Примечание</label>
+											<textarea type="text" class="swipe-textarea middle"></textarea>
+										</div>
+											<div class="history__wrap">
+													<label for="" class="swipe-label pb-10">История</label>
+												<div class="history__block">													
+													<p class="history__name">Маргарита<span>18.12.2018 в 15.55</span></p>
+													<p class="history__status" style="background:#ffced0">Просрочила задачу <span>отправить письмо благодарности</span></p>
+												</div>
+												<div class="history__block">													
+														<p class="history__name" >Маргарита<span>18.12.2018 в 15.55</span></p>
+														<p class="history__status" style="background:#fff" >Создала задачу <span>отправить письмо благодарности</span></p>
+													</div>
+											</div>
+								</div>
+							</div>	
+						
+					</div>				
+				</form>	
+		</div>	
+	</div>
+	
+	
+	
+	<!--добвление задачи. task-board-page-->
+	<!--Добавление оклада-->
+<div class="swipe-panel swipe-panel-29 w400">
+		<div class="swipe-panel__header">
+				<div class="swipe-panel__title-block">
+					<p class="swipe-panel__title">
+					Создать скидку
+					</p>			
+				</div>
+				<div class="swipe-panel__close-block">
+						<i class="icon icon-close"></i>
+				</div>	
+		</div>
+		<div class="swipe-panel__body">			
+				<div class="swipe-panel__info">							
+				</div>
+				<form action="" class="swipe-form">
+					<div class="input-wrap">
+							<label for="" class="swipe-label">Название</label>
+							<input type="text" class="swipe-input" placeholder="Введите название должности">
+					</div>
+					
+					<div class="input-wrap dable-input-wrap no-tire sb">
+							<label for="" class="swipe-label">Размер скидки</label>
+							<input type="text" class="swipe-input">						
+								<select class="swipe-select" ref="master">
+									<option value="0" data-display="%">%</option>
+									<option value="1">грн</option>
+									<option value="2">доллар</option>        
+								</select>					
+					</div>
+					<div class="datepicker-block sb mt-0">
+                            <label for="" class="swipe-label">Период действия</label>
+                            <div class="datepicker-wrap">							
+                                    <input type="text" class="swipe-input datepicker-1 input-1" placeholder="16.11.2017">                    
+                                    <i class="icon icon-calendar form-calendar-button datepicker-1" aria-hidden="true"></i>
+                            </div>
+                            <span class="tire">-</span>
+                            <div class="datepicker-wrap">
+                                    <input type="text" class="swipe-input datepicker-2 input-2" placeholder="16.11.2017">                    
+                                    <i class="icon icon-calendar form-calendar-button datepicker-2" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="input-wrap dable-input-wrap no-tire sb">
+                                <label for="" class="swipe-label">Кол-во использований</label>
+                                <input type="text" class="swipe-input">
+                               
+                                <div class="checkbox-wrap mt-10">
+                                    <input type="checkbox" class="checkbox">
+                                    <label for="checkbox" class="check-label">Безлимитная</label>
+                                </div> 					
+                        </div>
+                        <div class="checkbox-wrap w-100pr mb-20">
+                            <input type="checkbox" class="checkbox ">
+                            <label for="checkbox" class="check-label">Действует в определенное время</label>
+                        </div>
+                        <div class="input-wrap">
+                                <label for="" class="swipe-label">Минимальная стоимость товара или услуги, грн</label>
+                                <input type="text" class="swipe-input">
+                        </div>
+                        <div class="input-wrap">
+                                <label for="" class="swipe-label">Сумма чека (от), грн</label>
+                                <input type="text" class="swipe-input" placeholder="Введите название должности">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="" class="swipe-label">Предоставляется клиентам</label>                           
+                                <select class="swipe-select" ref="master">
+                                    <option value="0" data-display="Всем клиентам">Всем клиентам</option>
+                                    <option value="1">постоянным клиентам</option>
+                                    <option value="2">новым клиентам</option>        
+                                </select>					
+                        </div>
+                        <div class="checkbox-wrap w-100pr mb-20">
+                            <input type="checkbox" class="checkbox">
+                            <label for="checkbox" class="check-label bold">Скидка действует на следующие услуги</label>
+                        </div>					
+					<div class="add-block">						
+							<div class="input-wrap">								
+                                    <input type="text" class="swipe-input" placeholder="Найти услугу">
+                                    <button class="plus-button md braun"><i class="fa fa-plus" aria-hidden="true"></i></button>
+							</div>
+							<table class="search__list">
+									<tbody><tr>
+											<td class="search__item-name">Объемное наращивание ресниц 2D</td>											
+											<td><i class="icon icon-close-sm" aria-hidden="true"></i></td>
+									</tr>
+									<tr>
+											<td class="search__item-name">
+											Гарантийное перенаращивание	
+											</td>
+											
+											<td><i class="icon icon-close-sm" aria-hidden="true"></i></td>
+									</tr>								
+								</tbody>
+							</table>							
+					</div>				
+                    <div class="checkbox-wrap w-100pr mb-20">
+                            <input type="checkbox" class="checkbox">
+                            <label for="checkbox" class="check-label bold">Скидка действует на следующие товары</label>
+                        </div>
+					<div class="button-wrap">
+						<button class="button green trans">Сохранить</button>
+						<button class="button gray-border trans">Отмена</button>
+					</div>
+				</form>	
+		</div>	
+	</div>
+	
+	
+	
+	<!--добвление скидки. discounts-board-page-->
+	<!--Добавление оклада-->
+<div class="swipe-panel swipe-panel-30 w400">
+		<div class="swipe-panel__header">
+				<div class="swipe-panel__title-block">
+					<p class="swipe-panel__title">
+					Создать тип сертификата
+					</p>			
+				</div>
+				<div class="swipe-panel__close-block">
+						<i class="icon icon-close"></i>
+				</div>	
+		</div>
+		<div class="swipe-panel__body">			
+				<div class="swipe-panel__info">							
+				</div>
+				<form action="" class="swipe-form">
+					<div class="input-wrap">
+							<label for="" class="swipe-label">Название</label>
+							<input type="text" class="swipe-input" placeholder="Введите название должности">
+					</div>
+					<div class="input-wrap">
+						<label for="" class="swipe-label">Ограничение применения</label>                           
+								<select class="swipe-select" ref="master">
+										<option value="0" data-display="Без ограничений">Без ограничений</option>
+										<option value="1">постоянным клиентам</option>
+										<option value="2">новым клиентам</option>        
+								</select>					
+				</div>
+				<div class="input-wrap">
+					<label for="" class="swipe-label">Тип списания</label>                           
+							<select class="swipe-select" ref="master">
+									<option value="0" data-display="Без ограничений">Без ограничений</option>
+									<option value="1">Однократное списание</option>
+									<option value="2">поэтапное списание</option>        
+							</select>					
+				</div>
+				<div class="row-wrap sb">
+					<div class="input-wrap w-46pr">
+						<label for="" class="swipe-label">Цена, грн</label>
+						<input type="text" class="swipe-input">
+					</div>
+					<div class="input-wrap w-46pr">
+						<label for="" class="swipe-label">Номинал, грн</label>
+						<input type="text" class="swipe-input">
+					</div>
+				</div>
+				<div class="input-wrap">
+						<label for="" class="swipe-label">Действует в салонах</label>
+							<div class="checkbox-wrap">
+							<input type="checkbox" class="checkbox">
+							<label for="checkbox" class="check-label">Lash.Moda Praga</label>
+						</div>
+						<div class="checkbox-wrap">
+							<input type="checkbox" class="checkbox">
+							<label for="checkbox" class="check-label">Lash.Moda New-York</label>
+						</div>
+				</div>
+					<div class="button-wrap">
+						<button class="button green trans">Сохранить</button>
+						<button class="button gray-border trans">Отмена</button>
+					</div>
+				</form>	
+		</div>	
+	</div>
+	
+	
+	
+	<!--добвление сертификата. certificates-table-page-type-->
+	<!--Добавление оклада-->
+<div class="swipe-panel swipe-panel-31 w400">
+		<div class="swipe-panel__header">
+				<div class="swipe-panel__title-block">
+					<p class="swipe-panel__title">
+					Создать сертификат
+					</p>			
+				</div>
+				<div class="swipe-panel__close-block">
+						<i class="icon icon-close"></i>
+				</div>	
+		</div>
+		<div class="swipe-panel__body">			
+				<div class="swipe-panel__info">							
+				</div>
+				<form action="" class="swipe-form">
+					<div class="input-wrap">
+							<label for="" class="swipe-label">Название</label>
+							<input type="text" class="swipe-input">
+					</div>
+					<div class="input-wrap">
+							<label for="" class="swipe-label">Номер от</label>
+							<input type="text" class="swipe-input">
+					</div>
+					<div class="input-wrap">
+							<label for="" class="swipe-label">Номер до</label>
+							<input type="text" class="swipe-input">
+					</div>
+					
+					<div class="button-wrap">
+						<button class="button green trans">Сохранить</button>
+						<button class="button gray-border trans">Отмена</button>
+					</div>
+				</form>	
+		</div>	
+	</div>
+	
+	
+	
+	<!--добвление сертификата. certificates-table-page-reestr-->
+
 	
 	<!--системное сообщение-->
 
@@ -3214,6 +3890,6 @@
 	  </div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
-<!--попап оповещение -->
+<!--попап оповещение-->
 	
 </html>

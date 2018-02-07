@@ -52,6 +52,8 @@
 	<div class="button-wrap">
 			<button class="button green trans">Придет</button>
 			<button class="button red trans">Не придет</button>
+			<button class="button green-border trans">Удачно</button>
+			<button class="button red-border trans">Не удачно</button>
 	</div>
 
 
@@ -72,6 +74,7 @@
 
 <button class="plus-button green"><i class="fa fa-plus" aria-hidden="true"></i></button>
 <button class="plus-button md green"><i class="fa fa-plus" aria-hidden="true"></i></button>
+<button class="plus-button md braun"><i class="fa fa-plus" aria-hidden="true"></i></button>
 
 <!--статусы клиентов -->
 <span class="label label_orange lang" title="Постоянный" style="color: #ffffff; background: #ec5c1c">Постоянный</span>
@@ -117,6 +120,10 @@
 
 
 <!--form elements-->
+<div class="time-wrap">
+		<label for="" class="swipe-label">Создано</label>
+		<p class="time">15.38 <span>15:45</span></p>
+	</div>
 
 <div class="datepicker-block">
 	<label for="" class="swipe-label">Период</label>
@@ -129,6 +136,18 @@
 			<input type="text" class="swipe-input datepicker-2 input-2" placeholder="16.11.2017">                    
 			<i class="icon icon-calendar form-calendar-button datepicker-2" aria-hidden="true"></i>
 	</div>
+</div>
+
+<div class="input-wrap">
+		<label for="" class="swipe-label">Цены в салонах (грн)</label>
+		<div class="input-wrap horisontal">
+			<span>Lash.Moda Praga</span>
+			<input type="text" class="swipe-input sm">
+		</div>
+		<div class="input-wrap horisontal">
+			<span>Lash.Moda Kiev</span>
+			<input type="text" class="swipe-input sm">
+		</div>
 </div>
 
 <div class="input-wrap error">
@@ -156,6 +175,46 @@
 	<input type="text" class="swipe-input add-rec-datepicker" placeholder="16.11.2017">                    
 	<i class="icon icon-calendar form-calendar-button add-rec-datepicker" aria-hidden="true"></i>
 </div>
+
+<div class="row-wrap">
+	<div class="datepicker-block min">
+		<label for="" class="swipe-label">Дата</label>
+		<div class="datepicker-wrap w-100pr">
+			<input type="text" class="swipe-input add-rec-datepicker" placeholder="16.11.2017">                    
+			<i class="icon icon-calendar form-calendar-button add-rec-datepicker" aria-hidden="true"></i>
+		</div>
+	</div>
+	<div class="time-wrap">
+		<label for="" class="swipe-label">Время</label>
+		<p class="time">15.38</p>
+	</div>
+</div>
+
+<table class="input-table">
+		<tbody>
+			<tr>
+					<td class="w-60pr">
+							<div class="datepicker-wrap">
+									<input type="text" class="swipe-input add-rec-datepicker" placeholder="16.11.2017">                    
+									<i class="icon icon-calendar form-calendar-button add-rec-datepicker" aria-hidden="true"></i>
+								</div>
+					</td>
+					<td class="">
+							<input type="text" class="swipe-input" placeholder="19">														
+					</td>
+					<td class="w-3pr">
+							<span class="tire">:</span>
+					</td>
+					<td class="">
+							<div class="input-wrap clearfix">																	
+									<input type="text" class="swipe-input" placeholder="00">
+							</div>
+					</td>
+				
+			</tr>
+																
+		</tbody>
+	</table>
 
 <div class="input-wrap">
 	<select class="swipe-select" ref="master">
@@ -322,9 +381,25 @@
 </div>
 
 <label class="control control--checkbox">
-		<input type="checkbox" checked="checked"/>
+	<input type="checkbox" checked="checked"/>
+	<div class="control__indicator"></div>
+</label>
+
+<div class="checkbox-wrap">
+	<input type="checkbox" class="checkbox">
+	<label class="control braun-control control--checkbox">
+		<input type="checkbox" checked="checked">
 		<div class="control__indicator"></div>
+	</label>
+</div>
+
+<div class="checkbox-wrap">
+		<input type="checkbox" class="checkbox">
+		<label class="control gray-control control--checkbox">
+			<input type="checkbox" checked="checked">
+			<div class="control__indicator"></div>
 		</label>
+	</div>
 
 <!--text-->
 <p class="green-text">мама мыла раму</p>

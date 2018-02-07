@@ -1,0 +1,150 @@
+{% extends "template.html" %}	
+
+{% block content %}	
+
+<main class="sertificates-page">
+	<div class="tools">
+		
+	</div>
+
+	<div class="table-page">
+		<div class="table-page__head">
+				<div class="table-page__head_left">	
+					<h1 class="title">Типы сертификатов</h1>
+					<button class="button green trans">
+							+ Создать тип
+					</button>
+				</div>
+				<ul class="task-page__tabs-list ml-20">
+					<li class="task-page__tabs-item">Типы сертификатов</li>
+					<li class="task-page__tabs-item active">Использование сертификатов</li>
+					<li class="task-page__tabs-item">Реестр сертификатов</li>
+				</ul>	
+		</div>
+		<div class="filter-wrap">
+				<div class="table-page__filter">
+					
+					<div class="table-page__filter-top-block fend">
+							<div class="datepicker-block">
+									<label for="" class="swipe-label">Продажа</label>
+									<div class="datepicker-wrap">							
+											<input type="text" class="swipe-input datepicker-1 input-1" placeholder="16.11.2017">                    
+											<i class="icon icon-calendar form-calendar-button datepicker-1" aria-hidden="true"></i>
+									</div>
+									<span class="tire">-</span>
+									<div class="datepicker-wrap">
+											<input type="text" class="swipe-input datepicker-2 input-2" placeholder="16.11.2017">                    
+											<i class="icon icon-calendar form-calendar-button datepicker-2" aria-hidden="true"></i>
+									</div>
+							</div>
+							<div class="input-wrap clearfix">
+									<label for="" class="swipe-label">Место продажи</label>
+									<select class="swipe-select swipe-input" ref="master">
+											<option value="0" data-display="Все">Все</option>                       
+											<option value="2">Lash.moda-2</option>
+											<option value="2">Lash.moda-3</option>
+											<option value="2">Lash.moda-4</option>        
+									</select>
+								</div>	
+								<div class="input-wrap clearfix">
+										<label for="" class="swipe-label">Место использования</label>
+										<select class="swipe-select swipe-input" ref="master">
+												<option value="0" data-display="Все">Все</option>                       
+												<option value="2">Lash.moda-2</option>
+												<option value="2">Lash.moda-3</option>
+												<option value="2">Lash.moda-4</option>        
+										</select>
+									</div>
+									<div class="datepicker-block">
+											<label for="" class="swipe-label">Использован</label>
+											<div class="datepicker-wrap">							
+													<input type="text" class="swipe-input datepicker-1 input-1" placeholder="16.11.2017">                    
+													<i class="icon icon-calendar form-calendar-button datepicker-1" aria-hidden="true"></i>
+											</div>
+											<span class="tire">-</span>
+											<div class="datepicker-wrap">
+													<input type="text" class="swipe-input datepicker-2 input-2" placeholder="16.11.2017">                    
+													<i class="icon icon-calendar form-calendar-button datepicker-2" aria-hidden="true"></i>
+											</div>
+									</div>					
+							<div class="input-wrap filter-button-block">
+											<button class="button braun trans">Применить</button>
+											<button class="button gray-border trans">Сброс</button>
+							</div>                      
+					</div>
+				</div>	
+				<div class="table-page__filter-select">
+						<span class="swipe-label">Шаблон фильтра:</span>
+						<div class="input-wrap">
+								<select class="swipe-select" data-placeholder="Короленко Фильтр-1" ref="master">
+										<option value="0">Петрова Фильтр-1</option>
+										<option value="21">Короленко Фильтр-2</option>
+										<option value="8">Короленко Фильтр-3</option>
+										<option value="9">Короленко Фильтр-4</option>									
+								</select>
+						</div>
+						<div class="button-wrap">
+								<button class="panel-redact braun-bg"><i class="icon icon-pencil-white"></i></button>
+								<button class="panel-save braun-bg"><i class="icon icon-save-white"></i></button>
+						</div>
+				</div>
+			</div>
+		<div class="schedule__body">
+								<table class="schedule__content-column white">
+										<thead class="schedule__content-column-head">
+												<tr>
+														<th class="w-7pr">
+															номер
+														</th>
+														<th class="title-phone">
+															Тип
+														</th>
+														<th class="">
+															покупатель
+														</th>
+														<th class="w-20pr">
+														дата/место продажи
+														</th>	
+														<th class="w-10pr">
+															стоимость, грн
+														</th>	
+														<th class="w-7pr">
+																номинал
+														</th>	
+														<th class="w-7pr">
+															баланс
+														</th>
+														<th class="w-15pr">
+															статус
+														</th>													
+												</tr>
+										</thead>
+										<tbody>
+												<tr>
+														<td class="">
+														123456		
+														</td>
+														<td class="bold">
+															Подарочный
+														</td>
+														<td>Наталья Сидорова</td>
+														<td>
+															17.01.18 Lash.Moda Praga
+														</td>
+														<td class="bold">500</td>
+														<td class="bold">500</td>
+														<td class="bold">500</td>
+														<td class="green-text bold">неиспользован</td>											
+												
+										</tbody>
+								</table>
+								
+					</div>
+		
+	</div>
+
+</main>
+
+{% endblock %} 
+
+	

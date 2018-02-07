@@ -137,7 +137,7 @@ gulp.task('build', ['clean', 'copy'], function() {
     return gulp.src(src.html)
         .pipe(nunjucks.compile())
         .pipe(assets)
-        .pipe(gulpif(isFileExt('js'), uglify()))
+        //.pipe(gulpif(isFileExt('js'), uglify()))
         .pipe(gulpif(isFileExt('css'), minifyCss()))
         .pipe(assets.restore())
         .pipe(useref())

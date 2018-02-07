@@ -125,5 +125,13 @@ $icon-font-path: '../fonts/';
             font-size: 13px;
             padding: 15px 10px;
         }
-    }
+		}
+		
+		.task-page {
+
+			&__tabs-item {
+				font-size: 13px;
+				min-width: auto;
+			}
+		}
 }

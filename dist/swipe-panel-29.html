@@ -1,0 +1,110 @@
+<!--Добавление оклада-->
+<div class="swipe-panel swipe-panel-29 w400">
+		<div class="swipe-panel__header">
+				<div class="swipe-panel__title-block">
+					<p class="swipe-panel__title">
+					Создать скидку
+					</p>			
+				</div>
+				<div class="swipe-panel__close-block">
+						<i class="icon icon-close"></i>
+				</div>	
+		</div>
+		<div class="swipe-panel__body">			
+				<div class="swipe-panel__info">							
+				</div>
+				<form action="" class="swipe-form">
+					<div class="input-wrap">
+							<label for="" class="swipe-label">Название</label>
+							<input type="text" class="swipe-input" placeholder="Введите название должности">
+					</div>
+					
+					<div class="input-wrap dable-input-wrap no-tire sb">
+							<label for="" class="swipe-label">Размер скидки</label>
+							<input type="text" class="swipe-input">						
+								<select class="swipe-select" ref="master">
+									<option value="0" data-display="%">%</option>
+									<option value="1">грн</option>
+									<option value="2">доллар</option>        
+								</select>					
+					</div>
+					<div class="datepicker-block sb mt-0">
+                            <label for="" class="swipe-label">Период действия</label>
+                            <div class="datepicker-wrap">							
+                                    <input type="text" class="swipe-input datepicker-1 input-1" placeholder="16.11.2017">                    
+                                    <i class="icon icon-calendar form-calendar-button datepicker-1" aria-hidden="true"></i>
+                            </div>
+                            <span class="tire">-</span>
+                            <div class="datepicker-wrap">
+                                    <input type="text" class="swipe-input datepicker-2 input-2" placeholder="16.11.2017">                    
+                                    <i class="icon icon-calendar form-calendar-button datepicker-2" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="input-wrap dable-input-wrap no-tire sb">
+                                <label for="" class="swipe-label">Кол-во использований</label>
+                                <input type="text" class="swipe-input">
+                               
+                                <div class="checkbox-wrap mt-10">
+                                    <input type="checkbox" class="checkbox">
+                                    <label for="checkbox" class="check-label">Безлимитная</label>
+                                </div> 					
+                        </div>
+                        <div class="checkbox-wrap w-100pr mb-20">
+                            <input type="checkbox" class="checkbox ">
+                            <label for="checkbox" class="check-label">Действует в определенное время</label>
+                        </div>
+                        <div class="input-wrap">
+                                <label for="" class="swipe-label">Минимальная стоимость товара или услуги, грн</label>
+                                <input type="text" class="swipe-input">
+                        </div>
+                        <div class="input-wrap">
+                                <label for="" class="swipe-label">Сумма чека (от), грн</label>
+                                <input type="text" class="swipe-input" placeholder="Введите название должности">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="" class="swipe-label">Предоставляется клиентам</label>                           
+                                <select class="swipe-select" ref="master">
+                                    <option value="0" data-display="Всем клиентам">Всем клиентам</option>
+                                    <option value="1">постоянным клиентам</option>
+                                    <option value="2">новым клиентам</option>        
+                                </select>					
+                        </div>
+                        <div class="checkbox-wrap w-100pr mb-20">
+                            <input type="checkbox" class="checkbox">
+                            <label for="checkbox" class="check-label bold">Скидка действует на следующие услуги</label>
+                        </div>					
+					<div class="add-block">						
+							<div class="input-wrap">								
+                                    <input type="text" class="swipe-input" placeholder="Найти услугу">
+                                    <button class="plus-button md braun"><i class="fa fa-plus" aria-hidden="true"></i></button>
+							</div>
+							<table class="search__list">
+									<tbody><tr>
+											<td class="search__item-name">Объемное наращивание ресниц 2D</td>											
+											<td><i class="icon icon-close-sm" aria-hidden="true"></i></td>
+									</tr>
+									<tr>
+											<td class="search__item-name">
+											Гарантийное перенаращивание	
+											</td>
+											
+											<td><i class="icon icon-close-sm" aria-hidden="true"></i></td>
+									</tr>								
+								</tbody>
+							</table>							
+					</div>				
+                    <div class="checkbox-wrap w-100pr mb-20">
+                            <input type="checkbox" class="checkbox">
+                            <label for="checkbox" class="check-label bold">Скидка действует на следующие товары</label>
+                        </div>
+					<div class="button-wrap">
+						<button class="button green trans">Сохранить</button>
+						<button class="button gray-border trans">Отмена</button>
+					</div>
+				</form>	
+		</div>	
+	</div>
+	
+	
+	
+	
