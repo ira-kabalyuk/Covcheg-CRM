@@ -1642,14 +1642,65 @@ $icon-font-path: '../fonts/';
 
 	.tab-content {
 		min-height: calc(100% - 60px);
+
+		.call-tab {
+
+			.tel__call-block {
+				background: #f0f0f0;
+			}
+		}
+
+		.call-in-tab {
+
+			.tel__call-block {
+				background: #3a3a3a;
+			}
+		}
+
+		.call-out-tab {
+
+			.tel__call-block {
+				background: #424242;
+			}
+		}
+
+		.call-away-tab {
+
+			.tel__call-block {
+				background:#474747;
+			}
+		}
+
 	}
 
 	.tab-pane {
-		min-height: calc(100vh - 110px);
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		
+		.flex {
+			min-height: calc(100vh - 110px);
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+		}
 	}
+
+	.tel-panel-close {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 18px;
+		height: 18px;
+		background: #ededed;
+		color: #a7a7a7;
+		border: none;
+		border-radius: 50%;
+		position: absolute;
+		top: 50%;
+		margin-top: -9px;
+		right: 9px;
+		font-size: 20px;
+		line-height: 17px;
+	}		
 }
 
 .tel {
@@ -1688,8 +1739,7 @@ $icon-font-path: '../fonts/';
 		}
 	}	
 
-	&__call-block {
-		background: #f0f0f0;
+	&__call-block {	
 		min-height: 70px;
 		padding: 15px 30px;
 		display: flex;
@@ -1714,25 +1764,7 @@ $icon-font-path: '../fonts/';
 		.swipe-input {
 			width: 100%;
 			margin-left: -1px;
-		}
-
-		.tel-panel-close {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			width: 18px;
-			height: 18px;
-			background: #ededed;
-			color: #a7a7a7;
-			border: none;
-			border-radius: 50%;
-			position: absolute;
-			top: 50%;
-			margin-top: -9px;
-			right: 9px;
-			font-size: 20px;
-			line-height: 17px;
-		}		
+		}	
 		
 	}
 

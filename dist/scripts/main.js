@@ -25009,6 +25009,13 @@ var effectsEffectTransfer = effect;
  * Licensed under the MIT license.
  */
 !function(e){"use strict";var t=0,i=function(t,i){this.options=i,this.$elementjFilestyle=[],this.$element=e(t)};i.prototype={clear:function(){this.$element.val(""),this.$elementjFilestyle.find(":text").val(""),this.$elementjFilestyle.find(".count-jfilestyle").remove()},destroy:function(){this.$element.removeAttr("style").removeData("jfilestyle").val(""),this.$elementjFilestyle.remove()},dragdrop:function(e){return e!==!0&&e!==!1?this.options.dragdrop:void(this.options.dragdrop=e)},disabled:function(e){if(e===!0)this.options.disabled||(this.$element.attr("disabled","true"),this.$elementjFilestyle.find("label").attr("disabled","true"),this.options.disabled=!0);else{if(e!==!1)return this.options.disabled;this.options.disabled&&(this.$element.removeAttr("disabled"),this.$elementjFilestyle.find("label").removeAttr("disabled"),this.options.disabled=!1)}},buttonBefore:function(e){if(e===!0)this.options.buttonBefore||(this.options.buttonBefore=!0,this.options.input&&(this.$elementjFilestyle.remove(),this.constructor(),this.pushNameFiles()));else{if(e!==!1)return this.options.buttonBefore;this.options.buttonBefore&&(this.options.buttonBefore=!1,this.options.input&&(this.$elementjFilestyle.remove(),this.constructor(),this.pushNameFiles()))}},input:function(e){if(e===!0)this.options.input||(this.options.input=!0,this.$elementjFilestyle.find("label").before(this.htmlInput()),this.$elementjFilestyle.find(".count-jfilestyle").remove(),this.pushNameFiles());else{if(e!==!1)return this.options.input;if(this.options.input){this.options.input=!1,this.$elementjFilestyle.find(":text").remove();var t=this.pushNameFiles();t.length>0&&this.$elementjFilestyle.find("label").append(' <span class="count-jfilestyle">'+t.length+"</span>")}}},text:function(e){return void 0===e?this.options.text:(this.options.text=e,void this.$elementjFilestyle.find("label span").html(this.options.text))},theme:function(e){return void 0===e?this.options.theme:(console.log(this.$elementjFilestyle.attr("class").replace(/.*(jfilestyle-theme-.*).*/,"$1")),this.$elementjFilestyle.removeClass(this.$elementjFilestyle.attr("class").replace(/.*(jfilestyle-theme-.*).*/,"$1")),this.options.theme=e,this.$elementjFilestyle.addClass("jfilestyle-theme-"+this.options.theme),void 0)},inputSize:function(e){return void 0===e?this.options.inputSize:(this.options.inputSize=e,void this.$elementjFilestyle.find(":text").css("width",this.options.inputSize))},placeholder:function(e){return void 0===e?this.options.placeholder:(this.options.placeholder=e,void this.$elementjFilestyle.find(":text").attr("placeholder",e))},htmlInput:function(){return this.options.input?'<input type="text" style="width:'+this.options.inputSize+'" placeholder="'+this.options.placeholder+'" disabled> ':""},pushNameFiles:function(){var e="",t=[];void 0===this.$element[0].files?t[0]={name:this.$element.value}:t=this.$element[0].files;for(var i=0;i<t.length;i++)e+=t[i].name.split("\\").pop()+", ";return""!==e?this.$elementjFilestyle.find(":text").val(e.replace(/\, $/g,"")):this.$elementjFilestyle.find(":text").val(""),t},constructor:function(){var i=this,n="",l=i.$element.attr("id");""!==l&&l||(l="jfilestyle-"+t,i.$element.attr({id:l}),t++),n='<span class="focus-jfilestyle"><label for="'+l+'" '+(i.options.disabled?'disabled="true"':"")+"><span>"+i.options.text+"</span></label></span>",i.options.buttonBefore===!0?n+=i.htmlInput():n=i.htmlInput()+n,i.$elementjFilestyle=e('<div class="jfilestyle '+(i.options.input?"jfilestyle-corner":"")+" "+(this.options.buttonBefore?" jfilestyle-buttonbefore":"")+" "+(i.options.theme?"jfilestyle-theme-"+i.options.theme:"")+'"><div name="filedrag"></div>'+n+"</div>"),i.$elementjFilestyle.find(".focus-jfilestyle").attr("tabindex","0").keypress(function(e){return 13===e.keyCode||32===e.charCode?(i.$elementjFilestyle.find("label").click(),!1):void 0}),i.$element.css({position:"absolute",clip:"rect(0px 0px 0px 0px)"}).attr("tabindex","-1").after(i.$elementjFilestyle),i.options.disabled&&i.$element.attr("disabled","true"),i.$elementjFilestyle.find('[name="filedrag"]').css({position:"absolute",width:"100%",height:i.$elementjFilestyle.height()+"px","z-index":-1}),i.$element.change(function(){var e=i.pushNameFiles();0==i.options.input?0==i.$elementjFilestyle.find(".count-jfilestyle").length?i.$elementjFilestyle.find("label").append(' <span class="count-jfilestyle">'+e.length+"</span>"):0==e.length?i.$elementjFilestyle.find(".count-jfilestyle").remove():i.$elementjFilestyle.find(".count-jfilestyle").html(e.length):i.$elementjFilestyle.find(".count-jfilestyle").remove(),i.options.onChange(e)}),window.navigator.userAgent.search(/firefox/i)>-1&&this.$elementjFilestyle.find("label").click(function(){return i.$element.click(),!1}),e(document).on("dragover",function(t){t.preventDefault(),t.stopPropagation(),i.options.dragdrop||e('[name="filedrag"]').css("z-index","9")}).on("drop",function(t){t.preventDefault(),t.stopPropagation(),i.options.dragdrop||e('[name="filedrag"]').css("z-index","-1")}),i.$elementjFilestyle.find('[name="filedrag"]').on("dragover",function(e){e.preventDefault(),e.stopPropagation()}).on("dragenter",function(e){e.preventDefault(),e.stopPropagation()}).on("drop",function(t){if(t.originalEvent.dataTransfer&&!i.options.disabled&&i.options.dragdrop&&t.originalEvent.dataTransfer.files.length){t.preventDefault(),t.stopPropagation(),i.$element[0].files=t.originalEvent.dataTransfer.files;var n=i.pushNameFiles();0==i.options.input?0==i.$elementjFilestyle.find(".count-jfilestyle").length?i.$elementjFilestyle.find("label").append(' <span class="count-jfilestyle">'+n.length+"</span>"):0==n.length?i.$elementjFilestyle.find(".count-jfilestyle").remove():i.$elementjFilestyle.find(".count-jfilestyle").html(n.length):i.$elementjFilestyle.find(".count-jfilestyle").remove(),e('[name="filedrag"]').css("z-index","-1")}})}};var n=e.fn.jfilestyle;e.fn.jfilestyle=function(t,n){var l="",s=this.each(function(){if("file"===e(this).attr("type")){var s=e(this),o=s.data("jfilestyle"),a=e.extend({},e.fn.jfilestyle.defaults,t,"object"==typeof t&&t);o||(s.data("jfilestyle",o=new i(this,a)),o.constructor()),"string"==typeof t&&(l=o[t](n))}});return void 0!==typeof l?l:s},e.fn.jfilestyle.defaults={text:"Choose file",input:!0,disabled:!1,buttonBefore:!1,inputSize:"200px",placeholder:"",dragdrop:!0,theme:"default",onChange:function(){}},e.fn.jfilestyle.noConflict=function(){return e.fn.jfilestyle=n,this},e(function(){e(".jfilestyle").each(function(){var t=e(this),i={text:t.attr("data-text"),input:"false"!==t.attr("data-input"),disabled:"true"===t.attr("data-disabled"),buttonBefore:"true"===t.attr("data-buttonBefore"),inputSize:t.attr("data-inputSize"),placeholder:t.attr("data-placeholder"),theme:t.attr("data-theme"),dragdrop:"false"!==t.attr("data-dragdrop")};t.jfilestyle(i)})})}(window.jQuery);
+/*
+    jQuery Masked Input Plugin
+    Copyright (c) 2007 - 2015 Josh Bush (digitalbush.com)
+    Licensed under the MIT license (http://digitalbush.com/projects/masked-input-plugin/#license)
+    Version: 1.4.1
+*/
+!function(a){"function"==typeof define&&define.amd?define(["jquery"],a):a("object"==typeof exports?require("jquery"):jQuery)}(function(a){var b,c=navigator.userAgent,d=/iphone/i.test(c),e=/chrome/i.test(c),f=/android/i.test(c);a.mask={definitions:{9:"[0-9]",a:"[A-Za-z]","*":"[A-Za-z0-9]"},autoclear:!0,dataName:"rawMaskFn",placeholder:"_"},a.fn.extend({caret:function(a,b){var c;if(0!==this.length&&!this.is(":hidden"))return"number"==typeof a?(b="number"==typeof b?b:a,this.each(function(){this.setSelectionRange?this.setSelectionRange(a,b):this.createTextRange&&(c=this.createTextRange(),c.collapse(!0),c.moveEnd("character",b),c.moveStart("character",a),c.select())})):(this[0].setSelectionRange?(a=this[0].selectionStart,b=this[0].selectionEnd):document.selection&&document.selection.createRange&&(c=document.selection.createRange(),a=0-c.duplicate().moveStart("character",-1e5),b=a+c.text.length),{begin:a,end:b})},unmask:function(){return this.trigger("unmask")},mask:function(c,g){var h,i,j,k,l,m,n,o;if(!c&&this.length>0){h=a(this[0]);var p=h.data(a.mask.dataName);return p?p():void 0}return g=a.extend({autoclear:a.mask.autoclear,placeholder:a.mask.placeholder,completed:null},g),i=a.mask.definitions,j=[],k=n=c.length,l=null,a.each(c.split(""),function(a,b){"?"==b?(n--,k=a):i[b]?(j.push(new RegExp(i[b])),null===l&&(l=j.length-1),k>a&&(m=j.length-1)):j.push(null)}),this.trigger("unmask").each(function(){function h(){if(g.completed){for(var a=l;m>=a;a++)if(j[a]&&C[a]===p(a))return;g.completed.call(B)}}function p(a){return g.placeholder.charAt(a<g.placeholder.length?a:0)}function q(a){for(;++a<n&&!j[a];);return a}function r(a){for(;--a>=0&&!j[a];);return a}function s(a,b){var c,d;if(!(0>a)){for(c=a,d=q(b);n>c;c++)if(j[c]){if(!(n>d&&j[c].test(C[d])))break;C[c]=C[d],C[d]=p(d),d=q(d)}z(),B.caret(Math.max(l,a))}}function t(a){var b,c,d,e;for(b=a,c=p(a);n>b;b++)if(j[b]){if(d=q(b),e=C[b],C[b]=c,!(n>d&&j[d].test(e)))break;c=e}}function u(){var a=B.val(),b=B.caret();if(o&&o.length&&o.length>a.length){for(A(!0);b.begin>0&&!j[b.begin-1];)b.begin--;if(0===b.begin)for(;b.begin<l&&!j[b.begin];)b.begin++;B.caret(b.begin,b.begin)}else{for(A(!0);b.begin<n&&!j[b.begin];)b.begin++;B.caret(b.begin,b.begin)}h()}function v(){A(),B.val()!=E&&B.change()}function w(a){if(!B.prop("readonly")){var b,c,e,f=a.which||a.keyCode;o=B.val(),8===f||46===f||d&&127===f?(b=B.caret(),c=b.begin,e=b.end,e-c===0&&(c=46!==f?r(c):e=q(c-1),e=46===f?q(e):e),y(c,e),s(c,e-1),a.preventDefault()):13===f?v.call(this,a):27===f&&(B.val(E),B.caret(0,A()),a.preventDefault())}}function x(b){if(!B.prop("readonly")){var c,d,e,g=b.which||b.keyCode,i=B.caret();if(!(b.ctrlKey||b.altKey||b.metaKey||32>g)&&g&&13!==g){if(i.end-i.begin!==0&&(y(i.begin,i.end),s(i.begin,i.end-1)),c=q(i.begin-1),n>c&&(d=String.fromCharCode(g),j[c].test(d))){if(t(c),C[c]=d,z(),e=q(c),f){var k=function(){a.proxy(a.fn.caret,B,e)()};setTimeout(k,0)}else B.caret(e);i.begin<=m&&h()}b.preventDefault()}}}function y(a,b){var c;for(c=a;b>c&&n>c;c++)j[c]&&(C[c]=p(c))}function z(){B.val(C.join(""))}function A(a){var b,c,d,e=B.val(),f=-1;for(b=0,d=0;n>b;b++)if(j[b]){for(C[b]=p(b);d++<e.length;)if(c=e.charAt(d-1),j[b].test(c)){C[b]=c,f=b;break}if(d>e.length){y(b+1,n);break}}else C[b]===e.charAt(d)&&d++,k>b&&(f=b);return a?z():k>f+1?g.autoclear||C.join("")===D?(B.val()&&B.val(""),y(0,n)):z():(z(),B.val(B.val().substring(0,f+1))),k?b:l}var B=a(this),C=a.map(c.split(""),function(a,b){return"?"!=a?i[a]?p(b):a:void 0}),D=C.join(""),E=B.val();B.data(a.mask.dataName,function(){return a.map(C,function(a,b){return j[b]&&a!=p(b)?a:null}).join("")}),B.one("unmask",function(){B.off(".mask").removeData(a.mask.dataName)}).on("focus.mask",function(){if(!B.prop("readonly")){clearTimeout(b);var a;E=B.val(),a=A(),b=setTimeout(function(){B.get(0)===document.activeElement&&(z(),a==c.replace("?","").length?B.caret(0,a):B.caret(a))},10)}}).on("blur.mask",v).on("keydown.mask",w).on("keypress.mask",x).on("input.mask paste.mask",function(){B.prop("readonly")||setTimeout(function(){var a=A(!0);B.caret(a),h()},0)}),e&&f&&B.off("input.mask").on("input.mask",u),A()})}})});
 jQuery(document).ready(function() {
     
     var td = $('.selectedTD');
@@ -25072,42 +25079,42 @@ jQuery(document).ready(function() {
 
     //swipe-panels
 
-    function openPopup(settings) {
-      var options = Object.assign({}, {
-          closeButton: '.swipe-panel__close-block',
-          event: 'click'
-      }, settings);
-    
-      if(!options.content || !options.button) {
-          console.warn('required parameters is missing in openPopup function');
-      }
-    
-      $(options.button).on(options.event, function(){
-        var body = $('body');
-        var mask = $('<div class="mask"></div>');
-        var content = $(options.content);
-        var contentOriginalParent = content.parent();
-        var closeButton = content.find(options.closeButton);
-    
-        mask.append(content);
-        body.append(mask);
-        setTimeout(function(){content.addClass('visible')});
-    
-        closeButton.click(function() {
-          var hasTransition = !(content.css('transition-duration') == '0s');
-          if(hasTransition) {
-              content.one('transitionend', function(){
-                  contentOriginalParent.append(content);
-                  mask.remove();
-              });
-              content.removeClass('visible');
-          } else {
-              contentOriginalParent.append(content);
-              mask.remove();
-          }
-        })
-      })
-    }
+		function openPopup(settings) {
+			var options = Object.assign({}, {
+					closeButton: '.swipe-panel__close-block',
+					event: 'click'
+			}, settings);
+		
+			if(!options.content || !options.button) {
+					console.warn('required parameters is missing in openPopup function');
+			}
+		
+			$(options.button).on(options.event, function(){
+				var body = $('body');
+				var mask = $('<div class="mask"></div>');
+				var content = $(options.content);
+				var contentOriginalParent = content.parent();
+				var closeButton = content.find(options.closeButton);
+		
+				mask.append(content);
+				body.append(mask);
+				setTimeout(function(){content.addClass('visible')});
+		
+				closeButton.click(function() {
+					var hasTransition = !(content.css('transition-duration') == '0s');
+					if(hasTransition) {
+							content.one('transitionend', function(){
+									contentOriginalParent.append(content);
+									mask.remove();
+							});
+							content.removeClass('visible');
+					} else {
+							contentOriginalParent.append(content);
+							mask.remove();
+					}
+				})
+			})
+		}
   
   openPopup({content: '.add-record__body', button: '.add-record-button', closeButton: '.back-button'})
   openPopup({content: '.swipe-panel-1', button: '.client-add'})
@@ -25141,8 +25148,9 @@ jQuery(document).ready(function() {
 	openPopup({content: '.swipe-panel-29', button: '.js-add-discounts'})
 	openPopup({content: '.swipe-panel-30', button: '.js-add-sertificates-type'})
 	openPopup({content: '.swipe-panel-31', button: '.js-add-sertificates-reestr'})
-	js-add-sertificates-reestr
-  
+	openPopup({content: '.swipe-panel-32', button: '.js-add-telephonia'})
+	
+	$("#js-phone").mask("+3(80)99 999-99-99");
 
   //end swipe panels
 
