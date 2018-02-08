@@ -157,11 +157,19 @@ $icon-font-path: '../fonts/';
 			height: 20px;
 		}
 
+		&-red_3 {
+			background: url(../images/header-icon-red-3.png);
+			width: 20px;
+			height: 20px;
+		}
+
 		&_4 {
 			background: url(../images/header-icon-4.png);
 			width: 20px;
 			height: 19px;
 		}
+
+		
 	}
 
 	.user-item {
