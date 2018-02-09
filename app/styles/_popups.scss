@@ -11,7 +11,7 @@ $icon-font-path: '../fonts/';
 
 .popup-system-message {
     display: none; /*display: flex;*/
-    background: rgba(190, 190, 190, 0.5);
+    background: rgba(190, 190, 190, 0.6);
     align-items: center;
     justify-content: center;
 
@@ -25,7 +25,7 @@ $icon-font-path: '../fonts/';
 
 .modal-system-message {
     width: 350px;
-
+		margin-top: 100px;
 }
 
 .modal-content {
@@ -87,13 +87,20 @@ $icon-font-path: '../fonts/';
     display: none; /*display: flex;*/
     background: $green;
     width: 100%;
-    height: 50px;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 700;
+    height: 50px;    
     z-index: 1050;
-    align-items: center;
-    justify-content: center;
+   
+		
+		&__wrap {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 17px;
+			font-weight: 700;
+		}
 }
 
 /*системное сообщение сохранено конец*/
@@ -103,16 +110,24 @@ $icon-font-path: '../fonts/';
     position: fixed;
     top: 0;
     left: 0;
-    display: none; /*display: flex;*/
+    display: none;
     background: #dd484c;
     width: 100%;
-    height: 50px;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 700;
+    height: 50px;    
+   
     z-index: 1050;
-    align-items: center;
-    justify-content: center;
+  
+		
+		&__wrap {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 17px;
+			font-weight: 700;
+		}
 }
 
 /*системное сообщение ошибка конец*/
@@ -301,7 +316,7 @@ $icon-font-path: '../fonts/';
 /*notification*/
 
 .popup-notification {
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(0, 0, 0, 0.7);
 	align-items: center;
 	justify-content: center;
 	display:none;
@@ -312,6 +327,7 @@ $icon-font-path: '../fonts/';
 	background: #f0f0f0;
 	width: 775px;
 	max-width: 775px;
+	margin-top: 100px;
 
 	.modal-header  {
 		padding: 30px 30px 0 30px;

@@ -193,10 +193,122 @@ $icon-font-path: '../fonts/';
 	}
 
 	.submenu {
+    background: $braun-bg;
+    color: #a5a5a5;
+    width: 165px;
+    position: absolute;   
+    display: none;
+		z-index: 50;
+		
 		width: 225px;		
 		top: 100%;
 		right: -30px;
 		display: none;
-		
+
+    &__item {
+				border-bottom: 1px solid $light-bg;
+				position: relative;
+
+        &:hover {
+            background: $dark-bg;  
+				}
+				
+				&.s-item-1 {				
+
+					&:before {
+						content: "";
+						background: url(../images/submenu-icon-1.png);				
+						display: inline-block;
+						width: 16px;
+						height: 16px;
+						position: absolute;
+						top:50%;
+						margin-top: -8px;
+						left: 15px;
+					}
+				}
+
+				&.s-item-2 {				
+
+					&:before {
+						content: "";
+						background: url(../images/submenu-icon-2.png);				
+						display: inline-block;
+						width: 16px;
+						height: 15px;
+						position: absolute;
+						top:50%;
+						margin-top: -8px;
+						left: 15px;
+					}
+				}
+
+				&.s-item-3 {				
+
+					&:before {
+						content: "";
+						background: url(../images/submenu-icon-3.png);				
+						display: inline-block;
+						width: 16px;
+						height: 15px;
+						position: absolute;
+						top:50%;
+						margin-top: -8px;
+						left: 15px;
+					}
+				}
+
+				&.s-item-4 {				
+
+					&:before {
+						content: "";
+						background: url(../images/submenu-icon-4.png);				
+						display: inline-block;
+						width: 16px;
+						height: 16px;
+						position: absolute;
+						top:50%;
+						margin-top: -8px;
+						left: 15px;
+					}
+				}
+
+				&.s-item-5 {				
+
+					&:before {
+						content: "";
+						background: url(../images/submenu-icon-5.png);				
+						display: inline-block;
+						width: 16px;
+						height: 13px;
+						position: absolute;
+						top:50%;
+						margin-top: -7px;
+						left: 15px;
+					}
+				}
+    }
+
+    a {
+        color: $braun;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        padding: 15px 15px 15px 45px;
+        font-size: 14px;
+        font-weight: 400;
+        
+        &:hover {
+            color: #fff;
+            text-decoration: none; 
+        }
+    }
+
+    &__light-item {
+        background: #dadada;
+        color: #484848;
+        border-bottom: 1px solid #dadada;
+    }
 	}
 }

@@ -1,0 +1,51 @@
+{% extends "template-width-swipe.html" %}	
+
+{% block content %}	
+
+<main class="import-page page-width-sidebar">
+		<div class="content-wrap flex">
+				{% include "sidebar.html" %}
+			<div class="content col">
+					<div class="title-block title-braun">
+							<p class="title">Импорт документа</p>							 
+					</div>
+					<ul class="import__nav-list">
+						<li class="import__nav-item">
+							Загрузка файла
+						</li>
+						<li class="import__nav-item active">
+							Соответствие полей
+						</li>
+						<li class="import__nav-item">
+								Старт импорта
+						</li>
+						<li class="import__nav-item">
+							Результат
+						</li>
+					</ul>
+				
+				<div class="element-wrap part-4">
+							<div class="information-block">
+								<p class="information-block__title">Документ успешно импортирован!</p>
+								<p class="information-block__list-title">Результат</p>
+								<ul class="information-block__list">
+									<li class="information-block__item">
+										Полей импортировано
+										<span>120</span>
+									</li>
+									<li class="information-block__item">
+										Полей пропущено
+										<span>40</span>
+									</li>
+								</ul>
+								<button class="button gray-border trans">Импорт другого файла</button>
+							</div>
+					</div>		
+							
+				</div>
+		</div>
+</main>
+
+{% endblock %} 
+
+	

@@ -85,9 +85,9 @@
 						<i class="label ab label_red">5</i>
 					</a>					
 				</li>
-				<li class="header__menu-item">
+				<li class="header__menu-item active">
 					<a href="">
-						<i class="icon header__menu-icon_3"></i>
+						<i class="icon header__menu-icon_3"></i>						
 					</a>
 				</li>
 				<li class="header__menu-item">
@@ -104,19 +104,19 @@
 
 					<div class="submenu">
 						<ul class="submenu__list">
-							<li class="submenu__item">
+							<li class="submenu__item s-item-1">
 								<a href="">Управление аккаунтом</a>
 							</li>
-							<li class="submenu__item">
+							<li class="submenu__item s-item-2">
 								<a href="">Подписка на сервис</a>
 							</li>
-							<li class="submenu__item">
+							<li class="submenu__item s-item-3">
 								<a href="">Настройки профиля</a>
 							</li>
-							<li class="submenu__item">
+							<li class="submenu__item s-item-4">
 								<a href="">Помощь</a>
 							</li>
-							<li class="submenu__item submenu__light-item">
+							<li class="submenu__item submenu__light-item s-item-5">
 								<a href="">Выход</a>
 							</li>
 						</ul>
@@ -3580,7 +3580,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="tab-pane call-in-tab" id="tab11_2">
+			<div class="tab-pane call-tab" id="tab11_2">
 					<div class="flex">
 						<div class="tel__body-top">
 							<div class="tel__call-block">
@@ -3624,7 +3624,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="tab-pane call-in-tab call-out-tab" id="tab11_3">
+			<div class="tab-pane call-tab" id="tab11_3">
 					<div class="flex">
 						<div class="tel__body-top">
 							<div class="tel__call-block">
@@ -3668,7 +3668,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="tab-pane call-in-tab call-away-tab" id="tab11_4">
+			<div class="tab-pane call-tab" id="tab11_4">
 					<div class="flex">
 						<div class="tel__body-top">
 							<div class="tel__call-block">
@@ -3724,7 +3724,7 @@
 	
 	<!--системное сообщение-->
 
-<div class="modal popup-system-message"> <!--display: none; display: flex;-->
+<div class="modal popup-system-message" id="systemPopup">
 	<div class="modal-dialog modal-system-message">
 	  <div class="modal-content">
 		<div class="modal-header">
@@ -3744,14 +3744,18 @@
   </div><!-- /.modal -->
 <!--системное сообщение-->
 	<!--системное сообщение сохранено-->
-<div class="popup-save-message"> <!--display: none; display: flex;-->
-	Сохранено!
+<div class="popup-save-message" id="savePopup">
+	<div class="popup-save-message__wrap">
+			Сохранено!
+	</div>
 </div>
 
 <!--системное сообщение ошибка-->
 
-<div class="popup-error-message"> <!--display: none; display: flex;-->
-	Ошибка загрузки файла. Максимально допустимый размер - 20мб
+<div class="popup-error-message" id="errorPopup">
+		<div class="popup-error-message__wrap">
+				Ошибка загрузки файла. Максимально допустимый размер - 20мб
+		</div>
 </div>
 <!--системное сообщение сохранено и системное сообщение ошибка-->
 	<!--попап на calendar-page.html при оплате услуги-->
@@ -3916,7 +3920,7 @@
 <!--попап оплаты услуги в calendar-page.html -->
 	<!--системное сообщение-->
 
-<div class="modal popup-notification" id=""> <!--display: none; display: flex;-->
+<div class="modal popup-notification" id="notificPopup"> <!--display: none; display: flex;-->
 	<div class="modal-dialog modal-notification">
 	  <div class="modal-content">			
 		<div class="modal-header clearfix">
