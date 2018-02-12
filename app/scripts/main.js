@@ -418,6 +418,15 @@ $(document).ready(function() {
           var target=$(this).data('target');
           $(target).slideToggle(400);
         });
+
+        /*системное сообщение анимация*/
+
+        $(".js-save-popup").click(function( e ) {
+          $("#savePopup").removeClass("win-visible")
+            setTimeout(function(){
+              $("#savePopup").addClass("win-visible");
+            })
+        });       
   
   })
 
