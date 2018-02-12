@@ -152,9 +152,10 @@
         border: 2px solid #d0d0d0;
         padding: 10px 15px;
         cursor: pointer;
-        width: 155px;
+        min-width: 155px;
         font-weight: 700;
         text-align: center;
+        //margin-left: -2px;
 
         &:hover {
             color: $green;
@@ -164,7 +165,10 @@
         &.active {
             color: $green;
             border: 2px solid $green;
-            margin-left: -2px;
+            margin: 0 -2px;
+            position: relative;
+            z-index: 10;
+            
         }
     }
 
