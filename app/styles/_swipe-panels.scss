@@ -1702,7 +1702,7 @@ $icon-font-path: '../fonts/';
 		}
 
 		&.call-item {
-			background: #f0f0f0;
+			background: #2a2a2a;
 		}
 
 		&.call-in-item {
@@ -1715,7 +1715,11 @@ $icon-font-path: '../fonts/';
 
 		&.call-away-item {
 			background: #474747;
-		}
+        }
+        
+        &.active {
+            background: #f0f0f0;
+        }
 	}	
 
 	&__call-block {	

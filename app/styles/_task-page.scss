@@ -15,7 +15,7 @@
 
 		&__list {
             width: 20%;
-            border-right: 1px solid #eaeaea;
+            border-right: 1px solid #eaeaea;           
             
             &.over {
                 
@@ -36,7 +36,7 @@
             align-items: flex-start;
             flex-direction: column;
             justify-content: space-between;
-            
+            overflow: hidden;
             
             .checkbox-wrap {
                 margin: 15px 0;
@@ -167,8 +167,7 @@
 
         &.active {
             color: $green;
-            border: 2px solid $green;
-            margin: 0 -2px;
+            border: 2px solid $green;           
             position: relative;
             z-index: 10;           
 
