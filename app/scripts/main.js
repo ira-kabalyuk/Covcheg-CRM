@@ -61,42 +61,42 @@ jQuery(document).ready(function() {
 
     //swipe-panels
 
-    function openPopup(settings) {
-      var options = Object.assign({}, {
-          closeButton: '.swipe-panel__close-block',
-          event: 'click'
-      }, settings);
-    
-      if(!options.content || !options.button) {
-          console.warn('required parameters is missing in openPopup function');
-      }
-    
-      $(options.button).on(options.event, function(){
-        var body = $('body');
-        var mask = $('<div class="mask"></div>');
-        var content = $(options.content);
-        var contentOriginalParent = content.parent();
-        var closeButton = content.find(options.closeButton);
-    
-        mask.append(content);
-        body.append(mask);
-        setTimeout(function(){content.addClass('visible')});
-    
-        closeButton.click(function() {
-          var hasTransition = !(content.css('transition-duration') == '0s');
-          if(hasTransition) {
-              content.one('transitionend', function(){
-                  contentOriginalParent.append(content);
-                  mask.remove();
-              });
-              content.removeClass('visible');
-          } else {
-              contentOriginalParent.append(content);
-              mask.remove();
-          }
-        })
-      })
-    }
+		function openPopup(settings) {
+			var options = Object.assign({}, {
+					closeButton: '.swipe-panel__close-block',
+					event: 'click'
+			}, settings);
+		
+			if(!options.content || !options.button) {
+					console.warn('required parameters is missing in openPopup function');
+			}
+		
+			$(options.button).on(options.event, function(){
+				var body = $('body');
+				var mask = $('<div class="mask"></div>');
+				var content = $(options.content);
+				var contentOriginalParent = content.parent();
+				var closeButton = content.find(options.closeButton);
+		
+				mask.append(content);
+				body.append(mask);
+				setTimeout(function(){content.addClass('visible')});
+		
+				closeButton.click(function() {
+					var hasTransition = !(content.css('transition-duration') == '0s');
+					if(hasTransition) {
+							content.one('transitionend', function(){
+									contentOriginalParent.append(content);
+									mask.remove();
+							});
+							content.removeClass('visible');
+					} else {
+							contentOriginalParent.append(content);
+							mask.remove();
+					}
+				})
+			})
+		}
   
   openPopup({content: '.add-record__body', button: '.add-record-button', closeButton: '.back-button'})
   openPopup({content: '.swipe-panel-1', button: '.client-add'})
@@ -127,8 +127,12 @@ jQuery(document).ready(function() {
   openPopup({content: '.swipe-panel-26', button: '.js-add-salary'})   
   openPopup({content: '.swipe-panel-27', button: '.js-add-product'})   
   openPopup({content: '.swipe-panel-28', button: '.js-add-task'})
-  openPopup({content: '.swipe-panel-29', button: '.js-add-discounts'})
-  
+	openPopup({content: '.swipe-panel-29', button: '.js-add-discounts'})
+	openPopup({content: '.swipe-panel-30', button: '.js-add-sertificates-type'})
+	openPopup({content: '.swipe-panel-31', button: '.js-add-sertificates-reestr'})
+	openPopup({content: '.swipe-panel-32', button: '.js-add-telephonia'})
+	
+	$("#js-phone").mask("+3(80)99 999-99-99");
 
   //end swipe panels
 

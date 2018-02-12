@@ -1,0 +1,113 @@
+{% extends "template-width-swipe.html" %}	
+
+{% block content %}	
+
+<main class="import-page page-width-sidebar">
+		<div class="content-wrap flex">
+				{% include "sidebar.html" %}
+			<div class="content col">
+					<div class="title-block title-braun">
+							<p class="title">Импорт документа</p>							 
+					</div>
+					<ul class="import__nav-list">
+						<li class="import__nav-item">
+							Загрузка файла
+						</li>
+						<li class="import__nav-item active">
+							Соответствие полей
+						</li>
+						<li class="import__nav-item">
+								Старт импорта
+						</li>
+						<li class="import__nav-item">
+							Результат
+						</li>
+					</ul>
+				
+					<div class="element-wrap part-2">
+							<div class="row-wrap col-3 aic sb">
+									<div class="input-wrap clearfix">
+											<label for="" class="swipe-label">Уникальность по:</label>
+											<select class="swipe-select swipe-input" ref="master">
+													<option value="0" data-display="SMS">SMS</option>
+													<option value="1">E-mail</option>
+													<option value="2">Viber</option>        
+											</select>
+									</div>
+									<div class="checkbox-wrap fend mt-10">
+										<input type="checkbox" class="checkbox">
+										<label for="checkbox" class="check-label">Игнорировать первую строку</label>
+									</div> 
+							</div>
+							<div class="input-wrap clearfix mt-20">
+									<label for="" class="swipe-label">Укажите каким данным о контакте соответствуют колонки из файла</label>
+							</div>
+							<table class="import-table">
+								<thead>
+									<tr>
+										<th class="w-5pr"></th>
+										<th>
+												<select class="swipe-select swipe-input" ref="master">
+														<option value="0" data-display="Пропустить">SMS</option>
+														<option value="1">E-mail</option>
+														<option value="2">Viber</option>        
+												</select>
+										</th>
+										<th>
+												<select class="swipe-select swipe-input" ref="master">
+														<option value="0" data-display="Пропустить">SMS</option>
+														<option value="1">E-mail</option>
+														<option value="2">Viber</option>        
+												</select>
+										</th>
+										<th>
+												<select class="swipe-select swipe-input" ref="master">
+														<option value="0" data-display="Пропустить">SMS</option>
+														<option value="1">E-mail</option>
+														<option value="2">Viber</option>        
+												</select>
+										</th>
+										<th>
+												<select class="swipe-select swipe-input" ref="master">
+														<option value="0" data-display="Пропустить">SMS</option>
+														<option value="1">E-mail</option>
+														<option value="2">Viber</option>        
+												</select>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="bold">35</td>
+										<td>kimberly</td>
+										<td>gmail@gmail.com</td>
+										<td>null</td>
+										<td>10/11/2018</td>
+									</tr>
+									<tr>
+											<td class="bold">42</td>
+											<td>kimberly</td>
+											<td>gmail@gmail.com</td>
+											<td>null</td>
+											<td>10/11/2018</td>
+										</tr>
+										<tr>
+											<td class="bold">42</td>
+											<td>kimberly</td>
+											<td>gmail@gmail.com</td>
+											<td>null</td>
+											<td>10/11/2018</td>
+										</tr>
+								</tbody>
+							</table>
+							<div class="button-wrap">
+									<button class="button green trans">Далее</button>
+							</div>		
+					</div>
+				
+		</div>
+</main>
+
+{% endblock %} 
+
+	

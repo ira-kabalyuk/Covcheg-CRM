@@ -113,17 +113,27 @@ $icon-font-path: '../fonts/';
                 }
             }
         }
+
+    }
+
+    .import-table {
+
+        .nice-select {
+            font-size: 13px;
+        }
+
+        td {
+            font-size: 13px;
+            padding: 15px 10px;
+        }
 		}
 		
-		.import-table {
+		.task-page {
 
-			.nice-select {
+			&__tabs-item {
 				font-size: 13px;
-			}
-
-			td {
-				font-size: 13px;
-				padding: 15px 10px;
+				min-width: auto;
 			}
 		}
 }
+>>>>>>> 3c49d5af51fa79cc9f9d9d75aeba82458d67b0ea
