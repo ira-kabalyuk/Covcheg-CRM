@@ -138,9 +138,11 @@ $icon-font-path: '../fonts/';
 @-webkit-keyframes blick {
 	0%	 { opacity: 0; z-index: -10}
 
-	10% { opacity: 1; z-index: 1200}
+	10% { opacity: 0.7; z-index: 1200}
+
+	50% { opacity: 1; z-index: 1200}
 	
-	90%	 { opacity: 1; z-index: 1200}
+	90%	 { opacity: 0.3; z-index: 1200}
 		
 	100% { opacity: 0; z-index: -10}
 }
@@ -148,9 +150,11 @@ $icon-font-path: '../fonts/';
 @keyframes blick{
 	0%	 { opacity: 0; z-index: -10}
 
-	10% { opacity: 1; z-index: 1200}
+	10% { opacity: 0.7; z-index: 1200}
+
+	50% { opacity: 1; z-index: 1200}
 	
-	90%	 { opacity: 1; z-index: 1200}
+	90%	 { opacity: 0.3; z-index: 1200}
 		
 	100% { opacity: 0; z-index: -10}
 }
