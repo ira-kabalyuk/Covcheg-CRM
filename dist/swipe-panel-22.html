@@ -1,0 +1,236 @@
+<!--запись в салон-->
+<div class="swipe-panel swipe-panel-22 h100 w800">
+		<div class="swipe-panel__header">
+				<div class="swipe-panel__title-block">
+					<p class="swipe-panel__title">
+					Запись в салон
+					</p>			
+				</div>
+				<div class="swipe-panel__close-block">
+						<i class="icon icon-close" aria-hidden="true"></i>
+				</div>	
+		</div>
+		<div class="swipe-panel__body">                
+				<div class="swipe-form">
+					<div class="swipe-form__column-wrap aifs">
+						<div class="swipe-form__column">
+							<div class="input-wrap">
+									<label for="checkbox" class="check-label color border-green" title="осблуживание завершено">осблуживание завершено</label>		
+							</div>	
+							<div class="swipe-panel__data-block">
+									<i class="icon icon-calendar-gray"></i>
+									<span>17 ноября 10.30-11.30</span> 
+							</div>
+							<div class="swipe-panel__name-block">
+									<p class="swipe-panel__name">Мастер: <span>Екатерина Мирончук</span></p>
+							</div>
+							<div class="swipe-panel__name-block mb-10">
+									<p class="swipe-panel__subname">Администратор: <span>Екатерина Мирончук</span></p>
+							</div>							
+								<div class="input-wrap">
+										<div class="add-block__head">
+												<span class="name">Клиент</span>
+												<span class="add client-add">+ Добавить клиента</span>
+										</div>
+										<input type="text" class="swipe-input" placeholder="Найти клиента">								
+										<table class="search__list">
+												<tbody>
+														<tr>
+														<td class="search__item-name"> Екатерина Иванова-Петровская</td>                            
+														<td>+38 (095) 555-55-55</td>
+														</tr>
+														<tr>
+																<td class="search__item-name green">Марина Иванова</td>                                
+																<td>+38 (095) 555-55-55</td>
+														</tr>
+														<tr>
+																<td class="search__item-name">Наталья Петрова</td>                                
+																<td>+38 (095) 555-55-55</td>
+														</tr>
+														<tr>
+																<td class="search__item-name">Татьяна Сидорова</td>                                
+																<td>+38 (095) 555-55-55</td>
+														</tr>
+												</tbody>
+										</table>		
+										<div class="add-block__body no-btn">									
+												<span class="name big blue-text dotted-dec">Екатерина Кишковская</span>
+												<span class="label label_orange lang" title="Постоянный" style="color: #ffffff; background: #ec5c1c">Постоянный</span>
+												<p class="info">+38099-999-99-99</p>
+										</div>
+								</div>
+								<div class="input-wrap">
+									<div class="add-block__head">
+											<span class="name">Заметки</span>
+											<span class="add client-add">+ Добавить заметку</span>
+									</div>
+									<textarea name="" id="" cols="30" rows="10" class="comment-input"></textarea>
+									<button class="button braun mt-10 trans">Добавить</button>
+									<div class="bookmark">
+										<div class="bookmark-info">
+											<i class="icon icon-bookmark-gray"></i>
+											<span class="bookmark-info__data">10 нояб. 2018</span>
+											<span class="bookmark-info__time">15.30</span>
+										</div>
+										<p class="bookmark__text">клиент просит скидку</p>
+									</div>
+								</div>
+								<div class="swipe-button-wrap">
+									<button class="button green w-100pr trans" data-toggle="modal" data-target="#payPopup">Оплатить</button>
+									<button class="button gray-border w-100pr trans">Записать на следующий прием</button>
+									<button class="button braun w-100pr trans">Визит отменен</button>
+									<div class="button-wrap mb-20">
+											<button class="button green trans">Придет</button>
+											<button class="button red trans">Не придет</button>
+									</div>
+									<div class="input-wrap clearfix">										
+										<select class="swipe-select" ref="master">
+												<option value="0" data-display="укажите причину отказа">причина-1</option>
+												<option value="1">причина-2</option>
+												<option value="2">причина-3</option>        
+										</select>
+								</div>
+								</div>
+								<ul class="nav swipe-row-tabs">
+									<li class="active"><i class="icon icon-pencil-gray"></i><a href="#s-1" data-toggle="tab"> Просмотр/Редактирование</a></li>
+									<li><i class="icon icon-book-gray"></i><a href="#s-2" data-toggle="tab">История</a></li>																			
+								</ul>
+						</div>
+						<div class="swipe-row-tab-content tab-content gray-bg">
+							<div class="swipe-form__column tab-pane active" id="s-1">
+								<div class="del-block__head flex fend">                        
+									<span class="add client-add">Сбросить статус</span>
+									<span class="del client-del"><i class="icon cross-icon">×</i> Удалить запись</span>
+								</div>
+								<div class="swipe-info-block mb-20">
+									<label for="" class="swipe-label">Информация</label>
+									<div class="swipe-panel__name-block">
+										<p class="swipe-panel__subname">Дата <span>8 нояб. 11.30-12.30</span></p>
+									</div>
+									<div class="swipe-panel__name-block">
+										<p class="swipe-panel__subname">Администратор: <span>Екатерина Мирончук</span></p>
+									</div>
+								</div>
+								<div class="add-block mb-20">
+									<div class="add-block__head">
+										<span class="name">Товар</span>
+										<span class="add client-add">+ Добавить товар, сертификат</span>
+									</div>
+									<div class="add-block__body">
+										<button type="button" class="form-close light-braun">×</button>
+										<span class="product-name">Kоррекция наращивания ресниц</span>									
+										<p class="product-price"><span>800</span> грн. 180 мин</p>
+									</div>
+									<div class="add-block__body">
+										<button type="button" class="form-close light-braun">×</button>
+										<span class="product-name">Kоррекция наращивания ресниц</span>									
+										<p class="product-price"><span>800</span> грн. 180 мин</p>
+									</div>
+								</div>
+								<div class="add-block mb-20">
+									<div class="add-block__body">
+											<button type="button" class="form-close">×</button>
+											<span class="service-name">Объемное наращивание ресниц Голливуд</span>
+											<div class="row-wrap sb">
+													<p class="product-price"><span>800</span> грн. 180 мин</p>
+												<input type="text" class="swipe-input" placeholder="кол-во">
+											</div>												                      
+									</div> 
+								</div> 
+								<div class="add-block mb-20">
+										<div class="add-block__head">
+											<span class="name">Услуга</span>
+											<span class="add client-add">+ Добавить услугу</span>
+										</div>
+										<div class="add-block__body">
+											<button type="button" class="form-close light-braun">×</button>
+											<span class="product-name">Шампунь Brelil</span>									
+											<p class="product-price"><span>800</span> грн</p>
+										</div>
+										<div class="add-block__body">
+											<button type="button" class="form-close light-braun">×</button>
+											<span class="product-name">Бальзам для волос Brelil</span>									
+											<p class="product-price"><span>800</span> грн</p>
+										</div>										
+									</div>
+									<div class="swipe-info-block mb-20">
+											<label for="" class="swipe-label">Всего по товарам и услугам</label>
+											<div class="row-wrap sb">
+													<span class="product-name">Всего</span>	
+													<p class="product-price"><span class="green-text">800</span> грн</p>			
+											</div>
+									</div>
+									<div class="swipe-info-block mb-20">
+											<table class="swipe-info-table">
+													<colgroup></colgroup>												
+												<tr>
+													<td class="">Запись <span>	№534</span></td>
+													<td>8 ноября на 10.30</td>													
+												</tr>
+												<tr>
+													<td class="">Клиент</td>
+													<td><span>Кишковская Екатерина</span></td>
+												</tr>
+												<tr>
+													<td class="">Сумма без скидки</td>
+													<td><span>800</span>грн</td>
+												</tr>
+												<tr>
+													<td class="">Сумма к оплате</td>
+													<td><span>800</span>грн</td>
+												</tr>
+											</table>	
+									</div>
+									<div class="swipe-info-block mb-20">
+											<label for="" class="swipe-label">Услуги</label>
+											<div class="add-block__body no-btn">
+													<span class="product-name">Бальзам для волос Brelil</span>
+												<table class="swipe-services-table">
+													<thead>
+														<tr>
+															<th>Кол-во</th>
+															<th>Цена</th>
+															<th>Сумма</th>
+															<th>Скидка</th>
+															<th>Итого</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>25</td>
+															<td>180 грн</td>
+															<td>1800 грн</td>
+															<td>0%</td>
+															<td>20000 грн</td>
+														</tr>
+													</tbody>
+												</table>	
+											</div>	
+									</div>
+									<div class="pay-status green">Оплачено</div>
+									<div class="swipe-services__block">
+										<p class="swipe-services__title">Скрипты продаж</p>
+										<ul class="swipe-services__list">
+											<li class="swipe-services__item">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  aliqua. 
+											</li>
+											<li class="swipe-services__item">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  aliqua. 
+											</li>
+										</ul>
+									</div>
+							</div>
+							<div class="swipe-form__column tab-pane" id="s-2">
+												
+							</div>
+						</div>
+							</div>	
+						
+					</div>				
+				</div>	
+		</div>	
+	</div>
+	
+	
+	
+	
