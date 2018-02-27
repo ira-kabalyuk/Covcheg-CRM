@@ -851,3 +851,53 @@ input[type="checkbox"].bigswitch.switch + div > div {
         width: 40px;
     }
 }
+
+.js-select2-dropdown-1 {
+
+	.select2-results__option {
+		display: block;
+	}
+
+	.select2-results__options  {
+		display: block;
+	}
+
+	.select2-results {
+
+		.select2-results__options{
+			display: block;				
+
+				/*&:first-child {
+
+					.select2-results__option {
+						//background: #d3b4d3;				
+					}									
+				}*/
+
+				/*&:nth-child(2) {
+
+					.select2-results__option {
+					//	background: blue;				
+					}									
+				}*/
+			}	
+		
+	}
+	.select2-results__group {
+		padding: 6px 15px;
+	}
+
+	.select2-results__options--nested {
+		padding: 6px 10px;
+	}
+
+
+	.select2-container--default .select2-results__option[aria-selected=true] {
+		color: $black;
+	}
+
+	/*.select2-results__options:first-child > .select2-results__option {
+		background: #d3b4d3;		
+	}*/
+	
+}

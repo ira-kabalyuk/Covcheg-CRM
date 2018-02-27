@@ -192,8 +192,22 @@ jQuery(document).ready(function() {
         templateResult: function (item) {
           return $('<b>'+item.text+'</b><span>'+item.profession+'</span>')
         }
-      });
+			});
+			
+		
 
+		$(".js-status").select2({
+			"containerCssClass": 'js-select2-container-1',
+			"dropdownCssClass": 'js-select2-dropdown-1'
+		});
+		$('.select2-text').on('select2:selecting', function (e) {
+			var target = $(e.params.args.originalEvent.currentTarget);
+			var bgColor = target.closest('.select2-results__option').css('background-color');
+				var dropdown = target.closest('.js-select2-dropdown-1')
+				var container = $('.js-select2-container-1');
+				var selected = container.find('.select2-selection__rendered')
+				selected.css('background-color', bgColor)  
+			});
      
 
       $('.multiple-select-2').select2({
