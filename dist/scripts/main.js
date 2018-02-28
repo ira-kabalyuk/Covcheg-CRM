@@ -19473,7 +19473,7 @@ jQuery(document).ready(function() {
 		});
 		$('.select2-text').on('select2:selecting', function (e) {
 			var target = $(e.params.args.originalEvent.currentTarget);
-			var bgColor = target.closest('.select2-results__option').css('background-color');
+			var bgColor = target.parents('.select2-results__option').first().css('background-color');
 				var dropdown = target.closest('.js-select2-dropdown-1')
 				var container = $('.js-select2-container-1');
 				var selected = container.find('.select2-selection__rendered')

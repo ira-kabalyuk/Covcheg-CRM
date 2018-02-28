@@ -852,7 +852,34 @@ input[type="checkbox"].bigswitch.switch + div > div {
     }
 }
 
+.select2-container {
+
+	.select2-selection--single {
+
+		&.js-select2-container-1 {
+			padding: 0 30px 0 0px;
+
+			.select2-selection__rendered {
+				padding-left: 15px;
+				line-height: 38px;
+			}
+
+			.select2-selection--single {
+				background: transparent;
+			}
+		}
+	}
+
+}
+
+
+
+
 .js-select2-dropdown-1 {
+
+	.select2-results {
+		//border-top: 1px solid #f7f7f7;
+	}
 
 	.select2-results__option {
 		display: block;
@@ -860,6 +887,8 @@ input[type="checkbox"].bigswitch.switch + div > div {
 
 	.select2-results__options  {
 		display: block;
+
+	
 	}
 
 	.select2-results {
@@ -867,19 +896,6 @@ input[type="checkbox"].bigswitch.switch + div > div {
 		.select2-results__options{
 			display: block;				
 
-				/*&:first-child {
-
-					.select2-results__option {
-						//background: #d3b4d3;				
-					}									
-				}*/
-
-				/*&:nth-child(2) {
-
-					.select2-results__option {
-					//	background: blue;				
-					}									
-				}*/
 			}	
 		
 	}
@@ -891,13 +907,23 @@ input[type="checkbox"].bigswitch.switch + div > div {
 		padding: 6px 10px;
 	}
 
-
-	.select2-container--default .select2-results__option[aria-selected=true] {
+	.select2-results__options .select2-results__option[aria-selected=true] {
 		color: $black;
+		background-color: transparent;
 	}
-
-	/*.select2-results__options:first-child > .select2-results__option {
-		background: #d3b4d3;		
-	}*/
+	
+	.select2-results__options  .select2-results__option--highlighted[aria-selected] {
+		background-color: transparent;
+		color: $black;
+	}	
 	
 }
+
+.js-select2-dropdown-1 > .select2-results >.select2-results__options > .select2-results__option:nth-child(1) { background: #f3e3f9; }
+.js-select2-dropdown-1 > .select2-results >.select2-results__options > .select2-results__option:nth-child(2) { background: #e3f6f9; }
+.js-select2-dropdown-1 > .select2-results >.select2-results__options > .select2-results__option:nth-child(3) { background: #f5f8d2; }
+.js-select2-dropdown-1 > .select2-results >.select2-results__options > .select2-results__option:nth-child(4) { background: #f8d9d2; }
+.js-select2-dropdown-1 > .select2-results >.select2-results__options > .select2-results__option:nth-child(5) { background: #d2d5f8; }
+.js-select2-dropdown-1 > .select2-results >.select2-results__options > .select2-results__option:nth-child(6) { background: #d2f8d6; }
+.js-select2-dropdown-1 > .select2-results >.select2-results__options > .select2-results__option:nth-child(7) { background: #accbf0; }
+
