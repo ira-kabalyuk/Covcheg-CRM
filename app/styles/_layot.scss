@@ -192,14 +192,19 @@ body {
 	}
 
 	main {
-		padding: 0 30px;
-		margin-top: 50px;
-		//margin-left: 110px;
-		min-width: calc(992px - 80px);	
-		width: calc(100% - 110px);
-		flex-basis: calc(100% - 110px);
-		flex-shrink: 0;
+	width: 100%;
 	}
+
+	.layout {
+    padding: 0 30px;
+    margin-top: 50px;
+    /*margin-left: 110px;*/
+    min-width: calc(992px - 110px);  
+    width: calc(100% - 110px);
+    flex-basis: calc(100% - 110px);
+    flex-shrink: 0;
+		}
+
 
 	.tools {
 		display: flex;

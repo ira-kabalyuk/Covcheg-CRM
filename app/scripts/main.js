@@ -196,22 +196,78 @@ jQuery(document).ready(function() {
 			
 		
 
-		$(".js-status").select2({
-			"containerCssClass": 'js-select2-container-1',
-			"dropdownCssClass": 'js-select2-dropdown-1'
-		});
-		$('.js-status').on('select2:selecting', function (e) {
-			var target = $(e.params.args.originalEvent.currentTarget);
-			var bgColor = target.parents('.select2-results__option').first().css('background-color');
-				var dropdown = target.closest('.js-select2-dropdown-1')
-				var container = $('.js-select2-container-1');
-				var selected = container.find('.select2-selection__rendered');			
-				selected.css('background-color', bgColor)  
-			});
+		//цветной селект
 
-			$('.js-status').val('AK');
-			$('.js-status').trigger('change');
-     
+		$.fn.select2.amd.require(
+			["select2/utils", "select2/results"],
+			function (Utils, Results) {
+				var OptionDecorator = function(){};
+				OptionDecorator.prototype.option = function(decoratedMethod, data) {
+					var option = decoratedMethod.call(this, data);
+					if(data.color) {
+						$(option).css('background-color', data.color)
+					}
+					return option;
+				}
+				var OptionResultsAdapter = Utils.Decorate(Results, OptionDecorator);
+				
+				var	data = [
+					{
+						text: "Новый",
+						color: '#e4e2f9',
+						children: [
+							{ id: "n1", text: "Новый"}
+						]
+					},
+					{
+						text: "Согласование",
+						color: '#f4f6c8',
+						children: [
+							{ id: "sg1", text: "Наличие подтверждено", selected: true},
+							{ id: "sg2", text: "Назначить замену"}
+						]
+					},
+					{
+						text: "Комплектация",
+						color: '#f6c8ce',
+						children: [
+							{ id: "cm1", text: "Комплектуется"},
+							{ id: "cm2", text: "Укомплектован"}
+						]
+					},
+				]
+				
+				$(".js-status").select2({
+					"containerCssClass": 'js-select2-container-color-1',
+					"dropdownCssClass": 'js-select2-dropdown-color-1',
+					data: data,
+					resultsAdapter: OptionResultsAdapter,
+					templateSelection: templateSelection,
+				});
+		
+				function templateSelection (state) {
+					if (!state.id) {
+						return state.text;
+					}
+					var $state = $('<span class="select2-selection__top"><span class="select2-selection__text">' +  state.text + '</span></span>');					
+					var group = getItemGroup(data, state.id)
+					if(group && group.color) {
+						$state.css('background-color', group.color);
+					}
+					return $state;
+				};
+		
+				function getItemGroup(data, id){
+					var group = data.filter(function(group){
+						return group.children && group.children.some(function(item){return item.id === id});
+					})[0]
+					return group;
+				}
+			}
+		);
+
+
+		//конец цветной селект
 
       $('.multiple-select-2').select2({
         dropdownParent: $('.multiple-select-drop-2'),
